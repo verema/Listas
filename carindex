@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+           
+ 
+
+<item>
+    <title>[COLOR red]Juego De Tronos[/COLOR]</title>
+    <link>http://Ignoreme</link>
+	<thumbnail>http://i.imgur.com/XJWRRFY.jpg</thumbnail>
+<fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#101;&#118;&#101;&#110;&#116;&#111;&#115;&#046;&#120;&#109;&#108;</externallink>	
+    </item>
+
+ 
+<item>
+<title> [COLOR red]24/7[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item>
+			<title>[makelist.param2]</title>
+			<link>rtmp://$doregex[getserver]/live?$doregex[clearCode] playpath=live_[makelist.param1] live=1 timeout=20</link>
+			<regex>
+			<name>clearCode</name>
+			<expres>$pyFunction:'$doregex[getencoded]'.replace("0m0","").replace("0n0","")</expres>
+			<page></page>
+			</regex>
+			<regex>
+			<name>getencoded</name>
+			<expres>:mvnkey-(.*)</expres>
+			<page>$doregex[getUrl]</page>
+			</regex>
+			<regex>
+			<name>getserver</name>
+			<expres>(.*?);</expres>
+			<page>$doregex[getUrl]</page>
+			</regex>
+			<regex>
+			<name>getUrl</name>
+			<expres>(.*)</expres>
+			<page>http://mvn.vaughnsoft.net/video/edge/live_[makelist.param1]$doregex[gettime]-$doregex[gettime].33434</page>
+			</regex>
+			<regex>
+			<name>gettime</name>
+			<expres>$pyFunction:str(int(round(time.time() * 1000)))</expres>
+			<page></page>
+			</regex>
+			<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail></item>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>http://vaughnlive.tv/browse/espanol</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/OKY9Szg.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR red]EL TAQUILLAZO[/COLOR]</title>
+<link>http://Ignoreme</link>
+<thumbnail>http://i.imgur.com/m248iT4.jpg</thumbnail>
+<fanart>http://i.imgur.com/u11Rc03.jpg
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#084;&#065;&#081;&#085;&#073;&#076;&#076;&#065;&#090;&#079;&#046;&#088;&#077;&#076;</externallink>	
+</item>
+	
+	<item>
+    <title>[COLOR red]MI PELICULA DE HOY[/COLOR]</title>
+    <link>http://Ignoreme</link>
+	<thumbnail>http://i.imgur.com/xu57ulK.png</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#112;&#101;&#108;&#105;&#104;&#111;&#121;&#046;&#120;&#109;&#108;</externallink>	
+    </item>
+	
+    <item>
+    <title>[COLOR red]INFANTILES[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#073;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canales-infantiles.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item> 
+	
+	<item>
+    <title>[COLOR red]SERIES INFANTILES[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#105;&#101;&#115;&#105;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i.imgur.com/7voKiV1.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+		
+    <item>
+    <title>[COLOR red]PELICULAS INFANTILES[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#080;&#101;&#108;&#105;&#099;&#117;&#108;&#097;&#115;&#105;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i.imgur.com/RfiT087.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>  	
+		
+    <item>
+    <title>[COLOR red]DEPORTES[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#100;&#101;&#112;&#111;&#114;&#116;&#101;&#115;&#046;&#120;&#109;&#108;</externallink> 
+	<thumbnail>http://i.imgur.com/ICJ9tPt.png</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>     
+
+    <item>
+    <title>[COLOR red]MOVISTAR PLUS[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#109;&#111;&#118;&#105;&#115;&#116;&#097;&#114;&#046;&#120;&#109;&#108;</externallink>
+    <thumbnail>http://i.imgur.com/5sTg3yD.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>	    
+    
+    <item>
+    <title>[COLOR red]TDT[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#100;&#116;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/la_tdt10.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+    
+<item>
+<title>[COLOR red]CANALES LATINOS[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>[makelist.param2]</link>
+<agent>Mozilla/5.0</agent>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>#EXTINF.*?,(.*).*\n.*?(?=http|rtmp|rtsp|mms)(.*[\d|\w])</expres>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#108;&#105;&#115;&#116;&#097;&#115;%&#050;&#048;&#108;&#097;&#116;&#105;&#110;&#097;&#046;&#109;&#051;&#117;</page>
+<agent></agent>
+</regex>
+<thumbnail>http://i.imgur.com/v6UpAxZ.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>   
+	
+	<item>
+    <title>[COLOR red]LA ALTERNATIVA[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#067;&#097;&#116;&#111;&#097;&#108;&#105;&#115;&#116;/&#109;&#097;&#115;&#116;&#101;&#114;/&#097;&#108;&#116;&#101;&#114;&#110;&#097;&#116;&#105;&#118;&#097;</externallink>
+	<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	
+<tem>
+<title>[COLOR red]KODILIVE[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>[makelist.param2]</link>
+	<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>#EXTINF:-1.*,(.*?)\n(.*)</expres>
+<page>http://kodilive.eu/tv/</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+<thumbnail>http://i.imgur.com/ZGEc4WQ.jpg</thumbnail>
+<fanart>http://i.imgur.com/5Up4jOE.jpg
+
+</item>
+	
+	<item>
+    <title>[COLOR red]TV FRANCE[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#118;&#102;&#114;&#097;&#110;&#099;&#105;&#097;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i.imgur.com/oQq8SOe.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	
+	<item>
+    <title>[COLOR red]TV DE CATALUNYA[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#118;&#099;&#097;&#116;&#097;&#108;&#117;&#110;&#121;&#097;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/1262702256945.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+		    
+    <item>
+    <title>[COLOR red]TV URUGUAY[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#118;&#117;&#114;&#117;&#103;&#117;&#097;&#121;&#046;&#120;&#109;&#108;</externallink> 
+	<thumbnail>http://i.imgur.com/9wJ6pLG.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	
+		    
+    <item>
+    <title>[COLOR red]MUSICA[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#109;&#117;&#115;&#105;&#099;&#097;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i.imgur.com/3FxpWmy.png</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+    
+	<item>
+    <title>[COLOR red]RADIO[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#114;&#097;&#100;&#105;&#111;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i.imgur.com/mkMqBJt.png</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>	
+	
+	<item>
+    <title>[COLOR red]DOCUMENTALES[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#100;&#111;&#099;&#117;&#109;&#101;&#110;&#116;&#097;&#108;&#101;&#115;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/url10.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+		
+	<item>
+    <title>[COLOR magenta]SUPER LISTAS[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#117;&#112;&#101;&#114;&#108;&#105;&#115;&#116;&#097;&#115;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i.imgur.com/bZO05zt.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+
+<item>
+    <title>[COLOR magenta]Camaras del Mundo[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#119;&#101;&#098;&#099;&#097;&#109;&#046;&#120;&#109;&#108;</externallink>
+    <thumbnail></thumbnail>
+    <fanart></fanart>
+    </item>
