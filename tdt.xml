@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-
-<tem>
-<title>[COLOR lime]Canales[/COLOR][COLOR red][I] F4m[/I][/COLOR]</title>
-<link>http://Ignoreme</link>
-<thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<externallink></externallink> 
-</item>
-
 <item>
 <title>Atreseries</title>
 <ink>http://a3live-lh.akamaihd.net/i/a3shds/geoa3series_1@122775/index_1_av-b.m3u8?sd=10&rebase=on</link>
@@ -42,6 +33,13 @@
 <title>Cuatro</title>
 <link>rtmp://31.220.40.62/privatestream/ playpath=cuatroa?keys=onl1EKE-hWifcle6h5BHBw&keyt=1460649018 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalcuatro.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Telecinco</title>
+<link>&#112;&#108;&#117;&#103;&#105;&#110;://&#112;&#108;&#117;&#103;&#105;&#110;&#046;&#118;&#105;&#100;&#101;&#111;&#046;&#102;&#052;&#109;&#084;&#101;&#115;&#116;&#101;&#114;/?&#117;&#114;&#108;=&#104;&#116;&#116;&#112;://&#112;&#105;&#107;&#101;&#114;&#109;&#111;&#108;&#108;&#101;&#114;&#112;&#118;&#102;&#046;&#100;&#121;&#110;&#110;&#115;&#046;&#099;&#111;&#109;:&#056;&#048;&#048;&#048;/&#108;&#105;&#118;&#101;/&#074;&#046;&#104;&#099;&#050;/&#072;&#069;&#073;&#051;&#073;&#069;&#103;&#102;&#119;&#107;/&#056;&#050;&#051;&#046;&#116;&#115;&#038;&#097;&#109;&#112;;&#115;&#116;&#114;&#101;&#097;&#109;&#116;&#121;&#112;&#101;=&#084;&#083;&#068;&#079;&#087;&#078;&#076;&#079;&#065;&#068;&#069;&#082;&#038;&#097;&#109;&#112;;&#110;&#097;&#109;&#101;=&#084;&#101;&#108;&#101;&#099;&#105;&#110;&#099;&#111;</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
