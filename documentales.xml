@@ -1,44 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 
-
-<tem>
-<title>[COLOR lime]Canales[/COLOR][COLOR red][I] F4m[/I][/COLOR]</title>
-<link>http://Ignoreme</link>
-<externallink></externallink>
-<thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item> 
-
 <item>
-<title>Discovery Max[COLOR red][I] New STD[/I][/COLOR]</title> 
+<title>Discovery Max</title> 
 
 <thumbnail>http://i.imgur.com/ST0nJb2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
 <item>
-<title>Discovery Channel[COLOR red][I] New STD[/I][/COLOR]</title>
-
+<title>Discovery Channel</title>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/3359.ts&amp;streamtype=TSDOWNLOADER&amp;name=Discovery Channel</link>
 <thumbnail>http://i.imgur.com/VEXxOky.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
 <title>Caza y Pesca</title>
-<link>$doregex[url]</link>
-<regex>
-<name>url</name>
-<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://teledeporteonlinetv.org/')</expres>
-<page></page>
-</regex>
-<regex>
-<name>ch</name> 
-<expres>http://www.iguide.to/embed/(.*?)&</expres>
-<page>http://teledeporteonlinetv.org/ch/ch6.php</page>			
-</regex>
-<thumbnail></thumbnail>
-</item>	
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/110.ts&amp;streamtype=TSDOWNLOADER&amp;name=Casa y Pezca</link>
+<thumbnail>http://i.imgur.com/fP0g5ld.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
 
 <item>
 <title>Caza y Pesca</title>         
@@ -49,25 +31,32 @@
 </item>
 
 <item>
+<title>National Geografic</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/846.ts&amp;streamtype=TSDOWNLOADER&amp;name=National Geografic</link>
+<thumbnail>http://i.imgur.com/Co57iED.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
 <title>National Geography</title> 
 <link>http://vod.cdn.iutpcdn.com/LIVE/H01/CANAL377/PROFILE03.m3u8</link>
 <thumbnail>http://i.imgur.com/Co57iED.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<tem>
- <title>A and E</title>
-<link>rtmp://www1.iguide.to/iguide playpath=a94301d9dma2hc8  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
-<thumbnail>http://i.imgur.com/4q7xd8N.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>   
-           
-<tem>
-<title>A and E</title>
-<link>rtmp://31.220.0.187/privatestream/ playpath=aande25?keys=jiH3m9uxPA2FhTqpPeUjLw&keyt=1448246240 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<item>
+<title>AE</title>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/767.ts&amp;streamtype=TSDOWNLOADER&amp;name=AE</link>
 <thumbnail>http://i.imgur.com/4q7xd8N.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
+ 
+<item>
+<title>Canal Cocina</title>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/844.ts&amp;streamtype=TSDOWNLOADER&amp;name=Canal Cocina</link>
+<thumbnail>http://i.imgur.com/sJFRAiz.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
 
 <item>
 <title>Canal Cocina</title>
@@ -75,13 +64,20 @@
 <thumbnail>http://i.imgur.com/sJFRAiz.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>  
-           
-<tem>
-<title>Decasa tv</title>
-<link>rtmp://31.220.0.155/privatestream/ playpath=decasa12?keys=TPwqJlqH7xBOxQFgjPghLw&keyt=1448248518 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
-<thumbnail>http://i.imgur.com/Wz8ag28.jpg</thumbnail>
+ 
+<item>
+<title>Nat Geo Wild</title>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/847.ts&amp;streamtype=TSDOWNLOADER&amp;name=Nat Geo Wild</link>
+<thumbnail>http://i.imgur.com/q0BzvNo.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item> 
+</item>
+ 
+<item>
+<title>Historia</title>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/779.ts&amp;streamtype=TSDOWNLOADER&amp;name=Historia</link>
+<thumbnail>http://i.imgur.com/wOSLXuF.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
 
 <item>
 <title>Constriur TV</title>
@@ -97,10 +93,17 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
-<tem>
+<item>
 <title>Iberalia</title>
-<link>rtmp://31.220.40.60/privatestream/ playpath=iberalia65?keys=gz490nDBAqgC8FJ60ndyhQ&keyt=1448248960 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/833.ts&amp;streamtype=TSDOWNLOADER&amp;name=Iberalia</link>
 <thumbnail>https://pbs.twimg.com/profile_images/660596526880833536/w5F17Ux2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Viajar</title>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/86.ts&amp;streamtype=TSDOWNLOADER&amp;name=Viajar</link>
+<thumbnail>http://i.imgur.com/XdbNaeI.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
@@ -109,4 +112,22 @@
 <link>http://194.179.53.124:1935/live/myStream_2/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/XdbNaeI.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Odisea</title>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/1413.ts&amp;streamtype=TSDOWNLOADER&amp;name=Odisea</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Discovery Channel</title>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/3359.ts&amp;streamtype=TSDOWNLOADER&amp;name=Discovery Channel</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>CI</title>
+<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/J.hc2/HEI3IEgfwk/861.ts&amp;streamtype=TSDOWNLOADER&amp;name=CI</link>
+<thumbnail></thumbnail>
 </item>
