@@ -8,7 +8,7 @@
 <listrepeat><![CDATA[
 <title>[makelist.param1]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-<thumbnail></thumbnail>
+<thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
 <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
@@ -27,7 +27,7 @@
 <listrepeat><![CDATA[
 <title>[makelist.param1]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-<thumbnail></thumbnail>
+<thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
 <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
@@ -39,759 +39,136 @@
 </item>
 
 <item>
-<title>Primera Temporada</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist.param1]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-                        <thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-						<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-            ]]></listrepeat>
-            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-            <page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT3i8vK4yHYHfRvym4GUm6im</page>
-             <cookieJar></cookieJar>
-</regex>
-<thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-</item>
-
-<item>
-<title>Primera Temporada</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist.param1]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-                        <thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-						<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-            ]]></listrepeat>
-            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-            <page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT3i8vK4yHYHfRvym4GUm6im</page>
-             <cookieJar></cookieJar>
-</regex>
-<thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-</item>
-
-<item>
-<title>Primera Temporada</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist.param1]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-                        <thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-						<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-            ]]></listrepeat>
-            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-            <page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT3i8vK4yHYHfRvym4GUm6im</page>
-             <cookieJar></cookieJar>
-</regex>
-<thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-</item>
-
-<item>
-<title>Primera Temporada</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist.param1]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-                        <thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-						<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-            ]]></listrepeat>
-            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-            <page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT3i8vK4yHYHfRvym4GUm6im</page>
-             <cookieJar></cookieJar>
-</regex>
-<thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-</item>
-
-<item>
-<title>Primera Temporada</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist.param1]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-                        <thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-						<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-            ]]></listrepeat>
-            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-            <page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT3i8vK4yHYHfRvym4GUm6im</page>
-             <cookieJar></cookieJar>
-</regex>
-<thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-</item>
-
-<item>
-<title>Primera Temporada</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist.param1]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-                        <thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-						<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-            ]]></listrepeat>
-            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-            <page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT3i8vK4yHYHfRvym4GUm6im</page>
-             <cookieJar></cookieJar>
-</regex>
-<thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-</item>
-
-<item>
-<title>Primera Temporada</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist.param1]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-                        <thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-						<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-            ]]></listrepeat>
-            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-            <page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT3i8vK4yHYHfRvym4GUm6im</page>
-             <cookieJar></cookieJar>
-</regex>
-<thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
-<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
-</item>
-
-<item>
 <title>CantaJuegos Vol.3</title>
-<link>$doregex[makelist2]</link>
-
-
+<link>$doregex[makelist]</link>
 <regex>
-<name>makelist2</name>
+<name>makelist</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
-<link>$doregex[makelist3]</link>
-<referer></referer>
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+<fanart></fanart>
+ ]]></listrepeat>
+ <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+ <page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT3eA-6cIjOhONP7jy0ezq0E</page>
+ <cookieJar></cookieJar>
+</regex>
 <thumbnail></thumbnail>
-]]></listrepeat>
-<expres> (.*?),</expres>
-<page>$doregex[get-number]</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-            <name>makelist3</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
-                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>$doregex[get-source-page]</page>
-             <cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>get-number</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- url='https://www.youtube.com/playlist?list=PLq3aw1QZnLT3eA-6cIjOhONP7jy0ezq0E'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
-
- rr = requests.get(url, headers=headers)
- number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
- #number = number.encode('unicode-escape')
- number = number.replace(',', '')
- real = int(float(number)) / 100
- real2 = real + 3
-
- liste = list(range(real2))
- return liste
-]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>get-source-page</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- import json
-
- pageUrl='https://www.youtube.com/playlist?list=PLq3aw1QZnLT3eA-6cIjOhONP7jy0ezq0E'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
- r1 = requests.get(pageUrl, headers = headers)
- source = r1.text
- page = [makelist2.param1]
- N = int(float(page))
- pre = 'https://www.youtube.com'
- if (N > 1):
-
-   for itr in range (1,N):
-    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
-    continuationx = pre + continuex
-    r = requests.get(continuationx, headers = headers)
-    source = r.text
-    jdata = json.loads(source)
-    source = jdata["load_more_widget_html"]
-    page = jdata["content_html"]
-   return page
-    
- else:
-
-  return source
-]]></expres>
-<page></page>
-</regex>
+<fanart></fanart>
 </item>
 
 <item>
 <title>CantaJuegos Vol.4</title>
-<link>$doregex[makelist2]</link>
-
-
+<link>$doregex[makelist]</link>
 <regex>
-<name>makelist2</name>
+<name>makelist</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
-<link>$doregex[makelist3]</link>
-<referer></referer>
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+<fanart></fanart>
+ ]]></listrepeat>
+ <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+ <page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT1NzkVVQXgoSViie1N-rjBL</page>
+ <cookieJar></cookieJar>
+</regex>
 <thumbnail></thumbnail>
-]]></listrepeat>
-<expres> (.*?),</expres>
-<page>$doregex[get-number]</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-            <name>makelist3</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
-                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>$doregex[get-source-page]</page>
-             <cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>get-number</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- url='https://www.youtube.com/playlist?list=PLq3aw1QZnLT1NzkVVQXgoSViie1N-rjBL'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
-
- rr = requests.get(url, headers=headers)
- number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
- #number = number.encode('unicode-escape')
- number = number.replace(',', '')
- real = int(float(number)) / 100
- real2 = real + 3
-
- liste = list(range(real2))
- return liste
-]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>get-source-page</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- import json
-
- pageUrl='https://www.youtube.com/playlist?list=PLq3aw1QZnLT1NzkVVQXgoSViie1N-rjBL'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
- r1 = requests.get(pageUrl, headers = headers)
- source = r1.text
- page = [makelist2.param1]
- N = int(float(page))
- pre = 'https://www.youtube.com'
- if (N > 1):
-
-   for itr in range (1,N):
-    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
-    continuationx = pre + continuex
-    r = requests.get(continuationx, headers = headers)
-    source = r.text
-    jdata = json.loads(source)
-    source = jdata["load_more_widget_html"]
-    page = jdata["content_html"]
-   return page
-    
- else:
-
-  return source
-]]></expres>
-<page></page>
-</regex>
+<fanart></fanart>
 </item>
 
 <item>
 <title>CantaJuegos Vol.5</title>
-<link>$doregex[makelist2]</link>
-
-
+<link>$doregex[makelist]</link>
 <regex>
-<name>makelist2</name>
+<name>makelist</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
-<link>$doregex[makelist3]</link>
-<referer></referer>
-<thumbnail></thumbnail>
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+<fanart></fanart>
 ]]></listrepeat>
-<expres> (.*?),</expres>
-<page>$doregex[get-number]</page>
+<expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+<page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT1j0Cu1zgo0F1JCKdkC3lyH</page>
 <cookieJar></cookieJar>
 </regex>
-
-<regex>
-            <name>makelist3</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
-                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>$doregex[get-source-page]</page>
-             <cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>get-number</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- url='https://www.youtube.com/playlist?list=PLq3aw1QZnLT1j0Cu1zgo0F1JCKdkC3lyH'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
-
- rr = requests.get(url, headers=headers)
- number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
- #number = number.encode('unicode-escape')
- number = number.replace(',', '')
- real = int(float(number)) / 100
- real2 = real + 3
-
- liste = list(range(real2))
- return liste
-]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>get-source-page</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- import json
-
- pageUrl='https://www.youtube.com/playlist?list=PLq3aw1QZnLT1j0Cu1zgo0F1JCKdkC3lyH'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
- r1 = requests.get(pageUrl, headers = headers)
- source = r1.text
- page = [makelist2.param1]
- N = int(float(page))
- pre = 'https://www.youtube.com'
- if (N > 1):
-
-   for itr in range (1,N):
-    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
-    continuationx = pre + continuex
-    r = requests.get(continuationx, headers = headers)
-    source = r.text
-    jdata = json.loads(source)
-    source = jdata["load_more_widget_html"]
-    page = jdata["content_html"]
-   return page
-    
- else:
-
-  return source
-]]></expres>
-<page></page>
-</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
 <title>CantaJuegos Vol.6</title>
-<link>$doregex[makelist2]</link>
-
-
+<link>$doregex[makelist]</link>
 <regex>
-<name>makelist2</name>
+<name>makelist</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
-<link>$doregex[makelist3]</link>
-<referer></referer>
-<thumbnail></thumbnail>
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+<fanart></fanart>
 ]]></listrepeat>
-<expres> (.*?),</expres>
-<page>$doregex[get-number]</page>
+<expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+<page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT0X1A1U1d0TVwohphB6uH_p</page>
 <cookieJar></cookieJar>
 </regex>
-
-<regex>
-            <name>makelist3</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
-                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>$doregex[get-source-page]</page>
-             <cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>get-number</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- url='https://www.youtube.com/playlist?list=PLq3aw1QZnLT0X1A1U1d0TVwohphB6uH_p'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
-
- rr = requests.get(url, headers=headers)
- number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
- #number = number.encode('unicode-escape')
- number = number.replace(',', '')
- real = int(float(number)) / 100
- real2 = real + 3
-
- liste = list(range(real2))
- return liste
-]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>get-source-page</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- import json
-
- pageUrl='https://www.youtube.com/playlist?list=PLq3aw1QZnLT0X1A1U1d0TVwohphB6uH_p'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
- r1 = requests.get(pageUrl, headers = headers)
- source = r1.text
- page = [makelist2.param1]
- N = int(float(page))
- pre = 'https://www.youtube.com'
- if (N > 1):
-
-   for itr in range (1,N):
-    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
-    continuationx = pre + continuex
-    r = requests.get(continuationx, headers = headers)
-    source = r.text
-    jdata = json.loads(source)
-    source = jdata["load_more_widget_html"]
-    page = jdata["content_html"]
-   return page
-    
- else:
-
-  return source
-]]></expres>
-<page></page>
-</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
 <title>CantaJuegos Vol.7</title>
-<link>$doregex[makelist2]</link>
-
-
+<link>$doregex[makelist]</link>
 <regex>
-<name>makelist2</name>
+<name>makelist</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
-<link>$doregex[makelist3]</link>
-<referer></referer>
-<thumbnail></thumbnail>
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+<fanart></fanart>
 ]]></listrepeat>
-<expres> (.*?),</expres>
-<page>$doregex[get-number]</page>
+<expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+<page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT30BzNtI2tI3bjkaaYeZVYB</page>
 <cookieJar></cookieJar>
 </regex>
-
-<regex>
-            <name>makelist3</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
-                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>$doregex[get-source-page]</page>
-             <cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>get-number</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- url='https://www.youtube.com/playlist?list=PLq3aw1QZnLT30BzNtI2tI3bjkaaYeZVYB'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
-
- rr = requests.get(url, headers=headers)
- number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
- #number = number.encode('unicode-escape')
- number = number.replace(',', '')
- real = int(float(number)) / 100
- real2 = real + 3
-
- liste = list(range(real2))
- return liste
-]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>get-source-page</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- import json
-
- pageUrl='https://www.youtube.com/playlist?list=PLq3aw1QZnLT30BzNtI2tI3bjkaaYeZVYB'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
- r1 = requests.get(pageUrl, headers = headers)
- source = r1.text
- page = [makelist2.param1]
- N = int(float(page))
- pre = 'https://www.youtube.com'
- if (N > 1):
-
-   for itr in range (1,N):
-    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
-    continuationx = pre + continuex
-    r = requests.get(continuationx, headers = headers)
-    source = r.text
-    jdata = json.loads(source)
-    source = jdata["load_more_widget_html"]
-    page = jdata["content_html"]
-   return page
-    
- else:
-
-  return source
-]]></expres>
-<page></page>
-</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
 <title>CantaJuegos Vol.8</title>
-<link>$doregex[makelist2]</link>
-
-
+<link>$doregex[makelist]</link>
 <regex>
-<name>makelist2</name>
+<name>makelist</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
-<link>$doregex[makelist3]</link>
-<referer></referer>
-<thumbnail></thumbnail>
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+<fanart></fanart>
 ]]></listrepeat>
-<expres> (.*?),</expres>
-<page>$doregex[get-number]</page>
+<expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+<page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT39ApHz6R5H4euxFwoJJxZB</page>
 <cookieJar></cookieJar>
 </regex>
-
-<regex>
-            <name>makelist3</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
-                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>$doregex[get-source-page]</page>
-             <cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>get-number</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- url='https://www.youtube.com/playlist?list=PLq3aw1QZnLT39ApHz6R5H4euxFwoJJxZB'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
-
- rr = requests.get(url, headers=headers)
- number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
- #number = number.encode('unicode-escape')
- number = number.replace(',', '')
- real = int(float(number)) / 100
- real2 = real + 3
-
- liste = list(range(real2))
- return liste
-]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>get-source-page</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- import json
-
- pageUrl='https://www.youtube.com/playlist?list=PLq3aw1QZnLT39ApHz6R5H4euxFwoJJxZB'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
- r1 = requests.get(pageUrl, headers = headers)
- source = r1.text
- page = [makelist2.param1]
- N = int(float(page))
- pre = 'https://www.youtube.com'
- if (N > 1):
-
-   for itr in range (1,N):
-    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
-    continuationx = pre + continuex
-    r = requests.get(continuationx, headers = headers)
-    source = r.text
-    jdata = json.loads(source)
-    source = jdata["load_more_widget_html"]
-    page = jdata["content_html"]
-   return page
-    
- else:
-
-  return source
-]]></expres>
-<page></page>
-</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
 <title>CantaJuegos Navidad</title>
-<link>$doregex[makelist2]</link>
-
-
+<link>$doregex[makelist]</link>
 <regex>
-<name>makelist2</name>
+<name>makelist</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
-<link>$doregex[makelist3]</link>
-<referer></referer>
-<thumbnail></thumbnail>
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+<fanart></fanart>
 ]]></listrepeat>
-<expres> (.*?),</expres>
-<page>$doregex[get-number]</page>
+<expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+<page>https://www.youtube.com/watch?v=k9YIjOL-KZU&amp;list=PLq3aw1QZnLT0eLpOCbp9JIFJHM4qlds5X</page>
 <cookieJar></cookieJar>
 </regex>
-
-<regex>
-            <name>makelist3</name>
-            <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
-                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>$doregex[get-source-page]</page>
-             <cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>get-number</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- url='https://www.youtube.com/playlist?list=PLq3aw1QZnLT0eLpOCbp9JIFJHM4qlds5X'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
-
- rr = requests.get(url, headers=headers)
- number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
- #number = number.encode('unicode-escape')
- number = number.replace(',', '')
- real = int(float(number)) / 100
- real2 = real + 3
-
- liste = list(range(real2))
- return liste
-]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>get-source-page</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-
- import requests
- import re
- import json
-
- pageUrl='https://www.youtube.com/playlist?list=PLq3aw1QZnLT0eLpOCbp9JIFJHM4qlds5X'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
- r1 = requests.get(pageUrl, headers = headers)
- source = r1.text
- page = [makelist2.param1]
- N = int(float(page))
- pre = 'https://www.youtube.com'
- if (N > 1):
-
-   for itr in range (1,N):
-    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
-    continuationx = pre + continuex
-    r = requests.get(continuationx, headers = headers)
-    source = r.text
-    jdata = json.loads(source)
-    source = jdata["load_more_widget_html"]
-    page = jdata["content_html"]
-   return page
-    
- else:
-
-  return source
-]]></expres>
-<page></page>
-</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
