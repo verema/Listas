@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<tem>
+<title>[COLOR lime]Canales[/COLOR][COLOR red][I] F4m[/I][/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink></externallink>
+<thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+
+<item>
+<title>#0</title>
+<link>rtmp://www1.iguide.to/iguide playpath=6ztb3u18p5s68ll  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
+<thumbnail>http://i.imgur.com/JvpukWA.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+</item>
+
+<item>
+<title>Estrenos</title>
+<link>rtmp://www1.iguide.to/iguide playpath=oqlqntk3lt0tcz4 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<thumbnail>http://i.imgur.com/Y103Nw4.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+</item>
+
+<item>
+ <title>Bein España</title>
+<link>rtmp://www1.iguide.to/iguide playpath=9eeg1imgppj6zy0  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
+<thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Bein ES</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=72400',False,False,'http://vipracing.info/')</expres>
+<page></page>
+<cookieJar>$doregex[loadcookie]</cookieJar>
+</regex>
+<regex>
+<name>loadcookie</name>
+<expres></expres>
+<page></page>
+<cookieJar>open[streamlive1.lwp]</cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+ 
+<item>
+<title>Bein Latino</title>
+<link>$doregex[getVipRacing]</link>
+<regex>
+<name>getVipRacing</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://vipracing.info/channel/bein-es/frame')</expres>
+<page></page>
+</regex>
+<thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item> 
+<title>+ Liga [COLOR lime][I]HD[/I][/COLOR]</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+liga.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+liga.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>+ Liga</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/154.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Liga</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+ <title>+ Liga</title>
+<link>rtmp://www1.iguide.to/iguide playpath=nkmbihjxj5lmd5b  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>+ Liga 2</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/1218.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Liga 2</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>+ Deportes</title>
+<link>rtmp://www1.iguide.to/iguide playpath=8z2sz9pg92rdjw1 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+
+<item>
+<title>+ Deportes</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/155.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Deportes</link>
+<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>+ Deportes 2</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/1219.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Deportes 2</link>
+<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<tem>
+<title>Canal+ Deportes[COLOR lime] HD [/COLOR]</title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>source: '(.*?)'</expres>
+<page>http://tugoleada.com/canal5.php</page>
+</regex>
+<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<tem>
+<title>Canal+ Deportes</title> 
+<link>http://video01-lon.streamup.com/app/teledeporteonlinetvorg50s-stream_aac/playlist.m3u8</link>
+<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<link>plugin://program.plexus/?url=5050ac3455cc3c35aa85c4f9d4e1bc7b6bc9e197&amp;mode=1&amp;name=Catoal+Acestreams</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canal-plus-bar.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<title>Canal+ Futbol[COLOR red] Con Plexus[/COLOR]</title>
+</item>
+
+<item>
+<title>+ Futbol</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/156.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Futbol</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canal-plus-bar.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+ 
+<item>
+<title>Canal+ Futbol</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canal-plus-bar.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>+ Golf</title>
+<link>rtmp://31.220.40.63/privatestream/ playpath=golf8?keys=zmbsoAoFT1FtYVt66VzRSw&keyt=1460720380 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalGolf.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>+ Golf</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/412.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Gol</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalGolf.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Toros[I]teletoro [/I]</title><!--http://teletoro.link/ -->
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.mips.tv/membedplayer/42531yraetg/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mips.tv</referer>
+			</regex>
+<thumbnail>http://teletoro.link/teletorocabecera.jpg</thumbnail>
+<fanart>http://teletoro.link/teletorocabecera.jpg</fanart>
+</item>
+
+<item>
+<title>+ Toros </title>
+<link>rtmp://31.220.0.13/privatestream/ playpath=torosch?keys=KdbDBjM1-NmBkvF680paaQ&keyt=1460124824 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/cptohd.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>+ Toros</title>
+<link>rtmp://31.220.40.62/privatestream/torosch?keys=xENZYIYbyz1icmtCrJGzeA&keyt=1461283967 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf live=1 pageUrl=http://privatestream.tv/37</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/cptohd.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<tem>
+<title>Evento F1 diferido</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://teledeporteonlinetv.org/')</expres>
+<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://teledeporteonlinetv.org/ch/ch6.php</page>			
+</regex>
+<thumbnail></thumbnail>
+</item>	
+
+<tem>
+<title>Evento F1 HD</title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>source: '(.*?)'</expres>
+<page>http://tugoleada.com/canal1.php</page>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Formula 1 </title>
+<link>rtmp://www1.iguide.to/iguide playpath=38tj1wgh6wfqa6e swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=33317&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
+<thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+
+<item>
+<title>Formula 1</title>
+<link>rtmp://www1.iguide.to/iguide playpath=kpfk285js6zoxea  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
+<thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Moto GP</title>         
+<link>&#112;&#108;&#117;&#103;&#105;&#110;://&#112;&#108;&#117;&#103;&#105;&#110;&#046;&#118;&#105;&#100;&#101;&#111;&#046;&#102;&#052;&#109;&#084;&#101;&#115;&#116;&#101;&#114;/?&#115;&#116;&#114;&#101;&#097;&#109;&#116;&#121;&#112;&#101;=&#072;&#076;&#083;&#038;&#097;&#109;&#112;;&#117;&#114;&#108;=&#104;&#116;&#116;&#112;://&#099;&#100;&#110;&#046;&#115;&#115;&#116;&#114;&#101;&#097;&#109;&#046;&#112;&#119;/&#108;&#105;&#118;&#101;/&#109;&#111;&#116;&#111;&#103;&#112;&#095;&#098;&#048;&#120;&#107;&#049;&#101;&#056;/&#112;&#108;&#097;&#121;&#108;&#105;&#115;&#116;&#046;&#109;&#051;&#117;&#056;%&#055;&#067;&#065;&#099;&#099;&#101;&#112;&#116;&#045;&#069;&#110;&#099;&#111;&#100;&#105;&#110;&#103;%&#051;&#068;&#103;&#122;&#105;&#112;%&#050;&#054;&#067;&#111;&#110;&#110;&#101;&#099;&#116;&#105;&#111;&#110;%&#051;&#068;&#107;&#101;&#101;&#112;&#045;&#097;&#108;&#105;&#118;&#101;%&#050;&#054;&#082;&#101;&#102;&#101;&#114;&#101;&#114;%&#051;&#068;&#104;&#116;&#116;&#112;%&#051;&#065;%&#050;&#070;%&#050;&#070;&#119;&#119;&#119;&#046;&#115;&#117;&#110;&#104;&#100;&#046;&#105;&#110;&#102;&#111;%&#050;&#054;&#088;&#045;&#082;&#101;&#113;&#117;&#101;&#115;&#116;&#101;&#100;&#045;&#087;&#105;&#116;&#104;%&#051;&#068;&#083;&#104;&#111;&#099;&#107;&#119;&#097;&#118;&#101;&#070;&#108;&#097;&#115;&#104;%&#050;&#070;&#050;&#049;&#046;&#048;&#046;&#048;&#046;&#050;&#049;&#054;&#038;&#097;&#109;&#112;;&#110;&#097;&#109;&#101;=&#077;&#111;&#116;&#111;&#032;&#071;&#080;</link>
+<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<agent>&#077;&#111;&#122;&#105;&#108;&#108;&#097;/&#053;&#046;&#048;&#032;(&#087;&#105;&#110;&#100;&#111;&#119;&#115;&#032;&#078;&#084;&#032;&#054;&#046;&#049;;&#032;&#087;&#079;&#087;&#054;&#052;)&#032;&#065;&#112;&#112;&#108;&#101;&#087;&#101;&#098;&#075;&#105;&#116;/&#053;&#051;&#055;&#046;&#051;&#054;&#032;(&#075;&#072;&#084;&#077;&#076;,&#032;&#108;&#105;&#107;&#101;&#032;&#071;&#101;&#099;&#107;&#111;)&#032;&#067;&#104;&#114;&#111;&#109;&#101;/&#052;&#057;&#046;&#048;&#046;&#050;&#054;&#050;&#051;&#046;&#049;&#049;&#050;&#032;&#083;&#097;&#102;&#097;&#114;&#105;/&#053;&#051;&#055;&#046;&#051;&#054;</agent>
+<cookieJar></cookieJar>
+</item>
+
+<tem>
+<title>MotoGP</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/adnan/adnan/3101.ts&amp;streamtype=TSDOWNLOADER&amp;name=Moto Gp</link>
+<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>MotoGP-HD-Eventos</title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>file: "(.*?)"</expres>
+<page>http://lacasadeltikitaka.futbol/directo/canal1.php</page>
+</regex>
+thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>  
+
+<tem>
+<title>MotoGP-HD-Eventos</title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>source: '(.*?)'</expres>
+<page>http://tugoleada.com/canal1.php</page>
+</regex>
+<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<tem>
+ <title>Moto gp</title>
+<link>rtmp://www1.iguide.to/iguide playpath=av7woklj9cf50c2  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
+<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Real Madrid</title>
+<link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-p.m3u8?sd=10&rebase=on</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/RealMadridTv.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+ 
+<item>
+<title>Barça TV</title>
+<link>rtmp://31.220.0.187/privatestream/ playpath=barcas?keys=f9C9zoE6GkP1eV8jOs_Omw&keyt=1460719428 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/BarsaTV300.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+ 
+<item>
+<title>Eurosports 2</title>
+<link>http://3.hls.bolshoe.tv/1/streaming/eurosport2/tvrec/playlist.m3u8</link>
+<thumbnail>http://i.imgur.com/3XNuAzS.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+
+<item>
+<title>Acción</title>
+<link>rtmp://www1.iguide.to/iguide playpath=qyxepg6xttc83as swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+</item> 
+ 
+<item>
+<title>+ Comedia</title>
+<link>rtmp://www1.iguide.to/iguide playpath=t6zehd5sg0oehhq swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-3.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+ 
+<item>
+<title>+ SeriesXtra</title>
+<link>rtmp://www1.iguide.to/iguide playpath=62sn73q6cjfaq1l swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<thumbnail>http://i.imgur.com/0XwnQQ5.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>+ Series</title>    
+<link>rtmp://www1.iguide.to/iguide playpath=203cy9bnzp1kcm9 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalSeries.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<tem>
+<title>+ Xtra</title>
+<link>rtmp://31.220.0.201/privatestream/ playpath=plxtra?keys=8SEn6tdFTznwTry61lgA4w&keyt=1460562440 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalxtra.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+  
+<item>
+<title>DCine</title>
+<link>rtmp://www1.iguide.to/iguide playpath=y6y6vfv2sxxot0n swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplusdecine.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
