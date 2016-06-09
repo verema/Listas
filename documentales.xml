@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+<tem>
+<title>[COLOR lime]Canales[/COLOR][COLOR red][I] F4m[/I][/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink></externallink>
+<thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+
+<item>
+<title>Discovery Max[COLOR red][I] New STD[/I][/COLOR]</title> 
+
+<thumbnail>http://i.imgur.com/ST0nJb2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+ 
+<item>
+<title>Discovery Channel[COLOR red][I] New STD[/I][/COLOR]</title>
+
+<thumbnail>http://i.imgur.com/VEXxOky.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Caza y Pesca</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://teledeporteonlinetv.org/')</expres>
+<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://teledeporteonlinetv.org/ch/ch6.php</page>			
+</regex>
+<thumbnail></thumbnail>
+</item>	
+
+<item>
+<title>Caza y Pesca</title>         
+<link>&#112;&#108;&#117;&#103;&#105;&#110;://&#112;&#108;&#117;&#103;&#105;&#110;&#046;&#118;&#105;&#100;&#101;&#111;&#046;&#102;&#052;&#109;&#084;&#101;&#115;&#116;&#101;&#114;/?&#115;&#116;&#114;&#101;&#097;&#109;&#116;&#121;&#112;&#101;=&#072;&#076;&#083;&#038;&#097;&#109;&#112;;&#117;&#114;&#108;=&#104;&#116;&#116;&#112;://&#099;&#100;&#110;&#046;&#115;&#115;&#116;&#114;&#101;&#097;&#109;&#046;&#112;&#119;/&#108;&#105;&#118;&#101;/&#099;&#097;&#122;&#097;&#095;&#097;&#117;&#108;&#113;&#100;&#055;&#056;/&#112;&#108;&#097;&#121;&#108;&#105;&#115;&#116;&#046;&#109;&#051;&#117;&#056;%&#055;&#067;&#065;&#099;&#099;&#101;&#112;&#116;&#045;&#069;&#110;&#099;&#111;&#100;&#105;&#110;&#103;%&#051;&#068;&#103;&#122;&#105;&#112;%&#050;&#054;&#067;&#111;&#110;&#110;&#101;&#099;&#116;&#105;&#111;&#110;%&#051;&#068;&#107;&#101;&#101;&#112;&#045;&#097;&#108;&#105;&#118;&#101;%&#050;&#054;&#082;&#101;&#102;&#101;&#114;&#101;&#114;%&#051;&#068;&#104;&#116;&#116;&#112;%&#051;&#065;%&#050;&#070;%&#050;&#070;&#119;&#119;&#119;&#046;&#115;&#117;&#110;&#104;&#100;&#046;&#105;&#110;&#102;&#111;%&#050;&#054;&#088;&#045;&#082;&#101;&#113;&#117;&#101;&#115;&#116;&#101;&#100;&#045;&#087;&#105;&#116;&#104;%&#051;&#068;&#083;&#104;&#111;&#099;&#107;&#119;&#097;&#118;&#101;&#070;&#108;&#097;&#115;&#104;%&#050;&#070;&#050;&#049;&#046;&#048;&#046;&#048;&#046;&#050;&#049;&#054;&#038;&#097;&#109;&#112;;&#110;&#097;&#109;&#101;=&#067;&#097;&#116;&#111;&#097;&#108;</link>
+<thumbnail>http://i.imgur.com/fP0g5ld.jpg</thumbnail>
+<agent>&#077;&#111;&#122;&#105;&#108;&#108;&#097;/&#053;&#046;&#048;&#032;(&#087;&#105;&#110;&#100;&#111;&#119;&#115;&#032;&#078;&#084;&#032;&#054;&#046;&#049;;&#032;&#087;&#079;&#087;&#054;&#052;)&#032;&#065;&#112;&#112;&#108;&#101;&#087;&#101;&#098;&#075;&#105;&#116;/&#053;&#051;&#055;&#046;&#051;&#054;&#032;(&#075;&#072;&#084;&#077;&#076;,&#032;&#108;&#105;&#107;&#101;&#032;&#071;&#101;&#099;&#107;&#111;)&#032;&#067;&#104;&#114;&#111;&#109;&#101;/&#052;&#057;&#046;&#048;&#046;&#050;&#054;&#050;&#051;&#046;&#049;&#049;&#050;&#032;&#083;&#097;&#102;&#097;&#114;&#105;/&#053;&#051;&#055;&#046;&#051;&#054;</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+<title>National Geography</title> 
+<link>http://vod.cdn.iutpcdn.com/LIVE/H01/CANAL377/PROFILE03.m3u8</link>
+<thumbnail>http://i.imgur.com/Co57iED.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<tem>
+ <title>A and E</title>
+<link>rtmp://www1.iguide.to/iguide playpath=a94301d9dma2hc8  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
+<thumbnail>http://i.imgur.com/4q7xd8N.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>   
+           
+<tem>
+<title>A and E</title>
+<link>rtmp://31.220.0.187/privatestream/ playpath=aande25?keys=jiH3m9uxPA2FhTqpPeUjLw&keyt=1448246240 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<thumbnail>http://i.imgur.com/4q7xd8N.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Canal Cocina</title>
+<link>rtmp://31.220.40.63/privatestream/ playpath=cocinach?keys=xhU0t9d1sEYHeBpF-j7IbQ&keyt=1462304203 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<thumbnail>http://i.imgur.com/sJFRAiz.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>  
+           
+<tem>
+<title>Decasa tv</title>
+<link>rtmp://31.220.0.155/privatestream/ playpath=decasa12?keys=TPwqJlqH7xBOxQFgjPghLw&keyt=1448248518 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<thumbnail>http://i.imgur.com/Wz8ag28.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+
+<item>
+<title>Constriur TV</title>
+<link>http://iphone-streaming.ustream.tv/uhls/9143107/streams/live/iphone/playlist.m3u8</link>
+<thumbnail>http://i.imgur.com/gsd9AnF.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Vaughan tv</title>         
+<link>rtmp-raw=rtmp://vaughantv.streaming-pro.com:1935/live/ playpath=vaughantv swfUrl=http://grupovaughan.com/jwplayer.flash.swf live=1 pageUrl=http://grupovaughan.com/vaughan-tv/</link>
+<thumbnail>https://pbs.twimg.com/profile_images/660596526880833536/w5F17Ux2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+ 
+<tem>
+<title>Iberalia</title>
+<link>rtmp://31.220.40.60/privatestream/ playpath=iberalia65?keys=gz490nDBAqgC8FJ60ndyhQ&keyt=1448248960 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<thumbnail>https://pbs.twimg.com/profile_images/660596526880833536/w5F17Ux2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Viajar</title>
+<link>http://194.179.53.124:1935/live/myStream_2/playlist.m3u8</link>
+<thumbnail>http://i.imgur.com/XdbNaeI.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
