@@ -40,6 +40,22 @@
 </channel>
 
 <channel>
+<name>Temporada 1</name>
+<thumbnail>http://i.imgur.com/J49igee.jpg</thumbnail>
+<fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
+<items>
+
+<item>
+<title>Temporada 1</title>
+<link>http://Ignoreme</link>
+<thumbnail>http://i.imgur.com/J49igee.jpg</thumbnail>
+<fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#106;&#117;&#101;&#103;&#111;&#116;&#049;&#046;&#109;&#051;&#117;</externallink>	
+</item>
+</items>
+</channel>
+
+<channel>
 <name>Temporada 6</name>
 <thumbnail>http://i.imgur.com/XJWRRFY.jpg</thumbnail>
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
