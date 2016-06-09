@@ -89,6 +89,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
+<thumbnail>http://i.imgur.com/BLcl06H.jpg</thumbnail>
+<fanart>http://i.imgur.com/OsoP9Ob.jpg</fanart>
 </item>
 
 <item>
@@ -104,22 +106,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://i.imgur.com/VEXxOky.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
-
-<item>
-<title>Caza y Pesca</title>
-<link>$doregex[url]</link>
-<regex>
-<name>url</name>
-<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://teledeporteonlinetv.org/')</expres>
-<page></page>
-</regex>
-<regex>
-<name>ch</name> 
-<expres>http://www.iguide.to/embed/(.*?)&</expres>
-<page>http://teledeporteonlinetv.org/ch/ch6.php</page>			
-</regex>
-<thumbnail></thumbnail>
-</item>	
 
 <item>
 <title>Caza y Pesca</title>         
