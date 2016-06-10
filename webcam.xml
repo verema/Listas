@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+<channels>
+<channels_info> 
+<title>Camaras Del Mundo</title>
+<genre>Wepcam</genre>
+<description>La mejores webcaps</description>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<date>2016</date>
+<credits>© Catoal</credits>
+</channels_info>
+
+
+<channel>
+<name>Barcelona</name>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<items>
+
+<item>
+  <title>Playa de Sant Sebastia</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/cataluna/barcelona/playa-sant-sebastia.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item>
+
+
+<item>
+  <title>Playa La Barceloneta</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/cataluna/barcelona/playa-barceloneta.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item>
+</items>
+</channel>
+
+</channels>
