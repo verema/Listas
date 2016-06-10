@@ -49,4 +49,26 @@
 </items>
 </channel>
 
+<channel>
+<name>Cadiz</name>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<items>
+
+<item>
+<title>Puente de la Constotución</title>
+<link>plugin://plugin.video.youtube/play/?video_id=krIypJ2MEBU</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+			
+<item>
+<title>Puente Carranza</title>
+<link>plugin://plugin.video.youtube/play/?video_id=c3FDiVe2egU</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>  
+</items>
+</channel>
+
 </channels>
