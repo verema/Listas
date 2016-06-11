@@ -268,6 +268,13 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
+<item>
+<title>Moto GP</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://mediaipro.com:8000/live/32upp/xyg64356/1877.ts&amp;streamtype=TSDOWNLOADER&amp;name=Moto GP</link>
+<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
 <tem>
 <title>MotoGP-HD-Eventos</title>
 <link>$doregex[get-decode]</link>
@@ -292,7 +299,7 @@ thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<tem>
+<item>
  <title>Moto gp</title>
 <link>rtmp://www1.iguide.to/iguide playpath=av7woklj9cf50c2  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
