@@ -226,6 +226,22 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
+<item>
+<title>Evento F1</title>
+<link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://malaga65.org')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://malaga65.org/p/ch3.php</page>			
+</regex>
+<thumbnail></thumbnail>
+</item>
+
 <tem>
 <title>Evento F1 diferido</title>
 <link>$doregex[url]</link>
