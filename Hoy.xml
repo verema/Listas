@@ -136,6 +136,30 @@
 </channel>
 
 <channel>
+<name>Ant-Man</name>
+<thumbnail>http://cdn.pordede.com/content/covers/mediacover-57098-4.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>Opción 1</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-f5ewzx22ijqs-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<genre></genre>
+<info></info>
+<date></date>
+</item>
+</items>
+</channel>
+
+<channel>
 <name>La patrulla y el tesoro del pirata</name>
 <thumbnail>http://gnula.nu/wp-content/uploads/2016/05/Paw_Patrol_Pups_And_The_Pirate_Treasure_poster_espa%C3%B1ol.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
