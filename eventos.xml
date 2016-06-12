@@ -20,8 +20,8 @@
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 <items>
 
-<tem>
-<title>21:35 Ep6 ES - 22:35 Ep7 VOSE</title>
+<item>
+<title>03:00 Temp.6 - Ep8 VOSE</title>
 <link>$doregex[get-decode]</link>
 <regex>
 <name>get-decode</name>
