@@ -47,6 +47,13 @@
 </item>
 
 <item>
+<title>Cuatro</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://service1.astrovida.tv:8000/live/cqbmau0BmOm/W6l8qWJIv3T/49.ts&amp;streamtype=TSDOWNLOADER&amp;name=Cuatro</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalcuatro.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<tem>
 <title>Cuatro</title>
 <link>rtmp://31.220.40.62/privatestream/ playpath=cuatroa?keys=onl1EKE-hWifcle6h5BHBw&keyt=1460649018 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalcuatro.jpg</thumbnail>
@@ -54,6 +61,13 @@
 </item>
 
 <item>
+<title>Telecinco</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://service1.astrovida.tv:8000/live/cqbmau0BmOm/W6l8qWJIv3T/46.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<tem>
 <title>Telecinco</title>
 <link>rtmp://31.220.0.201/privatestream/ playpath=teleinco?keys=fEuwkWUvlwU0t7S6caErDA&keyt=1460648747 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
