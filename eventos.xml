@@ -20,7 +20,7 @@
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 <items>
 
-<item>
+<tem>
 <title>03:00 Temp.6 - Ep8 VOSE</title>
 <link>$doregex[get-decode]</link>
 <regex>
@@ -32,9 +32,11 @@
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 </item>
 
-<tem> 
-<title>21:35 Ep6 ES - 22:35 Ep7 VOSE</title> 
-<link>plugin://plugin.video.f4mTester/?url=http://149.202.197.37:8000/live/amr123/amr123/896.ts&amp;streamtype=TSDOWNLOADER&amp;name=Juegos de Tronos</link> 
+<item> 
+<title>21:35 Ep7 ES - 22:35 Ep8 VOSE</title> 
+<link>http://stream-ec.vty.dailymotion.com/40/dm/1/x4ehaf4/live.isml/events(live-1465775788)/live-audio=128000-video=2000000.m3u8</link>
+<thumbnail>http://i.imgur.com/XJWRRFY.jpg</thumbnail>
+<fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 </item> 
 </items>	
 </channel>
