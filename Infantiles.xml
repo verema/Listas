@@ -14,7 +14,42 @@
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#097;&#117;&#116;&#111;&#115;&#108;&#111;&#099;&#111;&#115;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://i.imgur.com/L5pS6ou.png</thumbnail>
 <fanart>http://www.dan-dare.org/Dan%20FRD/WackyRacesWallpaper800.gif</fanart>
-</item> 
+</item>
+
+<item>
+<title>Baby TV</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://service1.astrovida.tv:8000/live/cqbmau0BmOm/W6l8qWJIv3T/367.ts&amp;streamtype=TSDOWNLOADER&amp;name=Baby TV</link>
+<thumbnail>http://2.bp.blogspot.com/-FYFPgGQE-sE/UaUG_yRgUxI/AAAAAAAAAJE/PVhf6Hs3MOE/s1600/Baby_TV.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Clan TVE</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://service1.astrovida.tv:8000/live/cqbmau0BmOm/W6l8qWJIv3T/50.ts&amp;streamtype=TSDOWNLOADER&amp;name=Clan TVE</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Boing</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://service1.astrovida.tv:8000/live/cqbmau0BmOm/W6l8qWJIv3T/380.ts&amp;streamtype=TSDOWNLOADER&amp;name=Boing</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Disney XD</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://service1.astrovida.tv:8000/live/cqbmau0BmOm/W6l8qWJIv3T/2499.ts&amp;streamtype=TSDOWNLOADER&amp;name=Disney XD</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Disney JR</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://service1.astrovida.tv:8000/live/cqbmau0BmOm/W6l8qWJIv3T/2543.ts&amp;streamtype=TSDOWNLOADER&amp;name=Disney JR</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
 
 <item>
 <title>Clan</title>
@@ -23,7 +58,7 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Baby TV</title>
 <link>rtmp://31.220.0.201/privatestream/ playpath=babych?keys=vKnmG3TB18mm0MnDNeKhsQ&keyt=1460125157 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://2.bp.blogspot.com/-FYFPgGQE-sE/UaUG_yRgUxI/AAAAAAAAAJE/PVhf6Hs3MOE/s1600/Baby_TV.jpg</thumbnail>
