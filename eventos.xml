@@ -32,7 +32,7 @@
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 </item>
 
-<item> 
+<tem> 
 <title>21:35 Ep7 ES - 22:35 Ep8 VOSE</title> 
 <f4m>http://stream-ec.vty.dailymotion.com/10/dm/1/x4ehaf4/live.isml/events(live-1465851301)/live-audio=128000-video=2000000.m3u8</f4m>
 <thumbnail>http://i.imgur.com/XJWRRFY.jpg</thumbnail>
@@ -235,6 +235,35 @@
 <name>id2</name>
 <expres>file:'(.*)'</expres>
 <page>http://streamin.to/embed-4qk0zr2xj9n5-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+</subitem>
+</item>
+
+<item>
+<subitem>
+<title>07 ES</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-q8a40m3f2m83-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<thumbnail>http://i.imgur.com/XJWRRFY.jpg</thumbnail>
+<fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
+<link>$doregex[id1]</link>
+<regex>
+<name>id1</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-m6cttyrav763-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<link>$doregex[id2]</link>
+<regex>
+<name>id2</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-0hq1777n66yz-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
 </subitem>
