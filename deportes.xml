@@ -728,17 +728,17 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 
 <item>
 <title>360p Rusia – Eslovaquia (Miércoles 15 — 15:00)</title>
-<f4m>http://uefaliveshowgb-lh.akamaihd.net/i/2017888_1@327598/index_800_av-p.m3u8</f4m>
+<link>http://uefaliveshowgb-lh.akamaihd.net/i/2017888_1@327598/index_800_av-p.m3u8</link>
 </item>
 
 <item>
 <title>480p Rusia – Eslovaquia (Miércoles 15 — 15:00)</title>
-<f4m>http://uefaliveshowgb-lh.akamaihd.net/i/2017888_1@327598/index_1600_av-p.m3u8</f4m>
+<link>http://uefaliveshowgb-lh.akamaihd.net/i/2017888_1@327598/index_1600_av-p.m3u8</link>
 </item>
 
 <item>
 <title>720p Rusia – Eslovaquia (Miércoles 15 — 15:00)</title>
-<f4m>http://uefaliveshowgb-lh.akamaihd.net/i/2017888_1@327598/index_2500_av-p.m3u8</f4m>
+<link>http://uefaliveshowgb-lh.akamaihd.net/i/2017888_1@327598/index_2500_av-p.m3u8</link>
 </item>
 </items>
 </channel>
