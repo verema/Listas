@@ -122,14 +122,14 @@
 	<item>
 	<title>[COLOR magenta]TEST[/COLOR]</title>
 	<link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;://&#103;&#111;&#111;&#103;&#108;&#101;&#100;&#114;&#105;&#118;&#101;&#046;&#099;&#111;&#109;/&#104;&#111;&#115;&#116;/&#048;&#066;&#055;&#115;&#051;&#105;&#072;&#111;&#098;&#114;&#087;&#119;&#071;&#084;&#108;&#108;&#081;&#086;&#110;&#074;&#085;&#078;&#087;&#108;&#084;&#099;&#050;&#099;/&#112;&#114;&#117;&#101;&#098;&#097;&#046;&#120;&#109;&#108;</externallink>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#112;&#114;&#117;&#101;&#118;&#097;&#046;&#120;&#109;&#108;</externallink>
 	<thumbnail></thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
 <item>
     <title>[COLOR magenta]TEST 1[/COLOR]</title>
     <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#112;&#114;&#117;&#101;&#098;&#097;&#046;&#120;&#109;&#108;</externallink>
+    <externallink></externallink>
 	<thumbnail></thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
@@ -137,7 +137,7 @@
 	<item>
     <title>[COLOR magenta]TEST 2[/COLOR]</title>
     <link>http://Ignoreme</link>
-    <externallink>http://pastebin.com/raw/HnriLGB3</externallink>
+    <externallink></externallink>
 	<thumbnail></thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
@@ -145,7 +145,7 @@
 	<item>
     <title>[COLOR magenta]TEST 3[/COLOR]</title>
     <link>http://Ignoreme</link>
-    <externallink>http://googledrive.com/host/0B7s3iHobrWwGZlplM3czbXBiQWs/prueba3.xml</externallink>
+    <externallink></externallink>
 	<thumbnail></thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
@@ -153,7 +153,7 @@
 	<item>
     <title>[COLOR magenta]TEST 4[/COLOR]</title>
     <link>http://Ignoreme</link>
-    <externallink>http://googledrive.com/host/0B7s3iHobrWwGZlplM3czbXBiQWs/Test1.xml</externallink>
+    <externallink></externallink>
 	<thumbnail></thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
