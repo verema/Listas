@@ -13,38 +13,18 @@
 </item>
 
 <item>
-<title>Página 1</title>
+  <title>[COLOR red]try0[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title> [makelist.param3]</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>http://i.imgur.com/L5pS6ou.png</thumbnail>
+<name>makelist</name>
+<listrepeat><![CDATA[
+     <title>      [COLOR lightgreen][makelist.param2][/COLOR]    ( [makelist.param1] )  </title>
+    <link>NA</link>
+    <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
 ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/catoal/saga-rocky-30512/list,1,1</page>
+<expres>>(http:\/\/(.*?)\/.*?get.php.*?)&lt;</expres>
+<page>http://www.m3uliste.pw/</page>
+<referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/catoal/saga-rocky-30512/list,1,1</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://i.imgur.com/L5pS6ou.png</thumbnail>
-<fanart>http://www.dan-dare.org/Dan%20FRD/WackyRacesWallpaper800.gif</fanart>
 </item>
