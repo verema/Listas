@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+<item>
+<title>La Patrulla Canina</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#112;&#097;&#116;&#114;&#117;&#108;&#108;&#097;&#046;&#120;&#109;&#108;</externallink>
+<thumbnail>http://juguetesbaratosya.com/wp-content/uploads/2015/11/Manta-polar-de-Paw-Patrol-La-Patrulla-Canina-0.jpg</thumbnail>
+<fanart>http://www.leon7dias.com/wp-content/uploads/2015/12/patrulla-canina.jpg</fanart> 
+</item>
+
+<item>
+<title>Erase Una Vez Serie Completa</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://imagenes.fnac.es/multimedia/imagenes_productos/erase-una-vez-el-cuerpo-humano-dvd-3.jpeg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/naredo/erase-una-vez-coleccion-completa-28429/list,1,7</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/naredo/erase-una-vez-coleccion-completa-28429/list,1,7</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://imagenes.fnac.es/multimedia/imagenes_productos/erase-una-vez-el-cuerpo-humano-dvd-3.jpeg</thumbnail>
+<fanart>http://mlc-s1-p.mlstatic.com/animeantof-dvd-erase-una-vez-el-hombre-serie-completa-clasi-13383-MLC3117429431_092012-F.jpg</fanart>
+</item>	
+
+<item>
+<title>Dinosaucers</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://pbs.twimg.com/profile_images/686675844698390528/lr2zDNAr_400x400.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/naredo/dinosaucers-26853/list,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/naredo/dinosaucers-26853/list,1,3</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://pbs.twimg.com/profile_images/686675844698390528/lr2zDNAr_400x400.jpg</thumbnail>
+<fanart>https://saturdaymourningcartoons.files.wordpress.com/2014/07/dinosaucers.png</fanart>
+</item>	
+
+<item>
+<title>Popeye El Marino</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.inspiracionvolatil.com/wp-content/uploads/2010/04/popeye1.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/naredo/popeye-el-marino-sere-y-peliculas-28515/list,1,8</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/naredo/popeye-el-marino-sere-y-peliculas-28515/list,1,8</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.inspiracionvolatil.com/wp-content/uploads/2010/04/popeye1.jpg</thumbnail>
+<fanart>http://ayayay.tv/wp-content/uploads/2015/12/popeye06.jpg</fanart>
+</item>	
+
+<item>
+<title>Lucky Lucky</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.blogodisea.com/wp-content/uploads/2014/05/lucky_luke.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/naredo/las-nuevas-aventuras-de-lucky-luke-21279/list,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/naredo/las-nuevas-aventuras-de-lucky-luke-21279/list,1,3</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.blogodisea.com/wp-content/uploads/2014/05/lucky_luke.jpg</thumbnail>
+<fanart>https://i.ytimg.com/vi/vlcM_7ANHmM/maxresdefault.jpg</fanart>
+</item>	
+
+<item>
+<title>Tom Sawyer</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://s-media-cache-ak0.pinimg.com/236x/e7/4c/77/e74c772c9471849aa4348977dd33209a.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/INTERALIOS/tom-sawyer-5169/list,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/INTERALIOS/tom-sawyer-5169/list,1,3</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://s-media-cache-ak0.pinimg.com/236x/e7/4c/77/e74c772c9471849aa4348977dd33209a.jpg</thumbnail>
+<fanart>http://www.cinepremiere.com.mx/imgsHistorico/u18/int_tomSawyer_pelicula.jpg</fanart>
+</item>	
+
+<item>
+<title>La familia Robinson</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://mlc-s2-p.mlstatic.com/dvd-original-la-familia-robinson-serie-animada-completa-958-MLC2701957456_052012-F.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/INTERALIOS/la-familia-robinson-5178/list,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/INTERALIOS/la-familia-robinson-5178/list,1,3</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://mlc-s2-p.mlstatic.com/dvd-original-la-familia-robinson-serie-animada-completa-958-MLC2701957456_052012-F.jpg</thumbnail>
+<fanart>http://mlc-s2-p.mlstatic.com/dvd-original-la-familia-robinson-serie-animada-completa-958-MLC2701957456_052012-F.jpg</fanart>
+</item>	
+
+<item>
+<title>Dragon Ball Super (Latino)</title>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/dragonsuper.xml</externallink>
+<Thumbnail>http://1.bp.blogspot.com/-kRQZ-AUWVVE/VZlOaqGeFKI/AAAAAAAACkY/urQ0QOikyUA/s1600/Dragon_Ball_Super_2015.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+</item>	
+
+<item>
+<title>Mazinger Z</title>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/mazinger.xml</externallink>
+<thumbnail>http://i.imgur.com/J25DFC2.jpg</thumbnail>
+<fanart>http://i.imgur.com/oFE3uXn.jpg</fanart> 
+</item>	
+
+<item>
+<title>Mazinger Z Impacto</title>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/mszingerimpocto.xml</externallink>
+<thumbnail>http://l.yimg.com/bt/api/res/1.2/uiYGEZnvNnAvh1RpI30pVg--/YXBwaWQ9eW5ld3M7Zmk9aW5zZXQ7aD03NTM7cT04NTt3PTYzMA--/http://l.yimg.com/os/423/2012/05/16/mazinger-z-1-jpg_152855.jpg</thumbnail>
+<fanart>http://www.edicioncoleccionista.com/wp-content/uploads/2013/12/mazinger-z-edicion-impacto.jpg</fanart>
+</item>
+
+<item>
+<title>Mazinkaiser</title>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/mazinkaiser.xml</externallink>
+<thumbnail>http://www.selecta-vision.com/var/ezwebin_site/storage/images/home-entertainment/mazinkaiser-dvd/84864-2-esl-ES/Mazinkaiser-DVD_hv_big.png</thumbnail>
+<fanart>http://i.ytimg.com/vi/nCtyTNG5NPk/maxresdefault.jpg</fanart>
+</item>
+
+<item>
+<title>Tom y Jerry</title>
+<thumbnail>https://www.scarecrow.com/images/kcfinder/images/tomjerry.jpg</thumbnail>
+<fanart>http://www.dan-dare.org/Dan%20FRD/TomAndJerryWallpaper1024.jpg</fanart>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/tomjerry.xml</externallink>
+</item>    
+
+<item>
+<title>La Pantera Rosa</title>
+<thumbnail>http://ecx.images-amazon.com/images/I/51SGYmMT1aL._AC_UL320_SR226,320_.jpg</thumbnail>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/lapanterarosa.xml</externallink>
+</item>	
+
+<item>
+<title>Dibujos de los 70/80</title>
+<thumbnail>http://i.imgur.com/oWyDQSv.jpg</thumbnail>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/dibujos7080.xml</externallink>
+</item>	
+
+<item>
+<title>La Abeja Maya (Original) </title>
+<thumbnail>http://2.bp.blogspot.com/-Rw6oHp_b6Bw/UB6dy2oZ_LI/AAAAAAAABIA/hGTI2SFAx6g/s320/00maya+(Custom).jpg</thumbnail>
+<fanart>https://lh3.googleusercontent.com/-64_h_B28h9w/UwHrj6GLOJI/AAAAAAAAADA/mt_e52gmLIo/s923-fcrop64=1,22981a41e117da40/Abeja%2BMaya.jpg</fanart>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/maya.xml</externallink>
+</item>	
+
+<item>
+<title>Heidi (Original) </title>
+<thumbnail>http://www.leelibros.com/biblioteca/files/images/heidi%202.jpg</thumbnail>
+<fanart>https://lh6.googleusercontent.com/-In5hGDMZuXM/UwHyKZLzz7I/AAAAAAAAAEE/-U4HLTkOeWI/w622-h350-no/Heidi.jpg</fanart>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/heidi.xml</externallink>
+</item>	
+
+<item>
+<title>Vicky el Vikingo (Original) </title>
+<thumbnail>http://multimedia.fnac.com/multimedia/ES/images_produits/ES/ZoomPE/9/5/4/9788496874459.jpg</thumbnail>
+<fanart>https://lh6.googleusercontent.com/-PbQoaRkxxmU/UwHr_RSbC5I/AAAAAAAAAC0/rdpLhTQEppA/w1001-h563-no/Vicky.jpg</fanart>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/vicky.xml</externallink>
+</item>	
+
+<item>
+<title>La vuelta al mundo de Willy Fog (Original) </title>
+<thumbnail>http://www.seriesyonkis.com/img/series/170x243/la-vuelta-al-mundo-en-80-dias-de-willy-fog.jpg</thumbnail>
+<fanart>http://nubeo.nubeox.com/images/201424/21.jpg</fanart>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/Willy.xml</externallink>
+</item>
+
+<item>
+<title>Ulises 31 </title>
+<thumbnail>http://i.imgur.com/3wHIkzY.jpg</thumbnail>
+<fanart>http://i.imgur.com/UsuJfOy.jpg</fanart>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/Ulises31.xml</externallink>
+</item>	
+
+<item>
+<title>Las Aventuras de Tintin</title>
+<thumbnail>http://i.imgur.com/qmOJhEF.jpg</thumbnail>
+<fanart>http://i.imgur.com/m4vaHjh.png</fanart>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/tintin.xml</externallink>
+</item>
+
+<item>
+<title>Marco</title>
+<thumbnail>https://goo.gl/3fozA1</thumbnail>
+<fanart>https://goo.gl/oWTCU3</fanart>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/marco.xml</externallink>
+</item>	
+
+<item>
+<title>D'Artacan y los tres Mosqueperros</title>
+<thumbnail>http://ecx.images-amazon.com/images/I/711r-a-mUGL._SY500_.jpg</thumbnail>
+<link>http://Ignoreme</link>
+<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/dartacan.xml</externallink>
+<fanart>http://keluegobarraalguien.es/wp-content/uploads/2014/11/dartacan-y-los-tres-mosqueperros.jpg</fanart>
+</item>	
+
+<item>
+<title>David El Gnomo</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>https://s-media-cache-ak0.pinimg.com/236x/4c/ed/d6/4cedd66200d80793788d6007a3818faf.jpg</thumbnail>
+						<fanart>http://dibujostv.estaticos.net/series/david-el-gnomo/06-la-boda_640.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=EK22p0Ha--E&amp;list=PLvmFTGTOxh9OpoG0Xng2uKSJlzPSF1qop</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>https://s-media-cache-ak0.pinimg.com/236x/4c/ed/d6/4cedd66200d80793788d6007a3818faf.jpg</thumbnail>
+<fanart>http://dibujostv.estaticos.net/series/david-el-gnomo/06-la-boda_640.jpg</fanart>
+</item>
+
+<item>
+<title>El Inspector Gadget</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://img05.deviantart.net/acba/i/2011/035/a/b/inspector_gadget_cover_1_by_vdvector-d38rvhw.jpg</thumbnail>
+						<fanart>http://www.abc.es/Media/201302/08/gadjet-kanor--644x400.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=n2QDL0qEGM8&amp;list=PLj5usEZReQaw_iBHbRzpMZlsbRgH44h3t</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://img05.deviantart.net/acba/i/2011/035/a/b/inspector_gadget_cover_1_by_vdvector-d38rvhw.jpg</thumbnail>
+<fanart>http://www.abc.es/Media/201302/08/gadjet-kanor--644x400.jpg</fanart>
+</item>
+
+<item>
+<title>Los Pitufos</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://seriesadicto.com/img/series/los-pitufos.jpg</thumbnail>
+						<fanart>http://www.dibujosdesiempre.com/images/imagenes-infantiles-pitufos.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=KRbd6hfdYTc&amp;list=PLJ5mvLoa4aOEOMQ4_Beo7IDO2WMVNvwj7</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://seriesadicto.com/img/series/los-pitufos.jpg</thumbnail>
+<fanart>http://www.dibujosdesiempre.com/images/imagenes-infantiles-pitufos.jpg</fanart>
+</item>
+
+<item>
+<title>Mortadelo y Filemon</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://www.cineol.net/galeria/carteles/bigtmp_272serie.jpg</thumbnail>
+						<fanart>http://mortadelo-filemon.es/images/photos/Articulos/Cine/BRB4.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=lNx9pouMCN4&amp;list=PL8tqdIB1XcVP-etSanUVASvm9dH9attxh</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.cineol.net/galeria/carteles/bigtmp_272serie.jpg</thumbnail>
+<fanart>http://mortadelo-filemon.es/images/photos/Articulos/Cine/BRB4.jpg</fanart>
+</item>
+
+<item>
+<title>Don Quijote de la mancha</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [makelist.param1]</title>
+<link>$doregex[final-url]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>"link" title="(.*?)">.*? data-id="(.*?)"</expres>                (.*?)            ([^"]+)
+<page>http://www.dailymotion.com/playlist/x46fkk_monica-davila_don-quijote-de-la-mancha-dibujos-animados</page>
+<agent>Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0</agent>
+</regex>
+
+<regex>
+<name>final-url</name>
+<expres>(.*)#</expres>
+<page>$doregex[url]&amp;redirect=0</page>
+</regex>
+
+<regex>
+<name>url</name>
+<expres>$pyFunction:'$doregex[get-url]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-url</name>
+<expres>mpegURL.*"(http.*auth.*?)"</expres>
+<page>http://www.dailymotion.com/embed/video/[makelist.param2]</page>                                        
+<referer>http://www.dailymotion.com/</referer>
+</regex>
+<thumbnail>http://www.cruzdelgado.com/users/image/imagen_1326185427.jpg</thumbnail>
+<fanart>http://www.quien.net/wp-content/uploads/don-quijote-de-la-mancha-3.jpg</fanart>
+</item>
