@@ -35,3 +35,40 @@
 <jsonrpc>plugin://plugin.video.loganaddon/?name=Prueva&amp;url=sss</jsonrpc>
 <thumbnail> </thumbnail>
 </item>
+
+<item>
+<title>LA 7</title>
+<link>$doregex[makelist]|user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:44.0) Gecko/20130331 Firefox/44.0.2</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[COLOR dodgerblue]Resolution--->[makelist.param1]p[/COLOR]</title>
+    <link>$doregex[url]</link>
+    <thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>RESOLUTION=\d+x(4\d+),.+?"\s+(.+?)\s+</expres>
+<page>$doregex[get-url]</page>
+<referer>http://opus.re</referer>
+<agent>Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:44.0) Gecko/20130331 Firefox/44.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>url</name>
+<expres>$pyFunction:'$doregex[get-url]'.replace('master.m3u8','[makelist.param2]')</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-url</name>
+<expres>file: "(http.*?)"</expres>
+<page>$doregex[iframe]/15ss.php?u=/la7&amp;name=LA%207</page>
+<referer>http://opus.re/</referer>
+<agent>Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:44.0) Gecko/20130331 Firefox/44.0.2</agent>
+</regex>
+<regex>
+<name>iframe</name>
+<expres>unescape.+?src="(.+)\/.{5,20}?"</expres>
+<page>http://opus.re</page>
+<referer>http://opus.re/</referer>
+<agent>Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:44.0) Gecko/20130331 Firefox/44.0.2</agent>
+</regex>
+</item>
