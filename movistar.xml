@@ -22,6 +22,13 @@
 </item>
 
 <item>
+<title>#0</title>
+<link>plugin://plugin.video.f4mTester/?url=http://www.elboxtv.com:1985/live/nassim/nassim/1927.ts&amp;streamtype=TSDOWNLOADER&amp;name=#0</link>
+<thumbnail>http://i.imgur.com/JvpukWA.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
 <title>#0 </title>
 <link>rtmp://www1.iguide.to/iguide playpath=6ztb3u18p5s68ll  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/JvpukWA.jpg</thumbnail>
