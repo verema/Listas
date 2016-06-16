@@ -53,14 +53,14 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<tem>
+<item>
 <title>Cuatro</title>
 <link>rtmp://31.220.40.62/privatestream/ playpath=cuatroa?keys=onl1EKE-hWifcle6h5BHBw&keyt=1460649018 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalcuatro.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Telecinco</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://service1.astrovida.tv:8000/live/cqbmau0BmOm/W6l8qWJIv3T/46.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
