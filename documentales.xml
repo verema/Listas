@@ -367,6 +367,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
+<title>Caza Y Pesca</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/5162.ts&amp;streamtype=TSDOWNLOADER&amp;name=Caza Y Pesca</link>
+<thumbnail>http://i.imgur.com/fP0g5ld.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
 <title>Discovery Max[COLOR red][I] New STD[/I][/COLOR]</title> 
 
 <thumbnail>http://i.imgur.com/ST0nJb2.jpg</thumbnail>
