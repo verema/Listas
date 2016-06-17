@@ -235,7 +235,7 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Evento F1</title>
 <link>$doregex[url]</link>
 <regex>
@@ -281,7 +281,7 @@
 
 <item>
 <title>Formula 1</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/3102.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
+<link>plugin://plugin.video.f4mTester/?url=http://sat.010e.net:8000/live/aborady/ramy/1165.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
 <thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
