@@ -24,3 +24,20 @@
 <cookieJar></cookieJar>
 </regex>
 </item>
+
+<item>
+  <title>[COLOR red]casa jardin[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+     <title>      [COLOR lightgreen][makelist.param2][/COLOR]    ( [makelist.param1] )  </title>
+    <link>NA</link>
+    <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
+]]></listrepeat>
+<expres>>(http:\/\/(.*?)\/.*?get.php.*?)&lt;</expres>
+<page>https://cms.xtream-codes.com</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
