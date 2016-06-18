@@ -267,7 +267,7 @@
 <thumbnail></thumbnail>
 </item>	
 
-<tem>
+<item>
 <title>Evento F1 HD</title>
 <link>$doregex[get-decode]</link>
 <regex>
