@@ -36,7 +36,7 @@
     <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
 ]]></listrepeat>
 <expres>>(http:\/\/(.*?)\/.*?get.php.*?)&lt;</expres>
-<page>https://cms.xtream-codes.com</page>
+<page>http://worldcs.info:8080</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
