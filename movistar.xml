@@ -282,8 +282,8 @@
 <item>
 <title>Formula 1</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/6794.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
-<link>plugin://plugin.video.f4mTester/?http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3102.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
-<link>plugin://plugin.video.f4mTester/?http://iptv-volkan.net:8000/live/mike/mike1/902.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
+<link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3102.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
+<link>plugin://plugin.video.f4mTester/?url=http://iptv-volkan.net:8000/live/mike/mike1/902.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
 <thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
