@@ -63,14 +63,15 @@
 </item> 
 
 <item>
-<title> [COLOR lime]•[/COLOR]    [COLOR skyblue][B] IPTV España[/B] [/COLOR][COLOR lightblue][I]F4m Tester Requerido - opcion 1[/I][/COLOR]</title>
-<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<title> [COLOR lime]IPTV España[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
   <title>[makelist.param1]</title>
-  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=AdryanList: [makelist.param1]</link>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[makelist.param1]</link>
   <thumbnail></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
