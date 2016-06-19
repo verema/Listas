@@ -62,4 +62,21 @@
 <fanart>http://pics.filmaffinity.com/Oliver_y_Benji_Campeones_Serie_de_TV-437755983-large.jpg</fanart>
 </item> 
 
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR skyblue][B] IPTV España[/B] [/COLOR][COLOR lightblue][I]F4m Tester Requerido - opcion 1[/I][/COLOR]</title>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=AdryanList: [makelist.param1]</link>
+  <thumbnail></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<page>http://dmtn-iptv.com:8080/get.php?username=ksa.knig.g4&amp;password=ksa.knig.g4&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
 
