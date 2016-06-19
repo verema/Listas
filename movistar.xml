@@ -235,7 +235,18 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<tem>
+<item>
+<title>Evento F1</title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>file: "(.*?)"</expres>
+<page>http://www.lacasadeltikitaka.futbol/elitegol/canal1.php</page>
+</regex>
+<thumbnail></thumbnail>
+</item>  
+
+<item>
 <title>Evento F1</title>
 <link>$doregex[url]</link>
 <regex>
