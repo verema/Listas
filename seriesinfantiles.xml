@@ -4,6 +4,43 @@
 
 <item>
 <title>La Patrulla Canina</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://juguetesbaratosya.com/wp-content/uploads/2015/11/Manta-polar-de-Paw-Patrol-La-Patrulla-Canina-0.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/catoal/la-patrulla-canina-30763/list,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/catoal/la-patrulla-canina-30763/list,1,3</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://juguetesbaratosya.com/wp-content/uploads/2015/11/Manta-polar-de-Paw-Patrol-La-Patrulla-Canina-0.jpg</thumbnail>
+<fanart>http://www.leon7dias.com/wp-content/uploads/2015/12/patrulla-canina.jpg</fanart>
+</item>
+
+<tem>
+<title>La Patrulla Canina</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#112;&#097;&#116;&#114;&#117;&#108;&#108;&#097;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://juguetesbaratosya.com/wp-content/uploads/2015/11/Manta-polar-de-Paw-Patrol-La-Patrulla-Canina-0.jpg</thumbnail>
