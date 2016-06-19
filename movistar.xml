@@ -8,10 +8,8 @@
 <expres>source: '(.*?)'</expres>
 <page>http://tugoleada.com/canal9.php</page>
 </regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<referer>http://www.dailymotion.com/</referer></regex>
 <thumbnail>http://i.imgur.com/aZKxEjN.jpg</thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
