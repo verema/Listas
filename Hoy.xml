@@ -13,27 +13,17 @@
 </channels_info>
 
 <channel>
-<name>88.ª Ceremonia de los Premios Óscar (2016)</name>
-<thumbnail>http://es.web.img1.acsta.net/newsv7/16/01/12/16/17/058489.jpg</thumbnail>
-<fanart>http://as01.epimg.net/ocio/imagenes/2016/02/28/cine/1456685426_901439_1456717351_noticia_normal.jpg</fanart>
+<name>[COLOR red]La Videoteca[/COLOR]</name>
+<thumbnail>http://i.imgur.com/8bVIYFu.png</thumbnail>
+<fanart>http://butacaancha.com/wp-content/uploads/2013/06/apolo.jpg</fanart> 
 <items>
 
 <item>
-<title>Disfruta de la gala</title>
-<link>$doregex[url]</link>
-<regex>
-	<name>url</name>
-	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>
-	<page></page>
-</regex>
-<regex>
-	<name>jsonurl</name>
-	<expres>"url360":"(.*?)"</expres>
-	<page>http://vk.com/video_ext.php?oid=238243363&amp;id=456239019&amp;hash=577baabbc3046aeb&amp;hd=1</page>
-	<referer>http://vk.com</referer>
-</regex>
-<thumbnail>http://es.web.img1.acsta.net/newsv7/16/01/12/16/17/058489.jpg</thumbnail>
-<fanart>http://as01.epimg.net/ocio/imagenes/2016/02/28/cine/1456685426_901439_1456717351_noticia_normal.jpg</fanart>
+<title>[COLOR red]La Videoteca[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#118;&#105;&#100;&#101;&#111;&#116;&#101;&#099;&#097;</externallink>
+<thumbnail>http://i.imgur.com/8bVIYFu.png</thumbnail>
+<fanart>http://butacaancha.com/wp-content/uploads/2013/06/apolo.jpg</fanart> 
 </item>
 </items>
 </channel>
@@ -130,6 +120,32 @@
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#083;&#097;&#103;&#097;&#115;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://i.imgur.com/ZB4gIOA.jpg</thumbnail>
 <fanart>http://i.imgur.com/ZB4gIOA.jpg</fanart> 
+</item>
+</items>
+</channel>
+
+<channel>
+<name>88.ª Ceremonia de los Premios Óscar (2016)</name>
+<thumbnail>http://es.web.img1.acsta.net/newsv7/16/01/12/16/17/058489.jpg</thumbnail>
+<fanart>http://as01.epimg.net/ocio/imagenes/2016/02/28/cine/1456685426_901439_1456717351_noticia_normal.jpg</fanart>
+<items>
+
+<item>
+<title>Disfruta de la gala</title>
+<link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>
+	<page></page>
+</regex>
+<regex>
+	<name>jsonurl</name>
+	<expres>"url360":"(.*?)"</expres>
+	<page>http://vk.com/video_ext.php?oid=238243363&amp;id=456239019&amp;hash=577baabbc3046aeb&amp;hd=1</page>
+	<referer>http://vk.com</referer>
+</regex>
+<thumbnail>http://es.web.img1.acsta.net/newsv7/16/01/12/16/17/058489.jpg</thumbnail>
+<fanart>http://as01.epimg.net/ocio/imagenes/2016/02/28/cine/1456685426_901439_1456717351_noticia_normal.jpg</fanart>
 </item>
 </items>
 </channel>
