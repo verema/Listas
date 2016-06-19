@@ -300,12 +300,12 @@
 </item>
 
 <item>
-<title>Evento F1 HD</title>
+<title>Evento F1. HD</title>
 <link>$doregex[get-decode]</link>
 <regex>
 <name>get-decode</name>
 <expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal1.php</page>
+<page>http://tugoleada.com/canal9.php</page>
 </regex>
 <thumbnail></thumbnail>
 <fanart></fanart>
