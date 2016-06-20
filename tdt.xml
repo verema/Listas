@@ -63,9 +63,12 @@
 <item>
 <title>Telecinco</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://ksportiptv.com:1557/live/iptv1org/bestfreeiptv/1774.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
+<link>plugin://plugin.video.f4mTester/?url=http://gameserver4.streamiptv.online:80/live/martino30/martino30/6546.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
+
+http://gameserver4.streamiptv.online:80/live/martino30/martino30/6546.ts
 
 <item>
 <title>Telecinco</title>
