@@ -87,7 +87,7 @@
         <thumbnail>http://i.imgur.com/5UFNV5L.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/filojass/los-juegos-del-hambre-2013-2014-2015-19121</page>
+<page>http://diskokosmiko.mx/peliculas/jdh180-24707</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
@@ -105,7 +105,7 @@
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/filojass/los-juegos-del-hambre-2013-2014-2015-19121</referer>
+<referer>http://diskokosmiko.mx/peliculas/jdh180-24707</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
