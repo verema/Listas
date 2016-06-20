@@ -26,7 +26,7 @@
 </item>
 
 <item>
-<title>Campeones</title>
+<title>anime</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -36,7 +36,7 @@
         <thumbnail>http://www.mundodescargas.com/cine/listados/imagenes/covers/2_2218.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/catoal/la-patrulla-canina-30763/list,1,2</page>
+<page>http://diskokosmiko.mx/anime1</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
@@ -54,7 +54,7 @@
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/catoal/la-patrulla-canina-30763/list,1,2</referer>
+<referer>http://diskokosmiko.mx/anime1</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
