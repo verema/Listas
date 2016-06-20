@@ -41,10 +41,39 @@
 
 <item>
 <title>Saga Rocky</title>
-<link>http://Ignoreme</link>
-<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/rocky.xml</externallink>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://ximages.net/images/44694663250282425655.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/catoal/saga-rocky-30512</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/catoal/saga-rocky-30512</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
 <thumbnail>http://ximages.net/images/44694663250282425655.jpg</thumbnail>
-<fanart>http://i.imgur.com/j1VlNG0.jpg</fanart> 
+<fanart>http://i.imgur.com/j1VlNG0.jpg</fanart>
 </item>
 
 <item>
