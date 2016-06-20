@@ -226,12 +226,12 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Evento F1 hd</title>
 <f4m>http://stream-ec.vty.dailymotion.com/13/dm/1/x4hcpw5/live.isml/events(live-1466335651)/live-audio=128000-video=2000000.m3u8</f4m>
 </item>
 
-<item>
+<tem>
 <title>Evento F1</title>
 <link>$doregex[get-decode]</link>
 <regex>
@@ -242,7 +242,7 @@
 <thumbnail></thumbnail>
 </item>  
 
-<item>
+<tem>
 <title>Evento F1</title>
 <link>$doregex[url]</link>
 <regex>
@@ -274,7 +274,7 @@
 <thumbnail></thumbnail>
 </item>
 
-<item>
+<tem>
 <title>Evento F1</title>
 <link>$doregex[url]</link>
 <regex>
@@ -290,7 +290,7 @@
 <thumbnail></thumbnail>
 </item>
 
-<item>
+<tem>
 <title>Evento F1. HD</title>
 <link>$doregex[get-decode]</link>
 <regex>
