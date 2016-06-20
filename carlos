@@ -80,14 +80,40 @@
 </regex>
 </item>
 
-<item>
-<title>prova</title>
-<link>rtmp://46.28.48.252/live<playpath>futtr?id=26890&pk=a8cb3063ebc9853dca046559ba5331b884c9f05dc2eff6b608118e2e5c59b131 <swfUrl>http://www.embedezcast.com/static/scripts/fplayer.swf <pageUrl>http://www.embedezcast.com/embedplayer/futtr/1/645/395</link>
-</item>
+<items>
+    <items_info> <!-- this is opitonal -->
+      <title>Testing XML</title> <!-- a title is required, other elements are optional -->
+      <genre>News</genre>
+      <description>this is the descripton string</description>
+      <thumbnail>http://community-links.googlecode.com/svn/icons/news-icon.png</thumbnail>
+      <fanart>http://community-links.googlecode.com/svn/icons/news-fanart.jpg</fanart>
+      <date>04.01.2013</date>
+      <credits>divingmule, Johnny Cache</credits>
+    </items_info>
 
-<item>
-<title>prova2</title>
-<link>https://tvplay.cf/canales.php?token=BwbsPRPfgMql78skKa06Mgar&canal=314&format=.m3u8?</link>
-</item>
+    <item>
+        <title>POKER CHANNEL</title>
+        <link>mms://some/place/pokerchannel</link>
+        <thumbnail>http://channel.png</thumbnail>
+        <genre>Poker</genre>
+        <info>The Poker Channel – Europe’s largest dedicated gaming TV network is available online to a global audience, and to more than 30 million
+              cable and satellite homes in Europe and Latin America.</info>
+        <date>07.12.2011</date>  <!-- format - dd.mm.yyyy -->
+        <epg></epg>  <!-- See daschacka's post - http://forum.xbmc.org/showpost.php?p=936228&postcount=1076 -->
+        <fanart>http://fanart.jpg</fanart>
+    </item>
+
+        <item>
+        <title>NHK - World</title>        
+        <link>rtmp://some/place playpath=nhkworldhd swfUrl="http://player.0.3.6.2.swf" pageUrl="http://nhkworld/r/movie/" swfVfy=true live=true</link>
+        <thumbnail>http://header_logo.gif</thumbnail>
+    </item>
+
+    <item>
+        <title>BBC World</title>        
+        <link>rtmp://some/place playpath=bbcworld1_en_high.sdp swfUrl="http://some/place/player.swf" pageUrl="http://some/place/10-bbc-world-news-
+               english" swfVfy=true live=true</link>
+        <thumbnail>http://some/place.jpg</thumbnail>   
+</items>
 
 
