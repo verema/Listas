@@ -81,7 +81,7 @@
 </item>
 
 <item>
-<title> [COLOR lime]IPTV España[/COLOR]</title>
+<title> [COLOR lime]IPTV [/COLOR]</title>
 <thumbnail></thumbnail>
 <fanart></fanart>
 <link>$doregex[makelist]</link>
@@ -93,11 +93,11 @@
   <thumbnail></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
-<page>http://pikermollerpvf.dynns.com:8000/get.php?username=j.hc12&password=3z5mC28W93&type=m3u</page>
+<page>http://198.27.74.188:8000/get.php?username=3456&password=2342&type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
-
+http://198.27.74.188:8000/live/3456/2342/5.ts
 <item>
 <title>España22222</title>
 <link>http://mrvicserver.serveftp.com:9981/stream/mux/36885edc50fb85d35b4efbd20d6a89a4?ticket=6CF9218B861D5049DA5C1F4D41BAAD090D3A8832</link>
