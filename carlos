@@ -93,7 +93,7 @@
   <thumbnail></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
-<page>http://pikermollerpvf.dynns.com:8000/get.php?username=j.hc12&amp;password=3z5mC28W93&amp;type=m3u</page>
+<page>http://pikermollerpvf.dynns.com:8000/get.php?username=j.hc12&password=3z5mC28W93&type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
