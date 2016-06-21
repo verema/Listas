@@ -20,7 +20,7 @@
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 <items>
 
-<item>
+<tem>
 <title>09:35 Temp.6 - Ep8</title>
 <link>$doregex[get-decode]</link>
 <regex>
@@ -32,7 +32,7 @@
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>F4mTester 09:35 Temp.6 - Ep8</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/5153.ts&amp;streamtype=TSDOWNLOADER&amp;name=Catoal[COLOR lime] HD[/COLOR]</link>
 <link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/j.hc12/3z5mC28W93/66.ts&amp;streamtype=TSDOWNLOADER&amp;name=Catoal[COLOR lime] HD[/COLOR]</link>
@@ -273,6 +273,35 @@
 <name>id2</name>
 <expres>file:'(.*)'</expres>
 <page>http://streamin.to/embed-0hq1777n66yz-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+</subitem>
+</item>
+
+<item>
+<subitem>
+<title>08 ES</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-j2direzwy2zw-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<thumbnail>http://i.imgur.com/XJWRRFY.jpg</thumbnail>
+<fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
+<link>$doregex[id1]</link>
+<regex>
+<name>id1</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-17tc6e6vvy5g-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<link>$doregex[id2]</link>
+<regex>
+<name>id2</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-c8lqea33dsa0-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
 </subitem>
