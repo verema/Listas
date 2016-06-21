@@ -13,7 +13,7 @@
         <thumbnail>http://i.imgur.com/b0Hq5h7.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/naredo/star-wars-20191</page>
+<page>http://diskokosmiko.mx/catoal/star-wars-31097</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
@@ -31,7 +31,7 @@
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/naredo/star-wars-20191</referer>
+<referer>http://diskokosmiko.mx/catoal/star-wars-31097</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
@@ -111,4 +111,41 @@
 </regex>
 <thumbnail>http://i.imgur.com/5UFNV5L.jpg</thumbnail>
 <fanart>http://a69.g.akamai.net/n/69/10688/v1/img5.allocine.fr/acmedia/medias/nmedia/19/00/25/15/20628728.jpg</fanart>
+</item>
+
+<item>
+<title>Loca Academia de Policias</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://1.bp.blogspot.com/-HNrPTw6_FRY/TaDm_yVTcqI/AAAAAAAACV8/VRpaznU7Wlk/s320/locaacademiapoli1.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/naredo/loca-academia-de-policia-19983</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/naredo/loca-academia-de-policia-19983</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://1.bp.blogspot.com/-HNrPTw6_FRY/TaDm_yVTcqI/AAAAAAAACV8/VRpaznU7Wlk/s320/locaacademiapoli1.jpg</thumbnail>
+<fanart>http://yofuiaegb.com/wp-content/uploads/2013/03/Loca-academia-de-policia.jpg</fanart>
 </item>
