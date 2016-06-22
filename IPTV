@@ -1,7 +1,7 @@
 
 
 <item>
-  <title>[COLOR red]IPTV La Otra Televisión[/COLOR]</title>
+  <title>[COLOR red]Aviso Puede Tardar bastante Paciencia...[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
