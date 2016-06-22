@@ -14,7 +14,7 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-     <title>      [COLOR lightgreen][makelist.param2][/COLOR]    ( [makelist.param1] )  </title>
+     <title>      [COLOR lightgreen]Ipt Mundial[/COLOR]    ( [makelist.param1] )  </title>
     <link>NA</link>
     <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
 ]]></listrepeat>
@@ -24,6 +24,8 @@
 <cookieJar></cookieJar>
 </regex>
 </item>
+
+<title>      [COLOR lightgreen][makelist.param2][/COLOR]    ( [makelist.param1] )  </title>
 
 <item>
 <title>anime</title>
