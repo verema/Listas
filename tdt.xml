@@ -62,8 +62,8 @@
 
 <item>
 <title>Telecinco</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://topiptv.net:5890/live/azize/azize/818.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
-<link>plugin://plugin.video.f4mTester/?url=http://gameserver4.streamiptv.online:80/live/martino30/martino30/6546.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
+<link>plugin://plugin.video.f4mTester/?url=http://tv2iptv.com:8000/live/TNnsEPYspb/Yajx0LF8Xf/1132.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
+<ink>plugin://plugin.video.f4mTester/?url=http://tv2iptv.com:8000/live/TNnsEPYspb/Yajx0LF8Xf/1132.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
