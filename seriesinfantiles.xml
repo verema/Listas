@@ -445,7 +445,7 @@
   <listrepeat><![CDATA[
         <title> [makelist.param3]</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>https://s-media-cache-ak0.pinimg.com/236x/e7/4c/77/e74c772c9471849aa4348977dd33209a.jpg</thumbnail>
+        <thumbnail>http://i.imgur.com/qmOJhEF.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/catoal/tintin-las-peliculas-31043</page>
@@ -470,7 +470,7 @@
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://s-media-cache-ak0.pinimg.com/236x/e7/4c/77/e74c772c9471849aa4348977dd33209a.jpg</thumbnail>
+<thumbnail>http://i.imgur.com/qmOJhEF.jpg</thumbnail>
 <fanart><fanart>http://i.imgur.com/m4vaHjh.png</fanart></fanart>
 </item> 
 
