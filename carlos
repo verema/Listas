@@ -9,12 +9,12 @@
 
 
 <item>
-  <title>[COLOR red]casa jardin 1[/COLOR]</title>
+  <title>[COLOR red]IPTV La Otra Televisión[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-     <title>      [COLOR lightgreen]Ipt Mundial[/COLOR]    ( [makelist.param1] )  </title>
+     <title>      [COLOR lightgreen]IPTV By Catoal[/COLOR]    ( [makelist.param1] )  </title>
     <link>NA</link>
     <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
 ]]></listrepeat>
@@ -23,6 +23,8 @@
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
+<thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
+<fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
 </item>
 
 <title>      [COLOR lightgreen][makelist.param2][/COLOR]    ( [makelist.param1] )  </title>
