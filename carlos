@@ -15,14 +15,14 @@
 
 
 <item>
-  <title>[COLOR red]IPTV La Otra Televisión[/COLOR]</title>
+  <title>[COLOR red]IPTV  Otra Televisión[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-     <title>      [COLOR lightgreen]IPTV By Catoal[/COLOR]    ( La Mejor Opción  )  </title>
+     <title>      [COLOR lightgreen]IPTV By Catoal[/COLOR]    ( [makelist.param1] )  </title>
     <link>NA</link>
-    <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
+    <externallink>[makelist.param1][SP]$$TSDOWNLOADER$$</externallink>
 ]]></listrepeat>
 <expres>>(http:\/\/(.*?)\/.*?get.php.*?)&lt;</expres>
 <page>http://www.m3uliste.pw/</page>
