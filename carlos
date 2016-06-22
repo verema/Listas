@@ -14,7 +14,7 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-     <title>      [COLOR lightgreen]IPTV By Catoal[/COLOR]    ( [makelist.param1] )  </title>
+     <title>      [COLOR lightgreen]IPTV By Catoal[/COLOR]    ( La Mejor Opción  )  </title>
     <link>NA</link>
     <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
 ]]></listrepeat>
