@@ -649,7 +649,7 @@
 <regex>
 <name>id</name>
 <expres>file:'(.*)'</expres>
-<page>http://streamin.to/embed-3a69acay9h3t-740x360.html</page>
+<page>http://streamin.to/embed-xjjgfgs7mdg3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
 <thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
@@ -665,7 +665,7 @@
 <regex>
 <name>id</name>
 <expres>file:'(.*)'</expres>
-<page>http://streamin.to/embed-wzomfb7wptcf-740x360.html</page>
+<page>http://streamin.to/embed-557fye2ts36f-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
 <thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
