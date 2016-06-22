@@ -9,7 +9,7 @@
 
 
 <item>
-  <title>[COLOR red]casa jardin[/COLOR]</title>
+  <title>[COLOR red]casa jardin 1[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
