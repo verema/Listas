@@ -236,7 +236,7 @@ http://198.27.74.188:8000/live/3456/2342/5.ts
   <thumbnail></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
-<page>http://IPTV-VOLKAN.NET:8000/get.php?username=phill&amp;password=phill&amp;type=m3u</page>
+<page>http://iptv-volkan.ddns.net:8000/get.php?username=phill&amp;password=phill&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
@@ -254,7 +254,7 @@ http://198.27.74.188:8000/live/3456/2342/5.ts
   <thumbnail></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,SPA:(.*?)\n(.*)</expres>
-<page>http://IPTV-VOLKAN.NET:8000/get.php?username=phill&amp;password=phill&amp;type=m3u</page>
+<page>http://iptv-volkan.ddns.net:8000/get.php?username=phill&amp;password=phill&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
