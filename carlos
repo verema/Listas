@@ -36,7 +36,7 @@
 <title>      [COLOR lightgreen][makelist.param2][/COLOR]    ( [makelist.param1] )  </title>
 
 <item>
-<title>copiapop</title>
+<title>copia</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
