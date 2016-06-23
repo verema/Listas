@@ -181,7 +181,7 @@
 </regex>
 </item>
 
-<tem>
+<item>
 <title> [COLOR lime]IPTV España 4[/COLOR]</title>
 <thumbnail></thumbnail>
 <fanart></fanart>
@@ -194,7 +194,7 @@
   <thumbnail></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
-<page>http://iptv-volkan.ddns.net:8000/get.php?username=phill&amp;password=phill&amp;type=m3u</page>
+<page>http://ipsatpro.com:8000/get.php?username=bozil&amp;password=bozil&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
