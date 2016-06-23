@@ -73,7 +73,7 @@
 </item> 
 
 <item>
-<title> [COLOR lime]IPTV España[/COLOR]</title>
+<title> [COLOR lime]IPTV1 España[/COLOR]</title>
 <thumbnail></thumbnail>
 <fanart></fanart>
 <link>$doregex[makelist]</link>
@@ -84,7 +84,7 @@
   <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[makelist.param1]</link>
   <thumbnail></fanart>
 ]]></listrepeat>
-<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<expres>#EXTINF:-1,ES,SPA:(.*?)\n(.*)</expres>
 <page>http://IPTV-VOLKAN.NET:8000/get.php?username=mike&amp;password=mike1&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
