@@ -52,7 +52,7 @@
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<page>http://copiapop.com/action/DownloadFile?location=gi&amp;f=[makelist.param1]</page>
 <rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
 <referer>http://copiapop.com/[makelist.param2]</referer>
 <connection>keep-alive</connection>
