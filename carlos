@@ -36,7 +36,7 @@
 <title>      [COLOR lightgreen][makelist.param2][/COLOR]    ( [makelist.param1] )  </title>
 
 <item>
-<title>anime</title>
+<title>copiapop</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -46,15 +46,15 @@
         <thumbnail>http://www.mundodescargas.com/cine/listados/imagenes/covers/2_2218.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/anime1</page>
+<page>http://copiapop.com/Koba1994/saga-arma-letal-64773</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
 <rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<referer>http://copiapop.com/[makelist.param2]</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
@@ -63,8 +63,8 @@
 <regex>
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/anime1</referer>
+<page>http://copiapop.com/[makelist.param2]</page>
+<referer>http://copiapop.com/Koba1994/saga-arma-letal-64773</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
