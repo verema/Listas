@@ -85,10 +85,12 @@
   <thumbnail></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
-<page>http://dmtn-iptv.com:8080/get.php?username=ksa.knig.g4&amp;password=ksa.knig.g4&amp;type=m3u</page>
+<page>http://IPTV-VOLKAN.NET:8000/get.php?username=mike&amp;password=mike1&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
+
+http://IPTV-VOLKAN.NET:8000/get.php?username=mike&password=mike1&type=m3u
 
 <item>
 <title> [COLOR lime]IPTV [/COLOR]</title>
