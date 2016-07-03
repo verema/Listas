@@ -21,7 +21,7 @@
 <items>
 
 
-<item>
+<tem>
 <title>09:35 Temp.6 - Ep9</title>
 <link>$doregex[get-decode]</link>
 <regex>
@@ -33,11 +33,11 @@
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 </item>
 
-<tem>
-<title>F4mTester 09:35 Temp.6 - Ep8</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/5153.ts&amp;streamtype=TSDOWNLOADER&amp;name=Catoal[COLOR lime] HD[/COLOR]</link>
-<link>plugin://plugin.video.f4mTester/?url=http://pikermollerpvf.dynns.com:8000/live/j.hc12/3z5mC28W93/66.ts&amp;streamtype=TSDOWNLOADER&amp;name=Catoal[COLOR lime] HD[/COLOR]</link>
-<link>plugin://plugin.video.f4mTester/?url=http://serv01.iptvplanet.eu:11118/live/lEy5E750Iv/YTaUM5mU0f/2184.ts&amp;streamtype=TSDOWNLOADER&amp;name=Catoal[COLOR lime] HD[/COLOR]</link>
+<item>
+<title>F4mTester 03:00 Temp.6 - Ep10</title>         
+<link>plugin://plugin.video.f4mTester/?url=http://globalstream.noip.us:8000/live/test/test/1472.ts&amp;streamtype=TSDOWNLOADER&amp;name=Catoal[COLOR lime] HD[/COLOR]</link>
+<link>plugin://plugin.video.f4mTester/?url=http://ns3045782.ip-5-135-142.eu:8000/live/sYKADDaJs2/SnoQc6v4hZ/885.ts&amp;streamtype=TSDOWNLOADER&amp;name=Catoal[COLOR lime] HD[/COLOR]</link>
+<link>plugin://plugin.video.f4mTester/?url=http://176.31.237.228:8000/live/170216/170216/1058.ts&amp;streamtype=TSDOWNLOADER&amp;name=Catoal[COLOR lime] HD[/COLOR]</link>
 <thumbnail>http://i.imgur.com/XJWRRFY.jpg</thumbnail>
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 </item>
