@@ -1,7 +1,7 @@
 
 
 <item>
-  <title>[COLOR red]Aviso Puede Tardar bastante Paciencia...[/COLOR]</title>
+  <title>[COLOR lime]PINCAH AQUÍ[/COLOR][COLOR red][I] **Aviso Puede Tardar bastante, Paciencia...**[/I][/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
