@@ -70,6 +70,36 @@
 </item>
 
 <item>
+<title>Dragon-ball GT</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://lh3.googleusercontent.com/-AfENy9ESweM/VlkVuF64_PI/AAAAAAAAg08/Ijq1wuX4ZPo/s567-Ic42/Dragon-Ball-GT.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Koba1994/dragon-ball-gt-anime-64137/gallery,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://lh3.googleusercontent.com/-AfENy9ESweM/VlkVuF64_PI/AAAAAAAAg08/Ijq1wuX4ZPo/s567-Ic42/Dragon-Ball-GT.jpg</thumbnail>
+<fanart>https://congnghegiaitri.files.wordpress.com/2011/07/immaginidragonballgt003.jpg</fanart>
+</item>
+
+<item>
 <title>Batman La serie Animada</title>
 <link>$doregex[makelist]</link>
 <regex>
