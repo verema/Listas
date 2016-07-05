@@ -20,7 +20,7 @@
 </item>
 
 <item>
-<title> [COLOR lime]IPTV Varios Paises[/COLOR]</title>
+<title> [COLOR lime]IPTV Varios Paises 1[/COLOR]</title>
 <thumbnail></thumbnail>
 <fanart></fanart>
 <link>$doregex[makelist]</link>
@@ -35,6 +35,25 @@
 <page>http://www.m3uliste.pw/</page>
 <referer></referer>
 <cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title> [COLOR lime]IPTV Varios Paises 2[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>http://lucky.lts1.net:23000//get.php?username=Gaetano&amp;password=Gaetano&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
 
@@ -262,6 +281,25 @@
 ]]></listrepeat>
 <expres>#EXTINF:-1,SP=(.*?)\n(.*)</expres>
 <page>http://ns339484.ip-37-187-250.eu:8000/get.php?username=test&amp;password=test&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+<item>
+<title> [COLOR lime]IPTV España 6[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<page>http://149.202.201.221:8000/get.php?username=fr443500&amp;password=75019pa&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
