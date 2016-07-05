@@ -14,7 +14,7 @@
 <credits>© Catoal</credits>
 </channels_info>
 
-<channel>
+<hannel>
 <name>Capitulo Estreno Live</name>
 <thumbnail>http://i.imgur.com/Oe6T74a.jpg</thumbnail>
 <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
@@ -332,6 +332,35 @@
 <name>id2</name>
 <expres>file:'(.*)'</expres>
 <page>http://streamin.to/embed-qpo96i52a0si-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+</subitem>
+</item>
+
+<item>
+<subitem>
+<title>10 ES</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-qxrxct4zznn1-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<thumbnail>http://i.imgur.com/XJWRRFY.jpg</thumbnail>
+<fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
+<link>$doregex[id1]</link>
+<regex>
+<name>id1</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-00p3vcr30n3u-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<link>$doregex[id2]</link>
+<regex>
+<name>id2</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-55087djfsnqg-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
 </subitem>
