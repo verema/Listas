@@ -12,7 +12,7 @@
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Txarly/juego-de-tronos-primera-temporada-61223/list,1,1</page>
+<page>http://copiapop.com/Txarly/juego-de-tronos-primera-temporada-61223</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -43,7 +43,7 @@
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Txarly/juego-de-tronos-segunda-temporada-61910/list,1,1</page>
+<page>http://copiapop.com/Txarly/juego-de-tronos-segunda-temporada-61910</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -74,7 +74,7 @@
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Txarly/juego-de-tronos-tercera-temporada-62808/list,1,1</page>
+<page>http://copiapop.com/Txarly/juego-de-tronos-tercera-temporada-62808</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -105,7 +105,7 @@
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Txarly/juego-de-tronos-cuarta-temporada-63827/list,1,1</page>
+<page>http://copiapop.com/Txarly/juego-de-tronos-cuarta-temporada-63827</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -136,7 +136,7 @@
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Txarly/juego-de-tronos-quinta-temporada-64960/list,1,1</page>
+<page>http://copiapop.com/Txarly/juego-de-tronos-quinta-temporada-64960</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -167,7 +167,7 @@
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/LuciasSecrets/juego-de-tronos-temp-6-castellano-60488/list,1,1</page>
+<page>http://copiapop.com/LuciasSecrets/juego-de-tronos-temp-6-castellano-60488</page>
 <cookieJar></cookieJar>
 </regex>
 
