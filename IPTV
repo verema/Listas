@@ -97,7 +97,7 @@
 
 
 <tem>
-<title> [COLOR lime]IPTV España 1[/COLOR]</title>
+<title> [COLOR lime]IPTV España 3[/COLOR]</title>
 <thumbnail></thumbnail>
 <fanart></fanart>
 <link>$doregex[makelist]</link>
@@ -110,10 +110,12 @@
 	<fanart></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
-<page>http://IPTV-VOLKAN.NET:8000/get.php?username=mike&amp;password=mike1&amp;type=m3u</page>
+<page>http://91.134.217.235:1557/get.php?username=iptvshqip-ju-URON&amp;password=GEZUAR_-FITER-_BAJRAMIN&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
+
+http://91.134.217.235:1557/get.php?username=iptvshqip-ju-URON&password=GEZUAR_-FITER-_BAJRAMIN&type=m3u
 
 <tem>
 <title> [COLOR lime]IPTV España 1/2[/COLOR]</title>
