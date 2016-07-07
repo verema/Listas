@@ -412,3 +412,41 @@
 <fanart>http://www.periodistadigital.com/imagenes/2016/05/04/manolo-y-benito-corporation.jpg</fanart>
 </item>
 
+<item>
+<title>V</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://4.bp.blogspot.com/-SSOBXhEZtNg/VObnlMOvHtI/AAAAAAAAHFo/lX6nqFxMBb0/s1600/p84zVyL%2B(1).jpg</thumbnail>
+		<fanart>http://3.bp.blogspot.com/-g47GWY9PYwQ/UcuduznM68I/AAAAAAAAePU/YV5cdxi87_4/s1600/vlcsnap-2013-06-26-23h01m42s91.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/hernando-angel/v-invasion-extraterrestre-temporada-1-y-2-esp-29905/list,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/hernando-angel/v-invasion-extraterrestre-temporada-1-y-2-esp-29905/list,1,3</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://4.bp.blogspot.com/-SSOBXhEZtNg/VObnlMOvHtI/AAAAAAAAHFo/lX6nqFxMBb0/s1600/p84zVyL%2B(1).jpg</thumbnail>
+<fanart>http://3.bp.blogspot.com/-g47GWY9PYwQ/UcuduznM68I/AAAAAAAAePU/YV5cdxi87_4/s1600/vlcsnap-2013-06-26-23h01m42s91.png</fanart>
+</item>
+
