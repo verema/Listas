@@ -110,12 +110,12 @@
 	<fanart></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
-<page>http://91.134.217.235:1557/get.php?username=iptvshqip-ju-URON&amp;password=GEZUAR_-FITER-_BAJRAMIN&amp;type=m3u</page>
+<page>http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&amp;password=75019pa&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
 
-http://91.134.217.235:1557/get.php?username=iptvshqip-ju-URON&password=GEZUAR_-FITER-_BAJRAMIN&type=m3u
+http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&password=75019pa&type=m3u
 
 <tem>
 <title> [COLOR lime]IPTV España 1/2[/COLOR]</title>
