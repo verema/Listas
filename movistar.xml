@@ -194,6 +194,13 @@
 </item>
 
 <item>
+<title>TeleToro</title>
+<f4m>http://stream.ssh101.com:1935/live/paistu/chunklist.m3u8</f4m>
+<thumbnail>http://teletoro.link/teletorocabecera.jpg</thumbnail>
+<fanart>http://teletoro.link/teletorocabecera.jpg</fanart>            
+</item>
+
+<tem>
 <title>Toros[I]teletoro [/I]</title><!--http://teletoro.link/ -->
 <link>http://$doregex[ip]$doregex[m3u8]</link>
 <regex>
