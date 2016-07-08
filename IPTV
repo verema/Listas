@@ -119,8 +119,8 @@ http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&password=75019
 
 
 
-<tem>
-<title> [COLOR lime]IPTV España 1/2[/COLOR]</title>
+<item>
+<title> [COLOR lime]IPTV España 4[/COLOR]</title>
 <thumbnail></thumbnail>
 <fanart></fanart>
 <link>$doregex[makelist]</link>
@@ -132,11 +132,13 @@ http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&password=75019
 	<thumbnail></thumbnail>
 	<fanart></fanart>
 ]]></listrepeat>
-<expres>#EXTINF:-1,SPA:(.*?)\n(.*)</expres>
-<page>http://IPTV-VOLKAN.NET:8000/get.php?username=mike&amp;password=mike1&amp;type=m3u</page>
+<expres>#EXTINF:-1,ES_(.*?)\n(.*)</expres>
+<page>http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&amp;password=SnoQc6v4hZ&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
+
+http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&password=SnoQc6v4hZ&type=m3u
 
 <tem>
 <title> [COLOR lime]IPTV España 1/3[/COLOR]</title>
