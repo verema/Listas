@@ -450,3 +450,148 @@
 <fanart>http://3.bp.blogspot.com/-g47GWY9PYwQ/UcuduznM68I/AAAAAAAAePU/YV5cdxi87_4/s1600/vlcsnap-2013-06-26-23h01m42s91.png</fanart>
 </item>
 
+<item>
+<title>Magnum; p.i</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.liketotally80s.com/wp-content/uploads/2014/07/magnum-pi-costume-3.jpg</thumbnail>
+		<fanart>https://s-media-cache-ak0.pinimg.com/originals/f8/03/cc/f803ccf3d69952ff8870ebe54ec5bc60.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/lokario1/magnum-pi-temporadas-12345678-15957/list,1,7</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/lokario1/magnum-pi-temporadas-12345678-15957/list,1,7</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.liketotally80s.com/wp-content/uploads/2014/07/magnum-pi-costume-3.jpg</thumbnail>
+<fanart>https://s-media-cache-ak0.pinimg.com/originals/f8/03/cc/f803ccf3d69952ff8870ebe54ec5bc60.png</fanart>
+</item>
+
+<item>
+<title>90210 Beverly Hills</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://images-na.ssl-images-amazon.com/images/I/51lpB-f8oaL._AC_UL320_SR256,320_.jpg</thumbnail>
+		<fanart>http://aretheyoldenough.com/wp-content/uploads/2014/12/90210-beverly-hills-90210-4313373-1024-768.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/lokario1/90210-beverly-hills-sensacion-de-vivir-completa-11976/list,1,5</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/lokario1/90210-beverly-hills-sensacion-de-vivir-completa-11976/list,1,5</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/I/51lpB-f8oaL._AC_UL320_SR256,320_.jpg</thumbnail>
+<fanart>http://aretheyoldenough.com/wp-content/uploads/2014/12/90210-beverly-hills-90210-4313373-1024-768.jpg</fanart>
+</item>
+
+<item>
+<title>Melrose Place</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://www.podnapisi.net/thumbnails/moviedb/normal/AIM.jpg</thumbnail>
+		<fanart>http://2.bp.blogspot.com/-xPuBfjJ-GUs/UGxJLf8oUPI/AAAAAAAACt0/4t3LSujq-hk/s1600/1992-1999-Melrose-Place-Wallpaper-18.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/lokario1/melrose-place-temporadas-1234567-completa-11635/list,1,10</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/lokario1/melrose-place-temporadas-1234567-completa-11635/list,1,10</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://www.podnapisi.net/thumbnails/moviedb/normal/AIM.jpg</thumbnail>
+<fanart>http://2.bp.blogspot.com/-xPuBfjJ-GUs/UGxJLf8oUPI/AAAAAAAACt0/4t3LSujq-hk/s1600/1992-1999-Melrose-Place-Wallpaper-18.jpg</fanart>
+</item>
+
+<item>
+<title>Friends</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.subtitles.to/v/4/4f0d9587774e124c585b0c6f4f3e2996.jpg</thumbnail>
+		<fanart>http://pixel.nymag.com/imgs/daily/vulture/2016/03/23/23-friends-cover-story-lede.w750.h560.2x.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Koba1994/friends-serie-67065/gallery,1,10</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.subtitles.to/v/4/4f0d9587774e124c585b0c6f4f3e2996.jpg</thumbnail>
+<fanart>http://pixel.nymag.com/imgs/daily/vulture/2016/03/23/23-friends-cover-story-lede.w750.h560.2x.jpg</fanart>
+</item> 
+
