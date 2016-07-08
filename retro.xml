@@ -412,7 +412,7 @@
 <fanart>http://www.periodistadigital.com/imagenes/2016/05/04/manolo-y-benito-corporation.jpg</fanart>
 </item>
 
-<tem>
+<item>
 <title>V</title>
 <link>$doregex[makelist]</link>
 <regex>
