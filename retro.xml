@@ -595,3 +595,97 @@
 <fanart>http://pixel.nymag.com/imgs/daily/vulture/2016/03/23/23-friends-cover-story-lede.w750.h560.2x.jpg</fanart>
 </item> 
 
+<item>
+<title>Kung Fu</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://images-na.ssl-images-amazon.com/images/I/71oamaTQ12L._SY550_.jpg</thumbnail>
+		<fanart>http://laboladecristal.es/wp-content/uploads/2014/01/Kung-Fu-serie.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/kung-fu-serie-54900/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/I/71oamaTQ12L._SY550_.jpg</thumbnail>
+<fanart>http://laboladecristal.es/wp-content/uploads/2014/01/Kung-Fu-serie.jpg</fanart>
+</item> 
+
+<item>
+<title>Los Invasores</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://mla-s2-p.mlstatic.com/821001-MLA20262633647_032015-Y.jpg</thumbnail>
+		<fanart>http://i1008.photobucket.com/albums/af208/jaigorac/1%20Jaina%20P2P/Series%20Clasicas/losinvasores1.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/los-invasores-serie-54899/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://mla-s2-p.mlstatic.com/821001-MLA20262633647_032015-Y.jpg</thumbnail>
+<fanart>http://i1008.photobucket.com/albums/af208/jaigorac/1%20Jaina%20P2P/Series%20Clasicas/losinvasores1.jpg</fanart>
+</item> 
+
+<item>
+<title>Alf</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/alf_tv_series-263075555-large.jpg</thumbnail>
+		<fanart>http://www.freeway.com.uy/upload/imagenes/680x476/2013/08/21/alfs_2464.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/alf-t1at4-serie-54666/gallery,1,5</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/alf_tv_series-263075555-large.jpg</thumbnail>
+<fanart>http://www.freeway.com.uy/upload/imagenes/680x476/2013/08/21/alfs_2464.jpg</fanart>
+</item> 
+
+
