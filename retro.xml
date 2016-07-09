@@ -1340,37 +1340,6 @@
 </item> 
 
 <item>
-<title>Star Treck</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>http://images5.fanpop.com/image/photos/27300000/Star-Trek-TOS-star-trek-27332936-459-700.jpg</thumbnail>
-		<fanart>http://goo.gl/Zs0wCw</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Cuspide/star-trek-tos-t1at3-completa-51656/gallery,1,4</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://images5.fanpop.com/image/photos/27300000/Star-Trek-TOS-star-trek-27332936-459-700.jpg</thumbnail>
-<fanart>http://goo.gl/Zs0wCw</fanart>
-</item> 
-
-<item>
 <title>Remington Steele</title>
 <link>$doregex[makelist]</link>
 <regex>
