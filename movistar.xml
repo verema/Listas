@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<item>
+<tem>
 <title>[COLOR lime][B]Eventos[/B][/COLOR]</title>
 <link>$doregex[get-decode]</link>
 <regex>
@@ -10,6 +10,22 @@
 </regex>
 <thumbnail>http://i.imgur.com/aZKxEjN.jpg</thumbnail>
 <fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR lime][B]Eventos[/B][/COLOR]</title>
+<link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://malaga65.org')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://malaga65.org/p/ch1.php</page>			
+</regex>
+<thumbnail>http://i.imgur.com/aZKxEjN.jpg</thumbnail>
 </item>
 
 <item>
