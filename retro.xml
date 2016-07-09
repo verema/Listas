@@ -688,4 +688,779 @@
 <fanart>http://www.freeway.com.uy/upload/imagenes/680x476/2013/08/21/alfs_2464.jpg</fanart>
 </item> 
 
+<item>
+<title>El Pajaro Espino</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.mundodescargas.com/cine/listados/imagenes/covers/2_232.jpg</thumbnail>
+		<fanart>http://www.serielizados.com/wp-content/uploads/el-pajaro-espino-series-vintage-david-castillo.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/el-pajaro-espino-completa-53306</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.mundodescargas.com/cine/listados/imagenes/covers/2_232.jpg</thumbnail>
+<fanart>http://www.serielizados.com/wp-content/uploads/el-pajaro-espino-series-vintage-david-castillo.jpg</fanart>
+</item> 
+
+<item>
+<title>Sandokan</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://assets.lectulandia.com/b/Emilio%20Salgari/Sandokan%20(2698)/big.jpg</thumbnail>
+		<fanart>http://images.indianexpress.com/2015/11/kabir-bedi-sabdokan-759.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/sandokan-t1t2-completas-52204</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://assets.lectulandia.com/b/Emilio%20Salgari/Sandokan%20(2698)/big.jpg</thumbnail>
+<fanart>http://images.indianexpress.com/2015/11/kabir-bedi-sabdokan-759.jpg</fanart>
+</item> 
+
+<item>
+<title>Raises</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.divxatope.com/uploads/torrents/images/thumbnails2/2351_raicesweb.jpg</thumbnail>
+		<fanart>http://www.abc.es/Media/201311/07/Raices--644x362.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/raices-t1completa-52203</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://assets.lectulandia.com/b/Emilio%20Salgari/Sandokan%20(2698)/big.jpg</thumbnail>
+<fanart>http://www.abc.es/Media/201311/07/Raices--644x362.jpg</fanart>
+</item> 
+
+<item>
+<title>Los Camioneros</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://1.bp.blogspot.com/-GiCDlGyOH9A/UIxhJpaML_I/AAAAAAAAasU/B30v7aPsn9U/s400/49326_g.jpg</thumbnail>
+		<fanart>http://2.bp.blogspot.com/-XcgLM2v6EJA/UFkO584Rv-I/AAAAAAAAWB0/W8A7jZ-yhuY/s1600/vlcsnap-2012-09-18-21h08m24s141.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/los-camioneros-completa-52196</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://1.bp.blogspot.com/-GiCDlGyOH9A/UIxhJpaML_I/AAAAAAAAasU/B30v7aPsn9U/s400/49326_g.jpg</thumbnail>
+<fanart>http://2.bp.blogspot.com/-XcgLM2v6EJA/UFkO584Rv-I/AAAAAAAAWB0/W8A7jZ-yhuY/s1600/vlcsnap-2012-09-18-21h08m24s141.png</fanart>
+</item> 
+
+<item>
+<title>Doctor En Alaska</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://multimedia.fnac.com/multimedia/ES/images_produits/ES/ZoomPE/2/2/6/8414906783622.jpg</thumbnail>
+		<fanart>http://www.encadenados.org/rdc/images/stories/todo_demas/num_80/Doctor_en_Alaska-5.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/doctor-en-alaska-t1at6-completa-52192/gallery,1,5</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://multimedia.fnac.com/multimedia/ES/images_produits/ES/ZoomPE/2/2/6/8414906783622.jpg</thumbnail>
+<fanart>http://www.encadenados.org/rdc/images/stories/todo_demas/num_80/Doctor_en_Alaska-5.jpg</fanart>
+</item> 
+
+<item>
+<title>Los Hombres de Harrelson</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://s-media-cache-ak0.pinimg.com/736x/d3/54/2c/d3542c6a7dfca7250795ef6e3410bd7b.jpg</thumbnail>
+		<fanart>http://3.bp.blogspot.com/_X1-xFn8w-i0/TBcC6_sK0oI/AAAAAAAAHeA/I9lwJU8m5CI/s1600/swat1.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/los-hombres-de-harrelson-t1t2-c-52181/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://s-media-cache-ak0.pinimg.com/736x/d3/54/2c/d3542c6a7dfca7250795ef6e3410bd7b.jpg</thumbnail>
+<fanart>http://3.bp.blogspot.com/_X1-xFn8w-i0/TBcC6_sK0oI/AAAAAAAAHeA/I9lwJU8m5CI/s1600/swat1.jpg</fanart>
+</item> 
+
+<item>
+<title>La Fuga de Logan</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://multimedia.fnac.com/multimedia/ES/images_produits/ES/ZoomPE/8/1/1/8436022313118.jpg</thumbnail>
+		<fanart>https://lh3.googleusercontent.com/-hZrhTLCKx9Y/TXj5FsQctrI/AAAAAAAAAVU/OcuYb7tusmM/s1600/LaFugadeLoganLogansRun.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/la-fuga-de-logan-completa-52138</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://multimedia.fnac.com/multimedia/ES/images_produits/ES/ZoomPE/8/1/1/8436022313118.jpg</thumbnail>
+<fanart>https://lh3.googleusercontent.com/-hZrhTLCKx9Y/TXj5FsQctrI/AAAAAAAAAVU/OcuYb7tusmM/s1600/LaFugadeLoganLogansRun.jpg</fanart>
+</item> 
+
+<item>
+<title>los Angeles de Charlie</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://goo.gl/f8kafB</thumbnail>
+		<fanart>http://www.culturamas.es/wp-content/uploads/2013/09/los-%C3%A1ngeles-de-charlie.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/los-angeles-de-charlie-t1ct2inc-52130/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://goo.gl/f8kafB</thumbnail>
+<fanart>http://www.culturamas.es/wp-content/uploads/2013/09/los-%C3%A1ngeles-de-charlie.jpg</fanart>
+</item> 
+
+<item>
+<title>Los Cinco</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/famous_five_tv_series-337629741-large.jpg</thumbnail>
+		<fanart>https://i.ytimg.com/vi/_wszuo8McuM/hqdefault.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/los-cinco-t1t2-completas-52128/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/famous_five_tv_series-337629741-large.jpg</thumbnail>
+<fanart>https://i.ytimg.com/vi/_wszuo8McuM/hqdefault.jpg</fanart>
+</item> 
+
+<item>
+<title>Hombre Rico Hombre Pobre</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://decine21.com/img/upload/obras/Hombre-rico-hombre-pobre-23158/Hombre-rico-hombre-pobre-23158-C.jpg</thumbnail>
+		<fanart>http://blogs.diariovasco.com/series-gourmets/files/2014/06/hombre-rico-cast-e1402309514983.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/hombre-rico-hombre-pobre-t1t2completas-52126/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://decine21.com/img/upload/obras/Hombre-rico-hombre-pobre-23158/Hombre-rico-hombre-pobre-23158-C.jpg</thumbnail>
+<fanart>http://blogs.diariovasco.com/series-gourmets/files/2014/06/hombre-rico-cast-e1402309514983.jpg</fanart>
+</item> 
+
+<item>
+<title>El Halcon Callejero</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://papystreaming.com/es/files/2014/02/El-Halc%C3%B3n-Callejero.jpg</thumbnail>
+		<fanart>http://yofuiaegb.com/wp-content/uploads/2015/06/Street-Hawk.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/el-halcon-callejero-t-unicacompleta-51814</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://papystreaming.com/es/files/2014/02/El-Halc%C3%B3n-Callejero.jpg</thumbnail>
+<fanart>http://yofuiaegb.com/wp-content/uploads/2015/06/Street-Hawk.jpg</fanart>
+</item> 
+
+<item>
+<title>El Trueno Azul</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.ionlitio.com/images/2010/11/trueno-azul.jpg</thumbnail>
+		<fanart>http://photos1.blogger.com/blogger/4000/3003/1600/BlueThunder.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/el-trueno-azul-t-unicacompleta-51813</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.ionlitio.com/images/2010/11/trueno-azul.jpg</thumbnail>
+<fanart>http://photos1.blogger.com/blogger/4000/3003/1600/BlueThunder.jpg</fanart>
+</item> 
+
+<item>
+<title>El Tunel del Tiempo</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://seriesblanco.com/files/uploads/3242.jpg</thumbnail>
+		<fanart>http://seriesblanco.com/files/uploads/3242.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/el-tunel-del-tiempo-t-unicacompleta-51807/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://seriesblanco.com/files/uploads/3242.jpg</thumbnail>
+<fanart>http://seriesblanco.com/files/uploads/3242.jpg</fanart>
+</item> 
+
+<item>
+<title>Superagente 86</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://goo.gl/XVWVyp</thumbnail>
+		<fanart>http://www.todoretro.com/wp-content/uploads/2013/07/29.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/superagente-86-t1at5-completas-51764/gallery,1,6</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://goo.gl/XVWVyp</thumbnail>
+<fanart>http://www.todoretro.com/wp-content/uploads/2013/07/29.jpg</fanart>
+</item> 
+
+<item>
+<title>Starsky y Hutch</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/starsky_hutch_tv_series-896320453-large.jpg</thumbnail>
+		<fanart>http://img.actualidadmotor.com/wp-content/uploads/2011/03/starsky-and-hutch-torino.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/starsky-hutch-t1yt2-c-t3yt4-inc-51692/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/starsky_hutch_tv_series-896320453-large.jpg</thumbnail>
+<fanart>http://img.actualidadmotor.com/wp-content/uploads/2011/03/starsky-and-hutch-torino.jpg</fanart>
+</item> 
+
+<item>
+<title>Corrupcion en Miami</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.cineol.net/galeria/carteles/bigtmp_263serie.jpg</thumbnail>
+		<fanart>http://odstatic.com/todoseries.com/miami-vice.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/corrupcion-en-miami-t1at5-c-51691/gallery,1,5</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.cineol.net/galeria/carteles/bigtmp_263serie.jpg</thumbnail>
+<fanart>http://odstatic.com/todoseries.com/miami-vice.jpg</fanart>
+</item> 
+
+<item>
+<title>Aupista Hacia el Cielo</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://3.bp.blogspot.com/-bZgneYrUtoo/UxvqOwq8NCI/AAAAAAAARzI/BAERAqG__C8/s1600/autopista.jpg</thumbnail>
+		<fanart>http://blogs.diariovasco.com/series-gourmets/files/2014/04/landon.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/autopista-hacia-el-cielo-t1at3-completas-51687/gallery,1,4</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/-bZgneYrUtoo/UxvqOwq8NCI/AAAAAAAARzI/BAERAqG__C8/s1600/autopista.jpg</thumbnail>
+<fanart>http://blogs.diariovasco.com/series-gourmets/files/2014/04/landon.jpg</fanart>
+</item> 
+
+<item>
+<title>Mission Impossible</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/mission_impossible_tv_series-540967023-large.jpg</thumbnail>
+		<fanart>http://s3-eu-west-1.amazonaws.com/cinemania-cdn/wp-content/uploads/2016/05/20020240/960.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/mission-impossible-t1at7-completa-51678/gallery,1,8</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/mission_impossible_tv_series-540967023-large.jpg</thumbnail>
+<fanart>http://s3-eu-west-1.amazonaws.com/cinemania-cdn/wp-content/uploads/2016/05/20020240/960.jpg</fanart>
+</item> 
+
+<item>
+<title>Seaquest</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://i43.tower.com/images/mm107087765/seaquest-dsv-series-1-complete-dvd-cover-art.jpg</thumbnail>
+		<fanart>http://es.web.img2.acsta.net/pictures/14/03/17/13/19/207799.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/seaquest-t1at3-completa-51673/gallery,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i43.tower.com/images/mm107087765/seaquest-dsv-series-1-complete-dvd-cover-art.jpg</thumbnail>
+<fanart>http://es.web.img2.acsta.net/pictures/14/03/17/13/19/207799.jpg</fanart>
+</item> 
+
+<item>
+<title>El Coche Fantastico</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://laguiatv.abc.es/archivos/201112/cochefantastico.jpg</thumbnail>
+		<fanart>http://yofuiaegb.com/wp-content/uploads/2015/07/Knight-rider.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/el-coche-fantastico-t1at4-completa-51665/gallery,1,4</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://laguiatv.abc.es/archivos/201112/cochefantastico.jpg</thumbnail>
+<fanart>http://yofuiaegb.com/wp-content/uploads/2015/07/Knight-rider.jpg</fanart>
+</item> 
+
+<item>
+<title>Star Treck</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://images5.fanpop.com/image/photos/27300000/Star-Trek-TOS-star-trek-27332936-459-700.jpg</thumbnail>
+		<fanart>http://goo.gl/Zs0wCw</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/star-trek-tos-t1at3-completa-51656/gallery,1,4</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://images5.fanpop.com/image/photos/27300000/Star-Trek-TOS-star-trek-27332936-459-700.jpg</thumbnail>
+<fanart>http://goo.gl/Zs0wCw</fanart>
+</item> 
+
+<item>
+<title>Star Treck</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://images5.fanpop.com/image/photos/27300000/Star-Trek-TOS-star-trek-27332936-459-700.jpg</thumbnail>
+		<fanart>http://goo.gl/Zs0wCw</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/star-trek-tos-t1at3-completa-51656/gallery,1,4</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://images5.fanpop.com/image/photos/27300000/Star-Trek-TOS-star-trek-27332936-459-700.jpg</thumbnail>
+<fanart>http://goo.gl/Zs0wCw</fanart>
+</item> 
+
+<item>
+<title>Remington Steele</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/remington_steele_tv_series-334539667-large.jpg</thumbnail>
+		<fanart>https://diariodeunatelefila.files.wordpress.com/2014/03/promo-remington-steele.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/remington-steele-t1at5-completa-51654/gallery,1,4</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/remington_steele_tv_series-334539667-large.jpg</thumbnail>
+<fanart>https://diariodeunatelefila.files.wordpress.com/2014/03/promo-remington-steele.jpg</fanart>
+</item> 
+
+<item>
+<title>Luz de Luna</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://goo.gl/ipq4SR</thumbnail>
+		<fanart>https://i.ytimg.com/vi/GSMD9RsD8ew/hqdefault.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/luz-de-luna-t1at5-completa-51649/gallery,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://goo.gl/ipq4SR</thumbnail>
+<fanart>https://i.ytimg.com/vi/GSMD9RsD8ew/hqdefault.jpg</fanart>
+</item> 
+
+<item>
+<title>Automan</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.newvideo.com/wp-content/uploads/2015/09/AutomanTCSCover300dpi.jpeg</thumbnail>
+		<fanart>http://www.notrecinema.com/images/films/17000/17418__334597668_640.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Cuspide/automan-t-unicacompleta-49816</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.newvideo.com/wp-content/uploads/2015/09/AutomanTCSCover300dpi.jpeg</thumbnail>
+<fanart>http://www.notrecinema.com/images/films/17000/17418__334597668_640.jpg</fanart>
+</item> 
+
 
