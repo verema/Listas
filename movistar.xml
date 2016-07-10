@@ -28,7 +28,7 @@
 <thumbnail>http://i.imgur.com/aZKxEjN.jpg</thumbnail>
 </item>
 
-<item>
+<tem>
 <title>#0</title>
 <link>plugin://plugin.video.f4mTester/?url=http://www.elboxtv.com:1985/live/nassim/nassim/1927.ts&amp;streamtype=TSDOWNLOADER&amp;name=#0</link>
 <thumbnail>http://i.imgur.com/JvpukWA.jpg</thumbnail>
@@ -113,7 +113,7 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Liga</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1670.ts&amp;streamtype=TSDOWNLOADER&amp;name=Liga</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
@@ -127,7 +127,7 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>+ Liga 2</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/1218.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Liga 2</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
@@ -141,14 +141,14 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
-<item>
+<tem>
 <title>Deportes</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/155.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Deportes</link>
 <thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Deportes 2</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1675.ts&amp;streamtype=TSDOWNLOADER&amp;name=Deportes 2</link>
 <thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
@@ -162,7 +162,7 @@
 <title>Canal+ Futbol[COLOR red] Con Plexus[/COLOR]</title>
 </item>
 
-<item>
+<tem>
 <title>+ Futbol</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/156.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Futbol</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canal-plus-bar.jpg</thumbnail>
@@ -202,7 +202,7 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>+ Golf</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/412.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Gol</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalGolf.jpg</thumbnail>
@@ -252,6 +252,22 @@
 <tem>
 <title>Evento F1 hd</title>
 <f4m>http://stream-ec.vty.dailymotion.com/13/dm/1/x4hcpw5/live.isml/events(live-1466335651)/live-audio=128000-video=2000000.m3u8</f4m>
+</item>
+
+<item>
+<title>Evento F1</title>	
+<link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportemixtv.eu')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportemixtv.eu/canales/1.php</page>			
+</regex>
+<thumbnail></thumbnail>
 </item>
 
 <tem>
@@ -325,7 +341,7 @@
 <fanart></fanart>
 </item>
 
-<item>
+<tem>
 <title>Formula 1</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/6794.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3102.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
@@ -348,7 +364,7 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Moto GP</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/2085.ts&amp;streamtype=TSDOWNLOADER&amp;name=Moto GP</link>
 <thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
@@ -407,7 +423,7 @@ thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item> 
 
-<item>
+<tem>
 <title>Comedia</title>
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1674.ts&amp;streamtype=TSDOWNLOADER&amp;name=Comedia</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-3.jpg</thumbnail>
@@ -421,7 +437,7 @@ thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>SeriesXtra</title>
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1669.ts&amp;streamtype=TSDOWNLOADER&amp;name=SeriesXtra</link>
 <thumbnail>http://i.imgur.com/0XwnQQ5.jpg</thumbnail>
@@ -435,7 +451,7 @@ thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Series</title>
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1668.ts&amp;streamtype=TSDOWNLOADER&amp;name=Series</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalSeries.jpg</thumbnail>
