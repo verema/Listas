@@ -25,6 +25,32 @@
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#114;&#101;&#116;&#114;&#111;&#046;&#120;&#109;&#108;</externallink>	
 </item>
 
+<item>
+<title>[COLOR red]TV Latina[/COLOR]</title>
+<link>$doregex[makelist]</link>
+ <regex>
+ <name>makelist</name>
+ <listrepeat><![CDATA[<title>[makelist.param1]</title> <link>$doregex[Final_URL]</link> <regex><name>Final_URL</name><expres>$pyFunction: '$doregex[getURL1]|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf' if not '$doregex[getURL1]'=='' else 'plugin://plugin.video.youtube/play/?video_id=CEGSitBJ7Gw' </expres><page></page></regex> <regex><name>getURL1</name><expres>file: [",'](.*?)[",'],</expres><page>$doregex[frame]</page><referer>http://latino-webtv.com/</referer><cookieJar></cookieJar></regex> <regex><name>frame</name><expres>frame NAME=.*?[SRC,src]=[",'](.*?)[",'] FRAMEBORDER="\d</expres><page>$doregex[Final_Frame]</page><referer>http://latino-webtv.com/</referer><cookieJar></cookieJar></regex> <regex><name>Final_Frame</name><expres>$pyFunction: '$doregex[Frame1]' if not '$doregex[Frame1]'=='' else '$doregex[Frame2]' </expres><page></page></regex> <regex><name>Frame1</name><expres>iframe src=[",'](.*?)[",'] width="\d</expres><page>http://latino-webtv.com/[makelist.param1]/</page><referer>http://latino-webtv.com/</referer><cookieJar></cookieJar></regex> <thumbnail>[makelist.param2]</thumbnail>]]></listrepeat>
+ <expres>a href=[",']([^<]*)/[",'].*?src=[",']([^<]*)[",']\W</expres>
+ <page>http://latino-webtv.com/</page>
+ <cookieJar></cookieJar>
+ </regex><regex>
+ <name>Frame2</name>
+ <expres>frame NAME=.*?[SRC,src]=[",'](.*?)[",'] FRAMEBORDER="\d</expres>
+ <page>http://embed.latino-webtv.com/$doregex[channel].html</page>
+ <referer>http://latino-webtv.com/</referer>
+ <cookieJar></cookieJar>
+ </regex><regex>
+ <name>channel</name>
+ <expres>channel=[",'](.*?)[",'];</expres>
+ <page>http://latino-webtv.com/[makelist.param1]/</page>
+ <referer>http://latino-webtv.com/</referer>
+ <cookieJar></cookieJar>
+ </regex>
+<thumbnail>http://i.imgur.com/lXxIT8w.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+ </item>
+
  
 <tem>
 <title> [COLOR red]24/7[/COLOR]</title>
