@@ -1470,4 +1470,66 @@
 <fanart>http://www.mubis.es/media/users/3724/131412/macgyver-os-gusto-esta-serie-que-nota-le-dais-original.jpg</fanart>
 </item>
 
+<item>
+<title>Twin peaks</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://es.web.img2.acsta.net/pictures/15/10/12/14/18/321118.jpg</thumbnail>
+		<fanart>http://www.farandula.com/wp-content/uploads/2015/07/FARANDULA-TWIN-PEAKS-SERIES-DAVID-LYNCH.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Koba1994/twin-peaks-35862/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://es.web.img2.acsta.net/pictures/15/10/12/14/18/321118.jpg</thumbnail>
+<fanart>http://www.farandula.com/wp-content/uploads/2015/07/FARANDULA-TWIN-PEAKS-SERIES-DAVID-LYNCH.jpg</fanart>
+</item> 
+
+<item>
+<title>Verano Azul</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://s-media-cache-ak0.pinimg.com/236x/8e/87/90/8e879012c6ace792322929173d40fcd9.jpg</thumbnail>
+		<fanart>http://img.rtve.es/v/1181130?w=1180&preview=1314192497102.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/chicho306/verano-azul-50744</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://s-media-cache-ak0.pinimg.com/236x/8e/87/90/8e879012c6ace792322929173d40fcd9.jpg</thumbnail>
+<fanart>http://img.rtve.es/v/1181130?w=1180&preview=1314192497102.jpg</fanart>
+</item> 
+
 
