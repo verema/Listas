@@ -161,8 +161,8 @@ http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&password=SnoQc6v4hZ&type=m3
 
 http://www.x-media.tv:58080/get.php?username=qwerty&password=NJAnbY36eE&type=m3u
 
-<tem>
-<title> [COLOR lime]IPTV España 2[/COLOR]</title>
+<item>
+<title> [COLOR lime]IPTV España 6[/COLOR]</title>
 <thumbnail></thumbnail>
 <fanart></fanart>
 <link>$doregex[makelist]</link>
@@ -174,11 +174,13 @@ http://www.x-media.tv:58080/get.php?username=qwerty&password=NJAnbY36eE&type=m3u
 	<thumbnail></thumbnail>
 	<fanart></fanart>
 ]]></listrepeat>
-<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
-<page>http://IPTV-VOLKAN.NET:8000/get.php?username=edine&amp;password=edine&amp;type=m3u</page>
+<expres>#EXTINF:-1,SP:(.*?)\n(.*)</expres>
+<page>http://solofast.ddns.net:44222/get.php?username=2srganiptvvranj2016&amp;password=Serganvranjetest2019amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
+
+http://solofast.ddns.net:44222/get.php?username=2srganiptvvranj2016&password=Serganvranjetest2019&type=m3u
 
 <tem>
 <title> [COLOR lime]IPTV España 2/2[/COLOR]</title>
