@@ -154,12 +154,12 @@ http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&password=SnoQc6v4hZ&type=m3
 	<fanart></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
-<page>http://www.x-media.tv:58080/get.php?username=qwerty&amp;password=NJAnbY36eE&amp;type=m3u</page>
+<page>http://iptvx.starynos.com:8000/get.php?username=tvstarcccam.com&amp;password=lOPuMApVt2&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
 
-http://www.x-media.tv:58080/get.php?username=qwerty&password=NJAnbY36eE&type=m3u
+http://iptvx.starynos.com:8000/live/tvstarcccam.com/lOPuMApVt2/967.ts
 
 <item>
 <title> [COLOR lime]IPTV España 6[/COLOR]</title>
