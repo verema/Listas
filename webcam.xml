@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 
-
 <channels>
 <channels_info> 
 <title>Camaras Del Mundo</title>
@@ -15,13 +14,26 @@
 
 
 <channel>
-<name>Barcelona</name>
+<name>España</name>
 <thumbnail></thumbnail>
 <fanart></fanart>
 <items>
 
 <item>
-  <title>Playa de Sant Sebastia</title>
+  <title>[COLOR lime]Girona [/COLOR]Lloret de mar</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/cataluna/gerona/lloret-de-mar-costa-brava.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item>
+
+<item>
+  <title>[COLOR lime]Barcelona [/COLOR]Playa de Sant Sebastia</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -35,7 +47,7 @@
 
 
 <item>
-  <title>Playa La Barceloneta</title>
+  <title>[COLOR lime]Barcelona [/COLOR]Playa La Barceloneta</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -46,10 +58,390 @@
   <cookieJar></cookieJar>
   </regex>
 </item>
+
+<item>
+<title>[COLOR lime]Cádiz[/COLOR] Puente de la Constitución de 1812</title>
+<link>plugin://plugin.video.youtube/play/?video_id=krIypJ2MEBU</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+			
+<item>
+<title>[COLOR lime]Cádiz[/COLOR] Puente Carranza</title>
+<link>plugin://plugin.video.youtube/play/?video_id=c3FDiVe2egU</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item> 
+
+<item>
+  <title>[COLOR lime]Baleares [/COLOR]La Savina - Formentera</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/islas-baleares/formentera/la-savina.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Playa de Los Cristianos - Tenerife</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/playa-los-cristianos.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Catamaran Royal Delfin - Tenerife</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/catamarano-royal-delfin.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Playa Grande en Las Canteras - Gran Canaria</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/las-palmas-gran-canaria/playa-grande-las-canteras.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Las Palmas - Playa Las Canteras</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/las-palmas-gran-canaria/playa-las-canteras.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Paseo las Vistas</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/paseo-las-vistas.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Puerto Colon</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/puerto-colon-costa-adeje.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - La Orotava</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/la-orotava.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - El Medano</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/el-medano.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Las palmas - Costa Tequise</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/las-palmas/costa-teguise.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Gran Meleia Redlevel Garden</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/gran-melia-redlevel-garden.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Puerto de la Cruz</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/puerto-de-la-cruz-tenerife.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Las palmas - La Cicer Las Canteras</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/las-palmas-gran-canaria/la-cicer-las-canteras.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Santa Cruz de Tenerife</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/santa-cruz-de-tenerife.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Playa de el Medano</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/playa-de-el-medano.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Playa Troya</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/playa-troya.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Playa de Fanabe</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/playa-de-fanabe.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - El Teide</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/el-teide.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Golf Costa Adeje</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/golf-costa-adeje.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Plaza de la Candelaria</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/plaza-de-la-candelaria.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Macizo de Anaga</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/macizo-de-anaga.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]tenerife - Surf kitesurf Medano</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/surf-kitesurf-medano.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Las palmas - Playa las Cucharas</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/las-palmas/playa-las-cucharas.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]tenerife - Los Gigantes</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/los-gigantes.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - las Galletas</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/las-galletas.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Karting Club Tenerife</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/canarias/santa-cruz-de-tenerife/karting-club-tenerife.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Islas Canarias [/COLOR]La Savina - Formentera</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/islas-baleares/formentera/la-savina.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Islas Canarias [/COLOR]La Savina - Formentera</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/islas-baleares/formentera/la-savina.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+
 </items>
 </channel>
 
-<channel>
+<hannel>
 <name>Cádiz</name>
 <thumbnail></thumbnail>
 <fanart></fanart>
