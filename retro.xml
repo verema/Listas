@@ -1753,4 +1753,42 @@
 <fanart>http://cdn01.ts.infobae.com/adjuntos/164/imagenes/013/811/0013811591.jpg</fanart>
 </item> 
 
+<item>
+<title>Stargate SG1</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://img.123movies.to/2016/03/28/poster/da438f6acdfc260c8d2a5fe6d0d948cc-stargate-sg1-season-10.jpg</thumbnail>
+		<fanart>http://www.geek.com/wp-content/uploads/2014/10/stargate-sg1-stargate-sg1-atlantis-2469585-1152-785.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/titotv/stargate-sg1-atlantis-universe-en-espanol-1203/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/titotv/stargate-sg1-atlantis-universe-en-espanol-1203/list,1,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://img.123movies.to/2016/03/28/poster/da438f6acdfc260c8d2a5fe6d0d948cc-stargate-sg1-season-10.jpg</thumbnail>
+<fanart>http://www.geek.com/wp-content/uploads/2014/10/stargate-sg1-stargate-sg1-atlantis-2469585-1152-785.jpg</fanart>
+</item>
+
 
