@@ -71,4 +71,20 @@
 </items>
 </channel>
 
+<channel>
+<name>Tokyo</name>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<items>
+	
+<item>
+<title>Shibuya scramble crossing</title>
+<link>plugin://plugin.video.youtube/play/?video_id=6q36pnzcw70</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>  
+</items>
+</channel>	
+	
+
 </channels>
