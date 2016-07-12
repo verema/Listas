@@ -3,7 +3,7 @@
 
 <channels>
 <channels_info> 
-<title>Camaras Del Mundo</title>
+<title>Camaras Del Mundo[/COLOR]</title>
 <genre>Wepcam</genre>
 <description>La mejores webcaps</description>
 <thumbnail></thumbnail>
@@ -20,7 +20,7 @@
 <items>
 
 <item>
-  <title>[COLOR lime]Girona [/COLOR]Lloret de mar</title>
+  <title>[COLOR lime]Girona [/COLOR][COLOR golden]Lloret de mar[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -33,7 +33,7 @@
 </item>
 
 <item>
-  <title>[COLOR lime]Barcelona [/COLOR]Playa de Sant Sebastia</title>
+  <title>[COLOR lime]Barcelona [/COLOR][COLOR golden]Playa de Sant Sebastia[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -47,7 +47,7 @@
 
 
 <item>
-  <title>[COLOR lime]Barcelona [/COLOR]Playa La Barceloneta</title>
+  <title>[COLOR lime]Barcelona [/COLOR][COLOR golden]Playa La Barceloneta[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -60,21 +60,21 @@
 </item>
 
 <item>
-<title>[COLOR lime]Cádiz[/COLOR] Puente de la Constitución de 1812</title>
+<title>[COLOR lime]Cádiz[/COLOR][COLOR golden] Puente de la Constitución de 1812[/COLOR]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=krIypJ2MEBU</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
 			
 <item>
-<title>[COLOR lime]Cádiz[/COLOR] Puente Carranza</title>
+<title>[COLOR lime]Cádiz[/COLOR][COLOR golden] Puente Carranza[/COLOR]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=c3FDiVe2egU</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item> 
 
 <item>
-  <title>[COLOR lime]Baleares [/COLOR]La Savina - Formentera</title>
+  <title>[COLOR lime]Baleares [/COLOR][COLOR golden]La Savina - Formentera[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -87,7 +87,20 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Playa de Los Cristianos - Tenerife</title>
+  <title>[COLOR lime]Baleares [/COLOR][COLOR golden]Ibiza - Cala Vadella[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/islas-baleares/ibiza/cala-vadella.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<item>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Playa de Los Cristianos[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -100,7 +113,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Catamaran Royal Delfin - Tenerife</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Catamaran Royal Delfin[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -113,7 +126,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Playa Grande en Las Canteras - Gran Canaria</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Gran Canaria - Playa Grande en Las Canteras[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -126,7 +139,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Las Palmas - Playa Las Canteras</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Las Palmas - Playa Las Canteras[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -139,7 +152,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Paseo las Vistas</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Paseo las Vistas[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -152,7 +165,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Puerto Colon</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Puerto Colon[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -165,7 +178,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - La Orotava</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - La Orotava[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -178,7 +191,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - El Medano</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - El Medano[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -191,7 +204,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Las palmas - Costa Tequise</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Las palmas - Costa Tequise[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -204,7 +217,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Gran Meleia Redlevel Garden</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Gran Meleia Redlevel Garden[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -217,7 +230,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Puerto de la Cruz</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Puerto de la Cruz[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -230,7 +243,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Las palmas - La Cicer Las Canteras</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Las palmas - La Cicer Las Canteras[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -243,7 +256,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Santa Cruz de Tenerife</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Santa Cruz de Tenerife[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -256,7 +269,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Playa de el Medano</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Playa de el Medano[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -269,7 +282,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Playa Troya</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Playa Troya[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -282,7 +295,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Playa de Fanabe</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Playa de Fanabe[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -295,7 +308,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - El Teide</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - El Teide[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -308,7 +321,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Golf Costa Adeje</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Golf Costa Adeje[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -321,7 +334,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Plaza de la Candelaria</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Plaza de la Candelaria[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -334,7 +347,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Macizo de Anaga</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Macizo de Anaga[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -347,7 +360,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]tenerife - Surf kitesurf Medano</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]tenerife - Surf kitesurf Medano[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -360,7 +373,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Las palmas - Playa las Cucharas</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Las palmas - Playa las Cucharas[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -373,7 +386,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]tenerife - Los Gigantes</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]tenerife - Los Gigantes[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -386,7 +399,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - las Galletas</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - las Galletas[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -399,7 +412,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR]Tenerife - Karting Club Tenerife</title>
+  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR golden]Tenerife - Karting Club Tenerife[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -412,26 +425,247 @@
 </item> 
 
 <tem>
-  <title>[COLOR lime]Islas Canarias [/COLOR]La Savina - Formentera</title>
+  <title>[COLOR lime]Cantabria [/COLOR][COLOR golden]Santilla del Mar[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
   <name>playUrl</name>
   <expres>url:'(.+m3u8.+?)'</expres>
-  <page>https://www.skylinewebcams.com/en/webcam/espana/islas-baleares/formentera/la-savina.html</page>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/cantabria/santillana-del-mar/santillana-del-mar-cantabria.html</page>
   <agent>Mozilla/5.0</agent>
   <cookieJar></cookieJar>
   </regex>
 </item> 
 
 <tem>
-  <title>[COLOR lime]Islas Canarias [/COLOR]La Savina - Formentera</title>
+  <title>[COLOR lime]Madrid [/COLOR][COLOR golden]Puerta del Sol Tio Pepe[/COLOR]</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
   <name>playUrl</name>
   <expres>url:'(.+m3u8.+?)'</expres>
-  <page>https://www.skylinewebcams.com/en/webcam/espana/islas-baleares/formentera/la-savina.html</page>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-de-madrid/madrid/puerta-del-sol-tio-pepe.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item>
+
+<tem>
+  <title>[COLOR lime]Madrid [/COLOR][COLOR golden]Puerta del Sol[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-de-madrid/madrid/puerta-del-sol.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item>
+
+<tem>
+  <title>[COLOR lime]Madrid [/COLOR][COLOR golden]Edificio Metropolis[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-de-madrid/madrid/edificio-metropolis.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item>
+
+<tem>
+  <title>[COLOR lime]Madrid [/COLOR][COLOR golden]Calle Gran Via[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-de-madrid/madrid/calle-gran-via.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item>
+
+<tem>
+  <title>[COLOR lime]Madrid [/COLOR][COLOR golden]Calle Alcala[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-de-madrid/madrid/calle-alcala.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item>
+
+<tem>
+  <title>[COLOR lime]Madrid [/COLOR][COLOR golden]Plaza España[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-de-madrid/madrid/plaza-de-espana.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Murcia [/COLOR][COLOR golden]Bullas - Plaza España[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/region-de-murcia/murcia/bullas-plaza-de-espana.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Murcia [/COLOR][COLOR golden]Plaza del Arco[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/region-de-murcia/murcia/plaza-del-arco.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Murcia [/COLOR][COLOR golden]Manga del Mar Menor[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/region-de-murcia/murcia/manga-mar-menor.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Murcia [/COLOR][COLOR golden]Cartagena - manga del Mar Menor[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/region-de-murcia/murcia/manga-mar-menor-cartagena.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Murcia [/COLOR][COLOR golden]Mula[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/region-de-murcia/murcia/mula.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR golden]Benidorm - Playa Poniente[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-valenciana/alicante/benidorm-playa-poniente.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR golden]Benidorm - Playa Alicante[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-valenciana/alicante/benidorm-playa-alicante.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR golden]Benidorm - Playa Poniente Sur[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-valenciana/alicante/benidorm-playa-poniente-sur.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR golden]Alicante - Playa Albir[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-valenciana/alicante/alicante-playa-albir.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR golden]Benidorm - Playa Levante[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-valenciana/alicante/benidorm-playa-levante.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR golden]Altea - Playa la Roda[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-valenciana/alicante/altea-playa-la-roda.html</page>
+  <agent>Mozilla/5.0</agent>
+  <cookieJar></cookieJar>
+  </regex>
+</item> 
+
+<tem>
+  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR golden]Alicante - Playa del Albir[/COLOR]</title>
+  <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
+  
+  <regex>
+  <name>playUrl</name>
+  <expres>url:'(.+m3u8.+?)'</expres>
+  <page>https://www.skylinewebcams.com/en/webcam/espana/comunidad-valenciana/alicante/playa-del-albir.html</page>
   <agent>Mozilla/5.0</agent>
   <cookieJar></cookieJar>
   </regex>
@@ -448,14 +682,14 @@
 <items>
 
 <item>
-<title>Puente de la Constitución de 1812</title>
+<title>Puente de la Constitución de 1812[/COLOR]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=krIypJ2MEBU</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
 			
 <item>
-<title>Puente Carranza</title>
+<title>Puente Carranza[/COLOR]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=c3FDiVe2egU</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
@@ -470,13 +704,13 @@
 <items>
 	
 <item>
-<title>Shibuya scramble crossing</title>
+<title>Shibuya scramble crossing[/COLOR]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=6q36pnzcw70</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>  
 </items>
 </channel>	
-	
+
 
 </channels>
