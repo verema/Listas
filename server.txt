@@ -1,6 +1,6 @@
 
 Server:"[COLOR lightgreen]Julio 12[/COLOR]" URL="http://catoalkodi.info/kodi";
-Server:"033" URL="http://cp.dmbshare.net:8000/get.php?username=zitouni&password=zitouni&type=m3u";
+Servidor:"033" URL="http://cp.dmbshare.net:8000/get.php?username=zitouni&password=zitouni&type=m3u";
 Server:"034" URL="http://bhcardsharingiptv.hopto.org:8000/get.php?username=rankoitv&password=UXiZQPHVBK&type=m3u";
 Server:"036" URL="http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&password=lvwm5YIlAi&type=m3u"; regex" " 
 Server:"037" URL="http://91.134.217.235:1557/get.php?username=ARIVA&password=klnWxK6MI2&type=m3u"; regex"ES:"
