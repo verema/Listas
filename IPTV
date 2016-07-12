@@ -193,7 +193,7 @@ http://iptv.re:80/get.php?username=iptv-free&password=iptv-free&type=m3u
 	<thumbnail></thumbnail>
 	<fanart></fanart>
 ]]></listrepeat>
-<expres>#EXTINF:-1,ES (.*?)\n(.*)</expres>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
 <page>http://ksportiptv.com:1557/get.php?username=12/07/2016&amp;password=PW4UqMy6wV&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
