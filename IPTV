@@ -57,7 +57,26 @@
 </regex>
 </item>
 
-http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&password=75019pa&type=m3u
+<item>
+<title> [COLOR lime]IPTV Varios Paises 3[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&amp;password=lvwm5YIlAi&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&password=lvwm5YIlAi&type=m3u
 
 <item>
 <title> [COLOR lime]IPTV España 1[/COLOR]</title>
@@ -175,12 +194,12 @@ http://iptv.re:80/get.php?username=iptv-free&password=iptv-free&type=m3u
 	<fanart></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,ES (.*?)\n(.*)</expres>
-<page>http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&amp;password=lvwm5YIlAi&amp;type=m3u</page>
+<page>http://ksportiptv.com:1557/get.php?username=12/07/2016&amp;password=PW4UqMy6wV&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
+http://ksportiptv.com:1557/get.php?username=12/07/2016&password=PW4UqMy6wV&type=m3u
 
-http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&password=lvwm5YIlAi&type=m3u
 
 <item>
 <title> [COLOR lime]IPTV España 7[/COLOR]</title>
