@@ -1923,18 +1923,18 @@
 </item>
 
 <item>
-<title>El Principe de Bell Air</title>
+<title>Sabrina Cosas de Brujas</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
         <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://3.bp.blogspot.com/--8ZbTBgVZoY/UIx3QFNIQCI/AAAAAAAAKh0/dqiryyHt9Ro/s400/1163629-gf.jpg</thumbnail>
-		<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201508/118828.alfabetajuega-el-principe-de-bel-air-180815.jpg</fanart>
+        <thumbnail>http://3.bp.blogspot.com/-9cYxMCD7M9k/T-YLMDlmQ6I/AAAAAAAAMZw/aOv2VQzchsI/s400/18123_12_951.jpg</thumbnail>
+		<fanart>http://www.losreplicantes.com/images/articulos/0000/14/4.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/minhus/series-esp-el-principe-de-bell-air-56756/gallery,1,6</page>
+<page>http://copiapop.com/aisha/sabrina-cosas-de-brujas-59893/gallery,1,7</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -1949,8 +1949,101 @@
 <X-Req>XMLHttpRequest</X-Req>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://3.bp.blogspot.com/--8ZbTBgVZoY/UIx3QFNIQCI/AAAAAAAAKh0/dqiryyHt9Ro/s400/1163629-gf.jpg</thumbnail>
-<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201508/118828.alfabetajuega-el-principe-de-bel-air-180815.jpg</fanart>
+<thumbnail>http://3.bp.blogspot.com/-9cYxMCD7M9k/T-YLMDlmQ6I/AAAAAAAAMZw/aOv2VQzchsI/s400/18123_12_951.jpg</thumbnail>
+<fanart>http://www.losreplicantes.com/images/articulos/0000/14/4.jpg</fanart>
+</item>
+
+<item>
+<title>Hostal Royal Manzanares</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://es.web.img3.acsta.net/pictures/15/06/11/10/26/578661.jpg</thumbnail>
+		<fanart>https://i.ytimg.com/vi/xnEaawUxaos/hqdefault.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/aisha/hostal-royal-manzanares-64877/gallery,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://es.web.img3.acsta.net/pictures/15/06/11/10/26/578661.jpg</thumbnail>
+<fanart>https://i.ytimg.com/vi/xnEaawUxaos/hqdefault.jpg</fanart>
+</item>
+
+<item>
+<title>Er Urgencias</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/e_r_tv_series-570742193-large.jpg</thumbnail>
+		<fanart>http://2.bp.blogspot.com/-IwdrTCmXViQ/VBuFZJW1GuI/AAAAAAAABhs/8pEKFW58gz8/s1600/Wallpaper-er-32359697-1280-720.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/aisha/er-urgencias-castellano-56320/gallery,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/e_r_tv_series-570742193-large.jpg</thumbnail>
+<fanart>http://2.bp.blogspot.com/-IwdrTCmXViQ/VBuFZJW1GuI/AAAAAAAABhs/8pEKFW58gz8/s1600/Wallpaper-er-32359697-1280-720.jpg</fanart>
+</item>
+
+<item>
+<title>Dinosaurios</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://4.bp.blogspot.com/-2ovg2H_C9zk/UmLGs8LNM-I/AAAAAAAA0nU/Z8ZSVcPouXg/s1600/dinosaurs+01.jpg</thumbnail>
+		<fanart>http://k30.kn3.net/taringa/3/9/2/A/6/3/antoni16z16/693.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Koba1994/dinosaurios-serie-58604/gallery,1,3</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://4.bp.blogspot.com/-2ovg2H_C9zk/UmLGs8LNM-I/AAAAAAAA0nU/Z8ZSVcPouXg/s1600/dinosaurs+01.jpg</thumbnail>
+<fanart>http://k30.kn3.net/taringa/3/9/2/A/6/3/antoni16z16/693.jpg</fanart>
 </item>
 
 
