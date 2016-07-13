@@ -65,8 +65,23 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
-			
+
 <item>
+<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812/3[/COLOR]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=KFsFWLeIBfQ</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Plaza de Sevilla[/COLOR]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=jFELUgq46WA</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+			
+<tem>
 <title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente Carranza[/COLOR]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=c3FDiVe2egU</link>
 <thumbnail></thumbnail>
