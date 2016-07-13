@@ -12,7 +12,7 @@ Server:"045" URL="http://pro-vision.dyndns.pro:12580/get.php?username=javier403&
 Server:"046" URL="http://offside.uk.to:11118/get.php?username=ainhoa&password=tauro&type=m3u"; regex"ES:"
 Server:"047" URL="http://bb1.sendevric.com:8000/get.php?username=marksat380&password=mQS7OiuFY9&type=m3u"; regex"ES"
 Server:"048" URL="http://www.q7t1.com:8000/get.php?username=sliti&password=dmV9FUkIpn&type=m3u"; regex"ES_"
-
+Server:"000" URL="http://cp.dmbshare.net:8000/get.php?username=zitouni&password=zitouni&type=m3u"
 
 Server:"[COLOR lightgreen]July 11[/COLOR]" URL="http://catoalkodi.info/kodi";
 Server:"023" URL="http://89.163.148.31:8000/get.php?username=mark2&password=mark2&type=m3u"; regex" "
