@@ -1829,4 +1829,128 @@
 <fanart>http://www.tvdeguardia.com/wp-content/uploads/2014/07/un-paso-adelante-elenco.jpg</fanart>
 </item>
 
+<item>
+<title>Los Sopranos</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/the_sopranos_tv_series-356875926-large.jpg</thumbnail>
+		<fanart>http://elpalomitron.com/wp-content/uploads/2015/06/Los-soprano-personajes.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/minhus/series-esp-los-soprano-57347/gallery,1,4</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/the_sopranos_tv_series-356875926-large.jpg</thumbnail>
+<fanart>http://elpalomitron.com/wp-content/uploads/2015/06/Los-soprano-personajes.jpg</fanart>
+</item>
+
+<item>
+<title>Cosas de Casa</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/family_matters_tv_series-795292648-large.jpg</thumbnail>
+		<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201501/97867.alfabetajuega-steve-urkel-280115.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/minhus/series-esp-cosas-de-casa-56988/gallery,1,9</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/family_matters_tv_series-795292648-large.jpg</thumbnail>
+<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201501/97867.alfabetajuega-steve-urkel-280115.jpg</fanart>
+</item>
+
+<item>
+<title>El Principe de Bell Air</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://3.bp.blogspot.com/--8ZbTBgVZoY/UIx3QFNIQCI/AAAAAAAAKh0/dqiryyHt9Ro/s400/1163629-gf.jpg</thumbnail>
+		<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201508/118828.alfabetajuega-el-principe-de-bel-air-180815.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/minhus/series-esp-el-principe-de-bell-air-56756/gallery,1,6</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/--8ZbTBgVZoY/UIx3QFNIQCI/AAAAAAAAKh0/dqiryyHt9Ro/s400/1163629-gf.jpg</thumbnail>
+<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201508/118828.alfabetajuega-el-principe-de-bel-air-180815.jpg</fanart>
+</item>
+
+<item>
+<title>El Principe de Bell Air</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://3.bp.blogspot.com/--8ZbTBgVZoY/UIx3QFNIQCI/AAAAAAAAKh0/dqiryyHt9Ro/s400/1163629-gf.jpg</thumbnail>
+		<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201508/118828.alfabetajuega-el-principe-de-bel-air-180815.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/minhus/series-esp-el-principe-de-bell-air-56756/gallery,1,6</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/--8ZbTBgVZoY/UIx3QFNIQCI/AAAAAAAAKh0/dqiryyHt9Ro/s400/1163629-gf.jpg</thumbnail>
+<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201508/118828.alfabetajuega-el-principe-de-bel-air-180815.jpg</fanart>
+</item>
+
 
