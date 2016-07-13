@@ -1,43 +1,8 @@
 
 Server:"[COLOR lightgreen]Julio 12[/COLOR]" URL="http://catoalkodi.info/kodi";
-Server:"001" URL="http://cp.dmbshare.net:8000/get.php?username=zitouni&password=zitouni&type=m3u"; regex" "
-Server:"034" URL="http://bhcardsharingiptv.hopto.org:8000/get.php?username=rankoitv&password=UXiZQPHVBK&type=m3u";
-Server:"002" URL="http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&password=lvwm5YIlAi&type=m3u"; regex" " 
-Server:"037" URL="http://91.134.217.235:1557/get.php?username=ARIVA&password=klnWxK6MI2&type=m3u"; regex"ES:"
-Server:"038" URL="http://91.134.217.235:1557/get.php?username=SPARK&password=y0Q836XYyh&type=m3u"; regex"ES:"
-Server:"039" URL="http://ksportiptv.com:1557/get.php?username=12/07/2016&password=PW4UqMy6wV&type=m3u"; regex"ES:"
-Server:"042" URL="http://xiptv.dyndns.tv:8000/get.php?username=mo&password=mo&type=m3u"; regex" "
-Server:"044" URL="http://iptv.re:80/get.php?username=iptv-free&password=iptv-free&type=m3u"; regex"ES:"
-Server:"045" URL="http://pro-vision.dyndns.pro:12580/get.php?username=javier403&password=team064&type=m3u"; regex"SP:"
-Server:"046" URL="http://offside.uk.to:11118/get.php?username=ainhoa&password=tauro&type=m3u"; regex"ES:"
-Server:"047" URL="http://bb1.sendevric.com:8000/get.php?username=marksat380&password=mQS7OiuFY9&type=m3u"; regex"ES"
-Server:"048" URL="http://www.q7t1.com:8000/get.php?username=sliti&password=dmV9FUkIpn&type=m3u"; regex"ES_"
-Server:"000" URL="http://cp.dmbshare.net:8000/get.php?username=zitouni&password=zitouni&type=m3u"
-
-Server:"[COLOR lightgreen]July 11[/COLOR]" URL="http://catoalkodi.info/kodi";
-Server:"023" URL="http://89.163.148.31:8000/get.php?username=mark2&password=mark2&type=m3u"; regex" "
-Server:"024" URL="http://37.187.175.177:8000/get.php?username=thomas&password=thomas&type=m3u"; regex"ES:"
-Server:"025" URL="http://hamzasat07iptv.noip.me:25461/get.php?username=hamzasat07&password=4dqtRp9vcm&type=m3u"; regex"ES-SP:"
-
-
-
-Server:"[COLOR lightgreen]July 10[/COLOR]" URL="http://catoalkodi.info/kodi";
-Server:"026" URL="http://iptv-altamimi.org:8000/get.php?username=amin1&password=amin1&type=m3u"; regex" "
-
-
-Server:"[COLOR lightgreen]July 9[/COLOR]" URL="http://catoalkodi.info/kodi";
-Server:"007" URL="http://iptv.re:80/get.php?username=ricardo&password=ricardo&type=m3u"; regex"ES:"
-Server:"008" URL="http://tvservice.webhop.me:80/get.php?username=eROKuIGlwf&password=smCK4a7Qxl&type=m3u"; regex" "
-Server:"009" URL="http://62.210.214.31:5890/get.php?username=sahraoui&password=sahraoui&type=m3u"; regex""
-Server:"013" URL="http://167.114.157.210:80/get.php?username=dominik&password=dominik&type=m3u"; regex"ES:"
-Server:"014" URL="http://www.x-media.tv:58080/get.php?username=theglades&password=3wRhMHlxqZ&type=m3u"; regex"ES:"
-Server:"015" URL="http://pro.panel2cc101.us:8080/get.php?username=ozg1&password=ozg1&type=m3u"; regex" "
-Server:"016" URL="http://speedy.momy.mooo.com:8000/get.php?username=J6xvAl7JMV&password=eCXD2tonSI&type=m3u"; regex"ES:"
-Server:"017" URL="http://globalstream.noip.us:8000/get.php?username=test&password=test&type=m3u"; regex"SP="
-Server:"018" URL="http://hasbahcaiptv.club:8000/get.php?username=HasBahCa_Bayram&password=Bayram_Hediyesi2016&type=m3u"; regex" "
-Server:"021" URL="http://pro.panel2cc101.us:8080/get.php?username=haldun&password=haldun123&type=m3u"; regex" "
-Server:"022" URL="http://www.egyiptv.co.uk:8080/get.php?username=star7arab&password=wcXMUhsndP&type=m3u"; regex" "
-
-Server:"[COLOR lightgreen]July 8[/COLOR]" URL="http://catoalkodi.info/kodi";
-Server:"005" URL="http://look01.vipid.org:8000/get.php?username=test1&password=test1&type=m3u"; regex"ES:"
-Server:"006" URL="http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&password=SnoQc6v4hZ&type=m3u"; regex"ES_"
+Server:"IPTV" URL="http://pro-vision.dyndns.pro:12580/get.php?username=javier403&password=team064&type=m3u"; regex"SP:"
+Server:"IPTV" URL="http://offside.uk.to:11118/get.php?username=ainhoa&password=tauro&type=m3u"; regex"ES:"
+Server:"IPTV" URL="http://37.187.175.177:8000/get.php?username=thomas&password=thomas&type=m3u"; regex"ES:"
+Server:"IPTV" URL="http://hamzasat07iptv.noip.me:25461/get.php?username=hamzasat07&password=4dqtRp9vcm&type=m3u"; regex"ES-SP:"
+Server:"IPTV" URL="http://globalstream.noip.us:8000/get.php?username=test&password=test&type=m3u"; regex"SP="
+Server:"IPTV" URL="http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&password=SnoQc6v4hZ&type=m3u"; regex"ES_"
