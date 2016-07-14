@@ -1,20 +1,20 @@
 
 Server:"[COLOR lime]Julio[/COLOR]" URL="http://catoalkodi.info/kodi";
 Server:"IPTV España[COLOR lime] 01[/COLOR]" URL="http://pro-vision.dyndns.pro:12580/get.php?username=javier403&password=team064&type=m3u"; regex"SP:"
-Server:"IPTV España[COLOR lime] 02[/COLOR]" URL="http://offside.uk.to:11118/get.php?username=ainhoa&password=tauro&type=m3u"; regex"ES:"
+Server:"IPTV España[COLOR lime] 02[/COLOR]" URL="http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&password=75019pa&type=m3u"; regex"ES:"
 Server:"IPTV España[COLOR lime] 03[/COLOR]" URL="http://37.187.175.177:8000/get.php?username=thomas&password=thomas&type=m3u"; regex"ES:"
-Server:"IPTV España[COLOR lime] 04[/COLOR]" URL="http://hamzasat07iptv.noip.me:25461/get.php?username=hamzasat07&password=4dqtRp9vcm&type=m3u"; regex"ES:"
+Server:"IPTV España[COLOR lime] 04[/COLOR]" URL="http://iptv.re:80/get.php?username=iptv-free&password=iptv-free&type=m3u"; regex"ES:"
 Server:"IPTV España[COLOR lime] 05[/COLOR]" URL="http://globalstream.noip.us:8000/get.php?username=test&password=test&type=m3u"; regex"SP="
 Server:"IPTV España[COLOR lime] 06[/COLOR]" URL="http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&password=SnoQc6v4hZ&type=m3u"; regex"ES_"
 Server:"IPTV España[COLOR lime] 07[/COLOR]" URL="http://iptv.re:80/get.php?username=YioryosPlakas&password=YioryosPlakas&type=m3u"; regex"ES:"
 Server:"IPTV España[COLOR lime] 08[/COLOR]" URL="http://globiptv.com:8000/get.php?username=cardsharing&password=yg4tdh&type=m3u"; regex"ES:"
 Server:"IPTV España[COLOR lime] 09[/COLOR]" URL="http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&password=SnoQc6v4hZ&type=m3u"; regex"ES_"
 Server:"IPTV España[COLOR lime] 10[/COLOR]" URL="http://iptv.re:80/get.php?username=YioryosPlakas&password=YioryosPlakas&type=m3u"; regex"ES:"
-Server:"IPTV España[COLOR lime] 11[/COLOR]" URL="http://ksportiptv.com:1557/get.php?username=Testiptv1&password=Testiptv1&type=m3u"; regex"ES:"
-Server:"IPTV España[COLOR lime] 12[/COLOR]" URL="http://ksportiptv.com:1557/get.php?username=iptv13&password=7Nnrojrik7&type=m3u"; regex"ES:"
+Server:"IPTV España[COLOR lime] 11[/COLOR]" URL="http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&password=SnoQc6v4hZ&type=m3u"; regex"ES_"
+Server:"IPTV España[COLOR lime] 12[/COLOR]" URL="http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&password=75019pa&type=m3u"; regex"ES:"
 Server:"IPTV España[COLOR lime] 13[/COLOR]" URL="http://giptv.gemaccs.com:8899/get.php?username=belkhirabdou1&password=belkhirabdou1&type=m3u"; regex"ES:"
-Server:"IPTV España[COLOR lime] 14[/COLOR]" URL="http://91.134.217.235:1557/get.php?username=iptvmix&password=HiStFERCk7&type=m3u"; regex"ES:"
-Server:"IPTV España[COLOR lime] 15[/COLOR]" URL="http://91.134.217.235:1557/get.php?username=iptv13&password=7Nnrojrik7&type=m3u"; regex"ES:"
+Server:"IPTV España[COLOR lime] 14[/COLOR]" URL="http://91.134.217.235:1557/get.php?username=iptvmix&password=HiStFERCk7&type=m3u"; regex""
+Server:"IPTV España[COLOR lime] 15[/COLOR]" URL="http://91.134.217.235:1557/get.php?username=iptv13&password=7Nnrojrik7&type=m3u"; regex""
 
 
 
