@@ -1,0 +1,368 @@
+
+
+<item>
+  <title>[COLOR lime]PINCAH AQUÍ[/COLOR][COLOR red][I] **Aviso Puede Tardar bastante, Paciencia...**[/I][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+     <title>      [COLOR lightgreen]IPTV By Catoal[/COLOR]    ( [makelist.param1] )  </title>
+    <link>NA</link>
+    <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
+]]></listrepeat>
+<expres>>(http:\/\/(.*?)\/.*?get.php.*?)&lt;</expres>
+<page>http://www.m3uliste.pw/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
+<fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
+</item>
+
+<item>
+<title> [COLOR lime]IPTV Varios Paises 1[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+     <title>[COLOR lightgreen]IPTV By Catoal[/COLOR]    ([makelist.param1])  </title>
+    <link>NA</link>
+    <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
+]]></listrepeat>
+<expres>(http:\/\/orbit-iptv.com:2500\/.*?get.php.*?)&lt;</expres>
+<page>http://www.m3uliste.pw/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title> [COLOR lime]IPTV Varios Paises 2[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&amp;password=75019pa&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+<item>
+<title> [COLOR lime]IPTV Varios Paises 3[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&amp;password=lvwm5YIlAi&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&password=lvwm5YIlAi&type=m3u
+
+<item>
+<title> [COLOR lime]IPTV España[/COLOR]</title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR] Creado por[COLOR blue] Adryanlist[/COLOR][COLOR yellow]  y[COLOR] [COLOR red] Catoal[/COLOR]</title>
+ <link>$doregex[makelist]</link>
+ <thumbnail></thumbnail>
+ ]]></listrepeat>
+<expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[COLOR skyblue][makelist.param1][/COLOR]</title>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR lightblue]AdryanList/Catoal[/COLOR] [makelist.param1]</link>
+ <thumbnail></thumbnail>
+ ]]></listrepeat>
+<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
+<page>[makelist2.param2]</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+<thumbnail></thumbnail>
+</item> 
+
+<item>
+<title> [COLOR lime]IPTV España 1[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,SP=(.*?)\n(.*)</expres>
+<page>http://ns339484.ip-37-187-250.eu:8000/get.php?username=test&amp;password=test&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+<item>
+<title> [COLOR lime]IPTV España 2[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<page>http://149.202.201.221:8000/get.php?username=fr443500&amp;password=75019pa&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+
+<item>
+<title> [COLOR lime]IPTV España 3[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<page>http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&amp;password=75019pa&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+
+
+<item>
+<title> [COLOR lime]IPTV España 4[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES_(.*?)\n(.*)</expres>
+<page>http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&amp;password=SnoQc6v4hZ&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+http://www.q7t1.com:8000/get.php?username=sYKADDaJs2&password=SnoQc6v4hZ&type=m3u
+
+<item>
+<title> [COLOR lime]IPTV España 5[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<page>http://iptv.re:80/get.php?username=iptv-free&amp;password=iptv-free&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+http://iptv.re:80/get.php?username=iptv-free&password=iptv-free&type=m3u
+
+<item>
+<title> [COLOR lime]IPTV España 6[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<page>http://ksportiptv.com:1557/get.php?username=12/07/2016&amp;password=PW4UqMy6wV&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+http://ksportiptv.com:1557/get.php?username=12/07/2016&password=PW4UqMy6wV&type=m3u
+
+
+<item>
+<title> [COLOR lime]IPTV España 7[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<page>http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&amp;password=75019pa&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&password=75019pa&type=m3u
+
+<tem>
+<title> [COLOR lime]IPTV España 2/3[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,SPA-(.*?)\n(.*)</expres>
+<page>http://IPTV-VOLKAN.NET:8000/get.php?username=edine&amp;password=edine&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+<tem>
+<title> [COLOR lime]IPTV España 3[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<page>http://IPTV-VOLKAN.NET:8000/get.php?username=zd&amp;password=zd&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+<tem>
+<title> [COLOR lime]IPTV España 3/2[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,SPA:(.*?)\n(.*)</expres>
+<page>http://IPTV-VOLKAN.NET:8000/get.php?username=zd&amp;password=zd&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+<tem>
+<title> [COLOR lime]IPTV España 3/3[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,SPA-(.*?)\n(.*)</expres>
+<page>http://IPTV-VOLKAN.NET:8000/get.php?username=zd&amp;password=zd&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+<tem>
+<title> [COLOR lime]IPTV España 4[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,ES:(.*?)\n(.*)</expres>
+<page>http://ipsatpro.com:8000/get.php?username=bozil&amp;password=bozil&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+<tem>
+<title> [COLOR lime]IPTV España 4/2[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Catoal [makelist.param1]</link>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,SPA:(.*?)\n(.*)</expres>
+<page>http://iptv-volkan.ddns.net:8000/get.php?username=phill&amp;password=phill&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
