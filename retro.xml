@@ -2084,7 +2084,7 @@
 <fanart>http://www.elnortedecastilla.es/multimedia/201501/29/media/010-gal-amparo-baro.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Bonanza</title>
 <link>$doregex[makelist]</link>
 <regex>
