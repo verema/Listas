@@ -2084,4 +2084,35 @@
 <fanart>http://www.elnortedecastilla.es/multimedia/201501/29/media/010-gal-amparo-baro.jpg</fanart>
 </item>
 
+<item>
+<title>Bonanza</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://classicflix.com/images/bonanza_3_1.jpg</thumbnail>
+		<fanart>http://img1.rnkr-static.com/list_img_v2/6148/286148/full/bonanza-cast-list-u1.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/cmfp80/bonanza-58108/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://classicflix.com/images/bonanza_3_1.jpg</thumbnail>
+<fanart>http://img1.rnkr-static.com/list_img_v2/6148/286148/full/bonanza-cast-list-u1.jpg</fanart>
+</item> 
+
 
