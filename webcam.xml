@@ -60,8 +60,15 @@
 </item>
 
 <item>
-<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812[/COLOR]</title>
+<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812/1[/COLOR]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=krIypJ2MEBU</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812/2[/COLOR]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=7D7bVqypm74</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
