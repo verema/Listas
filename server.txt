@@ -1,6 +1,6 @@
 
 Server:"[COLOR lime]Julio[/COLOR]" URL="http://catoalkodi.info/kodi";
-Server:"IPTV España" "[COLOR lime] 01[/COLOR]" URL="http://pro-vision.dyndns.pro:12580/get.php?username=javier403&password=team064&type=m3u"; regex"SP:"
+Server:"IPTV España[COLOR lime] 01[/COLOR]" URL="http://pro-vision.dyndns.pro:12580/get.php?username=javier403&password=team064&type=m3u"; regex"SP:"
 Server:"IPTV España[COLOR lime] 02[/COLOR]" URL="http://ns3622101.ip-149-202-201.eu:8000/get.php?username=fr443500&password=75019pa&type=m3u"; regex"ES:"
 Server:"IPTV España[COLOR lime] 03[/COLOR]" URL="http://37.187.175.177:8000/get.php?username=thomas&password=thomas&type=m3u"; regex"ES:"
 Server:"IPTV España[COLOR lime] 04[/COLOR]" URL="http://iptv.re:80/get.php?username=iptv-free&password=iptv-free&type=m3u"; regex"ES:"
