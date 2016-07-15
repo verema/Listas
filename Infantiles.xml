@@ -35,7 +35,7 @@
 <title>Cantajuegos</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#099;&#097;&#110;&#116;&#097;&#106;&#117;&#101;&#103;&#111;&#115;&#046;&#120;&#109;&#108;</externallink>
-<thumbnail>https://yt3.ggpht.com/-YdMnc1Z9YB4/AAAAAAAAAAI/AAAAAAAAAAA/KN0tCAHi9XQ/s100-c-k-no-rj-c0xffffff/photo.jpg</thumbnail>
+<thumbnail>https://d18t9gwja9h9h.cloudfront.net/images/M_EVENT_IMAGE/11/27/46/112746_description_FOTO_SINOPSIS.jpg</thumbnail>
 <fanart>https://yt3.ggpht.com/---AgyeOm2nE/U7v11m5UaoI/AAAAAAAAABQ/9GhS7XM2zRM/w2120-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no/banner%2Bcantajuego.jpg.jpeg</fanart>
 </item> 
 
@@ -43,7 +43,7 @@
 <title>Los Autos Locos</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#097;&#117;&#116;&#111;&#115;&#108;&#111;&#099;&#111;&#115;&#046;&#120;&#109;&#108;</externallink>
-<thumbnail>http://i.imgur.com/L5pS6ou.png</thumbnail>
+<thumbnail>http://goo.gl/YqMZ9A</thumbnail>
 <fanart>http://www.dan-dare.org/Dan%20FRD/WackyRacesWallpaper800.gif</fanart>
 </item>
 
@@ -56,6 +56,7 @@
 <title> [makelist.param3]</title>
 <link>$doregex[getUrl]</link>
 <thumbnail>http://pics.filmaffinity.com/chip_n_dale_rescue_rangers_tv_series-183816536-large.jpg</thumbnail>
+<fanart>http://www.sosmoviers.com/wp-content/uploads/2014/02/Chip-y-Chop-Guardianes-Rescatadores.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/naredo/chip-y-chop-rescatadores-31229/list,1,3</page>
@@ -92,7 +93,8 @@
 <listrepeat><![CDATA[
 <title> [makelist.param3]</title>
 <link>$doregex[getUrl]</link>
-<thumbnail>http://www.eonline.com/eol_images/Entire_Site/201637/rs_560x415-160407101644-1024-animaniacs-coming-to-netflix-040716.jpg</thumbnail>
+<thumbnail>http://orig10.deviantart.net/6bf9/f/2007/017/4/b/animaniacs_by_derrickfish.jpg</thumbnail>
+<fanart>http://cdn.bleedingcool.net/wp-content/uploads/2016/04/big_thumb_d0362cfd0a8452fcff200432d31d1014.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/naredo/animaniancs-30821/list,1,3</page>
@@ -117,7 +119,7 @@
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://www.eonline.com/eol_images/Entire_Site/201637/rs_560x415-160407101644-1024-animaniacs-coming-to-netflix-040716.jpg</thumbnail>
+<thumbnail>http://orig10.deviantart.net/6bf9/f/2007/017/4/b/animaniacs_by_derrickfish.jpg</thumbnail>
 <fanart>http://cdn.bleedingcool.net/wp-content/uploads/2016/04/big_thumb_d0362cfd0a8452fcff200432d31d1014.jpg</fanart>
 </item>
 
@@ -129,7 +131,8 @@
 <listrepeat><![CDATA[
 <title> [makelist.param3]</title>
 <link>$doregex[getUrl]</link>
-<thumbnail>http://www.agendapampeana.com/images/1306182749-tom-y-jerry.jpg</thumbnail>
+<thumbnail>http://pics.filmaffinity.com/tom_jerry_little_quacker_s-174804078-large.jpg</thumbnail>
+<fanart>http://cdn.lopezdoriga.com/wp-content/uploads/2016/05/tom-y-jerry-Youtube-.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/anime1/tom-y-jerry-27065/list,1,7</page>
@@ -154,7 +157,7 @@
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://www.agendapampeana.com/images/1306182749-tom-y-jerry.jpg</thumbnail>
+<thumbnail>http://pics.filmaffinity.com/tom_jerry_little_quacker_s-174804078-large.jpg</thumbnail>
 <fanart>http://cdn.lopezdoriga.com/wp-content/uploads/2016/05/tom-y-jerry-Youtube-.jpg</fanart>
 </item>
 
@@ -167,6 +170,7 @@
 <title> [makelist.param3]</title>
 <link>$doregex[getUrl]</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/b/bd/Looney_Tunes_Golden_Collection_-_Volume_4.jpg</thumbnail>
+<fanart>http://images4.fanpop.com/image/photos/22400000/Looney-Tunes-looney-tunes-22494338-1440-1152.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/anime1/lonney-tunes-27078/list,1,7</page>
@@ -204,6 +208,7 @@
 <title> [makelist.param3]</title>
 <link>$doregex[getUrl]</link>
 <thumbnail>http://sim1.subirimagenes.net/img/2014/03/25/140325111201185063.png</thumbnail>
+<fanart>http://ktalo.birraya.com/wp-content/uploads/2015/08/cazafantasmas.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/naredo/los-verdaderos-cazafantasmas-22880/list,1,6</page>
@@ -241,6 +246,7 @@
 <title> [makelist.param3]</title>
 <link>$doregex[getUrl]</link>
 <thumbnail>http://goo.gl/8UJQ8d</thumbnail>
+<fanart>http://img2.uploadhouse.com/fileuploads/16318/163188333db58bd786b9773a276b66cfc2476bf5.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/naredo/el-pato-darwing-20238/list,1,5</page>
@@ -278,6 +284,7 @@
 <title> [makelist.param3]</title>
 <link>$doregex[getUrl]</link>
 <thumbnail>http://img-youpeliculas.com/images/2015/01/16/pato.jpg</thumbnail>
+<fanart>http://cdn.expansion.mx/media/2015/02/26/patoaventuras-disney.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/naredo/patoaventuras-20237/list,1,5</page>
@@ -315,6 +322,7 @@
 <title> [makelist.param3]</title>
 <link>$doregex[getUrl]</link>
 <thumbnail>https://mir-s3-cdn-cf.behance.net/project_modules/disp/91dfa611664475.560fb5b26de97.jpg</thumbnail>
+<fanart>http://www.cultture.com/pics/2016/01/street_sharks_by_darkcorvus07-d6dbcc1.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/naredo/street-sharks-20240/list,1,2</page>
@@ -352,6 +360,7 @@
 <title> [makelist.param3]</title>
 <link>$doregex[getUrl]</link>
 <thumbnail>http://i.blogs.es/e8d149/sherlockdvd/450_1000.jpg</thumbnail>
+<fanart>http://i.blogs.es/72fa12/sherlock1/450_1000.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/naredo/sherlock-holmes-serie-animada-20335/list,1,2</page>
@@ -383,7 +392,7 @@
 <item>
 <title>Tom and Jerry</title>
 <link>http://Ignoreme</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/1306182749-tom-y-jerry.jpg</thumbnail>
+<thumbnail>http://pics.filmaffinity.com/tom_jerry_little_quacker_s-174804078-large.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/tomyjerry.xml</externallink> 
 </item>             
