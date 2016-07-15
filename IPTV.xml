@@ -85,7 +85,7 @@ http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&password=lvwm5YIlAi&type
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
- <title>[COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR] Creado por[COLOR blue] Adryanlist[/COLOR][COLOR yellow]  y[COLOR] [COLOR red] Catoal[/COLOR]</title>
+ <title>[COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR]</title>
  <link>$doregex[makelist]</link>
  <thumbnail></thumbnail>
  ]]></listrepeat>
@@ -98,7 +98,7 @@ http://biloiptv.eu.com:8000/get.php?username=zYLQfMhLI4&password=lvwm5YIlAi&type
 <name>makelist</name>
 <listrepeat><![CDATA[
  <title>[COLOR skyblue][makelist.param1][/COLOR]</title>
- <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR lightblue]AdryanList/Catoal [/COLOR] [makelist.param1]</link>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR lightblue]Catoal [/COLOR] [makelist.param1]</link>
  <thumbnail></thumbnail>
  ]]></listrepeat>
 <expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
