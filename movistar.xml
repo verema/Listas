@@ -13,6 +13,17 @@
 </item>
 
 <item>
+<title><title>[COLOR lime][B]Eventos[/B][/COLOR]</title></title>
+<link>http://hls.goodgame.ru/hls/$doregex[get-id].m3u8</link>
+<regex>
+<name>get-id</name>
+<expres>/ggplayer.html\?(.*?)"</expres>
+<page>http://biophobia.tv/multis/best1.php</page>
+</regex>
+<thumbnail>http://i.imgur.com/aZKxEjN.jpg</thumbnail>
+</item>
+
+<tem>
 <title>[COLOR lime][B]Eventos[/B][/COLOR]</title>
 <link>$doregex[url]</link>
 <regex>
