@@ -13,7 +13,7 @@
 </item>
 
 <item>
-<title><title>[COLOR lime][B]Eventos[/B][/COLOR]</title></title>
+<title>[COLOR lime][B]Eventos[/B][/COLOR]</title>
 <link>http://hls.goodgame.ru/hls/$doregex[get-id].m3u8</link>
 <regex>
 <name>get-id</name>
