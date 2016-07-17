@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>Alfred Hitchcock Presenta</title>
+<title>[COLOR red]OFF [/COLOR]Alfred Hitchcock Presenta</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -32,7 +32,7 @@
 </item> 
 
 <item>
-<title>Norte Y Sur</title>
+<title>[COLOR red]OFF [/COLOR]Norte Y Sur</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -565,7 +565,7 @@
 </item>
 
 <item>
-<title>Friends</title>
+<title>[COLOR red]OFF [/COLOR]Friends</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -596,7 +596,7 @@
 </item> 
 
 <item>
-<title>Kung Fu</title>
+<title>[COLOR red]OFF [/COLOR]Kung Fu</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -627,7 +627,7 @@
 </item> 
 
 <item>
-<title>Los Invasores</title>
+<title>[COLOR red]OFF [/COLOR]Los Invasores</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -658,7 +658,7 @@
 </item> 
 
 <item>
-<title>Alf</title>
+<title>[COLOR red]OFF [/COLOR]Alf</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -689,7 +689,7 @@
 </item> 
 
 <item>
-<title>El Pajaro Espino</title>
+<title>[COLOR red]OFF [/COLOR]El Pajaro Espino</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -720,7 +720,7 @@
 </item> 
 
 <item>
-<title>Sandokan</title>
+<title>[COLOR red]OFF [/COLOR]Sandokan</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -751,7 +751,7 @@
 </item> 
 
 <item>
-<title>Raises</title>
+<title>[COLOR red]OFF [/COLOR]Raises</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -782,7 +782,7 @@
 </item> 
 
 <item>
-<title>Los Camioneros</title>
+<title>[COLOR red]OFF [/COLOR]Los Camioneros</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -813,7 +813,7 @@
 </item> 
 
 <item>
-<title>Doctor En Alaska</title>
+<title>[COLOR red]OFF [/COLOR]Doctor En Alaska</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -844,7 +844,7 @@
 </item> 
 
 <item>
-<title>Los Hombres de Harrelson</title>
+<title>[COLOR red]OFF [/COLOR]Los Hombres de Harrelson</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -875,7 +875,7 @@
 </item> 
 
 <item>
-<title>La Fuga de Logan</title>
+<title>[COLOR red]OFF [/COLOR]La Fuga de Logan</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -906,7 +906,7 @@
 </item> 
 
 <item>
-<title>los Angeles de Charlie</title>
+<title>[COLOR red]OFF [/COLOR]los Angeles de Charlie</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -937,7 +937,7 @@
 </item> 
 
 <item>
-<title>Los Cinco</title>
+<title>[COLOR red]OFF [/COLOR]Los Cinco</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -968,7 +968,7 @@
 </item> 
 
 <item>
-<title>Hombre Rico Hombre Pobre</title>
+<title>[COLOR red]OFF [/COLOR]Hombre Rico Hombre Pobre</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -999,7 +999,7 @@
 </item> 
 
 <item>
-<title>El Halcon Callejero</title>
+<title>[COLOR red]OFF [/COLOR]El Halcon Callejero</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1030,7 +1030,7 @@
 </item> 
 
 <item>
-<title>El Trueno Azul</title>
+<title>[COLOR red]OFF [/COLOR]El Trueno Azul</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1061,7 +1061,7 @@
 </item> 
 
 <item>
-<title>El Tunel del Tiempo</title>
+<title>[COLOR red]OFF [/COLOR]El Tunel del Tiempo</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1092,7 +1092,7 @@
 </item> 
 
 <item>
-<title>Superagente 86</title>
+<title>[COLOR red]OFF [/COLOR]Superagente 86</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1123,7 +1123,7 @@
 </item> 
 
 <item>
-<title>Starsky y Hutch</title>
+<title>[COLOR red]OFF [/COLOR]Starsky y Hutch</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1154,7 +1154,7 @@
 </item> 
 
 <item>
-<title>Corrupcion en Miami</title>
+<title>[COLOR red]OFF [/COLOR]Corrupcion en Miami</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1185,7 +1185,7 @@
 </item> 
 
 <item>
-<title>Aupista Hacia el Cielo</title>
+<title>[COLOR red]OFF [/COLOR]Aupista Hacia el Cielo</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1216,7 +1216,7 @@
 </item> 
 
 <item>
-<title>Mission Impossible</title>
+<title>[COLOR red]OFF [/COLOR]Mission Impossible</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1247,7 +1247,7 @@
 </item> 
 
 <item>
-<title>Seaquest</title>
+<title>[COLOR red]OFF [/COLOR]Seaquest</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1278,7 +1278,7 @@
 </item> 
 
 <item>
-<title>El Coche Fantastico</title>
+<title>[COLOR red]OFF [/COLOR]El Coche Fantastico</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1309,7 +1309,7 @@
 </item> 
 
 <item>
-<title>Star Treck</title>
+<title>[COLOR red]OFF [/COLOR]Star Treck</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1340,7 +1340,7 @@
 </item> 
 
 <item>
-<title>Remington Steele</title>
+<title>[COLOR red]OFF [/COLOR]Remington Steele</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1371,7 +1371,7 @@
 </item> 
 
 <item>
-<title>Luz de Luna</title>
+<title>[COLOR red]OFF [/COLOR]Luz de Luna</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1402,7 +1402,7 @@
 </item> 
 
 <item>
-<title>Automan</title>
+<title>[COLOR red]OFF [/COLOR]Automan</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1471,7 +1471,7 @@
 </item>
 
 <item>
-<title>Twin peaks</title>
+<title>[COLOR red]OFF [/COLOR]Twin peaks</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1502,7 +1502,7 @@
 </item> 
 
 <item>
-<title>Verano Azul</title>
+<title>[COLOR red]OFF [/COLOR]Verano Azul</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1723,7 +1723,7 @@
 </item>
 
 <item>
-<title>Perdidos en el Espacio</title>
+<title>[COLOR red]OFF [/COLOR]Perdidos en el Espacio</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1830,7 +1830,7 @@
 </item>
 
 <item>
-<title>Los Sopranos</title>
+<title>[COLOR red]OFF [/COLOR]Los Sopranos</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1861,7 +1861,7 @@
 </item>
 
 <item>
-<title>Cosas de Casa</title>
+<title>[COLOR red]OFF [/COLOR]Cosas de Casa</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1892,7 +1892,7 @@
 </item>
 
 <item>
-<title>El Principe de Bell Air</title>
+<title>[COLOR red]OFF [/COLOR]El Principe de Bell Air</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1923,7 +1923,7 @@
 </item>
 
 <item>
-<title>Sabrina Cosas de Brujas</title>
+<title>[COLOR red]OFF [/COLOR]Sabrina Cosas de Brujas</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1954,7 +1954,7 @@
 </item>
 
 <item>
-<title>Hostal Royal Manzanares</title>
+<title>[COLOR red]OFF [/COLOR]Hostal Royal Manzanares</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1985,7 +1985,7 @@
 </item>
 
 <item>
-<title>Er Urgencias</title>
+<title>[COLOR red]OFF [/COLOR]Er Urgencias</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -2016,7 +2016,7 @@
 </item>
 
 <item>
-<title>Dinosaurios</title>
+<title>[COLOR red]OFF [/COLOR]Dinosaurios</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -2276,7 +2276,7 @@
 
 
 <item>
-<title>Cuentame Como Paso</title>
+<title>[COLOR red]OFF [/COLOR]Cuentame Como Paso</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -2307,7 +2307,7 @@
 </item>
 
 <item>
-<title>Expediente X</title>
+<title>[COLOR red]OFF [/COLOR]Expediente X</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -2338,7 +2338,7 @@
 </item>
 
 <item>
-<title>Historias de la Cripta</title>
+<title>[COLOR red]OFF [/COLOR]Historias de la Cripta</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -2369,7 +2369,7 @@
 </item>
 
 <item>
-<title>La Dimension Desconocida</title>
+<title>[COLOR red]OFF [/COLOR]La Dimension Desconocida</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
