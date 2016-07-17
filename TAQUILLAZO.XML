@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>[COLOR lime][B]*** Catflix ***[/B][/COLOR][I] Nuevo[/I]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lime] [makelist.param1][/COLOR]</title>
+<link>[makelist.param2]</link>
+<agent>Mozilla/5.0</agent>
+<thumbnail>http://ih0.redbubble.net/image.88009184.7389/hj,x1000-bg,f8f8f8.jpg</thumbnail>
+<fanart>http://ih1.redbubble.net/image.88009156.7389/ap,550x550,16x12,1,transparent,t.png</fanart>
+]]></listrepeat>
+<expres>#EXTINF.*?,(.*).*\n.*?(?=http|rtmp|rtsp|mms)(.*[\d|\w])</expres>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#108;&#105;&#115;&#116;&#097;&#116;&#111;&#116;&#097;&#108;&#046;&#109;&#051;&#117;</page>
+<agent></agent>
+</regex>
+<thumbnail>http://ih0.redbubble.net/image.88009184.7389/hj,x1000-bg,f8f8f8.jpg</thumbnail>
+<fanart>http://ih1.redbubble.net/image.88009156.7389/ap,550x550,16x12,1,transparent,t.png</fanart>
+</item> 
+
+<item>
 <title>[COLOR lime]*** Catflix ***[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
