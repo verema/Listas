@@ -2398,8 +2398,46 @@
 <fanart>http://www.divinity.es/bbtfile/6_20120621e14D1Z.jpg</fanart>
 </item>
 
-
 <item>
+<title>Cuentame Como Paso</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://images-na.ssl-images-amazon.com/images/I/51MsTuBHcUL._AC_UL320_SR246,320_.jpg</thumbnail>
+		<fanart>http://img.rtve.es/v/3428281?w=1180&preview=1451472038289.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/lokario1/cuentame-como-paso-temp-1-14-14395/list,1,12</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/lokario1/cuentame-como-paso-temp-1-14-14395/list,1,12</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/I/51MsTuBHcUL._AC_UL320_SR246,320_.jpg</thumbnail>
+<fanart>http://img.rtve.es/v/3428281?w=1180&preview=1451472038289.jpg</fanart>
+</item>
+
+
+<tem>
 <title>[COLOR red]OFF [/COLOR]Cuentame Como Paso</title>
 <link>$doregex[makelist]</link>
 <regex>
