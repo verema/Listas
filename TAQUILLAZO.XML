@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>[COLOR lime][B]*** Catflix ***[/B][/COLOR][I] Nuevo[/I]</title>
+<title>[COLOR lime]*** [COLOR blue]Ca[/COLOR][COLOR yellow]t[/COLOR][COLOR red]flix[/COLOR] ***[/COLOR][I] Nuevo[/I]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
