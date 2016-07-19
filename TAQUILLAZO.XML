@@ -21,7 +21,7 @@
 </item> 
 
 <item>
-<title>[COLOR lime]*** Catflix ***[/COLOR]</title>
+<title>[COLOR red]OFF[/COLOR] [COLOR lime]*** Catflix ***[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -208,9 +208,10 @@
         <title> [makelist.param3]</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>http://i.imgur.com/SGhKNxi.jpg</thumbnail>
+		<fanart>http://www.blog.septima-ars.com/wp-content/uploads/2015/09/terror.png</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/naredo/terror-20055/list,1,2</page>
+<page>http://diskokosmiko.mx/trivianita/peliculas-de-suspense-hdripel-rockero-30176/list,1,5</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
@@ -228,7 +229,7 @@
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/naredo/terror-20055/list,1,2</referer>
+<referer>http://diskokosmiko.mx/trivianita/peliculas-de-suspense-hdripel-rockero-30176/list,1,5</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
@@ -458,7 +459,7 @@
 <fanart>http://www.elobservatodo.cl/sites/elobservatodo.cl/files/imagecache/380x285/imagen_noticia/sal_pelicula.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR lime]*** Cine Disney ***[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
