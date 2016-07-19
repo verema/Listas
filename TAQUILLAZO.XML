@@ -459,7 +459,7 @@
 <fanart>http://www.elobservatodo.cl/sites/elobservatodo.cl/files/imagecache/380x285/imagen_noticia/sal_pelicula.jpg</fanart>
 </item>
 
-<tem>
+<item>
 <title>[COLOR lime]*** Cine Disney ***[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
