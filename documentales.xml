@@ -2,6 +2,38 @@
 
 
 <item>
+<title>IPTV Con Canales De Documentales</title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR]</title>
+ <link>$doregex[makelist]</link>
+ <thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
+ <fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
+ ]]></listrepeat>
+<expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[COLOR skyblue][makelist.param1][/COLOR]</title>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR lightblue]Catoal [/COLOR] [makelist.param1]</link>
+ <thumbnail></thumbnail>
+ ]]></listrepeat>
+<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
+<page>[makelist2.param2]</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+<thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
+<fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
+</item> 
+
+<item>
 <title>El Hombre Y La Tierra</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -427,7 +459,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://i.imgur.com/OsoP9Ob.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Caza Y Pesca</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/5162.ts&amp;streamtype=TSDOWNLOADER&amp;name=Caza Y Pesca</link>
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/7402.ts&amp;streamtype=TSDOWNLOADER&amp;name=Caza Y Pesca</link>
@@ -435,21 +467,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Discovery Max[COLOR red][I] New STD[/I][/COLOR]</title> 
 
 <thumbnail>http://i.imgur.com/ST0nJb2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
-<item>
+<tem>
 <title>Discovery Channel[COLOR red][I] New STD[/I][/COLOR]</title>
 
 <thumbnail>http://i.imgur.com/VEXxOky.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>National Geography</title> 
 <link>http://vod.cdn.iutpcdn.com/LIVE/H01/CANAL377/PROFILE03.m3u8</link>
 <thumbnail>http://i.imgur.com/Co57iED.jpg</thumbnail>
@@ -470,7 +502,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Canal Cocina</title>
 <link>rtmp://31.220.40.63/privatestream/ playpath=cocinach?keys=xhU0t9d1sEYHeBpF-j7IbQ&keyt=1462304203 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i.imgur.com/sJFRAiz.jpg</thumbnail>
@@ -484,14 +516,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
-<item>
+<tem>
 <title>Constriur TV</title>
 <link>http://iphone-streaming.ustream.tv/uhls/9143107/streams/live/iphone/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/gsd9AnF.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Vaughan tv</title>         
 <link>rtmp-raw=rtmp://vaughantv.streaming-pro.com:1935/live/ playpath=vaughantv swfUrl=http://grupovaughan.com/jwplayer.flash.swf live=1 pageUrl=http://grupovaughan.com/vaughan-tv/</link>
 <thumbnail>https://pbs.twimg.com/profile_images/660596526880833536/w5F17Ux2.jpg</thumbnail>
@@ -505,7 +537,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>Viajar</title>
 <link>http://194.179.53.124:1935/live/myStream_2/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/XdbNaeI.jpg</thumbnail>
