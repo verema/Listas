@@ -18,7 +18,17 @@ Server:"IPTV España[COLOR lime] 15[/COLOR]" URL="http://ns3622101.ip-149-202-20
 
 
 
-http://91.134.217.235:1557/get.php?username=iptv15&password=dcsgj3Uofp&type=m3u
+http://ksportiptv.com:1557/get.php?username=m3u819&password=pZTwjJnazY&type=m3u
+
+http://orbit-iptv.com:2500/get.php?username=l5TddgRCKU&password=c02RNSnel1&type=m3u
+
+http://iptv.re:80/get.php?username=22&password=22&type=m3u
+
+http://ca01.iptv.re:80/get.php?username=victor&password=victor&type=m3u
+
+http://www.q7t1.com:8000/get.php?username=alfredo&password=EDc3ZSBUFu&type=m3u
+
+http://ksportiptv.com:1557/get.php?username=iptvlinks&password=33OQaGzMvu&type=m3u
 
 
 
