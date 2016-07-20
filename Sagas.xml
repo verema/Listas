@@ -149,3 +149,96 @@
 <thumbnail>http://1.bp.blogspot.com/-HNrPTw6_FRY/TaDm_yVTcqI/AAAAAAAACV8/VRpaznU7Wlk/s320/locaacademiapoli1.jpg</thumbnail>
 <fanart>http://yofuiaegb.com/wp-content/uploads/2013/03/Loca-academia-de-policia.jpg</fanart>
 </item>
+
+<item>
+<title>Jackie Chan</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://cdn.20m.es/img2/recortes/2012/12/18/88827-351-550.jpg</thumbnail>
+		<fanart>http://www.labutaca.net/noticias/wp-content/uploads/2012/12/jackie-chan-confirma-mercenarios-3.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/slek/jackie-58128/gallery,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.20m.es/img2/recortes/2012/12/18/88827-351-550.jpg</thumbnail>
+<fanart>http://www.labutaca.net/noticias/wp-content/uploads/2012/12/jackie-chan-confirma-mercenarios-3.jpg</fanart>
+</item>
+
+<item>
+<title>Los Mercenarios</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/the_expendables-597606855-large.jpg</thumbnail>
+		<fanart>http://www.fondoswiki.com/Uploads/fondoswiki.com/ImagenesGrandes/wallpapers-de-la-pelicula-los-mercenarios-2.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Txarly/los-mercenarios-saga-65152/gallery,1,1</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/the_expendables-597606855-large.jpg</thumbnail>
+<fanart>http://www.fondoswiki.com/Uploads/fondoswiki.com/ImagenesGrandes/wallpapers-de-la-pelicula-los-mercenarios-2.jpg</fanart>
+</item>
+
+<item>
+<title>Harry Potter</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://pics.filmaffinity.com/harry_potter_and_the_deathly_hallows_part_ii-477385286-large.jpg</thumbnail>
+		<fanart>http://es.testsworld.net/files/2014/07/test-de-harry-potter-nivel-medio.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Koba1994/saga-harry-potter-68109/gallery,1,1</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://pics.filmaffinity.com/harry_potter_and_the_deathly_hallows_part_ii-477385286-large.jpg</thumbnail>
+<fanart>http://es.testsworld.net/files/2014/07/test-de-harry-potter-nivel-medio.jpg</fanart>
+</item>
