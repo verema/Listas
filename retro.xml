@@ -2675,7 +2675,7 @@
 <fanart>http://www.ladimensiondesconocidaa.com/wp-content/uploads/2015/06/La-dimension-desconocida-capitulos.jpg</fanart>
 </item>
 
-<tem>
+<item>
 <title>Los Hombres de Paco</title>
 <link>$doregex[makelist]</link>
 <regex>
