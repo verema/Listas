@@ -3,7 +3,7 @@
 
 <channels>
 <channels_info> 
-<title>Camaras Del Mundo[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Camaras Del Mundo **</title>
 <genre>Wepcam</genre>
 <description>La mejores webcaps</description>
 <thumbnail></thumbnail>
@@ -20,7 +20,7 @@
 <items>
 
 <item>
-  <title>[COLOR lime]Girona [/COLOR][COLOR yellow]Lloret de mar[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Girona [/COLOR][COLOR yellow]Lloret de mar[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -33,7 +33,7 @@
 </item>
 
 <item>
-  <title>[COLOR lime]Barcelona [/COLOR][COLOR yellow]Playa de Sant Sebastia[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Barcelona [/COLOR][COLOR yellow]Playa de Sant Sebastia[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -47,7 +47,7 @@
 
 
 <item>
-  <title>[COLOR lime]Barcelona [/COLOR][COLOR yellow]Playa La Barceloneta[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Barcelona [/COLOR][COLOR yellow]Playa La Barceloneta[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -60,28 +60,28 @@
 </item>
 
 <item>
-<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812/1[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812/1[/COLOR] **</title>
 <link>plugin://plugin.video.youtube/play/?video_id=krIypJ2MEBU</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
-<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812/2[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812/2[/COLOR] **</title>
 <link>plugin://plugin.video.youtube/play/?video_id=7D7bVqypm74</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
-<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812/3[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente de la Constitución de 1812/3[/COLOR] **</title>
 <link>plugin://plugin.video.youtube/play/?video_id=KFsFWLeIBfQ</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
-<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Plaza de Sevilla[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Cádiz[/COLOR][COLOR yellow] Plaza de Sevilla[/COLOR] **</title>
 <link>plugin://plugin.video.youtube/play/?video_id=jFELUgq46WA</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
@@ -89,14 +89,14 @@
 
 			
 <tem>
-<title>[COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente Carranza[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Cádiz[/COLOR][COLOR yellow] Puente Carranza[/COLOR] **</title>
 <link>plugin://plugin.video.youtube/play/?video_id=c3FDiVe2egU</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item> 
 
 <item>
-  <title>[COLOR lime]Baleares [/COLOR][COLOR yellow]La Savina - Formentera[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Baleares [/COLOR][COLOR yellow]La Savina - Formentera[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -109,7 +109,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Baleares [/COLOR][COLOR yellow]Ibiza - Cala Vadella[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Baleares [/COLOR][COLOR yellow]Ibiza - Cala Vadella[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -122,7 +122,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Playa de Los Cristianos[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Playa de Los Cristianos[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -135,7 +135,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Catamaran Royal Delfin[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Catamaran Royal Delfin[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -148,7 +148,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Gran Canaria - Playa Grande en Las Canteras[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Gran Canaria - Playa Grande en Las Canteras[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -161,7 +161,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Las Palmas - Playa Las Canteras[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Las Palmas - Playa Las Canteras[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -174,7 +174,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Paseo las Vistas[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Paseo las Vistas[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -187,7 +187,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Puerto Colon[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Puerto Colon[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -200,7 +200,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - La Orotava[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - La Orotava[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -213,7 +213,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - El Medano[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - El Medano[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -226,7 +226,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Las palmas - Costa Tequise[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Las palmas - Costa Tequise[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -239,7 +239,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Gran Meleia Redlevel Garden[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Gran Meleia Redlevel Garden[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -252,7 +252,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Puerto de la Cruz[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Puerto de la Cruz[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -265,7 +265,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Las palmas - La Cicer Las Canteras[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Las palmas - La Cicer Las Canteras[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -278,7 +278,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Santa Cruz de Tenerife[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Santa Cruz de Tenerife[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -291,7 +291,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Playa de el Medano[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Playa de el Medano[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -304,7 +304,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Playa Troya[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Playa Troya[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -317,7 +317,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Playa de Fanabe[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Playa de Fanabe[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -330,7 +330,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - El Teide[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - El Teide[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -343,7 +343,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Golf Costa Adeje[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Golf Costa Adeje[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -356,7 +356,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Plaza de la Candelaria[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Plaza de la Candelaria[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -369,7 +369,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Macizo de Anaga[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Macizo de Anaga[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -382,7 +382,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]tenerife - Surf kitesurf Medano[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]tenerife - Surf kitesurf Medano[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -395,7 +395,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Las palmas - Playa las Cucharas[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Las palmas - Playa las Cucharas[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -408,7 +408,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]tenerife - Los Gigantes[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]tenerife - Los Gigantes[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -421,7 +421,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - las Galletas[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - las Galletas[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -434,7 +434,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Karting Club Tenerife[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Islas Canarias [/COLOR][COLOR yellow]Tenerife - Karting Club Tenerife[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -447,7 +447,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Cantabria [/COLOR][COLOR yellow]Santilla del Mar[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Cantabria [/COLOR][COLOR yellow]Santilla del Mar[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -460,7 +460,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Madrid [/COLOR][COLOR yellow]Puerta del Sol Tio Pepe[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Madrid [/COLOR][COLOR yellow]Puerta del Sol Tio Pepe[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -473,7 +473,7 @@
 </item>
 
 <item>
-  <title>[COLOR lime]Madrid [/COLOR][COLOR yellow]Puerta del Sol[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Madrid [/COLOR][COLOR yellow]Puerta del Sol[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -486,7 +486,7 @@
 </item>
 
 <item>
-  <title>[COLOR lime]Madrid [/COLOR][COLOR yellow]Edificio Metropolis[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Madrid [/COLOR][COLOR yellow]Edificio Metropolis[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -499,7 +499,7 @@
 </item>
 
 <item>
-  <title>[COLOR lime]Madrid [/COLOR][COLOR yellow]Calle Gran Via[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Madrid [/COLOR][COLOR yellow]Calle Gran Via[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -512,7 +512,7 @@
 </item>
 
 <item>
-  <title>[COLOR lime]Madrid [/COLOR][COLOR yellow]Calle Alcala[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Madrid [/COLOR][COLOR yellow]Calle Alcala[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -525,7 +525,7 @@
 </item>
 
 <item>
-  <title>[COLOR lime]Madrid [/COLOR][COLOR yellow]Plaza España[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Madrid [/COLOR][COLOR yellow]Plaza España[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -538,7 +538,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Murcia [/COLOR][COLOR yellow]Bullas - Plaza España[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Murcia [/COLOR][COLOR yellow]Bullas - Plaza España[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -551,7 +551,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Murcia [/COLOR][COLOR yellow]Plaza del Arco[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Murcia [/COLOR][COLOR yellow]Plaza del Arco[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -564,7 +564,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Murcia [/COLOR][COLOR yellow]Manga del Mar Menor[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Murcia [/COLOR][COLOR yellow]Manga del Mar Menor[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -577,7 +577,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Murcia [/COLOR][COLOR yellow]Cartagena - manga del Mar Menor[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Murcia [/COLOR][COLOR yellow]Cartagena - manga del Mar Menor[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -590,7 +590,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Murcia [/COLOR][COLOR yellow]Mula[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Murcia [/COLOR][COLOR yellow]Mula[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -603,7 +603,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Benidorm - Playa Poniente[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Benidorm - Playa Poniente[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -616,7 +616,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Benidorm - Playa Alicante[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Benidorm - Playa Alicante[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -629,7 +629,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Benidorm - Playa Poniente Sur[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Benidorm - Playa Poniente Sur[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -642,7 +642,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Alicante - Playa Albir[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Alicante - Playa Albir[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -655,7 +655,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Benidorm - Playa Levante[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Benidorm - Playa Levante[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -668,7 +668,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Altea - Playa la Roda[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Altea - Playa la Roda[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -681,7 +681,7 @@
 </item> 
 
 <item>
-  <title>[COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Alicante - Playa del Albir[/COLOR]</title>
+  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Comunidad Valenciana [/COLOR][COLOR yellow]Alicante - Playa del Albir[/COLOR] **</title>
   <link>$doregex[playUrl]|User-Agent=Mozilla/5.0</link>
   
   <regex>
@@ -704,14 +704,14 @@
 <items>
 
 <item>
-<title>Puente de la Constitución de 1812[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Puente de la Constitución de 1812[/COLOR] **</title>
 <link>plugin://plugin.video.youtube/play/?video_id=krIypJ2MEBU</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
 			
 <item>
-<title>Puente Carranza[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Puente Carranza[/COLOR] **</title>
 <link>plugin://plugin.video.youtube/play/?video_id=c3FDiVe2egU</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
@@ -726,7 +726,7 @@
 <items>
 	
 <item>
-<title>Shibuya scramble crossing[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Shibuya scramble crossing[/COLOR] **</title>
 <link>plugin://plugin.video.youtube/play/?video_id=6q36pnzcw70</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
