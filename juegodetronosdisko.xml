@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>Temporada 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Temporada 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>http://i.imgur.com/J49igee.jpg</thumbnail>
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
@@ -39,12 +39,12 @@
 </item>
 
 <item>
-<title>Temporada 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Temporada 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>http://i.imgur.com/dRdStnB.jpg</thumbnail>
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
@@ -77,12 +77,12 @@
 </item>
 
 <item>
-<title>Temporada 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Temporada 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>http://i.imgur.com/PvMdvgS.jpg</thumbnail>
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
@@ -115,12 +115,12 @@
 </item>
 
 <item>
-<title>Temporada 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Temporada 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>http://i.imgur.com/El4Ra8B.jpg</thumbnail>
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
@@ -153,12 +153,12 @@
 </item>
 
 <item>
-<title>Temporada 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Temporada 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>http://i.imgur.com/Gc5AtqG.jpg</thumbnail>
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
@@ -191,12 +191,12 @@
 </item>
 
 <item>
-<title>Temporada 6</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Temporada 6 **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR lime] [makelist.param3][/COLOR]</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>http://i.imgur.com/MLG9Cfu.jpg</thumbnail>
         <fanart>http://i.imgur.com/ybkzF17.jpg</fanart>
