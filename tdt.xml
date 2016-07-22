@@ -2,26 +2,26 @@
 
 
 <item>
-<title>IPTV Con TDT España</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IPTV Con TDT España **</title>
 <link>$doregex[makelist2]</link>
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
- <title>[COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR]</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR] **</title>
  <link>$doregex[makelist]</link>
  <thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
  <fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
  ]]></listrepeat>
 <expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <title>[COLOR skyblue][makelist.param1][/COLOR]</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue][makelist.param1][/COLOR] **</title>
  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR lightblue]Catoal [/COLOR] [makelist.param1]</link>
  <thumbnail></thumbnail>
  ]]></listrepeat>
@@ -34,7 +34,7 @@
 </item> 
 
 <item>
-<title>Atreseries</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Atreseries **</title>
 <ink>http://a3live-lh.akamaihd.net/i/a3shds/geoa3series_1@122775/index_1_av-b.m3u8?sd=10&rebase=on</link>
 <link>http://a3live-lh.akamaihd.net/i/a3shds/geoa3series_1@122775/master.m3u8</link>
 <thumbnail>http://i.imgur.com/mG20hej.jpg</thumbnail>
@@ -42,7 +42,7 @@
 </item>
 
 <item>
-<title>Ten</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Ten **</title>         
 <link></link>
 <thumbnail>http://i.imgur.com/7dEfWxq.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -51,7 +51,7 @@
 </item>
 
 <item>
-<title>Be Mad</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Be Mad **</title>         
 <link>
 <thumbnail>http://i.imgur.com/JYrJj8Q.jpg</thumbnail>
 <agent>
@@ -59,42 +59,42 @@
 </item>
 
 <item>
-<title>La 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La 1 **</title>
 <link>http://iphonelive.rtve.es/LA1_LV3_IPH/LA1_LV3_IPH.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/TVE1.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>La 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La 2 **</title>
 <link>http://hlslive.rtve.es:80/LA2_LV3_IPH/bitrate_1.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/TVE2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Antena 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Antena 3 **</title>
 <link>http://a3live-lh.akamaihd.net/i/antena3_1@35248/master.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/antena3.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Cuatro</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Cuatro **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://service1.astrovida.tv:8000/live/cqbmau0BmOm/W6l8qWJIv3T/49.ts&amp;streamtype=TSDOWNLOADER&amp;name=Cuatro</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalcuatro.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Cuatro</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Cuatro **</title>
 <link>rtmp://31.220.40.62/privatestream/ playpath=cuatroa?keys=onl1EKE-hWifcle6h5BHBw&keyt=1460649018 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalcuatro.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Telecinco</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Telecinco **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://tv2iptv.com:8000/live/TNnsEPYspb/Yajx0LF8Xf/1132.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
 <ink>plugin://plugin.video.f4mTester/?url=http://tv2iptv.com:8000/live/TNnsEPYspb/Yajx0LF8Xf/1132.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
@@ -104,242 +104,242 @@
 http://gameserver4.streamiptv.online:80/live/martino30/martino30/6546.ts
 
 <item>
-<title>Telecinco</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Telecinco **</title>
 <link>rtmp://31.220.0.201/privatestream/ playpath=teleinco?keys=fEuwkWUvlwU0t7S6caErDA&keyt=1460648747 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
 <item>
-<title>Mega</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mega **</title>
 <link>http://a3live-lh.akamaihd.net/i/mghds/geomega_1@328914/master.m3u8</link>
 <thumbnail>http://i.imgur.com/Rsysfc2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Fox</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Fox **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=7hgj3pw3pvieqh9 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/w4GkY2U.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
 <item>
-<title>Fox Live</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Fox Live **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=o3m2hhbrqqux0ks swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/0dfbgI7.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
 <item>
-<title>AXN</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** AXN **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=bi3y8fxntkbf1ss swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/dhPvhlb.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>TNT</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TNT **</title>
 rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/1yGfSgo.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 	       
 <item>
-<title>NEOX</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** NEOX **</title>
 <link>http://a3live-lh.akamaihd.net/i/nxhds/geoneox_1@35261/index_1_av-p.m3u8?sd=10&rebase=on</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/antenaneox.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>NEOX HD</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** NEOX HD **</title>
 <link>http://a3live-lh.akamaihd.net/i/nxhds/geoneox_1@35261/master.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/antenaneox.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Nova</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Nova **</title>
 <link>http://a3live-lh.akamaihd.net/i/nvhds/geonova_1@379404/index_4_av-p.m3u8?sd=10&rebase=on</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/Nova.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Canal de las Estrellas</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Canal de las Estrellas **</title>
 <link>http://tvsawpdvr-lh.akamaihd.net/i/stch02wp_1@119660/index_648_av-p.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/Canal_de_las_Estrellas_2006_logo.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>La Sexta</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La Sexta **</title>
 <link>http://a3live-lh.akamaihd.net/i/lasexta_1@35272/index_1_av-p.m3u8?sd=10&rebase=on</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/lasexta.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Hollywood</title> 
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Hollywood **</title> 
 <link>rtmp://89.248.169.55/iguide playpath=g14tfn5k0uso0om swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/ token=#ed%h0#w18623jsda6523lDGDvcx7</link>
 <thumbnail>http://i.imgur.com/M3QCTSt.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>	
 
 <item>
-<title>24 H</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 24 H **</title>
 <link>http://iphonelive.rtve.es/24H_LV3_IPH/bitrate_1.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/24h-tve.jpg</thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
 <item>
-<title>Andalucia TV</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Andalucia TV **</title>
 <link>http://iphone-andaluciatelevision.rtva.stream.flumotion.com/rtva/andaluciatelevision-iphone-multi/main.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/andalucia_tv.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>  
 </item>
 	
 <item>
-<title>TV extremadura</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TV extremadura **</title>
 <link>rtmp://corporacionextremenaocclivefs.fplive.net/corporacionextremenalive-live/ playpath=stream1 swfUrl=http://www.canalextremadura.es/site...slx_reproductor/js/mediaplayer-5.7/player.swf live=1 pageUrl=http://www.canalextremadura.es/alacarta/tv/directo</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/small_canal_extremadura_tv.jpg</thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 	
 <item>
-<title>Levante TV</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Levante TV **</title>
 <link>rtmp://teledifusion.tv:1935/levantetvlive playpath=levantetvlive swfUrl=http://www.levantetv.es//servicios/...evantetvlive&autostart=true&wmode=transparent live=1 pageUrl=http://www.levantetv.es//servicios/...evantetvlive&autostart=true&wmode=transparent --live</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/LevanteTv.jpg</thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 	
 <item>
-<title>Canarias</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Canarias **</title>
 <link>rtmp://streamrtvcdrb.mad.idec.net/rtvcnet playpath=rtvcnet.drb.stream swfUrl=http://www2.rtvc.es/swf/flowplayer.rtmp-3.1.3.swf live=1 pageUrl=http://www2.rtvc.es/</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/Televisioacuten_Canaria_Net_logo.jpg</thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>  
 </item>
 	
 <item>
-<title>TVM 20</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TVM 20 **</title>
 <link>rtmp://stream.tvmelilla.es:1935/tvmelilla playpath=live swfUrl=http://tvmelilla.es/jwplayer/player.swf live=1 pageUrl=http://tvmelilla.es/directo.html</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tvm.jpg</thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
 <item>
-<title>Aragon tv</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Aragon tv **</title>
 <link>rtmp://aragontvlivefs.fplive.net/aragontvlive-live/stream_normal_abt</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/aragontv.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>   
 </item>
 
 <item>
-			<title>13 TV</title>
+			<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 13 TV **</title>
 			<thumbnail>http://upload.wikimedia.org/wikipedia/fr/9/9c/13tv_logo_2012.png</thumbnail>
 			<link>http://streaming13tv.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/mobile/playlist.m3u8?idLive=021&referer=TkQ=</link>
 			
 		</item>
 	
 	<item>
-	<title></title>
+	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
 	<link></link>
 	<thumbnail></thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>	
 	</item>
 	
 <item>
-<title>IB3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IB3 **</title>
 <link>http://ibsatiphone.ib3tv.com/iphoneliveIB3/IB3/IB3.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/220px-Mosca_IB3_fondo_blanco.jpg</thumbnail>   
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 	
 <item>
-<title>TVG America</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TVG America **</title>
 <link>http://media3.crtvg.es/live/tvga/vcx7.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/noimage-tvg-thumb.jpg</thumbnail>  
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 	
 <item>
-<title>TVG Europa</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TVG Europa **</title>
 <link>http://media3.crtvg.es/live/tvge/vcx7.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/noimage-tvg-thumb.jpg</thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>  
 </item>
 	
 <item>
-<title>TVG Galicia</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TVG Galicia **</title>
 <link>rtmp://media3.crtvg.es:80/live playpath=tvge swfUrl=http://www.crtvg.es/flowplayer3/flowplayer.commercial-3.2.7.swf live=1 pageUrl=http://www.omegateam.byethost7.com/ch/i-tv-galicia.php --live</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/noimage-tvg-thumb.jpg</thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>  
 </item>
 	
 <item>
-<title>Canal Sur</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Canal Sur **</title>
 <link>http://iphone-andaluciatelevision.rtva.stream.flumotion.com/rtva/andaluciatelevision-iphone-multi/main.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/Canal_Sur-logo-430F1E7BE3-seeklogo.jpg</thumbnail>  
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
     
 <item>
-<title>Rtpa</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Rtpa **</title>
 <link>http://iphone.rtpa.stream.flumotion.com/rtpa/tv-iphone-multi/main.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/rtpa_010.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>   
 </item>
 	
 	<item>
-	<title></title>
+	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
 	<link></link>
 	<thumbnail></thumbnail>
 	</item>
 	
 	<item>
-	<title></title>
-	<link></link>
-	<thumbnail></thumbnail>
-	</item>
-
-	<item>
-	<title></title>
+	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
 	<link></link>
 	<thumbnail></thumbnail>
 	</item>
 
+	<item>
+	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
+	<link></link>
+	<thumbnail></thumbnail>
+	</item>
+
 	
 	
 	<item>
-	<title></title>
+	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
 	<link></link>
 	<thumbnail></thumbnail>
 	</item>
 	
 <item>
-<title>ATV Andorra</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ATV Andorra **</title>
 <link>http://194.158.80.31:443/live/rtva/playlist.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/AndorraTV_logo2005.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 	
 	<item>
-	<title></title>
+	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
 	<link></link>
 	<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/barcelona_tv_large.jpg</thumbnail>
 	</item>
 	
 <item>
-<title>Alfa TV (Spain)</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Alfa TV (Spain) **</title>
 <link>rtsp://streamer1.streamhost.org:1935/salive/GMIalfah</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/alfa-tv-.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
      
 <item>
-<title>VIVE TV</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** VIVE TV **</title>
 <link>mmsh://difusion.cantv.net/vhost-covetel_live</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/vivetv2003.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -347,13 +347,13 @@ rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.t
       
 	
 <item>
-<title></title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
 <link></link>
 <thumbnail></thumbnail>   
 </item>
  
 <item>
- <title>CYLeon</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** CYLeon **</title>
  <link>rtmp://cdn.s10.eu.nice264.com/niceLiveServer/cyl_cyltvlivem_MB_698ext</link>
  <thumbnail></thumbnail>  
 </item>
@@ -366,19 +366,19 @@ rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.t
 
  
 <item>
- <title>IB3</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IB3 **</title>
  <link>http://ibsatiphone.ib3tv.com/iphoneliveIB3/IB3/IB3.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>ETB</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ETB **</title>
  <link>http://etbvhlsnogeo-lh.akamaihd.net/i/ETBEITBEUS_1@123113/master.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>TVelche</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TVelche **</title>
  <link>rtmp://teledifusion.tv/teleelx/teleelxlive</link>
  <thumbnail></thumbnail>  
 </item>
@@ -386,7 +386,7 @@ rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.t
 
  
 <item>
- <title>ZARAGOZATV</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ZARAGOZATV **</title>
  <link>http://streaming.enetres.net/CD9843D3A4014583ACED8D757D30EAE5022/mobile/playlist.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
@@ -396,13 +396,13 @@ rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.t
 
  
 <item>
- <title>8TV</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 8TV **</title>
  <link>rtmp://91.121.143.193:1935/liverepeater/8TV/8aldia-directe</link>
  <thumbnail></thumbnail>  
 </item>
 
  <item>
- <title>GIRONAtv</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** GIRONAtv **</title>
  <link>rtmp://tvgirona.dnssw.net/live/Icontouch</link>
  <thumbnail></thumbnail>  
 </item>
@@ -410,7 +410,7 @@ rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.t
 
  
 <item>
- <title>I+CiudadReal</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** I+CiudadReal **</title>
  <link>rtmp://149.11.34.6/live/imastv.stream</link>
  <thumbnail></thumbnail>  
 </item>
@@ -419,13 +419,13 @@ rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.t
  
 
 <item>
- <title>HUELVACOSTA</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** HUELVACOSTA **</title>
  <link>http://cls.todostreaming.eu/azahara/lepevision/chunklist.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>MELILLA</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MELILLA **</title>
  <link>http://stream.tvmelilla.es:1935/tvmelilla/live/playlist.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
@@ -433,25 +433,25 @@ rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.t
 
  
 <item>
- <title>SEVILLAFC</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SEVILLAFC **</title>
  <link>rtmp://flash0.80137-live0.dna.qbrick.com/80137-live0/sevillafc</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>MALAGATV</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MALAGATV **</title>
  <link>rtmp://teledifusion.tv/mijastv/mijastvlive</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>LEVANTE</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** LEVANTE **</title>
  <link>http://teledifusion.tv:1935/levantetvlive/levantetvlive/playlist.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
  
  <item>
- <title>OJOSSOLIDARIOS-Gran canaria</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** OJOSSOLIDARIOS-Gran canaria **</title>
  <link>http://wm.mad.interhost.com:80/OjosSolidariosTv/playlist.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
@@ -459,19 +459,19 @@ rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.t
 
  
 <item>
- <title>25BARBASTRO</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 25BARBASTRO **</title>
  <link>http://flash3.todostreaming.es/tvbarbastro/livestream/playlist.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
 
 <item> 
- <title>ASTURIAS</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ASTURIAS **</title>
  <link>rtmp://149.11.34.6:1935/live//teleasturias.stream</link>
 <thumbnail></thumbnail>  
 </item> 
  
 <item>
- <title>TOLEDO</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TOLEDO **</title>
  <link>http://flash3.todostreaming.es/edesco/livestream/playlist.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
@@ -479,43 +479,43 @@ rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.t
 
  
 <item>
- <title>RIBERA-Valencia</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** RIBERA-Valencia **</title>
  <link>http://flash3.todostreaming.es/ribera/livestream/playlist.m3u8</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>TV4-Castellon</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TV4-Castellon **</title>
  <link>http://flash3.todostreaming.es/15o8376r/mystream/playlist.m3u8</link>
 <thumbnail></thumbnail>  
 </item>
  
  <item>
- <title>DIRECTOTV</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** DIRECTOTV **</title>
  <link>rtmp://87.106.183.39/live/myStream_2</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>ONDACEROTV</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ONDACEROTV **</title>
  <link>rtmp://antena3fms35livefs.fplive.net/antena3fms35live-live//stream-eventos6_1</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>RIOJATV</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** RIOJATV **</title>
  <link>mms://87.106.208.121/stv</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>FERROL</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** FERROL **</title>
  <link>rtsp://streaming.arsenet.com/tvf</link>
  <thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>NAVARRATV</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** NAVARRATV **</title>
   <link>rtmp://antena3fms35livefs.fplive.net/antena3fms35live-live/stream-antena3_1</link>
   <thumbnail></thumbnail>  
 </item>

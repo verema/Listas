@@ -2,26 +2,26 @@
 
 
 <item>
-<title>IPTV Con Canales De Documentales</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IPTV Con Canales De Documentales **</title>
 <link>$doregex[makelist2]</link>
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
- <title>[COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR]</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR] **</title>
  <link>$doregex[makelist]</link>
  <thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
  <fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
  ]]></listrepeat>
 <expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <title>[COLOR skyblue][makelist.param1][/COLOR]</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue][makelist.param1][/COLOR] **</title>
  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR lightblue]Catoal [/COLOR] [makelist.param1]</link>
  <thumbnail></thumbnail>
  ]]></listrepeat>
@@ -34,12 +34,12 @@
 </item> 
 
 <item>
-<title>El Hombre Y La Tierra</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Hombre Y La Tierra **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>https://images-na.ssl-images-amazon.com/images/I/51VqM2nfNkL._AC_UL320_SR224,320_.jpg</thumbnail>
 		<fanart>http://1.bp.blogspot.com/-kRWpV9TUtYg/UmOfh0wfoYI/AAAAAAAABW8/AMKcWhHGi2Q/s1600/1.jpg</fanart>
@@ -65,12 +65,12 @@
 </item>
 
 <item>
-<title>El Hombre Y La Tierra (Fauna Iberica)</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Hombre Y La Tierra (Fauna Iberica) **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR yellow] [makelist.param2][/COLOR]</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>https://images-na.ssl-images-amazon.com/images/I/51VqM2nfNkL._AC_UL320_SR224,320_.jpg</thumbnail>
 		<fanart>http://1.bp.blogspot.com/-kRWpV9TUtYg/UmOfh0wfoYI/AAAAAAAABW8/AMKcWhHGi2Q/s1600/1.jpg</fanart>
@@ -96,14 +96,14 @@
 </item>
 
 <item>
-<title>Los Mejores Documentales</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Los Mejores Documentales **</title>
 <link>$doregex[makelist2]</link>
 
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Página [makelist2.param1] **</title>
 <link>$doregex[makelist3]</link>
 <referer></referer>
 <thumbnail></thumbnail>
@@ -116,7 +116,7 @@
 <regex>
             <name>makelist3</name>
             <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
+                        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist3.param2] **</title>
                         <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
                         <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
             ]]></listrepeat>
@@ -187,14 +187,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Los Mejores Documentales 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Los Mejores Documentales 2 **</title>
 <link>$doregex[makelist2]</link>
 
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Página [makelist2.param1] **</title>
 <link>$doregex[makelist3]</link>
 <referer></referer>
 <thumbnail></thumbnail>
@@ -207,7 +207,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
             <name>makelist3</name>
             <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
+                        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist3.param2] **</title>
                         <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
                         <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
             ]]></listrepeat>
@@ -278,14 +278,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Los Mejores Documentales 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Los Mejores Documentales 3 **</title>
 <link>$doregex[makelist2]</link>
 
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Página [makelist2.param1] **</title>
 <link>$doregex[makelist3]</link>
 <referer></referer>
 <thumbnail></thumbnail>
@@ -298,7 +298,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
             <name>makelist3</name>
             <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
+                        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist3.param2] **</title>
                         <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
                         <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
             ]]></listrepeat>
@@ -369,14 +369,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Redes Con Eduardo Punset</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Redes Con Eduardo Punset **</title>
 <link>$doregex[makelist2]</link>
 
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>Página [makelist2.param1]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Página [makelist2.param1] **</title>
 <link>$doregex[makelist3]</link>
 <referer></referer>
 <thumbnail></thumbnail>
@@ -389,7 +389,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
             <name>makelist3</name>
             <listrepeat><![CDATA[
-                        <title>[makelist3.param2]</title>
+                        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist3.param2] **</title>
                         <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
                         <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
             ]]></listrepeat>
@@ -460,7 +460,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <tem>
-<title>Caza Y Pesca</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Caza Y Pesca **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/5162.ts&amp;streamtype=TSDOWNLOADER&amp;name=Caza Y Pesca</link>
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/7402.ts&amp;streamtype=TSDOWNLOADER&amp;name=Caza Y Pesca</link>
 <thumbnail>http://i.imgur.com/fP0g5ld.jpg</thumbnail>
@@ -468,77 +468,77 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <tem>
-<title>Discovery Max[COLOR red][I] New STD[/I][/COLOR]</title> 
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Discovery Max[COLOR red][I] New STD[/I][/COLOR] **</title> 
 
 <thumbnail>http://i.imgur.com/ST0nJb2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
 <tem>
-<title>Discovery Channel[COLOR red][I] New STD[/I][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Discovery Channel[COLOR red][I] New STD[/I][/COLOR] **</title>
 
 <thumbnail>http://i.imgur.com/VEXxOky.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>National Geography</title> 
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** National Geography **</title> 
 <link>http://vod.cdn.iutpcdn.com/LIVE/H01/CANAL377/PROFILE03.m3u8</link>
 <thumbnail>http://i.imgur.com/Co57iED.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
- <title>A and E</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** A and E **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=a94301d9dma2hc8  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/4q7xd8N.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>   
            
 <tem>
-<title>A and E</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** A and E **</title>
 <link>rtmp://31.220.0.187/privatestream/ playpath=aande25?keys=jiH3m9uxPA2FhTqpPeUjLw&keyt=1448246240 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i.imgur.com/4q7xd8N.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>Canal Cocina</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Canal Cocina **</title>
 <link>rtmp://31.220.40.63/privatestream/ playpath=cocinach?keys=xhU0t9d1sEYHeBpF-j7IbQ&keyt=1462304203 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i.imgur.com/sJFRAiz.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>  
            
 <tem>
-<title>Decasa tv</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Decasa tv **</title>
 <link>rtmp://31.220.0.155/privatestream/ playpath=decasa12?keys=TPwqJlqH7xBOxQFgjPghLw&keyt=1448248518 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i.imgur.com/Wz8ag28.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
 <tem>
-<title>Constriur TV</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Constriur TV **</title>
 <link>http://iphone-streaming.ustream.tv/uhls/9143107/streams/live/iphone/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/gsd9AnF.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>Vaughan tv</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Vaughan tv **</title>         
 <link>rtmp-raw=rtmp://vaughantv.streaming-pro.com:1935/live/ playpath=vaughantv swfUrl=http://grupovaughan.com/jwplayer.flash.swf live=1 pageUrl=http://grupovaughan.com/vaughan-tv/</link>
 <thumbnail>https://pbs.twimg.com/profile_images/660596526880833536/w5F17Ux2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
 <tem>
-<title>Iberalia</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Iberalia **</title>
 <link>rtmp://31.220.40.60/privatestream/ playpath=iberalia65?keys=gz490nDBAqgC8FJ60ndyhQ&keyt=1448248960 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>https://pbs.twimg.com/profile_images/660596526880833536/w5F17Ux2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>Viajar</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Viajar **</title>
 <link>http://194.179.53.124:1935/live/myStream_2/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/XdbNaeI.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>

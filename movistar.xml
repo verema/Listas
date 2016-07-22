@@ -2,26 +2,26 @@
 
 
 <item>
-<title>IPTV Con Multitut de Canales</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IPTV Con Multitut de Canales **</title>
 <link>$doregex[makelist2]</link>
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
- <title>[COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR]</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR] **</title>
  <link>$doregex[makelist]</link>
  <thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
  <fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
  ]]></listrepeat>
 <expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <title>[COLOR skyblue][makelist.param1][/COLOR]</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue][makelist.param1][/COLOR] **</title>
  <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR lightblue]Catoal [/COLOR] [makelist.param1]</link>
  <thumbnail></thumbnail>
  ]]></listrepeat>
@@ -34,7 +34,7 @@
 </item> 
 
 <tem>
-<title>[COLOR lime][B]Eventos[/B][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][B]Eventos[/B][/COLOR] **</title>
 <link>$doregex[get-decode]</link>
 <regex>
 <name>get-decode</name>
@@ -46,7 +46,7 @@
 </item>
 
 <item>
-<title>[COLOR lime][B]Eventos[/B][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][B]Eventos[/B][/COLOR] **</title>
 <link>http://hls.goodgame.ru/hls/$doregex[get-id].m3u8</link>
 <regex>
 <name>get-id</name>
@@ -57,7 +57,7 @@
 </item>
 
 <tem>
-<title>[COLOR lime][B]Eventos[/B][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][B]Eventos[/B][/COLOR] **</title>
 <link>$doregex[url]</link>
 <regex>
 	<name>url</name>
@@ -73,35 +73,35 @@
 </item>
 
 <tem>
-<title>#0</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** #0 **</title>
 <link>plugin://plugin.video.f4mTester/?url=http://www.elboxtv.com:1985/live/nassim/nassim/1927.ts&amp;streamtype=TSDOWNLOADER&amp;name=#0</link>
 <thumbnail>http://i.imgur.com/JvpukWA.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>#0 </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** #0  **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=6ztb3u18p5s68ll  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/JvpukWA.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
 <item>
-<title>Estrenos</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Estrenos **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=oqlqntk3lt0tcz4 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/Y103Nw4.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
 <item>
- <title>Bein</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=9eeg1imgppj6zy0  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Bein</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein **</title>
 <link>$doregex[url]</link>
 <regex>
 <name>url</name>
@@ -120,7 +120,7 @@
 </item>
  
 <item>
-<title>Bein Latino</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein Latino **</title>
 <link>$doregex[getVipRacing]</link>
 <regex>
 <name>getVipRacing</name>
@@ -132,7 +132,7 @@
 </item>
 
 <item> 
-<title>+ Liga [COLOR lime][I]HD[/I][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Liga [COLOR lime][I]HD[/I][/COLOR] **</title>
 <link>$doregex[select_Url]</link>
 <regex>
 <name>select_Url</name>
@@ -158,42 +158,42 @@
 </item>
 
 <tem>
-<title>Liga</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Liga **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1670.ts&amp;streamtype=TSDOWNLOADER&amp;name=Liga</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
- <title>+ Liga</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Liga **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=nkmbihjxj5lmd5b  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>+ Liga 2</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Liga 2 **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/1218.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Liga 2</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>+ Deportes</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Deportes **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=8z2sz9pg92rdjw1 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
 <tem>
-<title>Deportes</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/155.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Deportes</link>
 <thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>Deportes 2</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes 2 **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1675.ts&amp;streamtype=TSDOWNLOADER&amp;name=Deportes 2</link>
 <thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -203,18 +203,18 @@
 <link>plugin://program.plexus/?url=5050ac3455cc3c35aa85c4f9d4e1bc7b6bc9e197&amp;mode=1&amp;name=Catoal+Acestreams</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canal-plus-bar.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<title>Canal+ Futbol[COLOR red] Con Plexus[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Canal+ Futbol[COLOR red] Con Plexus[/COLOR] **</title>
 </item>
 
 <tem>
-<title>+ Futbol</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Futbol **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/156.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Futbol</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canal-plus-bar.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
 <item>
-<title>Canal+ Futbol</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Canal+ Futbol **</title>
 <link>$doregex[select_Url]</link>
 <regex>
 <name>select_Url</name>
@@ -240,28 +240,28 @@
 </item>
 
 <item>
-<title>+ Golf</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Golf **</title>
 <link>rtmp://31.220.40.63/privatestream/ playpath=golf8?keys=zmbsoAoFT1FtYVt66VzRSw&keyt=1460720380 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalGolf.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>+ Golf</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Golf **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/412.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Gol</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalGolf.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>TeleToro San Fermines </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TeleToro San Fermines  **</title>
 <f4m>http://stream.ssh101.com:1935/live/SANFERMIN/chunklist.m3u8</f4m>
 <thumbnail>http://teletoro.link/teletorocabecera.jpg</thumbnail>
 <fanart>http://teletoro.link/teletorocabecera.jpg</fanart>            
 </item>
 
 <tem>
-<title>Toros[I]teletoro [/I]</title><!--http://teletoro.link/ -->
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Toros[I]teletoro [/I] **</title><!--http://teletoro.link/ -->
 <link>http://$doregex[ip]$doregex[m3u8]</link>
 <regex>
 			<name>ip</name>
@@ -280,26 +280,26 @@
 </item>
 
 <item>
-<title>+ Toros </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Toros  **</title>
 <link>rtmp://31.220.0.13/privatestream/ playpath=torosch?keys=KdbDBjM1-NmBkvF680paaQ&keyt=1460124824 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/cptohd.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>+ Toros</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Toros **</title>
 <link>rtmp://31.220.40.62/privatestream/torosch?keys=xENZYIYbyz1icmtCrJGzeA&keyt=1461283967 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf live=1 pageUrl=http://privatestream.tv/37</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/cptohd.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>Evento F1 hd</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 hd **</title>
 <f4m>http://stream-ec.vty.dailymotion.com/13/dm/1/x4hcpw5/live.isml/events(live-1466335651)/live-audio=128000-video=2000000.m3u8</f4m>
 </item>
 
 <item>
-<title>Evento F1</title>	
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 **</title>	
 <link>$doregex[url]</link>
 <regex>
 	<name>url</name>
@@ -315,7 +315,7 @@
 </item>
 
 <tem>
-<title>Evento F1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 **</title>
 <link>$doregex[get-decode]</link>
 <regex>
 <name>get-decode</name>
@@ -326,7 +326,7 @@
 </item>  
 
 <tem>
-<title>Evento F1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 **</title>
 <link>$doregex[url]</link>
 <regex>
 	<name>url</name>
@@ -342,7 +342,7 @@
 </item>
 
 <tem>
-<title>Evento F1 diferido</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 diferido **</title>
 <link>$doregex[url]</link>
 <regex>
 <name>url</name>
@@ -358,7 +358,7 @@
 </item>
 
 <tem>
-<title>Evento F1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 **</title>
 <link>$doregex[url]</link>
 <regex>
 	<name>url</name>
@@ -374,7 +374,7 @@
 </item>
 
 <tem>
-<title>Evento F1. HD</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1. HD **</title>
 <link>$doregex[get-decode]</link>
 <regex>
 <name>get-decode</name>
@@ -386,7 +386,7 @@
 </item>
 
 <tem>
-<title>Formula 1</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1 **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/6794.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3102.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
 <link>plugin://plugin.video.f4mTester/?url=http://iptv-volkan.net:8000/live/mike/mike1/902.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
@@ -395,28 +395,28 @@
 </item>
 
 <item>
-<title>Formula 1 </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1  **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=38tj1wgh6wfqa6e swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=33317&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
 <item>
-<title>Formula 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1 **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=kpfk285js6zoxea  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>Moto GP</title>         
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Moto GP **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/2085.ts&amp;streamtype=TSDOWNLOADER&amp;name=Moto GP</link>
 <thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>MotoGP-HD-Eventos</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MotoGP-HD-Eventos **</title>
 <link>$doregex[get-decode]</link>
 <regex>
 <name>get-decode</name>
@@ -428,7 +428,7 @@ thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 </item>  
 
 <tem>
-<title>MotoGP-HD-Eventos</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MotoGP-HD-Eventos **</title>
 <link>$doregex[get-decode]</link>
 <regex>
 <name>get-decode</name>
@@ -440,77 +440,77 @@ thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 </item>
 
 <item>
- <title>Moto gp</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Moto gp **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=av7woklj9cf50c2  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Real Madrid</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Real Madrid **</title>
 <link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-p.m3u8?sd=10&rebase=on</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/RealMadridTv.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
  
 <item>
-<title>Barça TV</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Barça TV **</title>
 <link>rtmp://31.220.0.187/privatestream/ playpath=barcas?keys=f9C9zoE6GkP1eV8jOs_Omw&keyt=1460719428 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/BarsaTV300.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
 <item>
-<title>Acción</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Acción **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=qyxepg6xttc83as swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item> 
 
 <tem>
-<title>Comedia</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Comedia **</title>
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1674.ts&amp;streamtype=TSDOWNLOADER&amp;name=Comedia</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-3.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Comedia</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Comedia **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=t6zehd5sg0oehhq swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-3.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>SeriesXtra</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SeriesXtra **</title>
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1669.ts&amp;streamtype=TSDOWNLOADER&amp;name=SeriesXtra</link>
 <thumbnail>http://i.imgur.com/0XwnQQ5.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
 <item>
-<title>SeriesXtra</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SeriesXtra **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=62sn73q6cjfaq1l swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/0XwnQQ5.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>Series</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Series **</title>
 <link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1668.ts&amp;streamtype=TSDOWNLOADER&amp;name=Series</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalSeries.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>Series</title>    
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Series **</title>    
 <link>rtmp://www1.iguide.to/iguide playpath=203cy9bnzp1kcm9 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalSeries.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <tem>
-<title>+ Xtra</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Xtra **</title>
 <link>rtmp://31.220.0.201/privatestream/ playpath=plxtra?keys=8SEn6tdFTznwTry61lgA4w&keyt=1460562440 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalxtra.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
