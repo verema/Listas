@@ -34,7 +34,7 @@
 </item> 
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][B]Eventos[/B][/COLOR][COLOR lightslategray] [I]Gracias a AdryanList[/I][/COLOR] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][B]Eventos[/B][/COLOR] **</title>
 <link>$doregex[makelist]</link>
 
 <regex>
@@ -64,7 +64,7 @@
 <name>makelist2</name>
 <listrepeat><![CDATA[
     <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue][makelist2.param2][/COLOR] **</title>
-    <link>plugin://plugin.video.f4mTester/?name=[COLOR lime]Catoal[/COLOR] [makelist.param2]&amp;streamtype=HLS&amp;url=$doregex[catcher]</link>
+    <link>plugin://plugin.video.f4mTester/?name=[COLOR lime]Catoal Eventos[/COLOR]&amp;streamtype=HLS&amp;url=$doregex[catcher]</link>
 ]]></listrepeat>
 <expres>href="(\w+\d+\.html)".+?&gt;(.*?)&lt;</expres>
 <page>[makelist.param3]</page>
