@@ -65,6 +65,7 @@
 <listrepeat><![CDATA[
     <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue][makelist2.param2][/COLOR] **</title>
     <link>plugin://plugin.video.f4mTester/?name=[COLOR lime]Catoal Eventos[/COLOR]&amp;streamtype=HLS&amp;url=$doregex[catcher]</link>
+	<thumbnail>http://i.imgur.com/aZKxEjN.jpg</thumbnail>
 ]]></listrepeat>
 <expres>href="(\w+\d+\.html)".+?&gt;(.*?)&lt;</expres>
 <page>[makelist.param3]</page>
