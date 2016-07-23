@@ -52,6 +52,44 @@
 </item>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Cine de Barrio ***[/COLOR] **[I] Nuevo[/I]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [makelist.param3] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://1.bp.blogspot.com/_7JRdmAAgnbk/SvQAiTVxT_I/AAAAAAAAAwM/Rqkop3Ib-N4/s400/cine+de+barrio+(front).jpg</thumbnail>
+		<fanart>http://www.diariosur.es/noticias/201601/13/media/cortadas/cine-regio--575x323.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/trivianita/cine-de-barrio-34541/list,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/trivianita/cine-de-barrio-34541/list,1,2</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://1.bp.blogspot.com/_7JRdmAAgnbk/SvQAiTVxT_I/AAAAAAAAAwM/Rqkop3Ib-N4/s400/cine+de+barrio+(front).jpg</thumbnail>
+<fanart>http://www.diariosur.es/noticias/201601/13/media/cortadas/cine-regio--575x323.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Películas en HD ***[/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <regex>
