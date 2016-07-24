@@ -721,7 +721,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 </channel>
 
 <channel>
-<name>.[COLOR lime] El Mundo del Deporte[/COLOR][I] ZemTv Addon Requerido[/I]</name>
+<name>.[COLOR lightslategray]Nuevo[/COLOR][COLOR lime] El Mundo del Deporte[/COLOR]</name>
 <Thumbnail></thumbnail>
 <fanart></fanart>
 <items>
