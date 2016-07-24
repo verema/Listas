@@ -117,6 +117,137 @@
 </item>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** A Todo Gas **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [makelist.param3] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://www.mubis.es/media/covers/1882/3306/the-fast-and-furious-a-todo-gas-saga-completa-portada-l_cover.jpg</thumbnail>
+		<fanart>https://filmfriki.files.wordpress.com/2012/01/the-fast-and-the-furious-poster.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/trivianita/a-todo-gas-saga-el-rockero-32144/list,1,1</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/trivianita/a-todo-gas-saga-el-rockero-32144/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.mubis.es/media/covers/1882/3306/the-fast-and-furious-a-todo-gas-saga-completa-portada-l_cover.jpg</thumbnail>
+<fanart>https://filmfriki.files.wordpress.com/2012/01/the-fast-and-the-furious-poster.png</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Dune **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://upload.wikimedia.org/wikipedia/en/3/3b/Dune-CardGameCover.jpg</thumbnail>
+		<fanart>https://kbwheeler.files.wordpress.com/2009/03/dune-0001.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Koba1994/saga-dune-68108/gallery,1,1</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/3/3b/Dune-CardGameCover.jpg</thumbnail>
+<fanart>https://kbwheeler.files.wordpress.com/2009/03/dune-0001.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Planeta de los Simios **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://hispatube.com/images/contenidos/pelis/batalla-por-el-planeta-de-los-simios.jpg</thumbnail>
+		<fanart>http://images.eldiario.es/cultura/cine/Cuantas-peliculas-Planeta-simios-cree_EDIIMA20140717_0237_5.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Koba1994/saga-el-planeta-de-los-simios-68107/gallery,1,1</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://hispatube.com/images/contenidos/pelis/batalla-por-el-planeta-de-los-simios.jpg</thumbnail>
+<fanart>http://images.eldiario.es/cultura/cine/Cuantas-peliculas-Planeta-simios-cree_EDIIMA20140717_0237_5.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Superdetective en Hollywood **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://s28.postimg.org/dvhrweme5/Beverly_Hills_Cop_saga.jpg</thumbnail>
+		<fanart>http://www.antena3.com/clipping/2016/06/15/00045/31.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/Koba1994/trilogia-superdetective-en-hollywood-66248/gallery,1,1</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://s28.postimg.org/dvhrweme5/Beverly_Hills_Cop_saga.jpg</thumbnail>
+<fanart>http://www.antena3.com/clipping/2016/06/15/00045/31.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Saga Star Wars **</title>
 <link>$doregex[makelist]</link>
 <regex>
