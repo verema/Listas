@@ -52,7 +52,7 @@
  </item>
 
  
-<tem>
+<item>
 <title> [COLOR red]24/7[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -60,32 +60,37 @@
 <listrepeat><![CDATA[
 <item>
 			<title>[makelist.param2]</title>
-			<link>rtmp://$doregex[getserver]/live?$doregex[clearCode] playpath=live_[makelist.param1] live=1 timeout=20</link>
-			<regex>
-			<name>clearCode</name>
-			<expres>$pyFunction:'$doregex[getencoded]'.replace("0m0","").replace("0n0","")</expres>
-			<page></page>
-			</regex>
-			<regex>
-			<name>getencoded</name>
-			<expres>:mvnkey-(.*)</expres>
-			<page>$doregex[getUrl]</page>
-			</regex>
-			<regex>
-			<name>getserver</name>
-			<expres>(.*?);</expres>
-			<page>$doregex[getUrl]</page>
-			</regex>
-			<regex>
-			<name>getUrl</name>
-			<expres>(.*)</expres>
-			<page>http://mvn.vaughnsoft.net/video/edge/live_[makelist.param1]$doregex[gettime]-$doregex[gettime].33434</page>
-			</regex>
-			<regex>
-			<name>gettime</name>
-			<expres>$pyFunction:str(int(round(time.time() * 1000)))</expres>
-			<page></page>
-			</regex>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_[makelist.param1]  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]_0.1.1.750_440-440-0.7715111235156655</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>     
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]_0.1.1.750_440-440-0.7715111235156655</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/[makelist.param1]</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
 			<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail></item>
 ]]></listrepeat>
 <expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
@@ -181,7 +186,7 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>   
 	
-	<item>
+	<tem>
     <title>[COLOR red]LA ALTERNATIVA[/COLOR]</title>
     <link>http://Ignoreme</link>
     <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#067;&#097;&#116;&#111;&#097;&#108;&#105;&#115;&#116;/&#109;&#097;&#115;&#116;&#101;&#114;/&#097;&#108;&#116;&#101;&#114;&#110;&#097;&#116;&#105;&#118;&#097;</externallink>
