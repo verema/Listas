@@ -4,7 +4,7 @@
 
 <channels>
 <channels_info> 
-<title>DEPORTES</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** DEPORTES **</title>
 <genre>Deportes</genre>
 <description>Los deportes del dia</description>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/deport10.jpg</thumbnail>
@@ -21,7 +21,7 @@
 <items>
 
 <item>
-<title>.[COLOR lime] Lista de deportes de ADRYAN LIST [/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Lista de deportes de ADRYAN LIST [/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>http://adryanlist.org/adryan/deportes_adryan_list.xml</externallink>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -36,21 +36,21 @@
 <items>
 
 <item>
-    <title>. Sevilla FC Op.1</title>
+    <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . Sevilla FC Op.1 **</title>
     <link>http://sevillafc_live-lh.akamaihd.net/i/video_0@354142/index_0700_av-b.m3u8?sd=10&rebase=on</link>
     <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/n_sevilla_fondos-44214.jpg</thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
 	
 <item>
-    <title>. Sevilla FC Op.2</title>
+    <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . Sevilla FC Op.2 **</title>
     <link>http://sevillafc_live-lh.akamaihd.net/i/video_0@354142/index_0300_av-p.m3u8?sd=10&rebase=on</link>
     <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/n_sevilla_fondos-44214.jpg</thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>	
 	
 <item>
-    <title>. Sevilla FC Op.3</title>
+    <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . Sevilla FC Op.3 **</title>
     <link>http://sevillafc_live-lh.akamaihd.net/i/video_0@354142/index_0700_av-p.m3u8?sd=10&rebase=on</link>
     <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/n_sevilla_fondos-44214.jpg</thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -65,7 +65,7 @@
 <items>
 
 <item>
-<title>.[COLOR lime] Mix Deportes[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Mix Deportes[/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>http://pastebin.com/raw/BQCNjGMZ</externallink>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -80,7 +80,7 @@
 <items>
 
 <item>
-<title>.[COLOR lime] Mix Bein[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Mix Bein[/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>http://pastebin.com/raw/zEpa4pAU</externallink>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -95,7 +95,7 @@
 <items>
 
 <item>
-<title>. [COLOR lime]ROJADIRECTA[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . [COLOR lime]ROJADIRECTA[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/rojadirecta.me.cfg&amp;mode=1</jsonrpc>
 </item>
@@ -109,12 +109,12 @@
 <items>
 
 <item>
-<title>.[COLOR lime] PIRLO TV[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] PIRLO TV[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR coral][makelist.param1][/COLOR] • [COLOR skyblue][B][makelist.param3][/B][/COLOR][COLOR skyblue][makelist.param4][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR coral][makelist.param1][/COLOR] • [COLOR skyblue][B][makelist.param3][/B][/COLOR][COLOR skyblue][makelist.param4][/COLOR] **</title>
 <sportsdevil>http://www.pirlotvlive.com/[makelist.param2]</sportsdevil>
 <referer>http://www.pirlotvlive.com</referer>
 ]]></listrepeat>
@@ -135,13 +135,13 @@
 <items>
 
 <item>
-<title>. [COLOR lime]Wizhdsports[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . [COLOR lime]Wizhdsports[/COLOR] **</title>
 <link>$doregex[makelist]</link>
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[ 
-   <title>[makelist.param2]--[makelist.param1]</title>
+   <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param2]--[makelist.param1] **</title>
    <link>$doregex[makelist2]</link>
    <referer>http://wizhdsports.com</referer>
 ]]></listrepeat>
@@ -154,7 +154,7 @@
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[ 
-	<title>Stream [makelist2.param1]</title>
+	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Stream [makelist2.param1] **</title>
 	<link>$doregex[getUrl]</link>
 ]]></listrepeat>
 <expres><![CDATA[(?s)float:left.{4,10}href.+?Stream\s*(\d+)\s*<\/a]]></expres>
@@ -225,7 +225,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 1[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 1[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -239,7 +239,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 2[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 2[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -253,7 +253,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 3[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 3[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -267,7 +267,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 4[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 4[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -281,7 +281,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 5[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 5[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -295,7 +295,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 6[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 6[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -309,7 +309,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 7[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 7[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -323,7 +323,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 8[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 8[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -337,7 +337,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 9[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 9[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -351,7 +351,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 10[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 10[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -365,7 +365,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 11[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 11[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -379,7 +379,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 12[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 12[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -393,7 +393,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 13[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 13[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -407,7 +407,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 14[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 14[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -421,7 +421,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 15[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 15[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -435,7 +435,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 16[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 16[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -449,7 +449,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 17[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 17[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -463,7 +463,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 18[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 18[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -477,7 +477,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 19[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 19[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -491,7 +491,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 20[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 20[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -505,7 +505,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 21[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 21[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -519,7 +519,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 22[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 22[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -533,7 +533,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 23[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 23[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -547,7 +547,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 24[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 24[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -561,7 +561,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 25[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 25[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -575,7 +575,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 26[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 26[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -589,7 +589,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 27[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 27[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -603,7 +603,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 28[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 28[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -617,7 +617,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 29[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 29[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -631,7 +631,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 30[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 30[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -645,7 +645,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 31[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 31[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -659,7 +659,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 32[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 32[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -673,7 +673,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 33[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 33[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -687,7 +687,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 34[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 34[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -701,7 +701,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 35[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 35[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 
 
@@ -715,7 +715,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <setcookie>beget=begetok</setcookie>
 </regex>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
-<title>[COLOR lime]ArenaVision 36[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision 36[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</title>
 </item>
 </items>
 </channel>
@@ -727,143 +727,71 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <items>
 
 <item>
-<title>.[COLOR lime] Copa y Puro A Punto[/COLOR][I] ZemTv Addon Requerido[/I]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Copa y Puro A Punto[/COLOR][I] ZemTv Addon Requerido[/I] **</title>
 <link>http://ignora.me</link>
 <jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=56&amp;name=Sport365.live&amp;url=sss</jsonrpc>
 <thumbnail> </thumbnail>
 </item>
 
-<tem>
-<title>23:00 CET FUTBOL: COSTA RICA-PARAGUAY (COPA AMERICA CENTENARIO)</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal4.php</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] TuttoSport[/COLOR] **</title>	
+<link>$doregex[makelist]</link>
 
-<tem>
-<title>01:30 CET FUTBOL: HAITI-PERU (COPA AMERICA CENTENARIO)</title>
-<link>$doregex[get-decode]</link>
 <regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal4.php</page>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR deepskyblue][makelist.param1][/COLOR] **</title>
+		<link>$doregex[getUrl]</link>
+		<thumbnail>http://gloocall.com/wp-content/uploads/Logo-TuttoSport-150x150.jpg</thumbnail>
+		<fanart>http://tarjeta-roja.com/wp-content/uploads/2015/06/xfootball.png.pagespeed.ic.g9eS-yvCav.png</fanart>
+        ]]></listrepeat>
+<expres>td>(.*?)<[\w\W\s]{0,30}tuttosportweb.com/(.*?).[\w\W\s]{0,15}blank">(.*?)<</expres>
+<page>http://tuttosportweb.com/</page>
+<cookieJar></cookieJar>
 </regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
 
-<tem>
-<title>04:00 CET FUTBOL: BRASIL-ECUADOR (COPA AMERICA CENTENARIO) </title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal4.php</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
 
-<tem>
-<title>15:00 CET TENIS: N. DJOKOVIC-A. MURRAY/ FINAL MASCULINA (ROLAND GARROS)</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal3.php</page>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://tuttosportweb.com/update/ch1.html'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://tuttosportweb.com/update/[makelist.param2].html</page>
+<referer>http://tuttosportweb.com</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
 </regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-<tem>
-<title>23:00 CET FUTBOL: JAMAICA-VENEZUELA (COPA AMERICA CENTENARIO)</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal4.php</page>
 </regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-<tem>
-<title>02:00 CET FUTBOL: MEXICO-URUGUAY (COPA AMERICA CENTENARIO)</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal4.php</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-<tem>
-<title> 20:30 CET FUTBOL: REAL OVIEDO-OSASUNA (ESPAÑA/LIGA ADELANTE)</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal16.php</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-<tem>
-<title>20:30 CET FUTBOL: MIRANDES-LEGANES (ESPAÑA/LIGA ADELANTE)</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal2.php</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-<tem>
-<title>20:30 CET FUTBOL: PONFERRADINA-GIRONA (ESPAÑA/LIGA ADELANTE)</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal14.php</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-<tem>
-<title>20:30 CET FUTBOL: REAL VALLADOLID-REAL MALLORCA (ESPAÑA/LIGA ADELANTE)</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal17.php</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-<tem>
-<title>20:30 CET FUTBOL: LLAGOSTERA-REAL ZARAGOZA (ESPAÑA/LIGA ADELANTE)</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal11.php</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
+<thumbnail>http://gloocall.com/wp-content/uploads/Logo-TuttoSport-150x150.jpg</thumbnail>
+<fanart>http://tarjeta-roja.com/wp-content/uploads/2015/06/xfootball.png.pagespeed.ic.g9eS-yvCav.png</fanart>
+</item>	
 </items>
 </channel>
 
