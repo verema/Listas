@@ -52,7 +52,7 @@
  </item>
 
  
-<item>
+<tem>
 <title> [COLOR red]24/7[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
