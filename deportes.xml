@@ -740,7 +740,7 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR deepskyblue][makelist.param1][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param1][/COLOR] **</title>
 		<link>$doregex[getUrl]</link>
 		<thumbnail>http://gloocall.com/wp-content/uploads/Logo-TuttoSport-150x150.jpg</thumbnail>
 		<fanart>http://tarjeta-roja.com/wp-content/uploads/2015/06/xfootball.png.pagespeed.ic.g9eS-yvCav.png</fanart>
