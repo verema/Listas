@@ -18,7 +18,7 @@
 <items>
 
 <item>
-<title>[COLOR lime]Estrenos[/COLOR] </title>
+<title>[COLOR lime]Estreno[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 
 
@@ -43,7 +43,7 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
 
-<title>[COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray][[makelist.param2]][/COLOR]</title>
+<title>[COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray][[makelist.param4]][/COLOR]</title>
 <link>$doregex[id]</link>
 
 
