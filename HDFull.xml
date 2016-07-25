@@ -34,6 +34,7 @@
 <page>http://hdfull.tv/peliculas-estreno</page>
 <referer></referer>
 <cookieJar></cookieJar>
+
 </regex>
 
   
@@ -44,9 +45,11 @@
 
 <title>[COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray][[makelist.param1]][/COLOR]</title>
 <link>$doregex[id]</link>
+
+
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file:'(.*?)'</expres>
 <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -57,7 +60,7 @@
 
 ]]></listrepeat>
 
-<expres>href="http://streamin.to/(.*?)"</expres>
+<expres>http://streamin.to/embed-(.*?)-</expres>
 <page>http://hdfull.tv/pelicula/[makelist2.param1]</page>
 <referer></referer>
 <cookieJar></cookieJar>
