@@ -2,7 +2,7 @@
 
 <channels>
 <channels_info> 
-<title>Hdfull</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Hdfull **</title>
 <genre>Peliculas</genre>
 <description>Web de peliculas en audio español y latino</description>
 <thumbnail>http://i.imgur.com/PIQyl6k.jpg</thumbnail>
@@ -18,14 +18,13 @@
 <items>
 
 <item>
-<title>[COLOR lime]Estrenos[/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Estrenos[/COLOR] **</title>
 <link>$doregex[makelist2]</link>
-
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param3][/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param3][/COLOR]  **</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
@@ -34,16 +33,13 @@
 <page>http://hdfull.tv/peliculas-estreno</page>
 <referer></referer>
 <cookieJar></cookieJar>
-
-</regex>
-
-  
+</regex>  
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
 
-<title>[COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray][[makelist.param0]][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray] [/COLOR] **</title>
 <link>$doregex[id]</link>
 
 
@@ -68,12 +64,14 @@
 </item>
 
 <item>
-<title>[COLOR lime]Actualizadas[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Actualizadas[/COLOR] **</title>
 <link>$doregex[makelist2]</link>
+
+
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param3][/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param3][/COLOR]  **</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
@@ -90,7 +88,7 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
 
-<title>[COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray][[makelist.param1]][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray][[makelist.param1]][/COLOR] **</title>
 <link>$doregex[id]</link>
 
 
@@ -115,7 +113,7 @@
 </item>
 
 <item>
-<title>[COLOR lime]Por Genero[/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Por Genero[/COLOR]  **</title>
 <link>$doregex[makelist3]</link> 
 <thumbnail> </thumbnail>  
 
@@ -124,7 +122,7 @@
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist3.param2][/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist3.param2][/COLOR]  **</title>
 <link>$doregex[showPages]</link> 
 
 ]]></listrepeat>
@@ -139,7 +137,7 @@
 <regex>
 <name>showPages</name>
 <listrepeat><![CDATA[
-   <title>[COLOR skyblue]room# [showPages.param1][/COLOR]</title>
+   <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue]room# [showPages.param1][/COLOR] **</title>
     <link>$doregex[makelist2]</link>
        
 ]]></listrepeat>
@@ -173,7 +171,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param3][/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param3][/COLOR]  **</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
@@ -190,7 +188,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist</name>
 <listrepeat><![CDATA[
 
-<title>[COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray][[makelist.param1]][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue][makelist2.param3] [/COLOR]  **</title>
 <link>$doregex[id]</link>
 
 
