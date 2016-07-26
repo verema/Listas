@@ -15,13 +15,13 @@
 
 
 <channel>
-<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Lista de deportes de ADRYAN LIST [/COLOR] **</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] Lista de deportes de ADRYAN LIST [/COLOR] **</name>
 <Thumbnail></thumbnail>
 <fanart></fanart>
 <items>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Lista de deportes de ADRYAN LIST [/COLOR] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] Lista de deportes de ADRYAN LIST [/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>http://adryanlist.org/adryan/deportes_adryan_list.xml</externallink>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -30,27 +30,27 @@
 </channel>
 
 <channel>
-<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . Sevilla FC **</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] Sevilla FC[/COLOR] **</name>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/n_sevilla_fondos-44214.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <items>
 
 <item>
-    <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . Sevilla FC Op.1 **</title>
+    <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  Sevilla FC Op.1 **</title>
     <link>http://sevillafc_live-lh.akamaihd.net/i/video_0@354142/index_0700_av-b.m3u8?sd=10&rebase=on</link>
     <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/n_sevilla_fondos-44214.jpg</thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
 	
 <item>
-    <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . Sevilla FC Op.2 **</title>
+    <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  Sevilla FC Op.2 **</title>
     <link>http://sevillafc_live-lh.akamaihd.net/i/video_0@354142/index_0300_av-p.m3u8?sd=10&rebase=on</link>
     <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/n_sevilla_fondos-44214.jpg</thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>	
 	
 <item>
-    <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . Sevilla FC Op.3 **</title>
+    <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  Sevilla FC Op.3 **</title>
     <link>http://sevillafc_live-lh.akamaihd.net/i/video_0@354142/index_0700_av-p.m3u8?sd=10&rebase=on</link>
     <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/n_sevilla_fondos-44214.jpg</thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -59,14 +59,14 @@
 </channel>
 
 <channel>
-<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Canales Deportivos no Españoles[/COLOR]] **</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] Canales Deportivos no Españoles[/COLOR] **</name>
 <thumbnail></thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <items>
 
 <item>
 
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Mix Deportes[/COLOR] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] Mix Deportes[/COLOR] **</title>
 <link>$doregex[makelist]</link>
    <regex>
 <name>makelist</name>
@@ -101,13 +101,13 @@
 </channel>
 
 <channel>
-<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime]ROJADIRECTA[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR]] **</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ROJADIRECTA[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</name>
 <thumbnail>http://novaley.es/wp-content/uploads/2014/04/img340_1.jpg</thumbnail>
 <fanart>http://novaley.es/wp-content/uploads/2014/04/img340_1.jpg</fanart>
 <items>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . [COLOR lime]ROJADIRECTA[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [COLOR lime]ROJADIRECTA[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/rojadirecta.me.cfg&amp;mode=1</jsonrpc>
 </item>
@@ -115,13 +115,13 @@
 </channel>
 
 <channel>
-<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] PIRLO TV[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] PIRLO TV[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</name>
 <thumbnail>http://www.intergoles.com/pirlotv/images/pirlotv.jpg</thumbnail>
 <fanart>http://pirlotvhd.com/wp-content/uploads/2015/11/pirlotv.jpg</fanart>
 <items>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] PIRLO TV[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] PIRLO TV[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -141,13 +141,13 @@
 </channel>
 
 <channel>
-<name>. [COLOR lime] Wizhdsports [/COLOR](Ver Programación en la web)</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [COLOR lime]Wizhdsports[/COLOR] **</name>
 <thumbnail>http://wizhdsports.com/images/wiz.jpg</thumbnail>
 <fanart>http://media.zenfs.com/es_ES/Sports/Eurosport/1450039-30997683-2560-1440.jpg</fanart>
 <items>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . [COLOR lime]Wizhdsports[/COLOR] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [COLOR lime]Wizhdsports[/COLOR] **</title>
 <link>$doregex[makelist]</link>
 
 <regex>
@@ -730,20 +730,20 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 </channel>
 
 <channel>
-<name>.[COLOR lightslategray]Nuevo[/COLOR][COLOR lime] El Mundo del Deporte[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] El mundo del Deporte[/COLOR] **</name>
 <Thumbnail></thumbnail>
 <fanart></fanart>
 <items>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Copa y Puro A Punto[/COLOR][I] ZemTv Addon Requerido[/I] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] Copa y Puro A Punto[/COLOR][I] ZemTv Addon Requerido[/I] **</title>
 <link>http://ignora.me</link>
 <jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=56&amp;name=Sport365.live&amp;url=sss</jsonrpc>
 <thumbnail> </thumbnail>
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] TuttoSport[/COLOR] **</title>	
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] TuttoSport[/COLOR] **</title>	
 <link>$doregex[makelist]</link>
 
 <regex>
