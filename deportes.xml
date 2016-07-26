@@ -15,7 +15,7 @@
 
 
 <channel>
-<name>.[COLOR lime] Lista de deportes de ADRYAN LIST [/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Lista de deportes de ADRYAN LIST [/COLOR] **</name>
 <Thumbnail></thumbnail>
 <fanart></fanart>
 <items>
@@ -30,7 +30,7 @@
 </channel>
 
 <channel>
-<name>. [COLOR lime]Sevilla FC[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** . Sevilla FC **</name>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/n_sevilla_fondos-44214.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <items>
@@ -59,37 +59,49 @@
 </channel>
 
 <channel>
-<name>.[COLOR lime] Canales Deportivos no Españoles[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Canales Deportivos no Españoles[/COLOR]] **</name>
 <thumbnail></thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <items>
 
 <item>
+
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Mix Deportes[/COLOR] **</title>
-<link>http://Ignoreme</link>
-<externallink>http://pastebin.com/raw/BQCNjGMZ</externallink>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<link>$doregex[makelist]</link>
+   <regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+<title>[COLOR ligme][makelist.param2][/COLOR]</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: 'plugin://plugin.video.f4mTester/?name=Catoal [makelist.param2]&amp;streamtype=HLS&amp;url=$doregex[progressive]' if not 'plugin://plugin.video.f4mTester/?name=Catoal [makelist.param2]&amp;streamtype=HLS&amp;url=$doregex[progressive]'=='' else 'plugin://plugin.video.f4mTester/?name=Catoal [makelist.param2]&amp;streamtype=HLS&amp;url=$doregex[hls]'</expres>
+<page></page>
+</regex>
+<regex>
+<name>progressive</name>
+<expres>progressive: "(.*?)"</expres>
+<page>http://www.liveonlinetv247.info/embed/[makelist.param1].php</page>
+</regex>
+<regex>
+<name>hls</name>
+<expres>hls: "(.*?)"</expres>
+<page>http://www.liveonlinetv247.info/embed/[makelist.param1].php </page>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+
+
+]]></listrepeat>
+<expres>channel=(.*?)">(.*?)<</expres>
+<page>http://www.liveonlinetv247.info/sports-channels.php</page>
+</regex>
 </item>
 </items>
 </channel>
 
 <channel>
-<name>.[COLOR lime] BeinSports [/COLOR]</name>
-<thumbnail></thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<items>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] Mix Bein[/COLOR] **</title>
-<link>http://Ignoreme</link>
-<externallink>http://pastebin.com/raw/zEpa4pAU</externallink>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-</items>
-</channel>
-
-<channel>
-<name>. [COLOR lime]ROJADIRECTA[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime]ROJADIRECTA[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR]] **</name>
 <thumbnail>http://novaley.es/wp-content/uploads/2014/04/img340_1.jpg</thumbnail>
 <fanart>http://novaley.es/wp-content/uploads/2014/04/img340_1.jpg</fanart>
 <items>
@@ -103,7 +115,7 @@
 </channel>
 
 <channel>
-<name>.[COLOR lime] PIRLO TV[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** .[COLOR lime] PIRLO TV[/COLOR] [COLOR blue][I]SportDevil[/I][/COLOR] **</name>
 <thumbnail>http://www.intergoles.com/pirlotv/images/pirlotv.jpg</thumbnail>
 <fanart>http://pirlotvhd.com/wp-content/uploads/2015/11/pirlotv.jpg</fanart>
 <items>
@@ -206,11 +218,8 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 </items>
 </channel>
 
-
-**********************************************************************************************************************************************************************
-
 <channel>
-<name>[COLOR blue]  Canales[/COLOR] [COLOR yellow]ArenaVision[/COLOR]:[COLOR yellow]Con Plexus)[/COLOR] :[COLOR red]Programación en el Grupo Telegram[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]ArenaVision[/COLOR][COLOR red]   [addon PLEXUS • Acestream][/COLOR] **</name>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/arena.jpg</thumbnail>
 <fanart></fanart> 
 <items>
