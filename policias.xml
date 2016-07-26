@@ -1,0 +1,2622 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+<channels>
+<channel>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR red]POLICIAS EN EL CORAZON DE LA CALLE[/COLOR][COLOR yellow]        temporada[/COLOR][COLOR blue]   1[/COLOR] **</name>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-1[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/sto11zxa5rg4' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+
+
+	<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-2[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=pAe0nNJM60A</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+			
+<item>
+
+	
+			
+
+			
+<item>
+
+
+
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-3[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/a3rpxeayuvfc' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-4[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/wr0jcobhjlvo' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-5[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/xzd4jdntwdrr' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-6[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/vnuczccd29vq' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</fanart>
+</item>
+
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-7[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=e7Tso6VvpOo</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-8[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/9e1sx6l50hqd' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-9[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/n71cwioc8jyf' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</fanart>
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-10[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=9KZtM3vE8r0</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-11[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/7aob35key9am' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-12[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/scak3f36vtye' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   1-13[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/geitrop2erbr' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</fanart>
+</item>
+
+
+</items>
+</channel>
+
+<channel>
+<name>[COLOR red]POLICIAS EN EL CORAZON DE LA CALLE[/COLOR][COLOR yellow]        temporada[/COLOR][COLOR blue]   2[/COLOR]</name>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-1[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/fkfrn9jt0m7l' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-2[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/nxw1hsza7c06' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-3[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/mivnm64be3oz' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-4[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=EaeHiI3dHkk</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-5[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/54at4vt9lv9m' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-6[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ader/policias-2-6-34557</page>   AQUI LA DERECCION DEL SERVIDOR
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ader/policias-2-6-34557</referer>  AQUI LA DERECCION DEL SERVIDOR
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-7[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=AfZg8nm3wQk</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-8[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/f55hof4sspt5' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-9[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/lj9f7psylwd1' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-10[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=eBNJqMWr1ak</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-11[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/jrimcbp35fzb' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-12[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/ltzyfwdhvsyx' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-13[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/wusg4qjv7eb6' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   2-14[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/wkqp8cc7pgey' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+
+</items>
+</channel>
+
+<channel>
+<name>[COLOR red]POLICIAS EN EL CORAZON DE LA CALLE[/COLOR][COLOR yellow]        temporada[/COLOR][COLOR blue]   3[/COLOR]</name>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-1[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/pmw9c6i7szsq' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-2[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/det5oahs5vuh' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-3[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=wIWStnAZQkM</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-4[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=dHxjG2XmcMU</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>	
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-5[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=CEH3TsqwSBs</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-6[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=1ewvTKXhfQI</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-7[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=Du4luDrkOzA</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-8[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=gN_5CuhZjXY</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-9[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=vQTCestnVBU</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-10[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=ViMC1Tf3wGM</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-11[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=A0s-jiykTqo</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-12[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=nJlsZhUlSLE</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+			<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-13[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=Iy6hI511-yk</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+			
+			
+
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   3-14[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=woRreu0uNdM</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>			
+
+
+
+
+</items>
+</channel>
+
+<channel>
+<name>[COLOR red]POLICIAS EN EL CORAZON DE LA CALLE[/COLOR][COLOR yellow]        temporada[/COLOR][COLOR blue]   4[/COLOR]</name>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-1[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/xd8fshcw8c32' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-2[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=8lik6VQt8O0</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>	
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-3[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/qmg58fv4fo4d' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-4[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=H6ZVaCwyFmc</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>	
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-5[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/1xywjt8hl190' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-6[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/uuq6k3s9k0qt' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-7[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=A5LVAWNDhQo</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+			
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-8[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=XE6kQGnrl1M</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+			
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-9[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=Mj1qpulFzII</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+			
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-10[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=69gS00H5neM</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-11[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ader/policias-4-11-34568</page>   AQUI LA DERECCION DEL SERVIDOR
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ader/policias-4-11-34568</referer>  AQUI LA DERECCION DEL SERVIDOR
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-12[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ader/policias-4-12-34586</page>   AQUI LA DERECCION DEL SERVIDOR
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ader/policias-4-12-34586</referer>  AQUI LA DERECCION DEL SERVIDOR
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+</item>
+
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-13[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=TzPkadIgtGI</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+	
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-14[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=LHjtB6vjhhU</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>	
+			
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   4-15[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ader/policias-4-15-34587</page>   AQUI LA DERECCION DEL SERVIDOR
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ader/policias-4-15-34587</referer>  AQUI LA DERECCION DEL SERVIDOR
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+</item>
+
+</items>
+</channel>
+
+<channel>
+<name>[COLOR red]POLICIAS EN EL CORAZON DE LA CALLE[/COLOR][COLOR yellow]        temporada[/COLOR][COLOR blue]   5[/COLOR]</name>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+<items>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-1[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=FVb7NB5XIcI</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+	
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-2[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=NnSfcfCym74</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>	
+			
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-3[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ader/policias-5-3-34599</page>   AQUI LA DERECCION DEL SERVIDOR
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ader/policias-5-3-34599</referer>  AQUI LA DERECCION DEL SERVIDOR
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-4[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ader/policias-5-4-34600</page>   AQUI LA DERECCION DEL SERVIDOR
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ader/policias-5-4-34600</referer>  AQUI LA DERECCION DEL SERVIDOR
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-5[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=yKVOgJUC8wE</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-6[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/zmjs58nat17y' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-7[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/yyatoul48fl5' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-8[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ader/policias-5-8-34637</page>   AQUI LA DERECCION DEL SERVIDOR
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ader/policias-5-8-34637</referer>  AQUI LA DERECCION DEL SERVIDOR
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-9[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=ztgUUE1ZmIM</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-10[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/qjrqm6vn6vfy' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-11[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/ttuhnukxq1ka' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-12[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/amempht6blfp' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   5-13[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=74dVMapHIZw</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<channel>
+<name>[COLOR red]POLICIAS EN EL CORAZON DE LA CALLE[/COLOR][COLOR yellow]        temporada[/COLOR][COLOR blue]   6[/COLOR]</name>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-1[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/dtgog32ivo1b' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-2[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=AvYDldBo2uA</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-3[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=m9FutyfyTyc</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+			
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-4[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=u9-mwYVTI-0</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>			
+
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-5[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ader/policias-6-5-34638</page>   AQUI LA DERECCION DEL SERVIDOR
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ader/policias-6-5-34638</referer>  AQUI LA DERECCION DEL SERVIDOR
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-6[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=kER55ziLU2o</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-7[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/8cdvyq9rntrk' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-8[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/x3aaojkmffq6' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-9[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=bmEeaB9xMv0</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+            
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-10[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=7__hwHqUj7w</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+            <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-11[/COLOR] **</title>
+            <link>plugin://plugin.video.youtube/play/?video_id=nopyOwABIk4</link>
+            <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail>
+			<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+            </item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-12[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/l3o1s4fzevne' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-13[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ader/policias-6-13-34639</page>   AQUI LA DERECCION DEL SERVIDOR
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ader/policias-6-13-34639</referer>  AQUI LA DERECCION DEL SERVIDOR
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> (AQUI EL LOGO O FRONTAL DE LA IMAGEN) 
+  <fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>  (AQUI LA IMAGEN DE FONDO)
+</item>
+
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]POLICIAS[/COLOR][COLOR yellow]   6-14[/COLOR] **</title>
+<link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/78p7c9s3tybd' 
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://descargardvd.com/wp-content/uploads/2016/03/12684030491685201.jpg</thumbnail> 
+<fanart>http://nubeo.nubeox.com/images/340026/21.jpg</fanart>
+</item>
+</channels>
