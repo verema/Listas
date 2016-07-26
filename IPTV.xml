@@ -52,12 +52,12 @@
 	<fanart></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,(.*?)\n(.*)</expres>
-<page>http://cdn04.selling-team.net:8000/get.php?username=vipsharedemo&amp;password=53753753&amp;type=m3u</page>
+<page>http://tvsbrothers.noip.me:8000/get.php?username=po6lhjfTvi&amp;password=FqGSG8e6ox&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
 
-http://cdn04.selling-team.net:8000/get.php?username=vipsharedemo&password=53753753&type=m3u
+http://tvsbrothers.noip.me:8000/get.php?username=po6lhjfTvi&password=FqGSG8e6ox&type=m3u
 
 <item>
 <title> [COLOR lime]IPTV Varios Paises 2[/COLOR]</title>
@@ -92,12 +92,12 @@ http://cdn04.selling-team.net:8000/get.php?username=vipsharedemo&password=537537
 	<fanart></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,(.*?)\n(.*)</expres>
-<page>http://namiptv.ddns.net:6969/get.php?username=tyutrde&amp;password=hgfdsa&amp;type=m3u</page>
+<page>http://163.172.33.203:6969/get.php?username=ahmed&amp;password=ahmed&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
 
-http://namiptv.ddns.net:6969/get.php?username=tyutrde&password=hgfdsa&type=m3u
+http://163.172.33.203:6969/get.php?username=ahmed&password=ahmed&type=m3u"
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IPTV ESPAÑA **</title>
 <link>$doregex[makelist2]</link>
