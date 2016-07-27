@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+
+
+<channels>
+<channels_info> 
+<title>MUSICA</title>
+<genre>Musica</genre>
+<description>Musica</description>
+<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/canale10.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<date>2016</date>
+<cblueits>© Catoal</cblueits>
+</channels_info>
+
+<channel>
+<name>* [COLOR lime]Videos Musicales [/COLOR]</name>
+<Thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/canale10.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR lime]Lista 40 Principales en videos[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Página [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+             <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):            
+
+ import requests
+ import re
+ url='https://www.youtube.com/playlist?list=PLSFitF4B6yNS82pcRx5XvD1PB6m8lIs5J'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ import json
+
+ pageUrl='https://www.youtube.com/playlist?list=PLSFitF4B6yNS82pcRx5XvD1PB6m8lIs5J'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(pageUrl, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+   for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+   return page
+    
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.music-bazaar.com/album-images/vol17/788/788113/2640610-big/Los-40-Principales-Del-9-Al-15-Agosto-cover.jpg</thumbnail>
+<fanart>https://i.imgur.com/va4Wiba.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR lime]VEVO Vídeos de todos los tiempos[/COLOR]</title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Página [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+             <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):            
+
+ import requests
+ import re
+ url='https://www.youtube.com/playlist?list=PLirAqAtl_h2pRAtj2DgTa3uWIZ3-0LKTA'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ import json
+
+ pageUrl='https://www.youtube.com/playlist?list=PLirAqAtl_h2pRAtj2DgTa3uWIZ3-0LKTA'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(pageUrl, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+   for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+   return page
+    
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://baixavideos.com.br/download/wp-content/uploads/2015/11/Vevo-icon.png</thumbnail>
+<fanart>http://www.clasesdeperiodismo.com/wp-content/uploads/2013/07/VEVO.png</fanart>
+</item>
+
+<item>
+<title>[COLOR lime]Techno ( Videos Del Recuerdo )[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Página [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+             <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):            
+
+ import requests
+ import re
+ url='https://www.youtube.com/playlist?list=PLtv6DWBXhImIiGKX13ZzZPkndP6W_nFBu'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ import json
+
+ pageUrl='https://www.youtube.com/playlist?list=PLtv6DWBXhImIiGKX13ZzZPkndP6W_nFBu'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(pageUrl, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+   for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+   return page
+    
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://img10.deviantart.net/9fa4/i/2010/290/9/5/teckno_wallpaper_by_afraz_z_jin-d30ysaz.jpg</thumbnail>
+<fanart>https://electronicaenmexico.files.wordpress.com/2012/10/cropped-coe.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR lime]Música pop 500 Vídeos[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Página [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+             <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ url='https://www.youtube.com/playlist?list=PLDcnymzs18LVXfO_x0Ei0R24qDbVtyy66'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ import json
+
+ pageUrl='https://www.youtube.com/playlist?list=PLDcnymzs18LVXfO_x0Ei0R24qDbVtyy66'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(pageUrl, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+   for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+   return page
+    
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR lime]Los 70 mejores videos de la historia[/COLOR]</title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Página [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+             <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ url='https://www.youtube.com/playlist?list=PLXogPMnvZ7sQqWN1pDfYVeGsrkWYRa6Ex'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ import json
+
+ pageUrl='https://www.youtube.com/playlist?list=PLXogPMnvZ7sQqWN1pDfYVeGsrkWYRa6Ex'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(pageUrl, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+   for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+   return page
+    
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://i2.ytimg.com/vi/mqKqyeO8CVo/mqdefault.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR lime]Los Mejores Videos de 2014/2015[/COLOR]</title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Página [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+             <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ url='https://www.youtube.com/playlist?list=PLkzjRJyqa7v1b7m_hZce-Tm9QjgYs-n_x'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ import json
+
+ pageUrl='https://www.youtube.com/playlist?list=PLkzjRJyqa7v1b7m_hZce-Tm9QjgYs-n_x'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(pageUrl, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+   for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+   return page
+    
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://i2.ytimg.com/vi/mqKqyeO8CVo/mqdefault.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR lime]POP Music Playlist 2016[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Página [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://i.ytimg.com/vi/[makelist3.param1]/hqdefault.jpg</thumbnail>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+             <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ url='https://www.youtube.com/playlist?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ import requests
+ import re
+ import json
+
+ pageUrl='https://www.youtube.com/playlist?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(pageUrl, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+   for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+   return page
+    
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+
+
+</items>
+</channel>
+
+<channel>
+<name>* [COLOR lime]Live [/COLOR]</name>
+<Thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/canale10.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>40 TV</title>
+<link>rtmp://play5.tvope.com/tvope playpath=stream_40ttv?p swfUrl=http://i.tvope.com/swf/player8.4.swf live=1 pageUrl=http://tvope.com</link>
+<Thumbnail>http://i.imgur.com/a6N8tk2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>40 TV [COLOR red][I]f4mTester requerido[/I][/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?url=http://fastroot.ddns.net:8000/live/hugo/hugo/304.ts&amp;streamtype=TSDOWNLOADER</link>
+<Thumbnail>http://i.imgur.com/a6N8tk2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+	
+	<tem>
+	<title>Sol Musica</title>
+	<link>http://selling-team.net:8000/live/castiglione/castiglione/2281.m3u8	</link>
+	<thumbnail></thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+	
+<tem>
+<title>Mezzo Live HD</title>
+<link>http://185.38.12.20:8088/mezzo/</link>	
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/mezzo_10.jpg</thumbnail> 
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>  
+</item>
+
+<tem>
+<title>Dance TV</title>
+<link>http://hls.svc.moyo.tv/hls/CH_SONYTURBO/bw1758000/variant.m3u8?</link>
+<thumbnail>http://viasatfan.clan.su/_nw/14/16971284.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<tem>
+<title>Dance HD</title>
+<link>http://109.239.142.62:1935/live/livestream1/vcx73.sd.stream.m3u8</link>
+<thumbnail>http://avatars.yandex.net/get-tv-channel-logos/1403093323665M96832/z</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Si TV</title>
+<link>http://hd.worldkast.com:1935/8436/8436/chunklist_w1164480834.m3u8</link>	
+<thumbnail>http://sitvhn.com/logositv260x260bb1.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>   
+</item>
+
+<tem>
+    <title>Lobas</title>      
+    <link>http://149.11.34.6:1935/live/lobas.stream/playlist.m3u8</link>
+    <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/lobastv.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+
+<item>
+    <title>Retro TV</title>      
+    <link>rtmp://stream.mediawork.cz/retrotv/ playpath=retrotvHQ1 swfUrl=http://vjs.zencdn.net/4.10/video-js.swf live=1 pageUrl=http://www.retromusic.cz/index.php?cont=vysilani&language=en</link>
+    <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/retro.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+
+<item>
+    <title>Retro TV</title>      
+    <link>rtmp://stream.mediawork.cz/retrotv/retrotvHQ1</link>
+    <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/retro.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+    	  
+	<tem>
+	<title>TELE MUSICA HIT</title>
+	<link>rtmp://190.0.28.154:1935/live/ playpath=S9bgB8dJmS swfUrl=http://www.longtailvideo.com/jwplayer/jwplayer.flash.swf live=1 pageUrl=http://welcome-to-capo.blogspot.mx/p/u.html</link>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/telemu10.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+
+	<tem>
+	<title>CAPITAL TV</title>
+	<link>rtmp://cdn-sov-2.musicradio.com:80/LiveVideo/Capital</link>
+	<thumbnail>http://www.lyngsat-logo.com/hires/cc/capital_tv_pk.png</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item> 
+
+	<tem>
+	<title>PARTY TV</title>
+	<link>rtmp://149.11.34.6/live playpath=partytv.stream swfUrl=http://www.lasteles.com/js/mediaplayer-5.10/player.swf?729 live=1 pageUrl=http://www.lasteles.com/es/directo/PARTY-TV/video/Party-TV/10870</link>
+	<thumbnail>http://shannygelu.ucoz.com/_ph/1/2/603546476.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+	
+	<tem>
+	<title>Varios</title>
+	<link>http://149.11.34.78:1935/live/imprestv.stream/playlist.m3u8</link>
+	<thumbnail></thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+		
+	<tem>
+	<title>VOX TV</title>
+	<link>rtmp://94.23.95.13/live2/vox/vox_360p</link>
+	<thumbnail>http://thumbs.eska.pl/common/8/3/s/837654K6hc.jpg/ru-0-r-244,244-n-837654K6hc.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+
+    <item>
+	<title>KISS TV</title>
+	<link>rtmp://tst.es.flash.glb.ipercast.net/tst.es-live/live</link>
+	<thumbnail>http://3.bp.blogspot.com/-GCSFVgoO7U0/UVrs8w6yexI/AAAAAAAAQV8/Ip9-Yp9KLVc/s1600/kiss+tv.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+
+    <item>
+    <title>VEVO 1 HD</title>
+    <link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/06/prog_index.m3u8</link>
+    <thumbnail>http://4.bp.blogspot.com/-jpWWOR9_fTU/UlLCoJR85WI/AAAAAAAARu4/biJxbevpRkM/s1600/vevo.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>  
+
+    <item>
+    <title>VEVO HIP HOP2 HD</title>
+    <link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/06/prog_index.m3u8</link>
+    <thumbnail>http://4.bp.blogspot.com/-jpWWOR9_fTU/UlLCoJR85WI/AAAAAAAARu4/biJxbevpRkM/s1600/vevo.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+
+    <item>
+    <title>ESKA ROCK</title>
+    <link>rtmp://stream.smcloud.net/live2/eska_rock/eska_rock_720p</link>
+    <thumbnail>http://wars-stars.pl/files/stars/71887fe37d81cdebe6c7359fffbd8b4e6cfc2373l.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>   
+
+    <item>
+    <title>VEVO 3 HD</title>
+    <link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8</link>
+    <thumbnail>http://4.bp.blogspot.com/-jpWWOR9_fTU/UlLCoJR85WI/AAAAAAAARu4/biJxbevpRkM/s1600/vevo.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+
+    <tem>
+	<title>FIRST MUSICA</title>
+    <link>rtmp://109.239.142.62/live/livestream3</link>
+	<thumbnail>http://1.bp.blogspot.com/--ASq9nxb4Xk/UitylHUthQI/AAAAAAAARZY/5PX-bIvLFW8/s1600/first+music+HD.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+
+    <item>
+	<title>VIRGIN TV</title>
+	<link>rtmp://fms.105.net:1935/live playpath=virgin1 swfUrl=http://video.virginradioitaly.it/co...y.it/com/universalmind/tv/virgin/videoXML.xml live=1 pageUrl=http://www.cracketzaa.tv/canal/virgintv.php?width=711&height=410</link>
+	<thumbnail>http://3.bp.blogspot.com/-EhzBUeRAyvw/UlgE1Lu7sdI/AAAAAAAARyE/SQLpmJeFjCo/s1600/virgin.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+
+    <tem>
+	<title>HEART TV</title>
+	<link>rtmp://cdn-sov-2.musicradio.com:80/LiveVideo/Heart</link>
+	<thumbnail>http://3.bp.blogspot.com/-JXKg3doLFgY/UV21yad8XRI/AAAAAAAAQYI/D45qrNnnph4/s1600/heartv.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+
+    <tem>
+	<title>STREETCLIP</title>
+	<link>rtmp://stream.streetclip.tv:1935/live/high-stream</link>
+	<thumbnail>http://2.bp.blogspot.com/-TFk32XoOp_0/UlLdA0IS-8I/AAAAAAAARvI/ybdLMsToCgw/s1600/streetclip.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+	   
+	<tem>
+    <title>MTV</title> 
+    <link>http://202.75.23.37/live/ch50/03.m3u8</link>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/mtv_li10.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	
+	<tem>
+    <title>MTV España</title>
+    <link>rtmp://188.165.221.77/live?token=MDF5Ult9w4N7e_xksePFBAExpired=1415060667 playpath=vermtv8rbtvix swfUrl=http://vercosasgratis.com/player.swf live=1 pageUrl=http://vercosasgratis.com/embed.php?a=6616&id=&width=650&height=400&autostart=true&strech=</link>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+		 
+    <tem>
+    <title>MTV Music</title> 
+    <link>http://83.139.104.101/Content/HLS/Live/Channel(mtv_music)/Stream(03)/index.m3u8</link>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/mtv_li10.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	 
+    <tem>
+    <title>MTV Rocks</title> 
+    <link>http://cdn-02.sdn.si/mtvrocks/mtvrocks.m3u8</link>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/mtv_li10.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	 
+    <tem>
+    <title>MTV Dance</title> 
+    <link>http://cdn-02.sdn.si/mtvdance/mtvdance.m3u8</link>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/mtv_li10.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	 
+    <tem>
+    <title>MTV Hits</title> 
+    <link>http://cdn-02.sdn.si/mtvhits/mtvhits.m3u8</link>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/mtv_li10.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+
+    <tem>
+	<title>MTV LIVE HD 1080 </title>
+	<link>http://195.189.239.15/streaming/mtvlivehd/fullhd/playlist.m3u8</link>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/mtv_li10.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+
+    <tem>
+	<title>VH1</title>
+	<link>http://178.49.132.73/streaming/vh1/tvrec/playlist.m3u8</link>
+	<thumbnail>http://www.underconsideration.com/brandnew/archives/vh1_2013_logo_detail.gif</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+
+    <tem>
+	<title>CAPITAL TV</title>
+	<link>rtmp://cdn-sov-2.musicradio.com:80/LiveVideo/Capital</link>
+	<thumbnail>http://3.bp.blogspot.com/-UlWnl6_eKZA/UV23HazM0HI/AAAAAAAAQYY/gYddrKMd80s/s1600/capital+tv.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+
+    <tem>
+    <title>LOBAS TV</title>
+    <link>rtmp://149.11.34.78/live playpath=lobas.stream swfUrl=http://www.lasteles.com/js/mediaplayer-5.10/player.swf?191live=1 pageUrl=http://www.lasteles.com/es/directo/LOBAS-TV/video/LOBAS-TV/1159</link>
+    <thumbnail>http://www.lasteles.com/uploads/video/thumb1159_grande.png</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	   
+	<tem>
+    <title>C MUSIC</title>
+    <link>mmsh://server2.4rt.co.uk:80/cmusicworld-tv?MSWMExt=.asf</link>
+    <thumbnail>http://www.cmusic.tv/images/cmusiclogo.png</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	   
+	<tem>
+    <title>DANCE TV</title>
+    <link>rtsp://91.82.85.71:1935/relay8/fstv_channel_1</link>
+    <thumbnail>https://1.bp.blogspot.com/_dd2d26eU320/TVGrn1Ti9eI/AAAAAAAAA0Q/RL8TExo_tzU/s1600/dancetv_logo.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	   
+	<item>
+	<title>RUSSIAN MUSIC BOX</title>
+	<link>rtmp://musicbox.cdnvideo.ru/musicbox-live/musicbox.sdp</link>
+	<thumbnail>http://toplogos.ru/images/logo-russian-music-box.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+	   
+	<item>
+	<title>ELECTRO SOUND .TV</title>
+	<link>rtmp://www.electrosound.tv:1935/public/stream</link>
+	<thumbnail>http://cdn9.staztic.com/app/a/3567/3567312/electrosoundtv-6-b-512x250.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+	   
+	<item>
+	<title>GOTICA TV</title>
+	<link>rtmp://149.11.34.6/live/gotica.stream</link>
+	<thumbnail>http://www.lasteles.com/uploads/video/thumb1107_grande.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+	   
+	<item>
+	<title>SINGLE TV</title>
+	<link>rtmp://149.11.34.78/live/singletv.stream</link>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/disc10.png</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+	   
+	<item>
+	<title>UNLOVER TV</title>
+	<link>rtmp://149.11.34.6/live/unlovechannel.stream</link>
+	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/disc10.png</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item>
+	   
+	<item>
+	<title>EUROPA PLUS TV</title>
+	<link>rtmp://europaplus.cdnvideo.ru:1935/europaplus-live/eptv_main.sdp</link>
+	<thumbnail>http://upload-downloads.livestream.com:8976/mogulus-channel-branding/europaplustv/2012/09/18/3F0FF6D4-EA67-1CD7-7EA4-D93478949D1C.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+	</item> 
+
+<item>
+<title>[COLOR yellow]•[/COLOR][COLOR blue] VEVO MUSIC[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/05/prog_index.m3u8 </link>
+</item>
+
+<item>
+<title>[COLOR yellow]•[/COLOR][COLOR blue] VIRGIN TV[/COLOR]</title>
+<link>rtmp://fms.105.net:1935/live playpath=virgin1 swfUrl=http://video.virginradioitaly.it/co...y.it/com/universalmind/tv/virgin/videoXML.xml live=1 pageUrl=http://www.cracketzaa.tv/canal/virgintv.php?width=711&height=410 </link>
+</item>
+
+<item>
+<title>[COLOR yellow]•[/COLOR][COLOR blue] DANCE TV MUSIC    [/COLOR]</title>
+<link>http://cdn.djing.com/tv/d-05.m3u8 </link>
+</item>
+
+<item>
+<title>[COLOR yellow]•[/COLOR][COLOR blue] MFM TV MUSIC      [/COLOR]</title>
+<link>http://ec.playmedia.fr/mfmtv/live/playlist.m3u8 </link>
+</item>
+
+<item>
+<title>[COLOR yellow]•[/COLOR][COLOR blue] BESTKAT MUSIC TV[/COLOR]</title>
+<link>rtmp://stream.smcloud.net/live2/best/best_720p </link>
+</item>
+
+<sitem>
+<title>[COLOR yellow]•[/COLOR][COLOR blue] VOX TV MUSIC [/COLOR]</title>
+<link>rtmp://stream.smcloud.net/live2/vox/vox_720p </link>
+</item>
+
+<item>
+<title>[COLOR yellow]•[/COLOR][COLOR blue] RADIO 105 MUSIC[/COLOR]</title>
+<link>rtmp://fms.105.net:1935/live/105Test1#gfgyut9991.ch?token=0.861700,1.03854 </link>
+</item>
+
+</items>
+</channel>
+
+
+
+
+
+</channels>
