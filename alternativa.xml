@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+<channels>
+<channels_info> 
+<title>La Alternativa</title>
+<genre>Tus listas</genre>
+<description>Canal dedicato a las listas de todos vosotros</description>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<date>2016</date>
+<credits>© Catoal</credits>
+</channels_info>
+
+<channel>
+<name>[COLOR lime]Enlace[/COLOR]</name>
+<thumbnail>http://enl2015.wpengine.com/wp-content/uploads/2015/09/enlace3.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+  <title>Enlace</title>
+  <link>$doregex[getsxtream]|User-Agent=iPhone</link>
+  
+  <regex>
+    <name>getsxtream</name>
+    <expres>smil[",\']\W[",\']m3u8_url.+?([^"]+)[",\']\W</expres>
+    <page>http://livestream.com/accounts/2675843/events/1839332</page>
+    <referer>http://livestream.com/</referer>
+    <agent>Mozilla/5.0</agent>
+    <cookieJar></cookieJar>
+  </regex>
+  <thumbnail>http://enl2015.wpengine.com/wp-content/uploads/2015/09/enlace3.png</thumbnail>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]Ibiza Global TV[/COLOR]</name>
+<thumbnail>https://yt3.ggpht.com/-kiDcGvVLBJA/AAAAAAAAAAI/AAAAAAAAAAA/XBhHM0Wvm6w/s100-c-k-no-rj-c0xffffff/photo.jpg</thumbnail>
+<fanart>https://i.ytimg.com/vi/FtD4Wgh97MA/mqdefault_live.jpg</fanart>
+<items>
+
+<item>
+    <title>Ibiza Global Tv</title>
+    <link>rtmp://server10.streaming-pro.com:1937/live/ playpath=ibgtvlive swfUrl=http://ssl.p.jwpcdn.com/player/v/7.5.0/jwplayer.flash.swf live=1 pageUrl=http://ibizaglobalradio.com/tv/live/</link>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] tvplayerlatino[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR yellow]TV [I]M3U[/I] [/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>http://live.tvplayerlatino.com/lista_remota.m3u</externallink>
+<humbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] Mix[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR yellow]Mix. [I]M3U[/I] [/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>http://pastebin.com/raw/BuWfKfNC</externallink>
+<humbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] Mix 2[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR yellow]Mix 2[I]M3U[/I] [/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>http://pastebin.com/raw/HMDVnfxs</externallink>
+<humbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+</items>
+</channel>
+
+<hannel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] Alter.1[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR yellow]Alter.1[I]M3U[/I] [/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>http://pastebin.com/raw/tUT8EbNV</externallink>
+<humbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] Latinos[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR yellow]Latinos[I]M3U[/I] [/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>http://pastebin.com/raw/BKuiXpGb</externallink>
+<humbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] Catnewstecnoactualizada[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR yellow]Catnewstecnoactualizada[I]M3U[/I] [/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>http://pastebin.com/raw/V16Admmp</externallink>
+<humbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] Mundo TV[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR yellow]TV [I]M3U[/I] [/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>https://raw.githubusercontent.com/catoalkodi/Catoalist/master/paises.m3u</externallink>
+<humbnail></thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] Mundo 2[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>Mundo 2</title>
+<link>http://Ignoreme</link>
+<externallink>https://raw.githubusercontent.com/catoalkodi/Catoalist/master/mundo.m3u</externallink>
+</item>
+</items>
+</channel>
+
+http://googledrive.com/host/0B7s3iHobrWwGZlplM3czbXBiQWs/18peliculas.m3u
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title></title>
+<link>http://Ignoreme</link>
+<externallink></externallink>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>[COLOR lime]***[/COLOR][COLOR blue]  Lista de:[/COLOR][COLOR red] .....[/COLOR][COLOR lime] ***[/COLOR]</name>
+<thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<items>
+
+<item>
+<title>.....</title>
+<link>http://....</link>
+</item>
+</items>
+</channel>
+
+</channels>
