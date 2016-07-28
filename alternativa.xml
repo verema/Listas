@@ -37,13 +37,15 @@
 
 <channel>
 <name>[COLOR lime]Ibiza Global TV[/COLOR]</name>
-<thumbnail>https://yt3.ggpht.com/-kiDcGvVLBJA/AAAAAAAAAAI/AAAAAAAAAAA/XBhHM0Wvm6w/s100-c-k-no-rj-c0xffffff/photo.jpg</thumbnail>
-<fanart>https://i.ytimg.com/vi/FtD4Wgh97MA/mqdefault_live.jpg</fanart>
+<thumbnail>http://lisa.eltelon.com/cache/media/4181/poster_220x220-2.jpg</thumbnail>
+<fanart>http://www.eiviluxury.com/wp-content/uploads/2015/10/logo-global-radio-tv.jpg</fanart>
 <items>
 
 <item>
-    <title>Ibiza Global Tv</title>
-    <link>rtmp://server10.streaming-pro.com:1937/live/ playpath=ibgtvlive swfUrl=http://ssl.p.jwpcdn.com/player/v/7.5.0/jwplayer.flash.swf live=1 pageUrl=http://ibizaglobalradio.com/tv/live/</link>
+<title>Ibiza Global Tv</title>
+<link>rtmp://server10.streaming-pro.com:1937/live/ playpath=ibgtvlive swfUrl=http://ssl.p.jwpcdn.com/player/v/7.5.0/jwplayer.flash.swf live=1 pageUrl=http://ibizaglobalradio.com/tv/live/</link>
+<thumbnail>http://lisa.eltelon.com/cache/media/4181/poster_220x220-2.jpg</thumbnail>
+<fanart>http://www.eiviluxury.com/wp-content/uploads/2015/10/logo-global-radio-tv.jpg</fanart>
 </item>
 </items>
 </channel>
