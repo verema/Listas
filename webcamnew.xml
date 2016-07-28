@@ -4,7 +4,7 @@
 
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Camaras del Mundo[/COLOR] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][Color blue]29 [/COLOR]Paises del Mundo[/COLOR] **</title>
 <link>$doregex[list]</link>
 <thumbnail></thumbnail>
 <regex>
