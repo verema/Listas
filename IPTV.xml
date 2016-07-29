@@ -52,12 +52,12 @@
 	<fanart></fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,(.*?)\n(.*)</expres>
-<page>http://devcon.1dns1.com:8080/get.php?username=clinecenter&amp;password=sN5xQ2Pjz&amp;type=m3u</page>
+<page>http://62-210-214-31.rev.poneytelecom.eu:5890/get.php?username=es1&amp;password=es1&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
 
-http://devcon.1dns1.com:8080/get.php?username=clinecenter&password=gsN5xQ2Pjz&type=m3u
+http://62-210-214-31.rev.poneytelecom.eu:5890/get.php?username=es1&password=es1&type=m3u
 
 <item>
 <title> [COLOR lime]IPTV Varios Paises 2[/COLOR]</title>
