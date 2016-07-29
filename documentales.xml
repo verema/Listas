@@ -575,3 +575,35 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://3.bp.blogspot.com/-x1s8RdXjBe0/TdyhqiJiKpI/AAAAAAAAJ7c/TspNWZx36xo/s640/El_Mundo_En_Guerra_Tenazas_Genocidio-Caratula.jpg</fanart>
 <info>El mundo en guerra (The World at War) es una serie documental para televisión emitida entre 1973 y 1974 sobre la Segunda Guerra Mundial y los acontecimientos que condujeron a ella y los que ocurrieron inmediatamente después. Fue producida por Jeremy Isaacs, escrita y coproducida por Peter Batty y narrada por Lawrence Olivier. Carl Davis compuso su banda sonora. Un libro, El mundo en guerra, fue escrito por Mark Arnold-Forster como suplemento de la misma. Fue galardonada con el Premio Emmy.La serie ha sido considerada a menudo como el mejor y definitivo documental sobre la historia de la Segunda Guerra Mundial hecho para televisión. También presentó raras imágenes de película en color de algunos de los acontecimientos de la guerra.En una encuesta realizada en el año 2000 por el British Film Institute, en la que participaron profesionales de los medios de comunicación, sobre los 100 mejores programas emitidos en la televisión británica, The World at War quedó en la 19º posición.En España, la serie fue editada en DVD, retitulada como La II Guerra Mundial, con motivo del 60 aniversario del final de dicha guerra.</info>
 </item> 
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** II Guerra mundial - Los Archivos Perdidos **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param2][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://i1096.photobucket.com/albums/g329/qpacha3e/AP1.jpg</thumbnail>
+		<fanart>http://estaticos03.cache.el-mundo.net/blogs/elmundo/asesinoenserie/imagenes_posts/2010/03/03/IIGM%2001_470x375.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
+<page>http://copiapop.com/deckardbcn/ii-guerra-mundial-los-archivos-perdidos-37245</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param3]</page>
+<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
+<referer>http://copiapop.com/[makelist.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.gstatic.com/tv/thumb/tvbanners/184004/p184004_b_v8_ab.jpg</thumbnail>
+<fanart>http://estaticos03.cache.el-mundo.net/blogs/elmundo/asesinoenserie/imagenes_posts/2010/03/03/IIGM%2001_470x375.jpg</fanart>
+<info>Canal de Historia ha producido "II GM. Los Archivos Perdidos", una superproducción de impresionante calidad visual que retrata la II Guerra Mundial a través de los ojos de sus protagonistas. Diez capítulos que, a través de documentación inédita obtenida tras un largo y exhaustivo proceso de investigación en los principales archivos de diferentes países del mundo, representan uno de los proyectos más ambiciosos de Canal de Historia. La serie reconstruye cómo fueron aquellos seis años de contienda a través de los ojos de quienes la vivieron y sufrieron. Doce militares estadounidenses, corresponsales de guerra y personal médico narran sus impactantes experiencias personales.</info>
+</item> 
