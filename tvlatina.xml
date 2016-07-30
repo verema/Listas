@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>[COLOR red]TV Latina[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR red]TV Latina[/COLOR] **</title>
 <link>$doregex[makelist]</link>
  <regex>
  <name>makelist</name>
- <listrepeat><![CDATA[<title>[makelist.param1]</title> <link>$doregex[Final_URL]</link> <regex><name>Final_URL</name><expres>$pyFunction: '$doregex[getURL1]|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf' if not '$doregex[getURL1]'=='' else 'plugin://plugin.video.youtube/play/?video_id=CEGSitBJ7Gw' </expres><page></page></regex> <regex><name>getURL1</name><expres>file: [",'](.*?)[",'],</expres><page>$doregex[frame]</page><referer>http://latino-webtv.com/</referer><cookieJar></cookieJar></regex> <regex><name>frame</name><expres>frame NAME=.*?[SRC,src]=[",'](.*?)[",'] FRAMEBORDER="\d</expres><page>$doregex[Final_Frame]</page><referer>http://latino-webtv.com/</referer><cookieJar></cookieJar></regex> <regex><name>Final_Frame</name><expres>$pyFunction: '$doregex[Frame1]' if not '$doregex[Frame1]'=='' else '$doregex[Frame2]' </expres><page></page></regex> <regex><name>Frame1</name><expres>iframe src=[",'](.*?)[",'] width="\d</expres><page>http://latino-webtv.com/[makelist.param1]/</page><referer>http://latino-webtv.com/</referer><cookieJar></cookieJar></regex> <thumbnail>[makelist.param2]</thumbnail>]]></listrepeat>
+ <listrepeat><![CDATA[<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param1] **</title> <link>$doregex[Final_URL]</link> <regex><name>Final_URL</name><expres>$pyFunction: '$doregex[getURL1]|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf' if not '$doregex[getURL1]'=='' else 'plugin://plugin.video.youtube/play/?video_id=CEGSitBJ7Gw' </expres><page></page></regex> <regex><name>getURL1</name><expres>file: [",'](.*?)[",'],</expres><page>$doregex[frame]</page><referer>http://latino-webtv.com/</referer><cookieJar></cookieJar></regex> <regex><name>frame</name><expres>frame NAME=.*?[SRC,src]=[",'](.*?)[",'] FRAMEBORDER="\d</expres><page>$doregex[Final_Frame]</page><referer>http://latino-webtv.com/</referer><cookieJar></cookieJar></regex> <regex><name>Final_Frame</name><expres>$pyFunction: '$doregex[Frame1]' if not '$doregex[Frame1]'=='' else '$doregex[Frame2]' </expres><page></page></regex> <regex><name>Frame1</name><expres>iframe src=[",'](.*?)[",'] width="\d</expres><page>http://latino-webtv.com/[makelist.param1]/</page><referer>http://latino-webtv.com/</referer><cookieJar></cookieJar></regex> <thumbnail>[makelist.param2]</thumbnail>]]></listrepeat>
  <expres>a href=[",']([^<]*)/[",'].*?src=[",']([^<]*)[",']\W</expres>
  <page>http://latino-webtv.com/</page>
  <cookieJar></cookieJar>
@@ -27,13 +27,13 @@
  </item>
  
 <item>
-<title> [COLOR red]24/7[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [COLOR red]24/7[/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
 <item>
-			<title>[makelist.param2]</title>
+			<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param2] **</title>
 			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_[makelist.param1]  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
 <regex>
 <name>get_ip</name>
