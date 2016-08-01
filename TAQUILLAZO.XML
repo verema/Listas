@@ -57,7 +57,7 @@
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [makelist.param3] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [COLOR lime] [makelist.param3] [/COLOR] **</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>http://ih0.redbubble.net/image.88009184.7389/hj,x1000-bg,f8f8f8.jpg</thumbnail>
         <fanart>http://ih1.redbubble.net/image.88009156.7389/ap,550x550,16x12,1,transparent,t.png</fanart>
