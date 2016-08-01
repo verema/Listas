@@ -52,6 +52,44 @@
 </item>
 
 <item>
+<title><title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** [COLOR blue]Ca[/COLOR][COLOR yellow]t[/COLOR][COLOR red]flix[/COLOR] ***[/COLOR][B] Versión Original[/B] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [makelist.param3] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://ih0.redbubble.net/image.88009184.7389/hj,x1000-bg,f8f8f8.jpg</thumbnail>
+        <fanart>http://ih1.redbubble.net/image.88009156.7389/ap,550x550,16x12,1,transparent,t.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/movies/mega-pack-1183/list,1,50</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/movies/mega-pack-1183/list,1,50</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://ih0.redbubble.net/image.88009184.7389/hj,x1000-bg,f8f8f8.jpg</thumbnail>
+<fanart>http://ih1.redbubble.net/image.88009156.7389/ap,550x550,16x12,1,transparent,t.png</fanart>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Audio Latino ***[/COLOR] **[I] Nuevo[/I]</title>
 <link>$doregex[makelist]</link>
 <regex>
