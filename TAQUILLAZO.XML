@@ -52,7 +52,7 @@
 </item>
 
 <item>
-<title><title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** [COLOR blue]Ca[/COLOR][COLOR yellow]t[/COLOR][COLOR red]flix[/COLOR] ***[/COLOR][B] Versión Original[/B] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** [COLOR blue]Ca[/COLOR][COLOR yellow]t[/COLOR][COLOR red]flix[/COLOR] ***[/COLOR][B] Versión Original[/B] **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
