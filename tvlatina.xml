@@ -76,3 +76,23 @@
 <thumbnail>http://i.imgur.com/OKY9Szg.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Total Play **</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param1][/COLOR] **</title>
+<link>[makelist.param2]</link>
+<agent>Mozilla/5.0</agent>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres>#EXTINF.*?,(.*).*\n.*?(?=http|rtmp|rtsp|mms)(.*[\d|\w])</expres>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#111;&#116;&#097;&#108;&#112;&#108;&#097;&#121;&#046;&#109;&#051;&#117;</page>
+<agent></agent>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item> 
