@@ -90,7 +90,45 @@
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Audio Latino ***[/COLOR] **[I] Nuevo[/I]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Los 80 ***[/COLOR] **[I] Nuevo[/I]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [makelist.param3] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://cuacarraquear.com/wp-content/uploads/2014/05/80s-movies-collage-party.gif</thumbnail>
+		<fanart>http://webalia.com/uploads/contenidos_usrs/originales/391576_bandas_sonoras_peliculas_80s_20120626152450.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/cinedelos80/peliculas-de-los-80-34332/list,1,30</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/cinedelos80/peliculas-de-los-80-34332/list,1,30</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cuacarraquear.com/wp-content/uploads/2014/05/80s-movies-collage-party.gif</thumbnail>
+<fanart>http://webalia.com/uploads/contenidos_usrs/originales/391576_bandas_sonoras_peliculas_80s_20120626152450.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Audio Latino ***[/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
