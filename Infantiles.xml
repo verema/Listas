@@ -102,7 +102,7 @@
 </item> 
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Mundo de Beakman **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Mundo de Beakman Por ELRULES **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -113,7 +113,7 @@
 		<fanart>http://cdn6.dibujos.net/images/blog/big/el-mundo-de-beakman-una-serie-perfecta-para-futuros-cientificos.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/the_collector83/el-mundo-de-beakman-temporada-1-19053/list,1,22</page>
+<page>http://diskokosmiko.mx/elrules/el-mundo-de-beakman-35472/list,1,22</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
@@ -131,7 +131,7 @@
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/the_collector83/el-mundo-de-beakman-temporada-1-19053/list,1,22</referer>
+<referer>http://diskokosmiko.mx/elrules/el-mundo-de-beakman-35472/list,1,22</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
