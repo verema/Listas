@@ -225,6 +225,32 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <items>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow]AGENDA Solo Informacion[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item>
+<title>[COLOR skyblue] [makelist.param1][/COLOR]  [COLOR yellow][makelist.param2][/COLOR][COLOR red]   [makelist.param5][/COLOR] [COLOR lime]  [makelist.param6][/COLOR]  </title>
+<link>[makelist.param1]</link>
+			<regex>
+			<name></name> 
+			<expres></expres>
+			<page>http://www.arenavision.in/AV</page>
+			<referer>http://www.arenavision.in</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+			<thumbnail></thumbnail>
+</item>	
+]]></listrepeat>
+<expres>190px">(.*?)<[\w\W\s]{0,45}182px">(.*?)<[\w\W\s]{0,45}188px">(.*?)<[\w\W\s]{0,45}283px">(.*?)<[\w\W\s]{0,45}685px">(.*?)<[\w\W\s]{0,45}317px">(.*.)-</expres>
+<page>http://arenavision.in/agenda</page>
+<Agent>Mozilla</Agent>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
 <link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Catoal+Acestreams</link>
 <regex>
 <name>hash</name>
