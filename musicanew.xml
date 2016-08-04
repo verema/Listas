@@ -330,7 +330,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  import requests
  import re
- url='https://www.youtube.com/playlist?list=PLDcnymzs18LVXfO_x0Ei0R24qDbVtyy66'
+ url='https://www.youtube.com/playlist?list=PLDcnymzs18LWrKzHmzrGH1JzLBqrHi3xQ'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
 
  rr = requests.get(url, headers=headers)
@@ -355,7 +355,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  import re
  import json
 
- pageUrl='https://www.youtube.com/playlist?list=PLDcnymzs18LVXfO_x0Ei0R24qDbVtyy66'
+ pageUrl='https://www.youtube.com/playlist?list=PLDcnymzs18LWrKzHmzrGH1JzLBqrHi3xQ'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
  r1 = requests.get(pageUrl, headers = headers)
  source = r1.text
