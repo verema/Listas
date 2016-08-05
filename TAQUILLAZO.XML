@@ -128,6 +128,13 @@
 </item>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] ZenMovies[/COLOR][I] Nuevo[/I] **</title>
+<link>http://ignora.me</link>
+<jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=36&amp;name=Catoal&amp;url=zemmovies</jsonrpc>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Audio Latino ***[/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <regex>
