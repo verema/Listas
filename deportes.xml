@@ -832,6 +832,20 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 </item>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] PV2 Now Sports[/COLOR][I] ZemTv Addon Requerido[/I] **</title>
+<link>http://ignora.me</link>
+<jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=36&amp;name=Catoal&amp;url=zemsports</jsonrpc>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] c247.tv-P3G.Tv[/COLOR][I] ZemTv Addon Requerido[/I] **</title>
+<link>http://ignora.me</link>
+<jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=36&amp;name=Catoal&amp;url=P3G</jsonrpc>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] TuttoSport[/COLOR] **</title>	
 <link>$doregex[makelist]</link>
 
