@@ -2,7 +2,7 @@
 
 <channels>
 <channels_info> 
-<title>Incapelis.com</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Incapelis.com **</title>
 <genre>Peliculas</genre>
 <description>Web de peliculas en audio español y latino</description>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
@@ -12,18 +12,18 @@
 </channels_info>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Acción[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Acción **</name>
 <Thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -49,12 +49,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -80,12 +80,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -111,12 +111,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -142,12 +142,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -175,18 +175,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Animación[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Animación **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -212,12 +212,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -243,12 +243,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -274,12 +274,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -305,12 +305,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -338,18 +338,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Aventuras[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Aventuras **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -375,12 +375,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -406,12 +406,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -437,12 +437,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -468,12 +468,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -501,18 +501,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Ciencia Ficción[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Ciencia Ficción **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -538,12 +538,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -569,12 +569,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -600,12 +600,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -631,12 +631,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -664,18 +664,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Comedia[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Comedia **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -701,12 +701,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -732,12 +732,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -763,12 +763,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -794,12 +794,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -827,18 +827,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Crimen[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Crimen **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -864,12 +864,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -895,12 +895,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -926,12 +926,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -957,12 +957,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -990,18 +990,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Destacadas[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Destacadas **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1029,18 +1029,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Documentales[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Documentales **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1068,18 +1068,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Dramas[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Dramas **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1105,12 +1105,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1136,12 +1136,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1167,12 +1167,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1198,12 +1198,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1231,18 +1231,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Estrenos[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Estrenos **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1268,12 +1268,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1301,18 +1301,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] En Familia[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** En Familia **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1338,12 +1338,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1369,12 +1369,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1400,12 +1400,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1431,12 +1431,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1464,18 +1464,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Fantacia[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Fantacia **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1501,12 +1501,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1532,12 +1532,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1563,12 +1563,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1594,12 +1594,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1627,18 +1627,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Guerra[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Guerra **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1664,12 +1664,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1695,12 +1695,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1726,12 +1726,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1757,12 +1757,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1790,18 +1790,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Historia[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Historia **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1827,12 +1827,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1858,12 +1858,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1889,12 +1889,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1920,12 +1920,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1953,18 +1953,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Misterio[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Misterio **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -1990,12 +1990,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2021,12 +2021,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2052,12 +2052,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2083,12 +2083,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2116,18 +2116,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Musicales[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Musicales **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2153,12 +2153,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2186,18 +2186,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Romances[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Romances **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2223,12 +2223,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2254,12 +2254,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2285,12 +2285,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2316,12 +2316,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2349,18 +2349,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Suspense[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Suspense **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2386,12 +2386,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2417,12 +2417,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2448,12 +2448,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2479,12 +2479,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2512,18 +2512,18 @@
 </channel>
 
 <channel>
-<name>[COLOR red]****[/COLOR][COLOR lime] Terror[/COLOR][COLOR red] ***[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Terror **</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart>
 <items>
 
 <item>
-<title>Sala 1</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 1 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2549,12 +2549,12 @@
 </item>
 
 <item>
-<title>Sala 2</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 2 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2580,12 +2580,12 @@
 </item>
 
 <item>
-<title>Sala 3</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 3 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2611,12 +2611,12 @@
 </item>
 
 <item>
-<title>Sala 4</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 4 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
@@ -2642,12 +2642,12 @@
 </item>
 
 <item>
-<title>Sala 5</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Sala 5 **</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param3]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param3] **</title>
 <link>$doregex[link2]</link>
 <regex>
 <name>link2</name>
