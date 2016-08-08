@@ -119,23 +119,23 @@
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
 	
-	<item>
-	<title>[COLOR magenta]TEST[/COLOR]</title>
+	<tem>
+	<title></title>
 	<link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#112;&#114;&#117;&#101;&#118;&#097;&#046;&#120;&#109;&#108;</externallink>
+    <externallink></externallink>
 	<thumbnail></thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
-<item>
-    <title>[COLOR magenta]TEST 1[/COLOR]</title>
+<tem>
+    <title></title>
     <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;://&#103;&#111;&#111;&#103;&#108;&#101;&#100;&#114;&#105;&#118;&#101;&#046;&#099;&#111;&#109;/&#104;&#111;&#115;&#116;/&#048;&#066;&#055;&#115;&#051;&#105;&#072;&#111;&#098;&#114;&#087;&#119;&#071;&#084;&#108;&#108;&#081;&#086;&#110;&#074;&#085;&#078;&#087;&#108;&#084;&#099;&#050;&#099;/&#112;&#114;&#111;&#050;&#046;&#120;&#109;&#108;</externallink>
+    <externallink></externallink>
 	<thumbnail></thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
 	
-	<item>
-    <title>[COLOR magenta]TEST 2[/COLOR]</title>
+	<tem>
+    <title></title>
     <link>http://Ignoreme</link>
     <externallink></externallink>
 	<thumbnail></thumbnail>
@@ -143,15 +143,15 @@
     </item>
 	
 	<item>
-    <title>[COLOR magenta]TEST 3[/COLOR]</title>
+    <title></title>
     <link>http://Ignoreme</link>
-    <externallink></externallink>
+    <externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/listapel.m3u</externallink>
 	<thumbnail></thumbnail>
 	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
     </item>
 	
 	<item>
-    <title>[COLOR magenta]TEST 4[/COLOR]</title>
+    <title></title>
     <link>http://Ignoreme</link>
     <externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/probajuegos.xml</externallink>
 	<thumbnail></thumbnail>
