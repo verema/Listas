@@ -148,14 +148,6 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 </item>
 
 
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** #0 **</title>
-<link>plugin://plugin.video.f4mTester/?url=http://www.elboxtv.com:1985/live/nassim/nassim/1927.ts&amp;streamtype=TSDOWNLOADER&amp;name=#0</link>
-<thumbnail>http://i.imgur.com/JvpukWA.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** #0  **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=6ztb3u18p5s68ll  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
@@ -176,146 +168,14 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein **</title>
-<link>$doregex[url]</link>
-<regex>
-<name>url</name>
-<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=72400',False,False,'http://vipracing.info/')</expres>
-<page></page>
-<cookieJar>$doregex[loadcookie]</cookieJar>
-</regex>
-<regex>
-<name>loadcookie</name>
-<expres></expres>
-<page></page>
-<cookieJar>open[streamlive1.lwp]</cookieJar>
-</regex>
-<thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
  
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein Latino **</title>
-<link>$doregex[getVipRacing]</link>
-<regex>
-<name>getVipRacing</name>
-<expres>$pyFunction:vipracing.decrypt_vipracing('http://vipracing.info/channel/bein-es/frame')</expres>
-<page></page>
-</regex>
-<thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item> 
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Liga [COLOR lime][I]HD[/I][/COLOR] **</title>
-<link>$doregex[select_Url]</link>
-<regex>
-<name>select_Url</name>
-<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
-<page></page>
-</regex>
-<regex>
-<name>get_sxstream</name>
-<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
-<page>http://www.liveonlinetv247.info/embed/canal+liga.php</page>
-<referer>http://www.liveonlinetv247.info/</referer>
-<agent></agent>
-</regex>
-<regex>
-<name>get_sxstream1</name>
-<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
-<page>http://www.liveonlinetv247.info/embed/canal+liga.php</page>
-<referer>http://www.liveonlinetv247.info/</referer>
-<agent></agent>
-</regex>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Liga **</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1670.ts&amp;streamtype=TSDOWNLOADER&amp;name=Liga</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
 <item>
  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Liga **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=nkmbihjxj5lmd5b  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Liga 2 **</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/1218.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Liga 2</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Deportes **</title>
-<link>rtmp://www1.iguide.to/iguide playpath=8z2sz9pg92rdjw1 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
-<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item> 
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes **</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/155.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Deportes</link>
-<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes 2 **</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1675.ts&amp;streamtype=TSDOWNLOADER&amp;name=Deportes 2</link>
-<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item>
-<link>plugin://program.plexus/?url=5050ac3455cc3c35aa85c4f9d4e1bc7b6bc9e197&amp;mode=1&amp;name=Catoal+Acestreams</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canal-plus-bar.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Canal+ Futbol[COLOR red] Con Plexus[/COLOR] **</title>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Futbol **</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/156.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Futbol</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canal-plus-bar.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
  
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Canal+ Futbol **</title>
-<link>$doregex[select_Url]</link>
-<regex>
-<name>select_Url</name>
-<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
-<page></page>
-</regex>
-<regex>
-<name>get_sxstream</name>
-<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
-<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
-<referer>http://www.liveonlinetv247.info/</referer>
-<agent></agent>
-</regex>
-<regex>
-<name>get_sxstream1</name>
-<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
-<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
-<referer>http://www.liveonlinetv247.info/</referer>
-<agent></agent>
-</regex>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canal-plus-bar.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Golf **</title>
 <link>rtmp://31.220.40.63/privatestream/ playpath=golf8?keys=zmbsoAoFT1FtYVt66VzRSw&keyt=1460720380 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
@@ -323,152 +183,11 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Golf **</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://mainstream.dyndns.tv:8000/live/oADdzK6f4W/UswG3exEgX/412.ts&amp;streamtype=TSDOWNLOADER&amp;name=+ Gol</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalGolf.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TeleToro San Fermines  **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TeleToro **</title>
 <f4m>http://stream.ssh101.com:1935/live/SANFERMIN/chunklist.m3u8</f4m>
 <thumbnail>http://teletoro.link/teletorocabecera.jpg</thumbnail>
 <fanart>http://teletoro.link/teletorocabecera.jpg</fanart>            
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Toros[I]teletoro [/I] **</title><!--http://teletoro.link/ -->
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.mips.tv/membedplayer/42531yraetg/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.mips.tv</referer>
-			</regex>
-<thumbnail>http://teletoro.link/teletorocabecera.jpg</thumbnail>
-<fanart>http://teletoro.link/teletorocabecera.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Toros  **</title>
-<link>rtmp://31.220.0.13/privatestream/ playpath=torosch?keys=KdbDBjM1-NmBkvF680paaQ&keyt=1460124824 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/cptohd.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Toros **</title>
-<link>rtmp://31.220.40.62/privatestream/torosch?keys=xENZYIYbyz1icmtCrJGzeA&keyt=1461283967 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf live=1 pageUrl=http://privatestream.tv/37</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/cptohd.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 hd **</title>
-<f4m>http://stream-ec.vty.dailymotion.com/13/dm/1/x4hcpw5/live.isml/events(live-1466335651)/live-audio=128000-video=2000000.m3u8</f4m>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 **</title>	
-<link>$doregex[url]</link>
-<regex>
-	<name>url</name>
-	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportemixtv.eu')</expres>
-	<page></page>
-</regex>
-<regex>
-<name>ch</name> 
-<expres>http://www.iguide.to/embed/(.*?)&</expres>
-<page>http://deportemixtv.eu/canales/1.php</page>			
-</regex>
-<thumbnail></thumbnail>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 **</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>file: "(.*?)"</expres>
-<page>http://www.lacasadeltikitaka.futbol/elitegol/canal1.php</page>
-</regex>
-<thumbnail></thumbnail>
-</item>  
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 **</title>
-<link>$doregex[url]</link>
-<regex>
-	<name>url</name>
-	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://malaga65.org')</expres>
-	<page></page>
-</regex>
-<regex>
-<name>ch</name> 
-<expres>http://www.iguide.to/embed/(.*?)&</expres>
-<page>http://malaga65.org/p/ch3.php</page>			
-</regex>
-<thumbnail></thumbnail>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 diferido **</title>
-<link>$doregex[url]</link>
-<regex>
-<name>url</name>
-<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://teledeporteonlinetv.org/')</expres>
-<page></page>
-</regex>
-<regex>
-<name>ch</name> 
-<expres>http://www.iguide.to/embed/(.*?)&</expres>
-<page>http://teledeporteonlinetv.org/ch/ch6.php</page>			
-</regex>
-<thumbnail></thumbnail>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1 **</title>
-<link>$doregex[url]</link>
-<regex>
-	<name>url</name>
-	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://www.k2deporte.xyz')</expres>
-	<page></page>
-</regex>
-<regex>
-<name>ch</name> 
-<expres>http://www.iguide.to/embed/(.*?)&</expres>
-<page>http://www.k2deporte.xyz/p/tv1.html</page>			
-</regex>
-<thumbnail></thumbnail>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evento F1. HD **</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal9.php</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1 **</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/6794.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
-<link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3102.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
-<link>plugin://plugin.video.f4mTester/?url=http://iptv-volkan.net:8000/live/mike/mike1/902.ts&amp;streamtype=TSDOWNLOADER&amp;name=Formula 1</link>
-<thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
@@ -485,55 +204,10 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Moto GP **</title>         
-<link>plugin://plugin.video.f4mTester/?url=http://dmtn-iptv.com:8080/live/ksa.knig.g4/ksa.knig.g4/2085.ts&amp;streamtype=TSDOWNLOADER&amp;name=Moto GP</link>
-<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MotoGP-HD-Eventos **</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>file: "(.*?)"</expres>
-<page>http://lacasadeltikitaka.futbol/directo/canal1.php</page>
-</regex>
-thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>  
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MotoGP-HD-Eventos **</title>
-<link>$doregex[get-decode]</link>
-<regex>
-<name>get-decode</name>
-<expres>source: '(.*?)'</expres>
-<page>http://tugoleada.com/canal1.php</page>
-</regex>
-<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Moto gp **</title>
-<link>rtmp://www1.iguide.to/iguide playpath=av7woklj9cf50c2  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
-<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Real Madrid **</title>
 <link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-p.m3u8?sd=10&rebase=on</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/RealMadridTv.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item> 
- 
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Barça TV **</title>
-<link>rtmp://31.220.0.187/privatestream/ playpath=barcas?keys=f9C9zoE6GkP1eV8jOs_Omw&keyt=1460719428 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/BarsaTV300.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
@@ -544,24 +218,10 @@ thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item> 
 
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Comedia **</title>
-<link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1674.ts&amp;streamtype=TSDOWNLOADER&amp;name=Comedia</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-3.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Comedia **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=t6zehd5sg0oehhq swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-3.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SeriesXtra **</title>
-<link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1669.ts&amp;streamtype=TSDOWNLOADER&amp;name=SeriesXtra</link>
-<thumbnail>http://i.imgur.com/0XwnQQ5.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
@@ -569,26 +229,5 @@ thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SeriesXtra **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=62sn73q6cjfaq1l swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/0XwnQQ5.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Series **</title>
-<link>plugin://plugin.video.f4mTester/?url=http://orbit-iptv.com:2500/live/FqmDI1ljtm/JQzUkxw4eN/1668.ts&amp;streamtype=TSDOWNLOADER&amp;name=Series</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalSeries.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Series **</title>    
-<link>rtmp://www1.iguide.to/iguide playpath=203cy9bnzp1kcm9 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalSeries.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Xtra **</title>
-<link>rtmp://31.220.0.201/privatestream/ playpath=plxtra?keys=8SEn6tdFTznwTry61lgA4w&keyt=1460562440 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalxtra.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
