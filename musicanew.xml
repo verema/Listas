@@ -2237,7 +2237,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
 <page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
 <referer>http://diskokosmiko.mx/[makelist.param2]</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
