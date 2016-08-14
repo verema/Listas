@@ -33,6 +33,13 @@
 </item>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Los Simpsons 24/7.(Latino) **</title>
+<link>plugin://plugin.video.youtube/play/?video_id=fN5NWrdxofY</link>
+<thumbnail>http://goo.gl/YxvUHJ</thumbnail>
+<fanart>http://static.t13.cl/images/sizes/1200x675/1443457474-los-simpson-175237.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Campeones Hacia el Mundial 2002  **</title>
 <link>$doregex[makelist]</link>
 
