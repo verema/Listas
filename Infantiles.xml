@@ -225,26 +225,27 @@
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** One Piece **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** One Piece  **</title>
 <link>$doregex[makelist]</link>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
         <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://www.qserie.com/files/uploads/4608.jpg</thumbnail>
+		<thumbnail>http://www.qserie.com/files/uploads/4608.jpg</thumbnail>
 		<fanart>http://uschina.usc.edu/Files/images/201102/onepiecedometour.jpg</fanart>
-]]></listrepeat>
+        ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/lokario1/one-piece-capitulos-1-264-espanol-castellano-12227/list,1,19</page>
+<page>http://copiapop.com/kike123/one-piece-shichibukai-72254/list,1,30</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
 <rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<referer>http://copiapop.com/[makelist.param2]</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
@@ -253,8 +254,8 @@
 <regex>
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/lokario1/one-piece-capitulos-1-264-espanol-castellano-12227/list,1,19</referer>
+<page>http://copiapop.com/[makelist.param2]</page>
+<referer>http://copiapop.com/kike123/one-piece-shichibukai-72254/list,1,30</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
