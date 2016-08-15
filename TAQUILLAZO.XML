@@ -374,7 +374,7 @@
         <thumbnail>http://i.imgur.com/SGhKNxi.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/pacharico/peliculas-hd-19324/list,1,32</page>
+<page>http://diskokosmiko.mx/pacharico/peliculas-hd-19324/list,1,50</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
@@ -392,7 +392,7 @@
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/pacharico/peliculas-hd-19324/list,1,32</referer>
+<referer>http://diskokosmiko.mx/pacharico/peliculas-hd-19324/list,1,50</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
