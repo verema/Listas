@@ -32,13 +32,13 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<item>
-			<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param2] **</title>
-			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_[makelist.param1]  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param2] **</title>
+<link>rtmp://$doregex[get_ip]/live?$doregex[get_key] app=live?$doregex[get_key] playpath=live_[makelist.param1]  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
 <regex>
 <name>get_ip</name>
 <expres>([^;]*?);:</expres>    
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                               
+<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                               
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
@@ -48,13 +48,27 @@
 <regex>
 <name>get_key</name>
 <expres>mvnkey-(.*?);</expres>  
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                              
+<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                               
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
 <accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
 <cookieJar></cookieJar>
 </regex>
+<regex>
+<name>get_key2</name>
+<expres>;.*;(.*?)</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+
+_psn12v?
+
+
 <regex>
 <name>get_channel</name>
 <expres>embedSWF\(\"(.*?)"</expres>    
@@ -65,7 +79,7 @@
 <accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
 <cookieJar></cookieJar>
 </regex>
-			<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail></item>
+			<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
 ]]></listrepeat>
 <expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
 <page>http://vaughnlive.tv/browse/espanol</page>
@@ -75,7 +89,7 @@
 </regex>
 <thumbnail>http://i.imgur.com/OKY9Szg.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item> 
+</item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR red]Total Play[/COLOR] **</title>
