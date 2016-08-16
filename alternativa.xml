@@ -31,6 +31,12 @@
 </item>
 
 <item>
+[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ElectroVelezTv **</title>
+<link>rtmp://89.140.80.244/livepkgr/_definst_ playpath=livestream2 swfUrl=http://www.electrovideotv.com/components/com_allvideoshare/player.swf?random=1722143246 live=1 pageUrl=http://www.electrovideotv.com/index.php/canalevtonline</link>
+<thumbnail>http://www.electrovideotv.com/images/logovideo.png</thumbnail>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow]TV [I]M3U[/I] [/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>http://live.tvplayerlatino.com/lista_remota.m3u</externallink>
