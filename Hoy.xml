@@ -37,7 +37,7 @@
 <item>
 <title>Sala 1</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -64,7 +64,7 @@
 <item>
 <title>Sala 2</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -91,7 +91,7 @@
 <item>
 <title>Sala 3</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -118,7 +118,7 @@
 <item>
 <title>Sala 4</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -145,7 +145,7 @@
 <item>
 <title>Sala 5</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -172,7 +172,7 @@
 <item>
 <title>Sala 6</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -199,7 +199,7 @@
 <item>
 <title>Sala 7</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -226,7 +226,7 @@
 <item>
 <title>Sala 8</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -253,7 +253,7 @@
 <item>
 <title>Sala 9</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -280,7 +280,7 @@
 <item>
 <title>Sala 10</title>
 <link>$doregex[makelist]</link> 
-<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<thumbnail>http://i.imgur.com/kMOIJKx.jpg</thumbnail> 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
