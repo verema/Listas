@@ -48,14 +48,14 @@
     <name>link-torrent</name>
     <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
     <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano</referer>
     </regex>
     
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -78,11 +78,11 @@
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     </regex>
     
-    <referer>http://www.divxatope.com/categoria/peliculas/pg/2</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano/pg/2</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas/pg/2</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano/pg/2</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -102,14 +102,14 @@
     <name>link-torrent</name>
     <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
     <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas/pg/3</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano/pg/3</referer>
     </regex>
     
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas/pg/3</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano/pg/3</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -129,14 +129,14 @@
     <name>link-torrent</name>
     <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
     <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas/pg/4</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano/pg/4</referer>
     </regex>
     
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas/pg/4</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano/pg/4</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -156,14 +156,14 @@
     <name>link-torrent</name>
     <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
     <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas/pg/5</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano/pg/5</referer>
     </regex>
     
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas/pg/5</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano/pg/5</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -183,14 +183,14 @@
     <name>link-torrent</name>
     <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
     <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas/pg/6</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano/pg/6</referer>
     </regex>
     
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas/pg/6</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano/pg/6</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -210,14 +210,14 @@
     <name>link-torrent</name>
     <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
     <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas/pg/7</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano/pg/7</referer>
     </regex>
     
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas/pg/7</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano/pg/7</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -237,14 +237,14 @@
     <name>link-torrent</name>
     <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
     <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas/pg/8</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano/pg/8</referer>
     </regex>
     
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas/pg/8</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano/pg/8</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -264,14 +264,14 @@
     <name>link-torrent</name>
     <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
     <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas/pg/9</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano/pg/9</referer>
     </regex>
     
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas/pg/9</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano/pg/9</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -291,14 +291,14 @@
     <name>link-torrent</name>
     <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
     <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas/pg/10</referer>
+    <referer>http://www.divxatope.com/categoria/peliculas-castellano/pg/10</referer>
     </regex>
     
     <referer>http://www.divxatope.com/categoria/peliculas</referer>
     <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
 ]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas/pg/10</page>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas-castellano/pg/10</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
