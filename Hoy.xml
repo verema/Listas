@@ -29,6 +29,284 @@
 </channel>
 
 <channel>
+<name>[COLOR red]Divxatope (Con QUASAR)[/COLOR]</name>
+<fanart>http://mispiclinks.esy.es/Archivos/DivX%20a%20tope.png</fanart>
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail>
+<items>
+
+<item>
+<title>Sala 1</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+
+<item>
+<title>Sala 2</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas/pg/2</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas/pg/2</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+
+<item>
+<title>Sala 3</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas/pg/3</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas/pg/3</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+
+<item>
+<title>Sala 4</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas/pg/4</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas/pg/4</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+
+<item>
+<title>Sala 5</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas/pg/5</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas/pg/5</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+
+<item>
+<title>Sala 6</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas/pg/6</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas/pg/6</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+
+<item>
+<title>Sala 7</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas/pg/7</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas/pg/7</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+
+<item>
+<title>Sala 8</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas/pg/8</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas/pg/8</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+
+<item>
+<title>Sala 9</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas/pg/9</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas/pg/9</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+
+<item>
+<title>Sala 10</title>
+<link>$doregex[makelist]</link> 
+<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/divxatope.png</thumbnail> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas/pg/10</referer>
+    </regex>
+    
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>          
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas/pg/10</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item> 
+</items>
+</channel>
+
+<channel>
 <name>[COLOR red]HDfull[/COLOR]</name>
 <Thumbnail>http://i.imgur.com/PIQyl6k.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
