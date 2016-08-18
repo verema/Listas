@@ -324,7 +324,7 @@
 <fanart>http://www.diariosur.es/noticias/201601/13/media/cortadas/cine-regio--575x323.jpg</fanart>
 </item>
 
-<tem>
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Cine de Barrio 4 ***[/COLOR] ** NUEVO</title>
 <link>$doregex[makelist]</link>
 <regex>
