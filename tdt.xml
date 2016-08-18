@@ -94,7 +94,7 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Telecinco **</title>         
 <link>plugin://plugin.video.f4mTester/?url=http://tv2iptv.com:8000/live/TNnsEPYspb/Yajx0LF8Xf/1132.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
 <ink>plugin://plugin.video.f4mTester/?url=http://tv2iptv.com:8000/live/TNnsEPYspb/Yajx0LF8Xf/1132.ts&amp;streamtype=TSDOWNLOADER&amp;name=Telecinco</link>
@@ -102,11 +102,9 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-http://gameserver4.streamiptv.online:80/live/martino30/martino30/6546.ts
-
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Telecinco **</title>
-<link>rtmp://31.220.0.201/privatestream/ playpath=teleinco?keys=fEuwkWUvlwU0t7S6caErDA&keyt=1460648747 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<link>rtmp://31.220.0.187/privatestream/ playpath=addfee?keys=HONp5GSPraiDzS58epPiNw&keyt=1466436643 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
