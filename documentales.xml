@@ -1253,3 +1253,41 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://i.imgur.com/BLcl06H.jpg</thumbnail>
 <fanart>http://i.imgur.com/OsoP9Ob.jpg</fanart>
 </item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Brain Games **</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://i.ytimg.com/sh/jobtJKLXhhs/showposter.jpg</thumbnail>
+        <fanart>http://4lifesuccess.info/Main/wp-content/uploads/2014/09/brain-games-3.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/chicho306/brain-games-35306/list,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/chicho306/brain-games-35306/list,1,2</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.ytimg.com/sh/jobtJKLXhhs/showposter.jpg</thumbnail>
+<fanart>http://4lifesuccess.info/Main/wp-content/uploads/2014/09/brain-games-3.png</fanart>
+</item>
