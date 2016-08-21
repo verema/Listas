@@ -69,7 +69,7 @@
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La 1 **</title>
-<ink>http://iphonelive.rtve.es/LA1_LV3_IPH/LA1_LV3_IPH.m3u8</link>
+<link>http://iphonelive.rtve.es/LA1_LV3_IPH/LA1_LV3_IPH.m3u8</link>
 <link>rtmp://31.220.40.62/pull/ playpath=launotve?keys=luX2hnRlqDtgpci1G__Jbg&keyt=1471554899 swfUrl=http://leton.tv/jwplayer.flash.swf live=1 pageUrl=http://leton.tv/player.php?streampage=launotve&width=600&height=450#</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/TVE1.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
