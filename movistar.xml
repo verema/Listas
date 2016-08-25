@@ -164,6 +164,17 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 </item>
 
 <item>
+<title>Gol Tv</title>
+<link>http://stream.zetatv.cf/pw/goltv_b2kycdj/chunklist.m3u8</link>
+</item>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein **</title>
+<link>http://stream.zetatv.cf/pw/bein_b0mgomf/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=9eeg1imgppj6zy0  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
