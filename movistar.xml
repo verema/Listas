@@ -152,21 +152,24 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <link>http://stream.zetatv.cf/pw/plus0_b0xk990/chunklist.m3u8</link>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
-<thumbnail>http://i.imgur.com/JvpukWA.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_0.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Estrenos **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=oqlqntk3lt0tcz4 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
-<thumbnail>http://i.imgur.com/Y103Nw4.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_estrenos.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
 <item>
 <title>Gol Tv</title>
 <link>http://stream.zetatv.cf/pw/goltv_b2kycdj/chunklist.m3u8</link>
+<thumbnail>http://www.supernovelty.com/imagenes/canales/gol-tv.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
+
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein **</title>
 <link>http://stream.zetatv.cf/pw/bein_b0mgomf/chunklist.m3u8</link>
@@ -184,19 +187,21 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes **</title> 
 <link>http://stream.zetatv.cf/pw/deportes_13uk31p/chunklist.m3u8</link>
-<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_deportes_1.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes 2 **</title>
 <link>http://stream.zetatv.cf/pw/deportes2_ardgdvv/chunklist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_deportes_2.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Tv Liga **</title>
 <link>http://stream.zetatv.cf/pw/verliga5_14vrscl/chunklist.m3u8</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
+<thumbnail>http://09stream.com/img/liga2.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
@@ -210,21 +215,23 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Golf **</title>
 <link>rtmp://31.220.40.63/privatestream/ playpath=golf8?keys=zmbsoAoFT1FtYVt66VzRSw&keyt=1460720380 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalGolf.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_golf.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TeleToro **</title>
-<f4m>http://stream.ssh101.com:1935/live/SANFERMIN/chunklist.m3u8</f4m>
-<thumbnail>http://teletoro.link/teletorocabecera.jpg</thumbnail>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Toros Tv **</title>
+<link>http://stream.zetatv.cf/pw/toros_9frbv56/chunklist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/tt/toros_tv_es.png</thumbnail>
 <fanart>http://teletoro.link/teletorocabecera.jpg</fanart>            
 </item>
+
+http://cdn.sstream.pw/live/toros_9frbv56/media-ugd361w47_33815.ts
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Moto gp **</title>
 <link>http://stream.zetatv.cf/pw/motogp_b0xk1e8/chunklist.m3u8</link>
-<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_moto_gp.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
@@ -232,14 +239,14 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1  **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=38tj1wgh6wfqa6e swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=33317&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <link>rtmp://www1.iguide.to/iguide playpath=kpfk285js6zoxea  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
-<thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_formula_1.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1  **</title>
 <link>http://stream.zetatv.cf/pw/f1_b0xjnv5/chunklist.m3u8</link>
-<thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_formula_1.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
@@ -247,14 +254,22 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Teledeportes **</title>
 <link>http://stream.zetatv.cf/pw/teledeporte_aw3kx97/chunklist.m3u8</link>
+<thumbnail>https://hermiguafutsal.files.wordpress.com/2014/08/tve_teledeporte.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
+
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** EuroSport 1 **</title>
 <link>http://stream.zetatv.cf/pw/eurosport1_b8omvr8/chunklist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ee/eurosport_fr_1.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
+
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** EuroSport 2 **</title>
 <link>http://stream.zetatv.cf/pw/eurosport2_b11qmaz/chunklist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ee/eurosport_fr_2.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
@@ -267,20 +282,20 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Acción **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=qyxepg6xttc83as swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-2.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_accion.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item> 
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Comedia **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=t6zehd5sg0oehhq swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalplus_es_plus1_30-3.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_comedia.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SeriesXtra **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=62sn73q6cjfaq1l swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
-<thumbnail>http://i.imgur.com/0XwnQQ5.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_xtra.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
