@@ -169,16 +169,35 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes **</title> 
+<link>http://stream.zetatv.cf/pw/deportes_13uk31p/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/pEYn7X7.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes 2 **</title>
+<link>http://stream.zetatv.cf/pw/deportes2_ardgdvv/chunklist.m3u8</link>
+</item>
+
+<item>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Tv Liga **</title>
+<link>http://stream.zetatv.cf/pw/verliga5_14vrscl/chunklist.m3u8</link>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Liga **</title>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Liga **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=nkmbihjxj5lmd5b  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalLiga.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** + Golf **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Golf **</title>
 <link>rtmp://31.220.40.63/privatestream/ playpath=golf8?keys=zmbsoAoFT1FtYVt66VzRSw&keyt=1460720380 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/CanalGolf.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -192,17 +211,33 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 </item>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Moto gp **</title>
+<link>http://stream.zetatv.cf/pw/motogp_b0xk1e8/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/9gVV2t2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1  **</title>
+<link>http://stream.zetatv.cf/pw/f1_b0xjnv5/chunklist.m3u8</link>
 <link>rtmp://www1.iguide.to/iguide playpath=38tj1wgh6wfqa6e swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=33317&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
+<link>rtmp://www1.iguide.to/iguide playpath=kpfk285js6zoxea  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
+
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1 **</title>
-<link>rtmp://www1.iguide.to/iguide playpath=kpfk285js6zoxea  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
-<thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Teledeportes **</title>
+<link>http://stream.zetatv.cf/pw/teledeporte_aw3kx97/chunklist.m3u8</link>
+</item>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** EuroSport 1 **</title>
+<link>http://stream.zetatv.cf/pw/eurosport1_b8omvr8/chunklist.m3u8</link>
+</item>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** EuroSport 2 **</title>
+<link>http://stream.zetatv.cf/pw/eurosport2_b11qmaz/chunklist.m3u8</link>
 </item>
 
 <item>
