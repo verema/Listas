@@ -219,9 +219,15 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1  **</title>
-<link>http://stream.zetatv.cf/pw/f1_b0xjnv5/chunklist.m3u8</link>
 <link>rtmp://www1.iguide.to/iguide playpath=38tj1wgh6wfqa6e swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=33317&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <link>rtmp://www1.iguide.to/iguide playpath=kpfk285js6zoxea  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
+<thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1  **</title>
+<link>http://stream.zetatv.cf/pw/f1_b0xjnv5/chunklist.m3u8</link>
 <thumbnail>http://i.imgur.com/3Z7SWB3.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
