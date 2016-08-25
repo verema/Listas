@@ -34,6 +34,67 @@
 </item> 
 
 <item>
+<title>discovery Max</title> 
+<link>http://stream.zetatv.cf/pw/dismax_9c7n25t/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/ST0nJb2.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Discovery Channel</title>
+<link>http://stream.zetatv.cf/pw/discoverydino_9dm3fgv/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/VEXxOky.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>National Geography</title> 
+<link>http://stream.zetatv.cf/pw/national_alwka53/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/Co57iED.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>Nat Geo Will</title> 
+<link>http://stream.zetatv.cf/pw/natgeowill_azu3urx/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/q0BzvNo.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>	
+
+<item>
+<title>Historia</title>
+<link>http://stream.zetatv.cf/pw/historia_9dm8skt/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/wOSLXuF.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+
+<item>
+<title>A and E</title>
+<link>http://stream.zetatv.cf/pw/AE_13mz39m/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/4q7xd8N.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>	
+
+<item>
+<title>Caza y Pesca</title> 
+<link>http://stream.zetatv.cf/pw/caza_aulqd78/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/fP0g5ld.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>	
+
+<item>
+<title>C I</title>
+<link>http://stream.zetatv.cf/pw/CI_b0ejsje/chunklist.m3u8</link>
+</item>
+
+<item>
+<title>Canal Cocina</title>
+<link>http://stream.zetatv.cf/pw/cocina_am9cifh/chunklist.m3u8</link>
+<thumbnail>http://i.imgur.com/sJFRAiz.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Hombre Y La Tierra **</title>
 <link>$doregex[makelist]</link>
 <regex>
