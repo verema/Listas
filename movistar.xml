@@ -158,7 +158,8 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Estrenos **</title>
-<link>rtmp://www1.iguide.to/iguide playpath=oqlqntk3lt0tcz4 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<link>http://stream.zetatv.cf/pw/plusestrenos_ahnxk7j/chunklist.m3u8</link>
+link>rtmp://www1.iguide.to/iguide playpath=oqlqntk3lt0tcz4 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_estrenos.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
@@ -226,8 +227,6 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <fanart>http://teletoro.link/teletorocabecera.jpg</fanart>            
 </item>
 
-http://cdn.sstream.pw/live/toros_9frbv56/media-ugd361w47_33815.ts
-
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Moto gp **</title>
 <link>http://stream.zetatv.cf/pw/motogp_b0xk1e8/chunklist.m3u8</link>
@@ -281,14 +280,16 @@ http://cdn.sstream.pw/live/toros_9frbv56/media-ugd361w47_33815.ts
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Acción **</title>
-<link>rtmp://www1.iguide.to/iguide playpath=qyxepg6xttc83as swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<link>http://stream.zetatv.cf/pw/accion_aqtvoax/chunklist.m3u8</link>
+<ink>rtmp://www1.iguide.to/iguide playpath=qyxepg6xttc83as swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_accion.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item> 
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Comedia **</title>
-<link>rtmp://www1.iguide.to/iguide playpath=t6zehd5sg0oehhq swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
+<link>http://stream.zetatv.cf/pw/comedia_b0dqg8y/chunklist.m3u8</link>
+<ink>rtmp://www1.iguide.to/iguide playpath=t6zehd5sg0oehhq swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_comedia.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
@@ -297,5 +298,19 @@ http://cdn.sstream.pw/live/toros_9frbv56/media-ugd361w47_33815.ts
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SeriesXtra **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=62sn73q6cjfaq1l swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_xtra.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Series **</title>
+<link>http://stream.zetatv.cf/pw/series_aw3d82v/chunklist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_series.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** DCine **</title>
+<link>http://stream.zetatv.cf/pw/dcine_aw3g20p/chunklist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_cine_espanol.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
