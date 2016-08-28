@@ -4,6 +4,24 @@
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IPTV Con TDT España **</title>
 <link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist2.param2][/COLOR] **</title>
+	<link>na</link>
+	<externallink>[makelist2.param1]</externallink>
+	<thumbnail>[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres>URL:(http.*?)\nNombre:(.*?)\nLogo:-(http.*?)--</expres>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#103;&#114;&#117;&#112;&#111;/&#109;&#097;&#115;&#116;&#101;&#114;/&#108;&#105;&#115;&#116;&#097;&#115;&#099;&#097;&#109;&#112;&#097;&#114;&#116;&#105;&#100;&#097;&#115;&#046;&#116;&#120;&#116;</page>
+</regex>
+<thumbnail>http://i.imgur.com/9hmmHaq.png</thumbnail>
+<fanart>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Philips_PM5544.svg/300px-Philips_PM5544.svg.png</fanart>
+</item>
+
+<tem>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IPTV Con TDT España **</title>
+<link>$doregex[makelist2]</link>
 
 <regex>
 <name>makelist2</name>
