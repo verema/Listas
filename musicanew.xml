@@ -1007,17 +1007,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <items>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  Michael Jackson This Is It **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow]Michael Jackson This Is It[/COLOR] **</title>
 <link>$doregex[makelist]</link>
-
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [makelist.param3] **</title>
         <link>$doregex[getUrl]</link>
-		<thumbnail>https://upload.wikimedia.org/wikipedia/en/4/43/Michael_Jackson's_This_Is_It_Poster.JPG</thumbnail>
+        <thumbnail>https://upload.wikimedia.org/wikipedia/en/4/43/Michael_Jackson's_This_Is_It_Poster.JPG</thumbnail>
 		<fanart>http://www.indiewire.com/wp-content/uploads/2014/12/this-is-it-mj.jpg</fanart>
-        ]]></listrepeat>
+]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 <page>http://diskokosmiko.mx/dos/m1ch43l-34974/list,1,1</page>
 <cookieJar></cookieJar>
@@ -1025,9 +1024,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
 <rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
@@ -1036,7 +1035,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
 <referer>http://diskokosmiko.mx/dos/m1ch43l-34974/list,1,1</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
