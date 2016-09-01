@@ -403,32 +403,6 @@
 </channel>
 
 <channel>
-<name>88.ª Ceremonia de los Premios Óscar (2016)</name>
-<thumbnail>http://es.web.img1.acsta.net/newsv7/16/01/12/16/17/058489.jpg</thumbnail>
-<fanart>http://as01.epimg.net/ocio/imagenes/2016/02/28/cine/1456685426_901439_1456717351_noticia_normal.jpg</fanart>
-<items>
-
-<item>
-<title>Disfruta de la gala</title>
-<link>$doregex[url]</link>
-<regex>
-	<name>url</name>
-	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>
-	<page></page>
-</regex>
-<regex>
-	<name>jsonurl</name>
-	<expres>"url360":"(.*?)"</expres>
-	<page>http://vk.com/video_ext.php?oid=238243363&amp;id=456239019&amp;hash=577baabbc3046aeb&amp;hd=1</page>
-	<referer>http://vk.com</referer>
-</regex>
-<thumbnail>http://es.web.img1.acsta.net/newsv7/16/01/12/16/17/058489.jpg</thumbnail>
-<fanart>http://as01.epimg.net/ocio/imagenes/2016/02/28/cine/1456685426_901439_1456717351_noticia_normal.jpg</fanart>
-</item>
-</items>
-</channel>
-
-<channel>
 <name>Ant-Man</name>
 <thumbnail>http://cdn.pordede.com/content/covers/mediacover-57098-4.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -436,18 +410,21 @@
 
 <item>
 <title>Opción 1</title>
-<link>$doregex[id]</link>
+<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
 <regex>
-<name>id</name>
-<expres>file:'(.*)'</expres>
+<name>file</name>
+<expres>file: "(.*?)\/flv</expres>
+<page>http://streamin.to/embed-f5ewzx22ijqs-740x360.html</page>   
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>play</name>
+<expres>\/flv:(.*?)",</expres>
 <page>http://streamin.to/embed-f5ewzx22ijqs-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
 <thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<genre></genre>
-<info></info>
-<date></date>
 </item>
 </items>
 </channel>
@@ -460,66 +437,17 @@
 
 <item>
 <title>Opción 1</title>
-<link>$doregex[id]</link>
+<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
 <regex>
-<name>id</name>
-<expres>file:'(.*)'</expres>
+<name>file</name>
+<expres>file: "(.*?)\/flv</expres>
+<page>http://streamin.to/embed-jfeisrhqbobo-740x360.html</page>   
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>play</name>
+<expres>\/flv:(.*?)",</expres>
 <page>http://streamin.to/embed-jfeisrhqbobo-740x360.html</page>
-<referer>http://streamin.to</referer>
-</regex>
-<thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<genre></genre>
-<info></info>
-<date></date>
-</item>
-
-<tem>
-<title>Opción 2</title>
-<link>$doregex[id]</link>
-<regex>
-<name>id</name>
-<expres>file:'(.*)'</expres>
-<page>http://streamin.to/embed-m901ov4hj08l-740x360.html</page>
-<referer>http://streamin.to</referer>
-</regex>
-<thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>Opción 3</title>
-<link>$doregex[id]</link>
-<regex>
-<name>id</name>
-<expres>file:'(.*)'</expres>
-<page>http://streamin.to/embed-qqua2a28vm2j-740x360.html</page>
-<referer>http://streamin.to</referer>
-</regex>
-<thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>Opción 4</title>
-<link>$doregex[id]</link>
-<regex>
-<name>id</name>
-<expres>file:'(.*)'</expres>
-<page>http://streamin.to/embed-7g8qgp1hwp1b-740x360.html</page>
-<referer>http://streamin.to</referer>
-</regex>
-<thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<tem>
-<title>Opción 5</title>
-<link>$doregex[id]</link>
-<regex>
-<name>id</name>
-<expres>file:'(.*)'</expres>
-<page>http://streamin.to/embed-qsjr42u51l6i-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
 <thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
