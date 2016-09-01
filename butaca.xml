@@ -25,19 +25,19 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [makelist.param1] [COLOR skyblue][[makelist.param5]][/COLOR] **</title>
-<link>$doregex[link2]</link>
+<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
 <regex>
-<name>link2</name>
-<expres>file:'(.*)'</expres>
-<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
+<name>file</name>
+<expres>file: "(.*?)\/flv</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
 <referer>http://streamin.to</referer>
-</regex>	 
-<regex>	 
-<name>link</name>	 
-<expres>http://streamin.to/(.*?)"</expres>	 
-<page>[makelist.param2]</page>	 
-<referer>http://catoalkodi.info</referer>	 
-</regex>	
+</regex>
+<regex>
+<name>play</name>
+<expres>\/flv:(.*?)",</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex> 	
 <thumbnail>[makelist.param3]</thumbnail>
 <fanart>[makelist.param3]</fanart><info>[makelist.param4]</info>
 ]]></listrepeat>
