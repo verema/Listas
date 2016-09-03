@@ -12,19 +12,19 @@
 </channels_info>
 
 <channel>
-<name>[COLOR blue]Yaske.net:[/COLOR][COLOR lime] Peliculas[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **[COLOR lime] Yaske[/COLOR] **</name>
 <Thumbnail>http://i.imgur.com/COXfQ4A.jpg</thumbnail>
 <fanart>http://s9.postimg.org/ujxykncfj/captura.jpg</fanart>
 <items>
 
 <item>
-<title>[COLOR lime]Por Genero[/COLOR]</title>
+<title>[COLOR lime][COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Por Genero[/COLOR] **</title>
 <link>$doregex[makelist3]</link>
 
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist3.param1] [/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist3.param1] [/COLOR] **</title>
 <link>$doregex[makelist2]</link>
 ]]></listrepeat>
 <expres>href='http://www.yaske.cc/es/peliculas/genero/(.*?)'</expres>
@@ -34,7 +34,7 @@
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[COLOR deepskyblue] [makelist2.param2] [/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR deepskyblue] [makelist2.param2] [/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
@@ -46,19 +46,14 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I]</title>
-<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
-<regex>
-<name>file</name>
-<expres>file: "(.*?)\/flv</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
-<referer>http://streamin.to</referer>
-</regex>
-<regex>
-<name>play</name>
-<expres>\/flv:(.*?)",</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>
-<referer>http://streamin.to</referer></regex> 
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I] **</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
@@ -68,16 +63,13 @@
 </item>
 
 <item>
-<title>[COLOR lime]Estrenos[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Estrenos[/COLOR] **</title>
 <link>$doregex[makelist2]</link>
-
-
-
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param2] [/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param2] [/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
@@ -89,37 +81,31 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I]</title>
-<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
-<regex>
-<name>file</name>
-<expres>file: "(.*?)\/flv</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
-<referer>http://streamin.to</referer>
-</regex>
-<regex>
-<name>play</name>
-<expres>\/flv:(.*?)",</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>
-<referer>http://streamin.to</referer></regex> 
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I] **</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
 <expres>streamin.to%2F(.*?)%3F[\w\W\s]{0,260}flags/(.*?)_[\w\W\s]{0,190}title="(.*?)\(</expres>
 <page>[makelist2.param1]</page>
-
 </regex>
 </item>
 
 <item>
-<title>[COLOR lime]Lo Mas Nuevo • Audio Latino[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Lo Mas Nuevo • Audio Latino[/COLOR] **</title>
 <link>$doregex[makelist2]</link>
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param2] [/COLOR] </title>
-<link>$doregex[makelist]</link>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param2] [/COLOR] </title>
+<link>$doregex[makelist] **</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
@@ -130,19 +116,14 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I]</title>
-<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
-<regex>
-<name>file</name>
-<expres>file: "(.*?)\/flv</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
-<referer>http://streamin.to</referer>
-</regex>
-<regex>
-<name>play</name>
-<expres>\/flv:(.*?)",</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>
-<referer>http://streamin.to</referer></regex> 
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I] **</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex> 
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
@@ -152,13 +133,13 @@
 </item>
 
 <item>
-<title>[COLOR lime]Lo Mas Nuevo • Audio Español - Castellano[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Lo Mas Nuevo • Audio Español - Castellano[/COLOR] **</title>
 <link>$doregex[makelist2]</link>
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param2] [/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param2] [/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
@@ -170,19 +151,14 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I]</title>
-<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
-<regex>
-<name>file</name>
-<expres>file: "(.*?)\/flv</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
-<referer>http://streamin.to</referer>
-</regex>
-<regex>
-<name>play</name>
-<expres>\/flv:(.*?)",</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>
-<referer>http://streamin.to</referer></regex> 
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I] **</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex> 
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
@@ -192,13 +168,13 @@
 </item>
 
 <item>
-<title>[COLOR lime]Mas Recientes • Subtituladas [ES][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Mas Recientes • Subtituladas [ES][/COLOR]**</title>
 <link>$doregex[makelist2]</link>
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param2] [/COLOR] </title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param2] [/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
@@ -210,19 +186,14 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I]</title>
-<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
-<regex>
-<name>file</name>
-<expres>file: "(.*?)\/flv</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
-<referer>http://streamin.to</referer>
-</regex>
-<regex>
-<name>play</name>
-<expres>\/flv:(.*?)",</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>
-<referer>http://streamin.to</referer></regex> 
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue] [makelist2.param2] [/COLOR] [COLOR gray][I]Idioma [B]([makelist.param2])[/B] • Calidad [makelist.param3][/COLOR][/I] **</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex> 
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
@@ -230,8 +201,6 @@
 <page>[makelist2.param1]</page>
 </regex>
 </item>
-
-
 </items>
 </channel>
 
