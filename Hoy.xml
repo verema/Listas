@@ -370,7 +370,7 @@
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>[COLOR red]InkaPelis.com[/COLOR]</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart> 
@@ -418,34 +418,7 @@
 </items>
 </channel>
 
-<hannel>
-<name>Ant-Man</name>
-<thumbnail>http://cdn.pordede.com/content/covers/mediacover-57098-4.png</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<items>
-
-<item>
-<title>Opción 1</title>
-<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
-<regex>
-<name>file</name>
-<expres>file: "(.*?)\/flv</expres>
-<page>http://streamin.to/embed-f5ewzx22ijqs-740x360.html</page>   
-<referer>http://streamin.to</referer>
-</regex>
-<regex>
-<name>play</name>
-<expres>\/flv:(.*?)",</expres>
-<page>http://streamin.to/embed-f5ewzx22ijqs-740x360.html</page>
-<referer>http://streamin.to</referer>
-</regex>
-<thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-</items>
-</channel>
-
-<hannel>
+<channel>
 <name>La patrulla y el tesoro del pirata</name>
 <thumbnail>http://gnula.nu/wp-content/uploads/2016/05/Paw_Patrol_Pups_And_The_Pirate_Treasure_poster_espa%C3%B1ol.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -453,17 +426,11 @@
 
 <item>
 <title>Opción 1</title>
-<link>$doregex[file] playpath=$doregex[play] swfUrl=http://streamin.to/player7/jwplayer.flash.swf live=1 pageUrl=http://streamin.to/</link>
+<link>$doregex[id]</link>
 <regex>
-<name>file</name>
-<expres>file: "(.*?)\/flv</expres>
+<name>id</name>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-jfeisrhqbobo-740x360.html</page>   
-<referer>http://streamin.to</referer>
-</regex>
-<regex>
-<name>play</name>
-<expres>\/flv:(.*?)",</expres>
-<page>http://streamin.to/embed-jfeisrhqbobo-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
 <thumbnail>https://i.ytimg.com/vi/x-B7GjBL0vU/hqdefault.jpg</thumbnail>
@@ -473,7 +440,7 @@
 </channel>
 
 
-<hannel>
+<channel>
 <name>Angry Birds: La Película (ts)</name>
 <thumbnail>http://cdn.pordede.com/content/covers/mediacover-66164-4.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -484,7 +451,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-3jkzesmucowl-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -500,7 +467,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-m901ov4hj08l-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -513,7 +480,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-qqua2a28vm2j-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -526,7 +493,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-7g8qgp1hwp1b-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -539,7 +506,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-qsjr42u51l6i-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -551,7 +518,7 @@
 
 
 
-<hannel>
+<channel>
 <name>Zoolander No. 2</name>
 <thumbnail>http://i.imgbox.com/YEZGRdLk.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -562,7 +529,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-zenl73furmbq-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -578,7 +545,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-3rq643snibm2-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -591,7 +558,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-j6taqgdagdzr-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -604,7 +571,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ahpcbxr4hndt-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -617,7 +584,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-rjsqesaggg5u-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -628,7 +595,7 @@
 </channel>
 
 
-<hannel>
+<channel>
 <name>Mr. Right</name>
 <thumbnail>http://i.imgbox.com/3MtfyhAS.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -639,7 +606,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-v9qqj2wnz1yl-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -655,7 +622,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-77kmouq8kji8-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -668,7 +635,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-twnroq8mtprg-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -681,7 +648,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ahpcbxr4hndt-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -694,7 +661,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-rjsqesaggg5u-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -704,7 +671,7 @@
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Joy</name>
 <thumbnail>http://shotimg.com/images/4f27c2ed6c3ccac4c828e44b1c5c0e1b.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -715,7 +682,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ap1rvi8ygqdk-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -731,7 +698,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-r0960bpt0cdi-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -744,7 +711,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ojiqdzrdokci-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -757,7 +724,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-1alg387fw0vp-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -770,7 +737,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-41c9xgfiuzof-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -782,7 +749,7 @@
 
 
 
-<hannel>
+<channel>
 <name>Perros Rabiosos</name>
 <thumbnail>http://img.filmsactu.net/datas/films/e/n/enrages/xl/enrages-affiche-55cdaf6fa40c1.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -793,7 +760,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-qiqc8k02yh12-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -809,7 +776,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-wc9vtqt2q23b-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -822,7 +789,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-3g0i1c5en6k9-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -835,7 +802,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-c7l70dlvvc6g-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -848,7 +815,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-g6dqkted58i7-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -859,7 +826,7 @@
 </channel>
 
 
-<hannel>
+<channel>
 <name>Star Wars: El despertar de la fuerza</name>
 <thumbnail>http://cdn.pordede.com/content/covers/mediacover-57128-4.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -870,7 +837,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-xjjgfgs7mdg3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -886,7 +853,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-557fye2ts36f-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -899,7 +866,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-arf6h5fb8834-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -912,7 +879,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-0q4m0x6oda7u-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -925,7 +892,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-mq2nknnfuovg-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -936,7 +903,7 @@
 </channel>
 
 
-<hannel>
+<channel>
 <name>Palmeras en la nieve</name>
 <thumbnail>http://www.eleconomista.es/boxoffice/wp-content/uploads/palmeras-en-la-nieve.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -947,7 +914,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-raem9h0qg6ew-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -963,7 +930,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-u7bp7m420ffa-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -976,7 +943,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-c7f0q2ydqwe3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -989,7 +956,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-b4wd47rjh1bp-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1002,7 +969,7 @@
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-28q8ry41vno7-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1012,7 +979,7 @@
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Alvin y Las Ardillas Fiesta Sobre Ruedas</name>
 <thumbnail>http://cdn.pordede.com/content/covers/mediacover-62432-4.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -1275,7 +1242,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Ice Age: En busca del huevo</name>
 <thumbnail>http://image.tmdb.org/t/p/w396/hhKix0CkCJwtNsCkJnrCdGV7oxn.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -1286,7 +1253,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-tca833vbmxjo-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1302,7 +1269,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-i156maaqrfrq-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1315,7 +1282,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-gdzpa43ovui3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1328,7 +1295,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-f4snhhqipc66-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1341,7 +1308,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-tt3g479aqjuo-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1351,7 +1318,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>La ola</name>
 <thumbnail>https://image.tmdb.org/t/p/w780/AnPHblkG8rcFeQVDa0BZXfNrhGs.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -1362,7 +1329,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-3f7hs3kmzn9m-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1378,7 +1345,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-khuwnlq84767-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1391,7 +1358,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-juv3mpjt5hrb-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1404,7 +1371,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-lwxe57h6p6h5-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1417,7 +1384,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pdru141mm6ux-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1427,7 +1394,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Los últimos caballeros</name>
 <thumbnail>http://www.zaipoc.com/wp-content/uploads/2015/10/Los-%C3%9Altimos-Caballeros-2014.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -1438,7 +1405,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-xplpg79hn3bc-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1454,7 +1421,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-u8q2z1pit0vr-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1621,7 +1588,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>En el corazón del mar</name>
 <thumbnail>http://i.imgur.com/yz4nkTw.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -1632,7 +1599,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-huhokichwc4s-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1648,7 +1615,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-wu1t7in0uwp4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1661,7 +1628,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-lkajypswsof1-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1674,7 +1641,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-a9q3uicyxfqh-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1687,7 +1654,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-v2x2zrhj6fph-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1697,7 +1664,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Una pastelería en Tokio</name>
 <thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/una-pasteleria-en-tokio/70081514-3-esl-ES/Una-pasteleria-en-Tokio.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -1708,7 +1675,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-3k0mhsdx8s6c-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1724,7 +1691,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-j68x7k5ceihk-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1737,7 +1704,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-z7ofg10of0dr-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1750,7 +1717,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-55yxhc9tgbok-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1763,7 +1730,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-a3uewx3jxti8-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1775,7 +1742,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
     
 
-<hannel>
+<channel>
 <name>Kung Fu Panda 3</name>
 <thumbnail>http://i.imgbox.com/Apy57JLX.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -1786,7 +1753,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-lbr0itp7vvi1-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1802,7 +1769,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-eby4n5mpw8zy-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1815,7 +1782,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-p7xz296logns-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1828,7 +1795,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-kcn6zu4xwcr1-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1841,7 +1808,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-so5h6v8l461k-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1852,7 +1819,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
     
-<hannel>
+<channel>
 <name>Rams (El valle de los carneros)</name>
 <thumbnail>http://www.albacete.es/es/webs-municipales/filmoteca/ficheros/rams-valle-de-los-carneros-cartel.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -1863,7 +1830,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-gan80ornkhgg-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1879,7 +1846,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-reok6a8vkfzd-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1892,7 +1859,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-4l3b0gutm078-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1905,7 +1872,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-6ti69cgbidj6-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1918,7 +1885,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-m0ppg7kyx71c-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1930,7 +1897,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
     
 
-<hannel>
+<channel>
 <name>Techo y comida</name>
 <thumbnail>http://lgecine.org/wp-content/uploads/2015/10/TECHO_Y_COMIDA_-_poster.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -1941,7 +1908,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-t6yzasb23xkj-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1957,7 +1924,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-nc9fzlopawe3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1970,7 +1937,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-82sqavb9l4hp-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1983,7 +1950,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-rz6zxqrrinr3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -1996,7 +1963,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-jr4pr48obqg3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2008,7 +1975,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
     
 
-<hannel>
+<channel>
 <name>Venganza en la prisión</name>
 <thumbnail>http://s30.postimg.org/dkd2nanxd/l_4642044_0e1723e9.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2019,7 +1986,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-e5q23a7mjt1q-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2035,7 +2002,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-gyooyhb3v6yx-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2048,7 +2015,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-dgbwrmzpqevz-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2061,7 +2028,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-e5q23a7mjt1q-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2074,7 +2041,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-d5wcen9j05dp-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2086,7 +2053,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
     
 
-<hannel>
+<channel>
 <name>Nadie quiere la noche</name>
 <thumbnail>http://www.clag.es/sites/default/files/noticias/imagen/2015/10/02/nadie-quiere-la-noche_filmax.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2097,7 +2064,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-w5tcfd95by8u-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2113,7 +2080,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-e7dd1tdwent2-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2126,7 +2093,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-xtsy0840fscm-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2139,7 +2106,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-x5k5w94st7rk-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2152,7 +2119,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-5w1fevf3ui0x-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2163,7 +2130,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 	
-<hannel>
+<channel>
 <name>Ocho Apellidos Catalanes</name>
 <thumbnail>http://cdn.pordede.com/content/covers/mediacover-61876-4.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2174,7 +2141,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-wjde62y6gwon-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2190,7 +2157,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-hhvf1g3hl4cs-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2203,7 +2170,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-4zsrqkzardqa-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2216,7 +2183,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-sv9nywiax3aq-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2229,7 +2196,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-5v4x8fhctb5w-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2241,7 +2208,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
     
 	
-<hannel>
+<channel>
 <name>Grandma</name>
 <thumbnail>http://i.imgbox.com/EWJFOocq.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2252,7 +2219,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-m066td7ck2kg-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2265,7 +2232,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ylivkrmlvsar-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2278,7 +2245,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ylivkrmlvsar-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2291,7 +2258,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-40jz69gg0kw5-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2304,7 +2271,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-n7x6secb521n-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2316,7 +2283,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 
-<hannel>
+<channel>
 <name>Taxi 4</name>
 <thumbnail>http://i.imgbox.com/kvAHbs1l.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2327,7 +2294,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-1f53o1vd1xok-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2340,7 +2307,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-f0uyqlqkejwi-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2353,7 +2320,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-1f53o1vd1xok-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2366,7 +2333,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-heswajoi0h2s-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2379,7 +2346,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-m4hus0ysvd9s-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2391,7 +2358,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 
-<hannel>
+<channel>
 <name>The End of the Tour</name>
 <thumbnail>http://i.imgbox.com/MNX5c4qW.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2402,7 +2369,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-nq5li5h9wwwe-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2415,7 +2382,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pbt2iazqell6-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2428,7 +2395,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-hn1a4ecidxt1-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2441,7 +2408,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-r4clef8kdyr6-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2454,7 +2421,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-vrwhqnht5kmm-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2467,7 +2434,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<hannel>
+<channel>
 <name>Kingsman: Servicio secreto</name>
 <thumbnail>http://cdn1.pordede.com/content/covers/mediacover-56903-4.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2478,7 +2445,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-che3922cogdm-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2491,7 +2458,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-62sqit23me0s-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2504,7 +2471,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-fhvhfh9m43bn-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2517,7 +2484,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-p8pj71wx54yv-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2530,7 +2497,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-yrd76lec3ri0-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2542,7 +2509,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 
-<hannel>
+<channel>
 <name>Point Break: Sin límites</name>
 <thumbnail>http://gnula.nu/wp-content/uploads/2015/11/Point_Break_poster_espa%C3%B1ol.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2553,7 +2520,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-zjfizfnjzcvr-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2566,7 +2533,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-8d2rhvhyi9vv-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2579,7 +2546,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-yzh5use76z4t-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2592,7 +2559,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-8d2rhvhyi9vv-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2605,7 +2572,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-yrd76lec3ri0-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2618,7 +2585,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<hannel>
+<channel>
 <name>Escándalo en el poder</name>
 <thumbnail>http://i.imgbox.com/rwHS92GY.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2629,7 +2596,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-yrd76lec3ri0-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2642,7 +2609,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ac6f9go38dyq-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2655,7 +2622,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-7szetdi8023a-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2668,7 +2635,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-cjm7lnk6327m-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2681,7 +2648,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-yrd76lec3ri0-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2692,7 +2659,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Ratter</name>
 <thumbnail>https://cdn.fstatic.com/media/movies/covers/2016/01/thumbs/ratter_t102470_jpg_290x478_upscale_q90.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2703,7 +2670,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ibhoph8g6ro4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2716,7 +2683,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-xpqwzqbw9kd9-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2729,7 +2696,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-x11hnsa69zqp-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2742,7 +2709,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pv2ylhy5yfw4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2755,7 +2722,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-mc1lf4w1jg8s-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2768,7 +2735,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<hannel>
+<channel>
 <name>El nuevo Nuevo Testamento</name>
 <thumbnail>http://i.imgbox.com/aY4RM6YK.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2779,7 +2746,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-rxpva36v58az-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2792,7 +2759,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-4h0x2m7tbtg3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2805,7 +2772,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-8spg25higenx-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2818,7 +2785,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-f4bba32ikg0c-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2831,7 +2798,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-qprd2oukij1o-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2842,7 +2809,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Hyena El infierno del crimen</name>
 <thumbnail>http://shotimg.com/images/c6d45275167f69939ac0cb94d8fcc273.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2853,7 +2820,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-7agpaa4tqj4e-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2866,7 +2833,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-lvxomjg1y8so-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2879,7 +2846,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-g7mls7sb73wg-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2892,7 +2859,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-fgi58so539fq-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2905,7 +2872,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-u0i5em82ybcr-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2916,7 +2883,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>El reino de Dunark</name>
 <thumbnail>http://i.imgbox.com/jTj50Er4.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -2927,7 +2894,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-dm51gsjppe7d-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2943,7 +2910,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-avycjz4jv3b4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2956,7 +2923,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-u74xblat4gyn-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2969,7 +2936,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-v-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2982,7 +2949,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-m8j1svlt2d60-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -2994,7 +2961,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 
-<hannel>
+<channel>
 <name>Krampus</name>
 <thumbnail>http://i.imgbox.com/940m3xXK.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3005,7 +2972,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-16czeettckv4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3021,7 +2988,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-no7evz0ff352-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3034,7 +3001,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-r9dnbxs7ev7g-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3047,7 +3014,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-qs6dthyy1i91-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3060,7 +3027,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-okq4euangyuw-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3071,7 +3038,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>La verdad</name>
 <thumbnail>http://i.imgbox.com/lGOZxZic.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3082,7 +3049,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-vaj76mel5hjr-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3098,7 +3065,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-9l76kt0x1tuj-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3111,7 +3078,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-8rxpswdr0e73-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3124,7 +3091,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-9l76kt0x1tuj-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3137,7 +3104,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ypg31exbcdyp-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3148,7 +3115,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>La gran apuesta</name>
 <thumbnail>http://i.imgbox.com/yXhlPbBs.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3159,7 +3126,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-7z9e7r2dl6u7-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3175,7 +3142,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-zcnkodp0ayti-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3188,7 +3155,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-6a1rqoshfjbq-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3201,7 +3168,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-4euucpwrub8j-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3214,7 +3181,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ymymp7jltn8v-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3225,7 +3192,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Los juegos del hambre: Sinsajo. Parte 2</name>
 <thumbnail>http://i1194.photobucket.com/albums/aa377/zpeliculas/3RCRdIR_zpsuakyxugi.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3236,7 +3203,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-rd2rhrppfsfs-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3252,7 +3219,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-k7byla7edm83-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3265,7 +3232,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-rd2rhrppfsfs-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3278,7 +3245,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-k7byla7edm83-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3291,7 +3258,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-rd2rhrppfsfs-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3302,7 +3269,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>De chica en chica</name>
 <thumbnail>http://i.imgbox.com/1V5DM9ZX.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3313,7 +3280,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-aos7lvql0y3v-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3329,7 +3296,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ypr6e2gybq8b-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3342,7 +3309,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-aos7lvql0y3v-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3355,7 +3322,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-k4yfrrnk8aqv-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3368,7 +3335,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-i51ppk9jw9iz-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3379,7 +3346,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Max</name>
 <thumbnail>http://i.imgbox.com/TXA05pDI.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3390,7 +3357,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-i73wuch9yccl-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3406,7 +3373,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-23ovj9d4s0cz-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3419,7 +3386,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-tuqumex5i0zw-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3432,7 +3399,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-wfn3c676whdj-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3445,7 +3412,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-6qmbe0sr5t4u-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3456,7 +3423,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>El Renacido [COLOR red](Nueva Calidad)[/COLOR]</name>
 <thumbnail>http://i1194.photobucket.com/albums/aa377/zpeliculas/GAHEFzc_zpswhpqsf1m.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3467,7 +3434,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-2ffawnx19gxo-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3483,7 +3450,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-9kmmy6sdz216-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3496,7 +3463,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-1xqte4i2a9f9-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3509,7 +3476,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-3yqmce3bt399-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3522,7 +3489,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-4x6a3ymbnfld-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3533,7 +3500,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Extinction [COLOR red](Nueva Calidad)[/COLOR]</name>
 <thumbnail>http://i.imgur.com/Xg8DwVd.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3547,7 +3514,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pvv7vdcgrbl4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3560,7 +3527,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-to85uq0hev9i-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3573,7 +3540,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-6aord5iclklb-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3586,7 +3553,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-to85uq0hev9i-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3599,7 +3566,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pvv7vdcgrbl4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3610,7 +3577,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>El cuento de los cuentos</name>
 <thumbnail>http://i.imgbox.com/tcEYPEmZ.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3624,7 +3591,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-wcjbyvcvkk03-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3637,7 +3604,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ttqfda8z0dms-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3650,7 +3617,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-qv3ibfdwbzb3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3663,7 +3630,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-to85uq0hev9i-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3676,7 +3643,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pvv7vdcgrbl4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3687,7 +3654,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>La maniobra de Heimlich</name>
 <thumbnail>http://shotimg.com/images/fa642b125890d21a35efdcf975bbd0cf.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3701,7 +3668,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-g0o3y4uwt1uw-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3714,7 +3681,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-7fxegh8nwhe1-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3727,7 +3694,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-bnbr1t486oei-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3740,7 +3707,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-to85uq0hev9i-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3753,7 +3720,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pvv7vdcgrbl4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3764,7 +3731,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>El cadáver de Anna Fritz</name>
 <thumbnail>http://i.imgbox.com/h3It3o3h.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3778,7 +3745,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-g6oqzjblmhaw-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3791,7 +3758,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-0vyy67pkhwqu-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3804,7 +3771,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-h5aieeq8yy4u-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3868,7 +3835,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pvv7vdcgrbl4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3879,7 +3846,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Turbo Kid</name>
 <thumbnail>http://i.imgbox.com/Fsy5OAFw.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -3893,7 +3860,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-e8w9i0n6aviw-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3906,7 +3873,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ggdhps0d1tjs-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -3919,7 +3886,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-8ul4imewwpjw-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4000,7 +3967,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>El coro</name>
 <thumbnail>http://i.imgbox.com/UwYQpm3d.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4014,7 +3981,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-qe7op1xarkla-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4027,7 +3994,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-2sogkxcsxkfc-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4040,7 +4007,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-j6p6gtjj7y23-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4121,7 +4088,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Camino hacia el éxito</name>
 <thumbnail>http://i.imgbox.com/k1Zg2FA4.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4135,7 +4102,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-1b6pbph39avr-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4148,7 +4115,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-2sogkxcsxkfc-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4161,7 +4128,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-j6p6gtjj7y23-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4242,7 +4209,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Paranormal Activity: Dimensión fantasma</name>
 <thumbnail>http://i.imgbox.com/VF1ihR7s.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4256,7 +4223,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-z0lfwokssmyw-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4269,7 +4236,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-2sogkxcsxkfc-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4282,7 +4249,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-j6p6gtjj7y23-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4363,7 +4330,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>El marido de mi hermana</name>
 <thumbnail>http://i.imgbox.com/i4emGw5m.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4377,7 +4344,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-2tzbpa40ti9a-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4390,7 +4357,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-2sogkxcsxkfc-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4403,7 +4370,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-j6p6gtjj7y23-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4484,7 +4451,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>El despertar de los dragones</name>
 <thumbnail>http://i.imgbox.com/O89vG23Q.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4498,7 +4465,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-7anjmyjw3t69-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4511,7 +4478,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-2sogkxcsxkfc-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4524,7 +4491,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-j6p6gtjj7y23-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4605,7 +4572,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>La Quinta Ola</name>
 <thumbnail>http://image.tmdb.org/t/p/w396/4jXOJZgen2cB9cGWCJuOyJDnJNv.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4619,7 +4586,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-x25uslbi7t78-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4632,7 +4599,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-l6g6evzbzqnz-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4645,7 +4612,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pg6l1831az0i-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4658,7 +4625,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-q9ej9lavvy1c-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4671,7 +4638,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-z2tqqq463iwb-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4682,7 +4649,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>La chica danesa</name>
 <thumbnail>http://i.imgbox.com/QW9VYzvL.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4696,7 +4663,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-4zt540yn1wim-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4709,7 +4676,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-nerq291xqhjk-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4722,7 +4689,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-j6p6gtjj7y23-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4803,7 +4770,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Perdiendo el Norte</name>
 <thumbnail>http://image.tmdb.org/t/p/w396/hLtmzVUqyF7er8JdGL0VlORVdRW.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4817,7 +4784,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-zbc6ibwlk9i3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4827,7 +4794,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Spotlight</name>
 <thumbnail>http://i.imgbox.com/n7Xqghns.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4841,7 +4808,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-cqrdd6hr5hpm-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4854,7 +4821,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ipgvkrqq14dr-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4867,7 +4834,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-pp5is70pvmfu-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4877,7 +4844,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>La Verdad duele</name>
 <thumbnail>http://gnula.nu/wp-content/uploads/2015/11/Concussion_poster_usa.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4939,7 +4906,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>De padres a hijas</name>
 <thumbnail>http://shotimg.com/images/08c61d6f33e0bd116c0e1104036ec2b2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -4953,7 +4920,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-v2vxkklwlch3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -4964,7 +4931,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>La playa de los ahogados</name>
 <thumbnail>http://i.imgbox.com/z7unjFJT.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -5027,7 +4994,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Criminal Activities</name>
 <thumbnail>http://i.imgbox.com/HKo2UG8b.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -5090,7 +5057,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Niebla</name>
 <thumbnail>http://i.imgbox.com/Sml6TR67.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -5153,7 +5120,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>Golpe de Estado</name>
 <thumbnail>http://i1194.photobucket.com/albums/aa377/zpeliculas/Golpe_de_Estado-138274894-large_zps93ltlfth.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -5216,7 +5183,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<hannel>
+<channel>
 <name>>> Página siquente</name>
 <thumbnail></thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -5442,7 +5409,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-yfbaeajsrmnw-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5455,7 +5422,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-d33uz4jltsck-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5468,7 +5435,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-7zfdrz9sdfuw-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5481,7 +5448,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-j2dxbsuycrpn-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5494,7 +5461,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-b5jzd6inyt0r-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5560,7 +5527,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-1g3iynlckv9q-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5573,7 +5540,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-2dpafmmgt8ad-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5587,7 +5554,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-n5pl5vn5ovqk-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5596,7 +5563,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id1]</link>
 <regex>
 <name>id1</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-8gv2tezj5s7i-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5608,7 +5575,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-icmmtmexj6d2-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5621,7 +5588,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-33sn3mdjs9lj-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5634,7 +5601,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-yw3bhprlxf25-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5648,7 +5615,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-8tzghmxe1lcc-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5657,7 +5624,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id1]</link>
 <regex>
 <name>id1</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ljmv4e2shvmd-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5669,7 +5636,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-dzfxkpwd1eh8-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5682,7 +5649,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-40ksxyu8q911-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5695,7 +5662,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-7gjcc7epou7g-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5708,7 +5675,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-3t63onr7fcyt-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5721,7 +5688,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-p22au1dwlavn-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5735,7 +5702,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-4cj4pftuywqy-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5744,7 +5711,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id1]</link>
 <regex>
 <name>id1</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-0rc5gknijzxn-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5757,7 +5724,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-08tmi1q4zu7t-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5766,7 +5733,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id1]</link>
 <regex>
 <name>id1</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-riegc13xyf7x-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5778,7 +5745,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-k53xibcvmpr7-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5791,7 +5758,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-chjxnk0h2z58-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5804,7 +5771,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-aoic9q6hr51j-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5817,7 +5784,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-m8rztq25s55j-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5831,7 +5798,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-b3pwlqlszxr0-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5840,14 +5807,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id1]</link>
 <regex>
 <name>id1</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-zf2gtqg60svg-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
 <link>$doregex[id2]</link>
 <regex>
 <name>id2</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-fr2sqj1rf64u-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5859,7 +5826,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-lnr7u3n6a8nd-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5872,7 +5839,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-84hk1ov94m8s-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5885,7 +5852,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-tm78kmx3c8p6-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5898,7 +5865,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-iqax30kpfzsq-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5911,7 +5878,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-z9yszpafayuv-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5924,7 +5891,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-9d4js922kq7b-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5937,7 +5904,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-lb4eafrspkw4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5951,7 +5918,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-bdcffoh7dhx3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5964,7 +5931,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-mm1v1cbrta4z-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5977,7 +5944,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-sazma391zhc2-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -5990,7 +5957,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-nljttcv0m6wr-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6003,7 +5970,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-vku621lg66oa-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6016,7 +5983,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-xcoctvvviwjt-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6029,7 +5996,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-zjgzbkr35nb1-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6042,7 +6009,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-d1rx5sybtk0a-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6055,7 +6022,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-bs8n9hloffir-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6068,7 +6035,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ufoxee2otkwv-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6081,7 +6048,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-jf78tb217sld-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6094,7 +6061,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-2wyz7ae5b43b-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6107,7 +6074,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-yl6oodqstuft-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6120,7 +6087,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-np9z5z13lfc7-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6133,7 +6100,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-47gpvfp7336m-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6146,7 +6113,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-mm2vq3g1udy3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6159,7 +6126,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-048jkksqwbz1-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6172,7 +6139,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-jj1r996ddobt-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6185,7 +6152,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-vsru0fersu99-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6198,7 +6165,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-gtu8wyr4hbo2-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6211,7 +6178,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-nk7t8odjwm2c-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6224,7 +6191,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-f8xogicu53nm-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6237,7 +6204,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-dmm0qqhn3qtc-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6250,7 +6217,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-cwsb2edjvu61-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6263,7 +6230,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-0e4sat2ahmvc-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6276,7 +6243,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-n5hd0k1irryg-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6289,7 +6256,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-dzwp6g4mydfv-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6302,7 +6269,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-i7aeavtrd3ws-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6315,7 +6282,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-puzrr8ghpud8-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6328,7 +6295,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-vhonis0htnh3-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6341,7 +6308,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-vsydaeqa6dk4-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6354,7 +6321,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-fufbmusyhx36-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6367,7 +6334,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-hw0vpnn3ehxm-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6380,7 +6347,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>$doregex[id]</link>
 	<regex>
 	<name>id</name>
-	<expres>file:'(.*)'</expres>
+	<expres>file: "(.*?)",</expres>
 	<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
 	<referer>http://streamin.to</referer>
 	</regex>
@@ -6399,7 +6366,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>$doregex[id]</link>
 	<regex>
 	<name>id</name>
-	<expres>file:'(.*)'</expres>
+	<expres>file: "(.*?)",</expres>
 	<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
 	<referer>http://streamin.to</referer>
 	</regex>
@@ -6418,7 +6385,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>$doregex[id]</link>
 	<regex>
 	<name>id</name>
-	<expres>file:'(.*)'</expres>
+	<expres>file: "(.*?)",</expres>
 	<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
 	<referer>http://streamin.to</referer>
 	</regex>
@@ -6440,7 +6407,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>$doregex[id]</link>
 	<regex>
 	<name>id</name>
-	<expres>file:'(.*)'</expres>
+	<expres>file: "(.*?)",</expres>
 	<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
 	<referer>http://streamin.to</referer>
 	</regex>
@@ -6462,7 +6429,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>$doregex[id]</link>
 	<regex>
 	<name>id</name>
-	<expres>file:'(.*)'</expres>
+	<expres>file: "(.*?)",</expres>
 	<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
 	<referer>http://streamin.to</referer>
 	</regex>
@@ -6486,7 +6453,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>$doregex[id]</link>
 	<regex>
 	<name>id</name>
-	<expres>file:'(.*)'</expres>
+	<expres>file: "(.*?)",</expres>
 	<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
 	<referer>http://streamin.to</referer>
 	</regex>
@@ -6508,7 +6475,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>$doregex[id]</link>
 	<regex>
 	<name>id</name>
-	<expres>file:'(.*)'</expres>
+	<expres>file: "(.*?)",</expres>
 	<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
 	<referer>http://streamin.to</referer>
 	</regex>
@@ -6530,7 +6497,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-dpxoreigtpeq-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6543,7 +6510,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>$doregex[id]</link>
 	<regex>
 	<name>id</name>
-	<expres>file:'(.*)'</expres>
+	<expres>file: "(.*?)",</expres>
 	<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
 	<referer>http://streamin.to</referer>
 	</regex>
@@ -6565,7 +6532,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>$doregex[id]</link>
 	<regex>
 	<name>id</name>
-	<expres>file:'(.*)'</expres>
+	<expres>file: "(.*?)",</expres>
 	<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
 	<referer>http://streamin.to</referer>
 	</regex>
@@ -6587,7 +6554,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     <link>$doregex[id]</link>
     <regex>
     <name>id</name>
-    <expres>file:'(.*)'</expres>
+    <expres>file: "(.*?)",</expres>
     <page>http://streamin.to/embed-h44qin0ex334-740x360.html</page>
     <referer>http://streamin.to</referer>
     </regex>
@@ -6600,7 +6567,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-immbstbw2bhg-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6613,7 +6580,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-30bqadl32d5l-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6626,7 +6593,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-s895kjjn9q3t-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6639,7 +6606,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-mbeuf54wr85p-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6652,7 +6619,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-173vat7xds2x-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6665,7 +6632,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-u1hrnl5wirdt-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6678,7 +6645,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-tmzoptqs5ht5-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6691,7 +6658,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-zhidnfsektvv-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6704,7 +6671,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-ziyd5poggwud-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
@@ -6717,7 +6684,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
-<expres>file:'(.*)'</expres>
+<expres>file: "(.*?)",</expres>
 <page>http://streamin.to/embed-cxomne2glw33-740x360.html</page>
 <referer>http://streamin.to</referer>
 </regex>
