@@ -123,7 +123,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** GH 17 **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=GH 17&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fcinestrenostvgh17_bfo6ov9%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail></thumbnail>
+<thumbnail>http://granhermano17.es/wp-content/uploads/2016/04/13001031_10153415814592382_6979627225954116791_n.jpg</thumbnail>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
 </item>
@@ -131,7 +131,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** #0 **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=0&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fplus0_b0xk990%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_0.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_0.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -149,7 +149,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Estrenos **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Estrenos&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fplusestrenos_ahnxk7j%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_estrenos.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_estrenos.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -166,7 +166,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Gol TV **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Gol TV&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fgoltv_b2kycdj%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.supernovelty.com/imagenes/canales/gol-tv.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/gg/gol_es.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -182,7 +182,70 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Bein&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fbein_b0mgomf%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://i.imgur.com/LPOM3Er.jpg</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/be_in_sports_es.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein Partidazo **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Bein&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fpartidazo_bb1r7mx%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/be_in_sports_es.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein Ver Liga **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Bein&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fverliga_bbsglgi%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/be_in_sports_es.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein Max 1 **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Bein&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Ftvb141%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/be_in_sports_es.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein Max 2 **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Bein&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Ftvb142%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/be_in_sports_es.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein Max 3 **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Bein&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Ftvb143%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/be_in_sports_es.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bein Max 4 **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Bein&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Ftvb144%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/be_in_sports_es.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** BeinLiga **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Bein&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fligarincon_a539aod%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/be_in_sports_es_la_liga.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -205,7 +268,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Deportes&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fdeportes_13uk31p%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_deportes_1.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_deportes_1.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -221,7 +284,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Deportes 2 **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Deportes 2&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fdeportes2_ardgdvv%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_deportes_2.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_deportes_2.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -237,7 +300,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Tv Liga **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Tv Liga&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fverliga5_14vrscl%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://09stream.com/img/liga2.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/be_in_sports_es_la_liga.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -257,10 +320,28 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<tem>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Futbol **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Futbol&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Ftvb112%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_futbol.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Futbol **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Futbol&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fplusfutbolrincondepensar_9wtnl4t%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_futbol.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Golf **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Golf&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fverliga5_14vrscl%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_golf.png</thumbnail>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Golf&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fgolf_asn535f%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_golf.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -269,14 +350,14 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Golf **</title>
 <link>rtmp://31.220.40.63/privatestream/ playpath=golf8?keys=zmbsoAoFT1FtYVt66VzRSw&keyt=1460720380 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_golf.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_golf.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Toros Tv **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Toros Tv&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Ftoros_9frbv56%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/tt/toros_tv_es.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/toros_tv_es.png</thumbnail>
 <fanart>http://teletoro.link/teletorocabecera.jpg</fanart> 
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -292,7 +373,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Moto gp **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Moto gp&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fmotogp_b0xk1e8%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_moto_gp.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_moto_gp.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -308,7 +389,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1 **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Formula 1&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Ff1_b0xjnv5%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_formula_1.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_formula_1.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -318,7 +399,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Formula 1  **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=38tj1wgh6wfqa6e swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel=33317&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
 <link>rtmp://www1.iguide.to/iguide playpath=kpfk285js6zoxea  swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1pageUrl=http://www.iguide.to/embedplayer_new.php?width=728&height=565&channel30323&autoplay=true token=#ed%h0#w18623jsda6523IDGD</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_formula_1.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_formula_1.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
 
@@ -332,7 +413,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Teledeportes **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Teledeportes&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fteledeporte_aw3kx97%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>https://hermiguafutsal.files.wordpress.com/2014/08/tve_teledeporte.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tve_teledeporte.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -385,9 +466,18 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 </item> 
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** BARçA **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=BARçA&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fbarcatv_aw3h4aq%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/barca_tv.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Acción **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Accion&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Faccion_aqtvoax%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_accion.png</thumbnail>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/movistar_es_accion.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -418,10 +508,10 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
  
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Acción **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Acción&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Faccion_aqtvoax%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_accion.png</thumbnail>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SeriesXtra **</title>       
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=SeriesXtra&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fseriesxtra_axgtru5%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_xtra.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -453,7 +543,7 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** DCine **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=DCine&amp;url=http%3A%2F%2Fcdn.sstream.pw%2Flive%2Fdcine_aw3g20p%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F50.0.2661.94%2520Safari%252F537.36</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_cine_espanol.png</thumbnail>
+<thumbnail>ttp://www.lyngsat-logo.com/logo/tv/mm/movistar_es_d_cine.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -462,6 +552,6 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 <tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** DCine **</title>
 <link>http://stream.zetatv.cf/pw/dcine_aw3g20p/chunklist.m3u8</link>
-<thumbnail>http://www.lyngsat-logo.com/hires/mm/movistar_es_cine_espanol.png</thumbnail>
+<thumbnail>ttp://www.lyngsat-logo.com/logo/tv/mm/movistar_es_d_cine.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
