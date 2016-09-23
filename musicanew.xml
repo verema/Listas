@@ -670,7 +670,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>40 TV</title>
-<link>rtmp://play5.tvope.com/tvope playpath=stream_40ttv?p swfUrl=http://i.tvope.com/swf/player8.4.swf live=1 pageUrl=http://tvope.com</link>
+<link>http://176.31.194.243:8000/live/app/channel/16.m3u8</link>
 <Thumbnail>http://i.imgur.com/a6N8tk2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
