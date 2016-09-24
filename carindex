@@ -36,6 +36,14 @@
 </item>
 
 <item>
+<title>[COLOR red]ArenaVision EZY[/COLOR][COLOR blue][I] Addon ArenaVision EZY Necesario[/I][/COLOR]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://plugin.video.arenavisionezy/</jsonrpc>
+<thumbnail>http://i.imgur.com/s0cmHc6.png</thumbnail>
+<fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR red]Catoflix[/COLOR] [COLOR lime]Nuevo[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/2vj3NGE.png</thumbnail>
