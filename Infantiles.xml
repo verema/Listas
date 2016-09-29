@@ -281,7 +281,7 @@
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Las Aventuras de Ladybug  **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Las Aventuras de Ladybug (Latino) **</title>
 <link>$doregex[makelist2]</link>
 
 <regex>
@@ -316,7 +316,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  import requests
  import re
- url='https://www.youtube.com/playlist?list=PLEYF80kQYipJ78C-nNRe96TPhbwfXfHNM'
+ url='https://www.youtube.com/playlist?list=PLEpXDfGh_3ivIsmYXN6LLJ3O2Z3YNplxI'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
 
  rr = requests.get(url, headers=headers)
@@ -341,7 +341,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  import re
  import json
 
- pageUrl='https://www.youtube.com/playlist?list=PLEYF80kQYipJ78C-nNRe96TPhbwfXfHNM'
+ pageUrl='https://www.youtube.com/playlist?list=PLEpXDfGh_3ivIsmYXN6LLJ3O2Z3YNplxI'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
  r1 = requests.get(pageUrl, headers = headers)
  source = r1.text
