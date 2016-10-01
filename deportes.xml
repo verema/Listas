@@ -142,7 +142,7 @@
 <name>getpage</name>
 <expres>$pyFunction:codecs.decode(page_data,'windows-1252').encode('ascii', 'xmlcharrefreplace').replace('&nbsp;', ' ')</expres>
 <page>http://www.stadium-live.biz/</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 m Safari/537.36</agent>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 m Safari/537.36</agent>
 <proxy></proxy>
 <cookieJar></cookieJar>
 </regex>
@@ -155,7 +155,7 @@
 ]]></listrepeat>
 <expres>href="(\w+\d+\.html)".+?&gt;(.*?)&lt;</expres>
 <page>[makelist.param3]</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 m Safari/537.36</agent>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 m Safari/537.36</agent>
 <cookieJar></cookieJar>
 </regex>
 
@@ -172,7 +172,7 @@ import json
 
 def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[makelist2.param1]'):  
     print 'stadium_py: ', ref
-    ua = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 m Safari/537.36'
+    ua = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 m Safari/537.36'
     hdrs = {'Referer':ref, 'User-Agent':ua}
     try:
         match = re.findall(r'iframe\s+src="(ch_.*?)"', page_data)
