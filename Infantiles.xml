@@ -203,84 +203,6 @@
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mazinger Z (Español/Catalan/Latino) **</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-		<thumbnail>http://i.imgur.com/wHQJdER.png</thumbnail>
-		<fanart>https://acajodiendolavida.files.wordpress.com/2015/01/66c61-1399723571253.jpg</fanart>
-        ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/Catoal/mazinger-z-remasterizada-esp-cat-lat-73300/list,1,21</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/Catoal/mazinger-z-remasterizada-esp-cat-lat-73300/list,1,21</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://i.imgur.com/wHQJdER.png</thumbnail>
-<fanart>https://acajodiendolavida.files.wordpress.com/2015/01/66c61-1399723571253.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Death Note **</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-		<thumbnail>https://tvfiles.alphacoders.com/957/poster-thumb-9571.jpg</thumbnail>
-		<fanart>https://i.ytimg.com/vi/XvOgEWs22UA/hqdefault.jpg</fanart>
-        ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/Robex69/death-note-76492/list,1,5</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/Robex69/death-note-76492/list,1,5</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://tvfiles.alphacoders.com/957/poster-thumb-9571.jpg</thumbnail>
-<fanart>https://i.ytimg.com/vi/XvOgEWs22UA/hqdefault.jpg</fanart>
-</item>
-
-<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Las Aventuras de Ladybug (Latino) **</title>
 <link>$doregex[makelist2]</link>
 
@@ -465,53 +387,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** DNA2 (Español,Catalan,Japones) ** [I]AnimeLliure[/I]</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-		<thumbnail>http://www.detodoexpres.com/fotos/dna-2---serie-completa-edicion-integral-18325-1.jpg</thumbnail>
-		<fanart>http://sobrecomic.com/wp-content/uploads/2008/10/fond-dna2-1.jpg</fanart>
-        ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/Catoal/dna2-esp-cat-jap-73275/list,1,1</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/Catoal/dna2-esp-cat-jap-73275/list,1,1</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://www.detodoexpres.com/fotos/dna-2---serie-completa-edicion-integral-18325-1.jpg</thumbnail>
-<fanart>http://sobrecomic.com/wp-content/uploads/2008/10/fond-dna2-1.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Saint Seiya **</title>
-<link>http://Ignoreme</link>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#097;&#105;&#110;&#116;&#115;&#101;&#105;&#121;&#097;&#046;&#120;&#109;&#108;</externallink>
-<thumbnail>http://www.deculture.es/wp-content/uploads/2014/02/saint-seiya-un-universo-en-expansion-dolmen-portada-608x600.jpg</thumbnail>
-<fanart>http://anime.es/wp-content/uploads/2014/05/saint-seiya-netflix-crunchyroll.jpg</fanart>
-</item>
-
-<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Dragon Ball GT (Español,Catalan,Gallego,Japones) ** [I]@teconpastas[/I]</title>
 <link>$doregex[makelist]</link>
 
@@ -549,85 +424,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/2/26/Dragon_Ball_GT_Volume_1.jpg</thumbnail>
 <fanart>https://misanimeshn.files.wordpress.com/2014/10/dragonball_gt_baby_saga_wallpaper_by_chriki93-d6qxe9n.jpg</fanart>
 </item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Musculman (Català) ** [I]Foro Animelliure[/I]</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-		<thumbnail>http://i.imgur.com/YchVt.jpg</thumbnail>
-		<fanart>http://photos1.blogger.com/blogger/1904/4182/400/202.0.jpg</fanart>
-        ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/Catoal/musculman-catala-73079/list,1,15</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/Catoal/musculman-catala-73079/list,1,15</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://i.imgur.com/YchVt.jpg</thumbnail>
-<fanart>http://photos1.blogger.com/blogger/1904/4182/400/202.0.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Dr Slump (Català) ** [I]Foro Animelliure[/I]</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-		<thumbnail>https://2.bp.blogspot.com/-7NfDg4EWrsg/VeTcQbFUP6I/AAAAAAAAALU/hSD8f3FqeW4/s320/Dr.%2BSlump1.jpg</thumbnail>
-		<fanart>http://cartoonresearch.com/wp-content/uploads/2014/01/Slump550.jpg</fanart>
-        ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/Catoal/dr-slump-catala-73053/list,1,11</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/Catoal/dr-slump-catala-73053/list,1,11</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://2.bp.blogspot.com/-7NfDg4EWrsg/VeTcQbFUP6I/AAAAAAAAALU/hSD8f3FqeW4/s320/Dr.%2BSlump1.jpg</thumbnail>
-<fanart>http://cartoonresearch.com/wp-content/uploads/2014/01/Slump550.jpg</fanart>
-</item>
-
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Jackie Y Nuca  **</title>
@@ -708,84 +504,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** One Punch Man  **</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-		<thumbnail>http://goo.gl/lrZo15</thumbnail>
-		<fanart>http://www.deculture.es/wp-content/uploads/2015/09/one-punch-man-anime-licenciado-636x360.jpg</fanart>
-        ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/kike123/one-punch-man-1080p-dual-ac3-72853/list,1,1</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/kike123/one-punch-man-1080p-dual-ac3-72853/list,1,1</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://goo.gl/lrZo15</thumbnail>
-<fanart>http://www.deculture.es/wp-content/uploads/2015/09/one-punch-man-anime-licenciado-636x360.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Chico Terremoto  **</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-		<thumbnail>http://www.detodoexpres.com/fotos/chicho-terremoto--vol-1-episodios-01--24-6918-1.jpg</thumbnail>
-		<fanart>https://puertatras.files.wordpress.com/2010/09/chichoterremoto2.jpg</fanart>
-        ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/kike123/chicho-terremoto-castellano-1-65-dvdrip-aac-72785/list,1,5</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/kike123/chicho-terremoto-castellano-1-65-dvdrip-aac-72785/list,1,5</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://www.detodoexpres.com/fotos/chicho-terremoto--vol-1-episodios-01--24-6918-1.jpg</thumbnail>
-<fanart>https://puertatras.files.wordpress.com/2010/09/chichoterremoto2.jpg</fanart>
-</item>
-
-<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Campeones Hacia el Mundial 2002  **</title>
 <link>$doregex[makelist]</link>
 
@@ -822,52 +540,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://i.imgur.com/eC4TZ7I.jpg</thumbnail>
 <fanart>https://i.ytimg.com/vi/Jmo62GCe9xU/hqdefault.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bola de Drac Z Kai (Catalan) **</title>
-<link>http://Ignoreme</link>
-<thumbnail>http://i.imgur.com/okGt6qT.jpg</thumbnail>
-<fanart>http://i1.wp.com/boladedragonz.com/wp-content/uploads/2015/10/Son-Goku-y-Vegeta.jpg</fanart>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#100;&#114;&#097;&#103;&#111;&#110;&#046;&#109;&#051;&#117;</externallink>	
-</item> 
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Scooby Doo ¿Donde estas? **</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>http://seriesnid.net/wp-content/uploads/2015/04/87-211x300.jpg</thumbnail>
-		<fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgJ2ZRLv16qmnCEWGLPqaMU1FLj-kmOByQmPAuLJ7bHuaBBHDDQ</fanart>
-]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/naredo/scooby-doo-donde-estas-20480/list,1,9</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/naredo/scooby-doo-donde-estas-20480/list,1,9</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://seriesnid.net/wp-content/uploads/2015/04/87-211x300.jpg</thumbnail>
-<fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgJ2ZRLv16qmnCEWGLPqaMU1FLj-kmOByQmPAuLJ7bHuaBBHDDQ</fanart>
 </item>
 
 <item>
@@ -978,45 +650,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** One Piece  **</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-		<thumbnail>http://www.qserie.com/files/uploads/4608.jpg</thumbnail>
-		<fanart>http://uschina.usc.edu/Files/images/201102/onepiecedometour.jpg</fanart>
-        ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/kike123/one-piece-shichibukai-72254/list,1,30</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/kike123/one-piece-shichibukai-72254/list,1,30</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://www.qserie.com/files/uploads/4608.jpg</thumbnail>
-<fanart>http://uschina.usc.edu/Files/images/201102/onepiecedometour.jpg</fanart>
-</item>
-
-<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Los Simpsons **</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -1046,44 +679,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://goo.gl/YxvUHJ</thumbnail>
 <fanart>http://static.t13.cl/images/sizes/1200x675/1443457474-los-simpson-175237.jpg</fanart>
 </item> 
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Doraemon **</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>http://animevf.tv/wp-content/uploads/2016/03/doraemon-240x350.jpg</thumbnail>
-		<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201604/146119.alfabetajuega-doraemon-manga-1-260416.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/trivianita/doraemon-dibujosel-rockero-33607/list,1,6</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/trivianita/doraemon-dibujosel-rockero-33607/list,1,6</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://animevf.tv/wp-content/uploads/2016/03/doraemon-240x350.jpg</thumbnail>
-<fanart>http://www.alfabetajuega.com/multimedia/imagenes/201604/146119.alfabetajuega-doraemon-manga-1-260416.jpg</fanart>
-</item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Los Supersonicos **</title>
@@ -2240,128 +1835,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SLAYERS: REENA & GAUDI (Anime) **</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param2][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>https://l02orjai.files.wordpress.com/2011/01/slayers-2.jpg</thumbnail>
-		<fanart>https://repasoenserie.files.wordpress.com/2014/10/slayers-2-1050x700.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/slayers-reena-gaudi-anime-62476/gallery,1,5</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://l02orjai.files.wordpress.com/2011/01/slayers-2.jpg</thumbnail>
-<fanart>https://repasoenserie.files.wordpress.com/2014/10/slayers-2-1050x700.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Dragon-ball **</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>http://saiyanwatch.com/wp-content/uploads/2014/06/Kid-Goku1.jpg</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/dragon-ball-anime-64722/gallery,1,7</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://saiyanwatch.com/wp-content/uploads/2014/06/Kid-Goku1.jpg</thumbnail>
-<fanart>http://i.blogs.es/446758/dragon-ball-cabecera/1024_2000.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Dragon-ball GT **</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>https://lh3.googleusercontent.com/-AfENy9ESweM/VlkVuF64_PI/AAAAAAAAg08/Ijq1wuX4ZPo/s567-Ic42/Dragon-Ball-GT.jpg</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/dragon-ball-gt-anime-64137/gallery,1,3</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://lh3.googleusercontent.com/-AfENy9ESweM/VlkVuF64_PI/AAAAAAAAg08/Ijq1wuX4ZPo/s567-Ic42/Dragon-Ball-GT.jpg</thumbnail>
-<fanart>https://congnghegiaitri.files.wordpress.com/2011/07/immaginidragonballgt003.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Dragon-ball Z **</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>http://saiyanwatch.com/wp-content/uploads/2014/06/SS3-Goku1.jpg</thumbnail>
-		<fanart>http://images2.wikia.nocookie.net/__cb20120404164140/dragonball/es/images/d/db/Saga_Cyborg_by_Nostal.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/dragon-ball-z-anime-64136/gallery,1,13</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://saiyanwatch.com/wp-content/uploads/2014/06/SS3-Goku1.jpg</thumbnail>
-<fanart>http://images2.wikia.nocookie.net/__cb20120404164140/dragonball/es/images/d/db/Saga_Cyborg_by_Nostal.jpg</fanart>
-</item>
-
-<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Batman La serie Animada **</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -2470,14 +1943,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://goo.gl/aNjral</thumbnail>
 <fanart>http://media.cineblog.it/7/7fb/Lupin-3-iniziate-le-riprese-del-live-action-giapponese-diretto-da-Ryuhei-Kitamura-131.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Pokemon (Latino) **</title>
-<link>http://Ignoreme</link>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#112;&#111;&#107;&#101;&#109;&#111;&#110;&#046;&#120;&#109;&#108;</externallink>
-<thumbnail>https://goo.gl/pTYSSl</thumbnail>
-<fanart>https://cdn2.vox-cdn.com/thumbor/ie_REzAR9GuOcmOD03TGyaVL9Gk=/0x266:1024x949/1280x854/cdn0.vox-cdn.com/uploads/chorus_image/image/48942277/N3DS_PokemonSuperMysteryDungeon_MainIllustration_png_jpgcopy.0.0.jpg</fanart> 
 </item>
 
 <item>
@@ -2783,30 +2248,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <Thumbnail>http://1.bp.blogspot.com/-kRQZ-AUWVVE/VZlOaqGeFKI/AAAAAAAACkY/urQ0QOikyUA/s1600/Dragon_Ball_Super_2015.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>	
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mazinger Z **</title>
-<link>http://Ignoreme</link>
-<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/mazinger.xml</externallink>
-<thumbnail>http://i.imgur.com/J25DFC2.jpg</thumbnail>
-<fanart>http://i.imgur.com/oFE3uXn.jpg</fanart> 
-</item>	
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mazinger Z Impacto **</title>
-<link>http://Ignoreme</link>
-<externallink>http://googledrive.com/host/0B7s3iHobrWwGTllQVnJUNWlTc2c/mszingerimpocto.xml</externallink>
-<thumbnail>http://l.yimg.com/bt/api/res/1.2/uiYGEZnvNnAvh1RpI30pVg--/YXBwaWQ9eW5ld3M7Zmk9aW5zZXQ7aD03NTM7cT04NTt3PTYzMA--/http://l.yimg.com/os/423/2012/05/16/mazinger-z-1-jpg_152855.jpg</thumbnail>
-<fanart>http://www.edicioncoleccionista.com/wp-content/uploads/2013/12/mazinger-z-edicion-impacto.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mazinkaiser **</title>
-<link>http://Ignoreme</link>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#073;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#109;&#097;&#122;&#105;&#110;&#107;&#097;&#105;&#115;&#101;&#114;&#046;&#120;&#109;&#108;</externallink>
-<thumbnail>http://www.selecta-vision.com/var/ezwebin_site/storage/images/home-entertainment/mazinkaiser-dvd/84864-2-esl-ES/Mazinkaiser-DVD_hv_big.png</thumbnail>
-<fanart>http://i.ytimg.com/vi/nCtyTNG5NPk/maxresdefault.jpg</fanart>
-</item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La Pantera Rosa **</title>
