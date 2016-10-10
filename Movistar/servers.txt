@@ -34,6 +34,29 @@ full:" Liga123 -3  " url="tvb153";
 full:" Liga123 -4  " url="tvb154";
 
 
+documentales:" DISCOVERY MAX " url="dismax_9c7n25t";
+documentales:" Caza y Pesca " url="caza_aulqd78";
+documentales:" Nat Geographic " url="national_alwka53";
+documentales:" Nat Geo Wild " url="natgeowill_azu3urx";
+documentales:" DISCOVERY CHANNEL " url="discoverydino_9dm3fgv";
+documentales:" HISTORIA " url="historia_9dm8skt";
+documentales:" ODISEA " url="odiseass_ab1rhro";
+documentales:" C.I(crimen/Investigacion) " url="ci_aaqtqg7";
+documentales:" AE " url="AE_13mz39m";
+documentales:" Cocina " url="cocina_am9cifh";
+
+
+
+
+
+
+
+
+
+
+
+
+
 deportes2:" Plus 0 " url="plus0_b0xk990";
 deportes2:" Toros " url="toros_9frbv56";
 deportes2:" BarcaTV " url="barcatv_aw3h4aq";

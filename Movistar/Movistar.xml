@@ -22,19 +22,18 @@
 
 
 <item>
-<title> [COLOR lime]•[/COLOR]    [COLOR lime][B]DEPORTES[/COLOR][COLOR chartreuse]ESP-2 [/COLOR][/B]  [COLOR lightslategray] [I] [/I][/COLOR]</title>
-
-<!-- si la pones  en tu addon favor de mencionar Adryanlist -->
-<link>$doregex[makelist]</link><!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** M+ Full 2 **</title>
+<link>$doregex[makelist]</link>
 <regex>
-<name>makelist</name><!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR deepskyblue][makelist.param1][/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param1][/COLOR] **</title>
 <link>http://teese.jl.serv.net.mx/sstream/[makelist.param2]/chunklist.m3u8</link>
-<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail>
-]]></listrepeat> <!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<thumbnail>http://1.bp.blogspot.com/-zuHhRR4oXxA/TlqwYUhrmPI/AAAAAAAAAF0/IdH71AKySSk/s1600/MOVISTAR-logo+terformado.jpg</thumbnail>
+]]></listrepeat>
 <expres><![CDATA[deportes2:"(.*?)" url="(.*?)";]]></expres>
 <page>https://raw.githubusercontent.com/Carlesto/Listas/master/Movistar/servers.txt</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
-</regex><thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail><!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+</regex>
+<thumbnail>http://1.bp.blogspot.com/-zuHhRR4oXxA/TlqwYUhrmPI/AAAAAAAAAF0/IdH71AKySSk/s1600/MOVISTAR-logo+terformado.jpg</thumbnail>
 </item>
