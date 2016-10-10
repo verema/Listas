@@ -1,0 +1,49 @@
+
+canales 
+
+deportes:" Plus 0 " url="plus0_b0xk990";
+deportes:" Toros " url="toros_9frbv56";
+deportes:" BarcaTV " url="barcatv_aw3h4aq";
+deportes:" Eurosports1 " url="eurosport1_aiyry92";
+deportes:" Bein " url="bein_alwkqfq";
+deportes:" LaLiga " url="ligarincon_a539aod";
+deportes:" GolTV " url="goltv_b2kycdj";
+deportes:" Partidazo " url="partidazo_bb1r7mx";
+deportes:" Deportes " url="deportes_bijr3le";
+deportes:" Deportes 2 " url="deportes2_ardgdvv";
+deportes:" Golf " url="golf_asn535f";
+
+
+deportes:" Futbol " url="tvb112";
+deportes:" Formula1 " url="tvb116";
+deportes:" MotoGP " url="tvb117";
+
+deportes:" 141  " url="tvb141";
+deportes:" Liga123 -1  " url="tvb151";
+deportes:" Liga123 -2  " url="tvb152";
+deportes:" Liga123 -3  " url="tvb153";
+deportes:" Liga123 -4  " url="tvb154";
+
+
+deportes2:" Plus 0 " url="plus0_b0xk990";
+deportes2:" Toros " url="toros_9frbv56";
+deportes2:" BarcaTV " url="barcatv_aw3h4aq";
+deportes2:" Eurosports1 " url="ZXVyb3Nwb3J0MV9haXlyeTky";
+deportes2:" Bein " url="YmVpbl9hbHdrcWZx";
+deportes2:" LaLiga " url="bGlnYXJpbmNvbl9hNTM5YW9k";
+deportes2:" GolTV " url="Z29sdHZfYjJreWNkag==";
+deportes2:" Partidazo " url="cGFydGlkYXpvX2JiMXI3bXg=";
+deportes2:" Deportes " url="ZGVwb3J0ZXNfYmlqcjNsZQ==";
+deportes2:" Deportes 2 " url="ZGVwb3J0ZXMyX2FyZGdkdnY=";
+deportes2:" Golf " url="Z29sZl9hc241MzVm";
+
+
+deportes2:" Futbol " url="dHZiMTEy";
+deportes2:" Formula1 " url="dHZiMTE2";
+deportes2:" MotoGP " url="dHZiMTE3";
+
+deportes2:" 141  " url="tvb141";
+deportes2:" Liga123 -1  " url="tvb151";
+deportes2:" Liga123 -2  " url="tvb152";
+deportes2:" Liga123 -3  " url="tvb153";
+deportes2:" Liga123 -4  " url="tvb154";
