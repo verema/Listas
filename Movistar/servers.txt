@@ -1,28 +1,29 @@
 
 canales 
 
-deportes:" Plus 0 " url="plus0_b0xk990";
-deportes:" Toros " url="toros_9frbv56";
-deportes:" BarcaTV " url="barcatv_aw3h4aq";
-deportes:" Eurosports1 " url="eurosport1_aiyry92";
-deportes:" Bein " url="bein_alwkqfq";
-deportes:" LaLiga " url="ligarincon_a539aod";
-deportes:" GolTV " url="goltv_b2kycdj";
-deportes:" Partidazo " url="partidazo_bb1r7mx";
-deportes:" Deportes " url="deportes_bijr3le";
-deportes:" Deportes 2 " url="deportes2_ardgdvv";
-deportes:" Golf " url="golf_asn535f";
+full:" #0 " url="plus0_b0xk990";
+full:" Toros " url="toros_9frbv56";
+full:" BarcaTV " url="barcatv_aw3h4aq";
+full:" Eurosports1 " url="eurosport1_aiyry92";
+full:" Bein " url="bein_alwkqfq";
+full:" LaLiga " url="ligarincon_a539aod";
+full:" GolTV " url="goltv_b2kycdj";
+full:" Partidazo " url="partidazo_bb1r7mx";
+full:" Deportes " url="deportes_bijr3le";
+full:" Deportes 2 " url="deportes2_ardgdvv";
+full:" Golf " url="golf_asn535f";
+full:" GH 17 " url="cinestrenostvgh17_bfo6ov9";
 
 
-deportes:" Futbol " url="tvb112";
-deportes:" Formula1 " url="tvb116";
-deportes:" MotoGP " url="tvb117";
+full:" Futbol " url="tvb112";
+full:" Formula1 " url="tvb116";
+full:" MotoGP " url="tvb117";
 
-deportes:" 141  " url="tvb141";
-deportes:" Liga123 -1  " url="tvb151";
-deportes:" Liga123 -2  " url="tvb152";
-deportes:" Liga123 -3  " url="tvb153";
-deportes:" Liga123 -4  " url="tvb154";
+full:" 141  " url="tvb141";
+full:" Liga123 -1  " url="tvb151";
+full:" Liga123 -2  " url="tvb152";
+full:" Liga123 -3  " url="tvb153";
+full:" Liga123 -4  " url="tvb154";
 
 
 deportes2:" Plus 0 " url="plus0_b0xk990";
