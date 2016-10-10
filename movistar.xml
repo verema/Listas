@@ -118,6 +118,27 @@ def GetLSProData(page_data, Cookie_Jar, m, ref='http://www.stadium-live.biz/[mak
 </regex>
 <thumbnail>http://i.imgur.com/aZKxEjN.jpg</thumbnail>
 <fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** M+ Full **</title>
+
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param1][/COLOR] **</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=[makelist.param1] - Catoal&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2F[makelist.param2]%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F53.0.2785.116 m%2520Safari%252F537.36</link>
+<thumbnail>http://1.bp.blogspot.com/-zuHhRR4oXxA/TlqwYUhrmPI/AAAAAAAAAF0/IdH71AKySSk/s1600/MOVISTAR-logo+terformado.jpg</thumbnail>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 m Safari/537.36</agent>
+<cookieJar></cookieJar>
+<thumbnail>http://1.bp.blogspot.com/-zuHhRR4oXxA/TlqwYUhrmPI/AAAAAAAAAF0/IdH71AKySSk/s1600/MOVISTAR-logo+terformado.jpg</thumbnail>
+]]></listrepeat>
+<expres>full:"(.*?)" url="(.*?)";</expres>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#077;&#111;&#118;&#105;&#115;&#116;&#097;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#115;&#046;&#116;&#120;&#116;</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+<thumbnail>http://1.bp.blogspot.com/-zuHhRR4oXxA/TlqwYUhrmPI/AAAAAAAAAF0/IdH71AKySSk/s1600/MOVISTAR-logo+terformado.jpg</thumbnail>
 </item>			
 
 
