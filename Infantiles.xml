@@ -1603,7 +1603,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://erickmen3.files.wordpress.com/2012/01/futurama-011.jpg</fanart>
 </item>
 
-<tem>
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bod Esponja **</title>
 <link>$doregex[makelist]</link>
 <regex>
