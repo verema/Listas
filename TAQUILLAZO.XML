@@ -29,7 +29,7 @@
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Actuales[/COLOR] ** Nuevo</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Actuales ***[/COLOR] ** Nuevo</title>
 <link>$doregex[makelist]</link>
 
 <regex>
@@ -41,7 +41,7 @@
 		<fanart>http://3.bp.blogspot.com/-DCk4_Goa4Nw/UJnX-_x9t4I/AAAAAAAAAAo/KYJchYyrMiw/s1600/logos+vector+cine.PNG</fanart>
         ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/sorprenent/peliculas-actuales-50567/gallery,1,50</page>
+<page>http://copiapop.com/sorprenent/peliculas-actuales-50567/list,1,50</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
@@ -59,7 +59,7 @@
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/sorprenent/peliculas-actuales-50567/gallery,1,50</referer>
+<referer>http://copiapop.com/sorprenent/peliculas-actuales-50567/list,1,50</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
