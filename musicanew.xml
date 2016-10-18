@@ -2291,7 +2291,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <items>
 
-<tem>
+<item>
 <title>[COLOR yellow]Ana Belen y Victor Manuel - Mucho mas que dos[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -2327,16 +2327,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>	
-
-<item>
-<title>[COLOR yellow]Ana Belen y Victor Manuel - Mucho mas que dos[/COLOR]</title>
-<urlsolve>http://streamin.to/nbbnf2rmgcs2</urlsolve>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<year></year>
-<info></info>
-</item>
-
 
 <item>
 <title>[COLOR yellow]MIGUEL RÍOS - ROCK AND RÍOS[/COLOR]</title>
