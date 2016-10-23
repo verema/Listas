@@ -59,6 +59,13 @@
 </item>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Los Simsons 24 Horas Live (Latino) **</title>
+<link>plugin://plugin.video.youtube/play/?video_id=MyJmBC9vuSA</link>
+<thumbnail>http://goo.gl/YxvUHJ</thumbnail>
+<fanart>http://static.t13.cl/images/sizes/1200x675/1443457474-los-simpson-175237.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **Duckman (Latino)[/COLOR] **</title>
 <link>$doregex[makelist2]</link>
 
