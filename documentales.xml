@@ -172,7 +172,46 @@
 <cookieJar></cookieJar>
 </item>
 
---> 
+-->
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mega Factorias **</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://www2.kba.com/fileadmin/user_upload/Products/Commander_6_2/26298B_big.jpg</thumbnail>
+		<fanart>https://i.ytimg.com/vi/lkLrFWVlEzI/maxresdefault.jpg</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://copiapop.com/Catoal/superestructuras-80213/list,1,1</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://copiapop.com/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://copiapop.com/[makelist.param2]</page>
+<referer>http://copiapop.com/Catoal/superestructuras-80213/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www2.kba.com/fileadmin/user_upload/Products/Commander_6_2/26298B_big.jpg</thumbnail>
+<fanart>https://i.ytimg.com/vi/lkLrFWVlEzI/maxresdefault.jpg</fanart>
+</item> 
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mega Factorias **</title>
