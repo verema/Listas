@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  
-
 <item>
-<title>[COLOR red]ESPECIAL HALLOWEEN[/COLOR]</title>
-<link>http://Ignoreme</link>
-<thumbnail>http://i.imgur.com/kvU8CPh.jpg</thumbnail>
-<fanart>http://i.imgur.com/crJx1aG.jpg</fanart>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#080;&#101;&#108;&#105;&#099;&#117;&#108;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#104;&#097;&#108;&#108;&#111;&#119;&#101;&#110;&#046;&#120;&#109;&#108;</externallink>	
-</item> 
-
-<item>
-<title>[COLOR red]IPTV La Otra Televisión[/COLOR]</title>
+<title>[COLOR lime]IPTV La Otra Televisión[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist2</name>
@@ -26,17 +17,9 @@
 <thumbnail>http://i.imgur.com/9hmmHaq.png</thumbnail>
 <fanart>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Philips_PM5544.svg/300px-Philips_PM5544.svg.png</fanart>
 </item>
-		   
-<tem>
-<title>[COLOR red]IPTV La Otra Televisión[/COLOR]</title>
-<link>http://Ignoreme</link>
-<thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
-<fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#073;&#080;&#084;&#086;&#046;&#120;&#109;&#108;</externallink>	
-</item> 
 
 <item>
-<title>[COLOR red]Mundo TV[/COLOR][COLOR yellow] EN PRUEBAS[/COLOR]</title>
+<title>[COLOR lime]Mundo TV[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/OMyXAvE.png</thumbnail>
 <fanart>http://i.imgur.com/OMyXAvE.png</fanart>
@@ -44,7 +27,15 @@
 </item>
 
 <item>
-<title>[COLOR red]La Liga[/COLOR]</title>
+<title>[COLOR lime]Deportes[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#100;&#101;&#112;&#111;&#114;&#116;&#101;&#115;&#046;&#120;&#109;&#108;</externallink> 
+<thumbnail>http://i.imgur.com/ICJ9tPt.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>  
+
+<item>
+<title>[COLOR lime]La Liga[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/oSO9uRy.jpg</thumbnail>
 <fanart>http://statics.laliga.es/img/campo-logo-v4.jpg</fanart>
@@ -52,15 +43,23 @@
 </item>
 
 <item>
-<title>[COLOR red]ArenaVision EZY[/COLOR][COLOR blue][I] Addon ArenaVision EZY Necesario[/I][/COLOR]</title>
+<title>[COLOR lime]ArenaVision EZY[/COLOR][COLOR blue][I] Addon ArenaVision EZY Necesario[/I][/COLOR]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://plugin.video.arenavisionezy/</jsonrpc>
 <thumbnail>http://i.imgur.com/s0cmHc6.png</thumbnail>
 <fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
 </item>
+ 
+<item>
+<title>[COLOR lime]Especial Halloween[/COLOR]</title>
+<link>http://Ignoreme</link>
+<thumbnail>http://i.imgur.com/kvU8CPh.jpg</thumbnail>
+<fanart>http://i.imgur.com/crJx1aG.jpg</fanart>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#080;&#101;&#108;&#105;&#099;&#117;&#108;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#104;&#097;&#108;&#108;&#111;&#119;&#101;&#110;&#046;&#120;&#109;&#108;</externallink>	
+</item> 
 
 <item>
-<title>[COLOR red]Catoflix[/COLOR] [COLOR lime]Nuevo[/COLOR]</title>
+<title>[COLOR lime]Catoflix[/COLOR] [COLOR lime]Nuevo[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/2vj3NGE.png</thumbnail>
 <fanart>http://i.imgur.com/iXATBaG.png</fanart>
@@ -68,7 +67,7 @@
 </item>
 
 <item>
-<title>[COLOR red]MEXFLIX[/COLOR][COLOR lime] by: castro[/COLOR]</title>
+<title>[COLOR lime]Mexflix[/COLOR][COLOR lime] by: castro[/COLOR]</title>
 <link>http://ignorame</link>
 <thumbnail>http://i.imgur.com/rrYUVXS.png</thumbnail> 
 <fanart>http://i.imgur.com/rrYUVXS.png</fanart>
@@ -76,23 +75,7 @@
 </item>
 
 <item>
-<title>[COLOR red]Mis Series Favoritas[/COLOR]</title>
-<link>http://Ignoreme</link>
-<thumbnail>http://i.imgur.com/PDYGvvl.png</thumbnail>
-<fanart>https://schneidermariano.files.wordpress.com/2012/02/00.jpg</fanart>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#083;&#101;&#114;&#105;&#101;&#115;&#097;&#099;&#046;&#120;&#109;&#108;</externallink>	
-</item>
-
-<item>
-<title>[COLOR red]Retro[/COLOR]</title>
-<link>http://Ignoreme</link>
-<thumbnail>http://i.imgur.com/gV3CLf7.jpg</thumbnail>
-<fanart>http://i.imgur.com/2Ak8yKK.jpg</fanart>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#114;&#101;&#116;&#114;&#111;&#046;&#120;&#109;&#108;</externallink>	
-</item>
-
-<item>
-<title>[COLOR red]EliteTorrent[/COLOR][COLOR blue][I] Addon EliteTorrent Necesario[/I][/COLOR]</title>
+<title>[COLOR lime]EliteTorrent[/COLOR][COLOR blue][I] Addon EliteTorrent Necesario[/I][/COLOR]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://plugin.video.elitetorrent/</jsonrpc>
 <thumbnail>http://i.imgur.com/3SicbXo.png</thumbnail>
@@ -100,16 +83,15 @@
 </item>
 
 <item>
-<title>[COLOR red]NewPctv1[/COLOR][COLOR blue][I] Addon NewPctv1 Necesario[/I][/COLOR]</title>
+<title>[COLOR lime]NewPctv1[/COLOR][COLOR blue][I] Addon NewPctv1 Necesario[/I][/COLOR]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://plugin.video.newpct1/</jsonrpc>
 <thumbnail>http://i.imgur.com/RYou4Oe.png</thumbnail>
 <fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
 </item>
 
-
 <item>
-<title>[COLOR red]EL TAQUILLAZO[/COLOR]</title>
+<title>[COLOR lime]El Taquillazo[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/m248iT4.jpg</thumbnail>
 <fanart>http://i.imgur.com/u11Rc03.jpg</fanart>
@@ -117,7 +99,7 @@
 </item>
 	
 <item>
-<title>[COLOR red]LA BUTACA[/COLOR]</title>
+<title>[COLOR lime]La Butaca[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/7Fj3NUR.png</thumbnail>
 <fanart>http://butacaancha.com/wp-content/uploads/2013/06/apolo.jpg</fanart>
@@ -125,7 +107,23 @@
 </item>
 
 <item>
-<title>[COLOR red]ANIME[/COLOR]</title>
+<title>[COLOR lime]Mis Series Favoritas[/COLOR]</title>
+<link>http://Ignoreme</link>
+<thumbnail>http://i.imgur.com/PDYGvvl.png</thumbnail>
+<fanart>https://schneidermariano.files.wordpress.com/2012/02/00.jpg</fanart>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#083;&#101;&#114;&#105;&#101;&#115;&#097;&#099;&#046;&#120;&#109;&#108;</externallink>	
+</item>
+
+<item>
+<title>[COLOR lime]Retro[/COLOR]</title>
+<link>http://Ignoreme</link>
+<thumbnail>http://i.imgur.com/gV3CLf7.jpg</thumbnail>
+<fanart>http://i.imgur.com/2Ak8yKK.jpg</fanart>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#114;&#101;&#116;&#114;&#111;&#046;&#120;&#109;&#108;</externallink>	
+</item>
+
+<item>
+<title>[COLOR lime]Anime[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/GrP6Ipl.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -133,39 +131,23 @@
 </item>
 	
 <item>
-<title>[COLOR red]INFANTILES[/COLOR]</title>
+<title>[COLOR lime]Infantil[/COLOR]</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#073;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canales-infantiles.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item> 
-	
-<tem>
-<title>[COLOR red]SERIES INFANTILES[/COLOR]</title>
-<link>http://Ignoreme</link>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#105;&#101;&#115;&#105;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;&#046;&#120;&#109;&#108;</externallink>
-<thumbnail>http://i.imgur.com/7voKiV1.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
 		
 <item>
-<title>[COLOR red]PELICULAS INFANTILES[/COLOR]</title>
+<title>[COLOR lime]Peliculas Infantiles[/COLOR]</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#080;&#101;&#108;&#105;&#099;&#117;&#108;&#097;&#115;&#105;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://i.imgur.com/RfiT087.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>  	
-		
-<item>
-<title>[COLOR red]DEPORTES[/COLOR]</title>
-<link>http://Ignoreme</link>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#100;&#101;&#112;&#111;&#114;&#116;&#101;&#115;&#046;&#120;&#109;&#108;</externallink> 
-<thumbnail>http://i.imgur.com/ICJ9tPt.png</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>     
+</item> 
 
 <item>
-<title>[COLOR red]MOVISTAR PLUS[/COLOR]</title>
+<title>[COLOR lime]M+[/COLOR]</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#109;&#111;&#118;&#105;&#115;&#116;&#097;&#114;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://i.imgur.com/5sTg3yD.jpg</thumbnail>
@@ -173,7 +155,7 @@
 </item>	    
     
 <item>
-<title>[COLOR red]TDT[/COLOR]</title>
+<title>[COLOR lime]Tdt[/COLOR]</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#100;&#116;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/la_tdt10.jpg</thumbnail>
@@ -181,7 +163,7 @@
 </item>
 	
 <item>
-<title>[COLOR red]TV Latina[/COLOR]</title>
+<title>[COLOR lime]TV Latina[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/lXxIT8w.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -189,7 +171,7 @@
 </item>	
     
 <item>
-<title>[COLOR red]CANALES LATINOS[/COLOR]</title>
+<title>[COLOR lime]Canales Latinos[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -207,93 +189,82 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>   
 	
-<item>
+<tem>
 <title>[COLOR red]LA ALTERNATIVA[/COLOR]</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#097;&#108;&#116;&#101;&#114;&#110;&#097;&#116;&#105;&#118;&#097;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://i.imgur.com/hO1VJo9.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
-	
-<tem>
-<title>[COLOR red]KODILIVE[/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-	<title>[makelist.param1]</title>
-	<link>[makelist.param2]</link>
-	<thumbnail>NA</thumbnail>
-]]></listrepeat>
-<expres>#EXTINF:-1.*,(.*?)\n(.*)</expres>
-<page>http://kodilive.eu/tv/</page>
-<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
-</regex>
-<thumbnail>http://i.imgur.com/ZGEc4WQ.jpg</thumbnail>
-<fanart>http://i.imgur.com/5Up4jOE.jpg
-
+		
+<item>
+<title>[COLOR lime]Tv Francia[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#118;&#102;&#114;&#097;&#110;&#099;&#105;&#097;&#046;&#120;&#109;&#108;</externallink>
+<thumbnail>http://i.imgur.com/oQq8SOe.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 	
-	<item>
-    <title>[COLOR red]TV FRANCE[/COLOR]</title>
-    <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#118;&#102;&#114;&#097;&#110;&#099;&#105;&#097;&#046;&#120;&#109;&#108;</externallink>
-	<thumbnail>http://i.imgur.com/oQq8SOe.jpg</thumbnail>
-	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-    </item>
-	
-	<item>
-    <title>[COLOR red]TV DE CATALUNYA[/COLOR]</title>
-    <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#118;&#099;&#097;&#116;&#097;&#108;&#117;&#110;&#121;&#097;&#046;&#120;&#109;&#108;</externallink>
-	<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/1262702256945.jpg</thumbnail>
-	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-    </item>
+<item>
+<title>[COLOR lime]Tv de cataluña[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#116;&#118;&#099;&#097;&#116;&#097;&#108;&#117;&#110;&#121;&#097;&#046;&#120;&#109;&#108;</externallink>
+<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/1262702256945.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
 		    
-    <item>
-    <title>[COLOR red]TV URUGUAY[/COLOR]</title>
-    <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#117;&#114;&#117;&#103;&#117;&#097;&#121;&#046;&#120;&#109;&#108;</externallink> 
-	<thumbnail>http://i.imgur.com/9wJ6pLG.jpg</thumbnail>
-	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-    </item>	
+<item>
+<title>[COLOR lime]Tv Uruguay[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#117;&#114;&#117;&#103;&#117;&#097;&#121;&#046;&#120;&#109;&#108;</externallink> 
+<thumbnail>http://i.imgur.com/9wJ6pLG.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>	
 		    
-    <item>
-    <title>[COLOR red]MUSICA[/COLOR]</title>
-    <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#109;&#117;&#115;&#105;&#099;&#097;&#110;&#101;&#119;&#046;&#120;&#109;&#108;</externallink>
-	<thumbnail>http://i.imgur.com/3FxpWmy.png</thumbnail>
-	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-    </item>
+<item>
+<title>[COLOR lime]Musica[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#109;&#117;&#115;&#105;&#099;&#097;&#110;&#101;&#119;&#046;&#120;&#109;&#108;</externallink>
+<thumbnail>http://i.imgur.com/3FxpWmy.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
     
-	<item>
-    <title>[COLOR red]RADIO[/COLOR]</title>
-    <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#114;&#097;&#100;&#105;&#111;&#046;&#120;&#109;&#108;</externallink>
-	<thumbnail>http://i.imgur.com/mkMqBJt.png</thumbnail>
-	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-    </item>	
+<item>
+<title>[COLOR lime]Radio[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#114;&#097;&#100;&#105;&#111;&#046;&#120;&#109;&#108;</externallink>
+<thumbnail>http://i.imgur.com/mkMqBJt.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>	
 	
-	<item>
-    <title>[COLOR red]DOCUMENTALES[/COLOR]</title>
-    <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#100;&#111;&#099;&#117;&#109;&#101;&#110;&#116;&#097;&#108;&#101;&#115;&#046;&#120;&#109;&#108;</externallink>
-	<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/url10.jpg</thumbnail>
-	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-    </item>
-		
-	<item>
-    <title>[COLOR magenta]SUPER LISTAS[/COLOR]</title>
-    <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#117;&#112;&#101;&#114;&#108;&#105;&#115;&#116;&#097;&#115;&#046;&#120;&#109;&#108;</externallink>
-	<thumbnail>http://i.imgur.com/bZO05zt.jpg</thumbnail>
-	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-    </item>
+<item>
+<title>[COLOR lime]Documentales[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#100;&#111;&#099;&#117;&#109;&#101;&#110;&#116;&#097;&#108;&#101;&#115;&#046;&#120;&#109;&#108;</externallink>
+<thumbnail>http://i39.servimg.com/u/f39/13/21/23/51/url10.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+	
+<item>
+<title>[COLOR lime]AdrianList[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/list.xml</externallink>
+<thumbnail>http://i.imgur.com/oxTNPnp.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item> 
+	
+<tem>
+<title>[COLOR lime]Super [/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#099;&#097;&#116;&#111;&#097;&#108;&#107;&#111;&#100;&#105;/&#076;&#105;&#115;&#116;&#097;&#067;&#097;&#116;&#111;&#097;&#108;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#117;&#112;&#101;&#114;&#108;&#105;&#115;&#116;&#097;&#115;&#046;&#120;&#109;&#108;</externallink>
+<thumbnail>http://i.imgur.com/bZO05zt.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
 
 <item>
-    <title>[COLOR magenta]Camaras del Mundo[/COLOR]</title>
-    <link>http://Ignoreme</link>
-    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#119;&#101;&#098;&#099;&#097;&#109;&#110;&#101;&#119;&#046;&#120;&#109;&#108;</externallink>
-    <thumbnail>http://i.imgur.com/ohF36zH.jpg</thumbnail>
-    <fanart>http://img1.meristation.com/files/imagenes/noticias/2014/11/20/webcam-spy.jpg</fanart>
-    </item>
+<title>[COLOR lime]Camaras del Mundo[/COLOR]</title>
+<link>http://Ignoreme</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#119;&#101;&#098;&#099;&#097;&#109;&#110;&#101;&#119;&#046;&#120;&#109;&#108;</externallink>
+<thumbnail>http://i.imgur.com/ohF36zH.jpg</thumbnail>
+<fanart>http://img1.meristation.com/files/imagenes/noticias/2014/11/20/webcam-spy.jpg</fanart>
+</item>
