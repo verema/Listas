@@ -276,7 +276,7 @@
   <listrepeat><![CDATA[
         <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-		<thumbnail>https://goo.gl/SJG9UP</thumbnail>
+		<thumbnail>https://images-na.ssl-images-amazon.com/images/I/51DpApdLf0L._AC_UL320_SR226,320_.jpg</thumbnail>
 		<fanart>https://goo.gl/Vy2hu8</fanart>
         ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
@@ -302,7 +302,7 @@
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://goo.gl/SJG9UP</thumbnail>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/I/51DpApdLf0L._AC_UL320_SR226,320_.jpg</thumbnail>
 <fanart>https://goo.gl/Vy2hu8</fanart>
 </item>
 
