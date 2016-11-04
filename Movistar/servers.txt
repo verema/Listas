@@ -1,6 +1,7 @@
 
 canales 
 
+full:" #Dark " url="dark_bniikxc";
 full:" #0 " url="plus0_b0xk990";
 full:" GH 17 " url="cinestrenostvgh17_bfo6ov9";
 full:" Estrenos " url="plusestrenos_ahnxk7j";
