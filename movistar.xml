@@ -46,7 +46,7 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param1] **</title>       
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param1][/COLOR] **</title>       
 <link>http://cdn.sitenow.me/live/[makelist.param2]/chunklist.m3u8|User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0&amp;Accept-Encoding=gzip,deflate&amp;DNT=1&amp;Referer=http://www.playerapp1.pw/&amp;Connection=keep-alive&amp;Icy-Metadata=0</link>
 <thumbnail>http://1.bp.blogspot.com/-zuHhRR4oXxA/TlqwYUhrmPI/AAAAAAAAAF0/IdH71AKySSk/s1600/MOVISTAR-logo+terformado.jpg</thumbnail>
 ]]></listrepeat> 
@@ -56,6 +56,7 @@
 </regex>
 </item>	
 
+<!--
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** M+ Full 2 **</title>
 <link>http://Ignoreme</link>
@@ -66,9 +67,6 @@
 
 
 
-		
-
-<!--
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** GH 17 **</title>       
 <link>https://kdsajkldsadjsad77567dsa99saghdshhdds.sitenow.me/live/cinestrenostvgh17_bfo6ov9/chunklist.m3u8|User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0&amp;Accept-Encoding=gzip,deflate&amp;DNT=1&amp;Referer=http://www.playerapp1.pw/&amp;Connection=keep-alive&amp;Icy-Metadata=0</link>
