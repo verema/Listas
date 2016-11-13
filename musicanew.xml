@@ -2471,7 +2471,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 <channel>
-<name>* [COLOR lime]Tributos /COLOR]</name>
+<name>* [COLOR lime]Tributos [/COLOR]</name>
 <Thumbnail></thumbnail>
 <fanart></fanart>
 <items>
