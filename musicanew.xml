@@ -2471,6 +2471,65 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 <channel>
+<name>* [COLOR lime]Tributos /COLOR]</name>
+<Thumbnail></thumbnail>
+<fanart></fanart>
+<items>
+
+<item>
+<title>[COLOR yellow]Metallica[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param2]</title>
+                        <utube>[makelist.param1]</utube>
+                        <thumbnail></thumbnail>
+            ]]></listrepeat>
+            <expres><![CDATA["yt-lockup-title ".*?href="/watch\?v=(.*?)">([^\<]+)<]]></expres>
+            <page>https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]The Rolling Stones[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param2]</title>
+                        <utube>[makelist.param1]</utube>
+                        <thumbnail></thumbnail>
+            ]]></listrepeat>
+            <expres><![CDATA["yt-lockup-title ".*?href="/watch\?v=(.*?)">([^\<]+)<]]></expres>
+            <page>https://www.youtube.com/channel/UCNYhhkQqeFLUc-YEDcLpSYQ</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]AC/DC[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param2]</title>
+                        <utube>[makelist.param1]</utube>
+                        <thumbnail></thumbnail>
+            ]]></listrepeat>
+            <expres><![CDATA["yt-lockup-title ".*?href="/watch\?v=(.*?)">([^\<]+)<]]></expres>
+            <page>https://www.youtube.com/channel/UCVm4YdI3hobkwsHTTOMVJKg</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+</items>
+</channels>
+
+<channel>
 <name>* [COLOR lime]Musica En MP3 (Solo Audio) [/COLOR]</name>
 <Thumbnail></thumbnail>
 <fanart></fanart>
@@ -2971,5 +3030,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://www.lesnuzparty.com/blog/wp-content/uploads/2013/08/Los-80-lo-mejor-de-una-decada-para-tu-fiesta-musica.png</fanart>
 </item>
 </items>
+</channel>
 
 </channels>
