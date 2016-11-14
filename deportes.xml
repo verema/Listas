@@ -66,13 +66,13 @@
 
 <item>
 
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] Mix Deportes[/COLOR] **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] Mix Deportes[/COLOR] **[B][COLOR skyblue] Actualizado[/COLOR][/B]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param1][/COLOR] **</title>
-<link>plugin://plugin.video.f4mTester/?url=$doregex[url1]&amp;streamtype=HLS&amp;name=catoal-Deportes</link>
+<link>plugin://plugin.video.f4mTester/?url=$doregex[url1]&amp;streamtype=HLS&amp;name=Catoal-Deportes</link>
 <thumbnail></thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[<li><a href="\/watch.*?title=(.*?)\&channel=(.*?)"]]></expres>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Catoal-Latino&amp;url=$doregex[serveur3]</link>
