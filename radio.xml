@@ -10,7 +10,7 @@
 	
 	<item>
 	<title>MegaStar FM </title>
-	<link>http://195.10.2.96/cope/megastar.mp3?GKID=0a8fa3aaca4811e5bae500163e914f69&fspref=aHR0cDovL3d3dy5tZWdhc3Rhci5mbS8=</link>
+	<link>http://195.55.74.208/cope/megastar.aac?</link>
 	<thumbnail>http://files.megastar.fm/static/img/logoShare.jpg</thumbnail>
 	
 	</item>
@@ -57,15 +57,22 @@
 	</item>
 
 	<item>
-	<title>Radio Marca</title>
-	<link>http://46.105.171.212:8138/</link>
+	<title>Radio Marca Barcelona</title>
+	<link>http://195.154.151.88:9003/stream</link>
+	<thumbnail>http://3.bp.blogspot.com/-1bYeaLDBVsk/UtPIxCZVuVI/AAAAAAAASsM/N0SMjdKNBQU/s1600/radiomarca.jpg</thumbnail>
+	
+	</item>
+	
+	<item>
+	<title>Radio Marca Valencia</title>
+	<link>http://188.165.134.20:8067</link>
 	<thumbnail>http://3.bp.blogspot.com/-1bYeaLDBVsk/UtPIxCZVuVI/AAAAAAAASsM/N0SMjdKNBQU/s1600/radiomarca.jpg</thumbnail>
 	
 	</item>
 
     <item>
 	<title>Maxima FM</title>
-	<link>http://5293.live.streamtheworld.com:80/MAXIMAFM_SC</link>
+	<link>http://63.243.149.3:443/MAXIMAFM_SC</link>
 	<thumbnail>http://2.bp.blogspot.com/-fvo4cpxg1CA/Uoeo6fNF9MI/AAAAAAAASKQ/GB-MYjV7k90/s1600/maxima.jpg</thumbnail>
 	
     </item>
