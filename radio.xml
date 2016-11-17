@@ -88,36 +88,173 @@
 	<title>Cadena Dial</title>
 	<link>http://streaming8.elitecomunicacion.es:8226/</link>
 	<thumbnail>http://3.bp.blogspot.com/-XvR5ncfuSns/Uoeo6K_DGaI/AAAAAAAASKY/dOXOeXkvjc8/s1600/dial.jpg</thumbnail>
-	
-    </item>
+	</item>
  
     <item>
-	<title>COPE</title>
-	<link>mms://a1569.l12014221568.c120142.l.lm.akamaistream.net/D/1569/120142/v0001/reflector:21568</link>
+	<title>COPE Albacete</title>
+	<link>http://195.10.10.201/copesedes/albacete.mp3</link>
 	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
 	
-    </item>
+	<item>
+	<title>COPE Alicante</title>
+	<link>http://195.10.10.221/copesedes/alicante.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Ávila</title>
+	<link>http://195.10.10.213/copesedes/avila.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE badajoz</title>
+	<link>http://195.10.10.213/copesedes/badajoz.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Barcelona</title>
+	<link>http://195.10.10.213/copesedes/barcelona.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Cuenca</title>
+	<link>http://195.10.10.201/copesedes/cuenca.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Ceuta</title>
+	<link>http://www.elfarodigital.es:8000/copeceuta</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Cáceres</title>
+	<link>http://195.55.74.208/copesedes/caceres.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Granada</title>
+	<link>http://195.10.10.221/copesedes/granada.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Lorca</title>
+	<link>http://195.10.10.201/copesedes/lorca.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Madrid</title>
+	<link>http://195.55.74.203/copesedes/madrid.mp3</link>
+	<link>http://195.55.74.207/cope/net1.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Melilla</title>
+	<link>http://radioserver4.profesionalhosting.com:8144/;</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Palencia</title>
+	<link>http://195.55.74.210/copesedes/palencia.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Salamanca/Santa Marta</title>
+	<link>http://195.55.74.203/copesedes/salamanca.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Santiago</title>
+	<link>http://195.10.10.201/copesedes/santiago.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Toledo</title>
+	<link>http://195.10.10.201/copesedes/toledo.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>COPE Zamora</title>
+	<link>http://195.55.74.210/copesedes/zamora.mp3</link>
+	<thumbnail>http://1.bp.blogspot.com/-6DOJxcA3PbI/Uoeo5oTtFzI/AAAAAAAASJ4/3ZRvGa4_POQ/s1600/cope.jpg</thumbnail>
+	</item>
  
     <item>
 	<title>M80</title>
-	<link>http://194.169.201.177:8085/liveM80.mp3</link>
+	<link>http://provisioning.streamtheworld.com/asx/M80RADIOAAC.asx</link>
 	<thumbnail>http://1.bp.blogspot.com/-ooyjFIZI6lE/Uoeo6Ne_65I/AAAAAAAASKI/Vr06bcJnHhA/s1600/m80.jpg</thumbnail>
 	
     </item>
  
     <item>
 	<title>Cadena 100</title>
-	<link>rtsp://a14.l12014932013.c120149.l.lm.akamaistream.net/D/14/120149/v0001/reflector:32013</link>
+	<link>http://cadena100.cope.stream.flumotion.com/cope/cadena100.mp3.m3u</link>
+	<link>http://cadena100.cope.stream.flumotion.com/cope/cadena100-low.mp3.m3u</link>
+	<link>http://cadena100.cope.stream.flumotion.com/cope/cadena100.aac.m3u</link>
 	<thumbnail>http://3.bp.blogspot.com/-SUqqn0fCRhY/Uoeo5l0BrMI/AAAAAAAASJ8/NxEQUTb7JY4/s1600/cadena100.jpg</thumbnail>
-	
-    </item>
+	</item>
  
     <item>
-	<title>Cadena SER</title>
-	<link>http://5243.live.streamtheworld.com/CADENASER_SC</link>
+	<title>Cadena SER Alicante</title>
+	<link>mms://94.127.190.245/radioelche</link>
 	<thumbnail>http://3.bp.blogspot.com/-cb6t8YGXN2g/Uoeo7k6Nh8I/AAAAAAAASKk/CP1l17X_lTk/s1600/ser.jpg</thumbnail>
+	</item>
+	 
+	<item>
+	<title>Cadena SER Almeria</title>
+	<link>http://212.83.164.82:8000/seralmeria.mp3</link>
+	<thumbnail>http://3.bp.blogspot.com/-cb6t8YGXN2g/Uoeo7k6Nh8I/AAAAAAAASKk/CP1l17X_lTk/s1600/ser.jpg</thumbnail>
+	</item> 
 	
-    </item>
+	<item>
+	<title>Cadena SER Asturias</title>
+	<link>http://centova.nsprimario.com/tunein.php/04/playlist.pls</link>
+	<thumbnail>http://3.bp.blogspot.com/-cb6t8YGXN2g/Uoeo7k6Nh8I/AAAAAAAASKk/CP1l17X_lTk/s1600/ser.jpg</thumbnail>
+	</item> 
+	
+	<item>
+	<title>Cadena SER Bilbao</title>
+	<link>http://13863.live.streamtheworld.com:3690/SER_BILBAO_SC</link>
+	<thumbnail>http://3.bp.blogspot.com/-cb6t8YGXN2g/Uoeo7k6Nh8I/AAAAAAAASKk/CP1l17X_lTk/s1600/ser.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>Cadena SER Burgos</title>
+	<link>http://13393.live.streamtheworld.com:3690/SER_BURGOS_SC</link>
+	<thumbnail>http://3.bp.blogspot.com/-cb6t8YGXN2g/Uoeo7k6Nh8I/AAAAAAAASKk/CP1l17X_lTk/s1600/ser.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>Cadena SER Castellón</title>
+	<link>http://stream.radiocastellon.com/ser</link>
+	<thumbnail>http://3.bp.blogspot.com/-cb6t8YGXN2g/Uoeo7k6Nh8I/AAAAAAAASKk/CP1l17X_lTk/s1600/ser.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>Cadena SER Ceuta</title>
+	<link>http://playerservices.streamtheworld.com/pls/SER_CEUTA.pls</link>
+	<thumbnail>http://3.bp.blogspot.com/-cb6t8YGXN2g/Uoeo7k6Nh8I/AAAAAAAASKk/CP1l17X_lTk/s1600/ser.jpg</thumbnail>
+	</item>
+	
+	<item>
+	<title>Cadena SER Cádiz</title>
+	<link>http://playerservices.streamtheworld.com/pls/SER_CADIZ.pls</link>
+	<thumbnail>http://3.bp.blogspot.com/-cb6t8YGXN2g/Uoeo7k6Nh8I/AAAAAAAASKk/CP1l17X_lTk/s1600/ser.jpg</thumbnail>
+	</item>
 		
 <item>
 	<title>Yoga</title>
