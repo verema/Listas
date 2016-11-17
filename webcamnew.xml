@@ -90,4 +90,69 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'https://www.skylinewebcams.com[li
 <link>plugin://plugin.video.youtube/play/?video_id=6q36pnzcw70</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
-</item>  
+</item> 
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]O Porto[/COLOR] **</title> 
+<link>$doregex[getURL]</link>
+<regex>
+<name>getURL</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests, re
+ url = 'http://www.visitar-porto.com/pt/imagens-videos/video-ao-vivo.html'
+ headers = {'User-Agent': 'Version/4.0 Mobile Safari/534.30', 'Upgrade-Insecure-Requests': '1'}
+ source = requests.get(url,headers = headers)
+ link1 = re.findall('ipt.+src="(.+?live.+?)"', source.text)[0]
+ url2 = link1
+ headers2 = {'User-Agent': 'Version/4.0 Mobile Safari/534.30', 'Referer': url}
+ source2 = requests.get(url2,headers = headers2)
+ link2 = re.findall('iframe src="(.*?)"', source2.text)[0]
+ url3 = link2
+ headers3 = {'User-Agent': 'Version/4.0 Mobile Safari/534.30', 'Referer': url}
+ source3 = requests.get(url3,headers = headers3)
+ link3 = re.findall("ipadUrl:.+?'(.*?)'", source3.text)[0]
+ url4 = link3
+ headers4 = {'User-Agent': 'Version/4.0 Mobile Safari/534.30', 'Referer': url}
+ source4 = requests.get(url4,headers = headers4)
+ findm3u8 = re.findall('(http.*)', source4.text)[0]
+ play = findm3u8
+ return play + '|User-Agent=iPhone'
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Madeira[/COLOR] **</title> 
+<link>$doregex[getURL]</link>
+<regex>
+<name>getURL</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests, re
+ url = 'http://www.madeira-web.com/camera/cam-live.html'
+ headers = {'User-Agent': 'Version/4.0 Mobile Safari/534.30', 'Upgrade-Insecure-Requests': '1'}
+ source = requests.get(url,headers = headers)
+ link1 = re.findall('src="(.*?)".+?\/java', source.text)[0]
+ url2 = link1
+ headers2 = {'User-Agent': 'Version/4.0 Mobile Safari/534.30', 'Referer': url}
+ source2 = requests.get(url2,headers = headers2)
+ link2 = re.findall('iframe src="(.*?)"', source2.text)[0]
+ url3 = link2
+ headers3 = {'User-Agent': 'Version/4.0 Mobile Safari/534.30', 'Referer': url}
+ source3 = requests.get(url3,headers = headers3)
+ link3 = re.findall("ipadUrl:.+?'(.*?)'", source3.text)[0]
+ url4 = link3
+ headers4 = {'User-Agent': 'Version/4.0 Mobile Safari/534.30', 'Referer': url}
+ source4 = requests.get(url4,headers = headers4)
+ findm3u8 = re.findall('(http.*)', source4.text)[0]
+ play = findm3u8
+ return play + '|User-Agent=iPhone'
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+ 
