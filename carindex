@@ -21,6 +21,14 @@
 -->
 
 <item>
+<title>[COLOR lime] Catoal IPTV[/COLOR][COLOR blue][I] Addon Catoal IPTV Necesario[/I][/COLOR]</title>
+<link>http://ignora.me</link>
+<jsonrpc>plugin://plugin.video.catoaliptv/</jsonrpc>
+<thumbnail>http://i.imgur.com/t6EjaU5.png</thumbnail>
+<fanart>http://i.imgur.com/EOuAwNY.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR lime]IPTV La Otra Televisión[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/9hmmHaq.png</thumbnail>
