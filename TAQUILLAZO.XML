@@ -106,6 +106,47 @@
 </item>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** [COLOR blue]Ca[/COLOR][COLOR yellow]t[/COLOR][COLOR red]flix[/COLOR] ***[/COLOR][B] Versión Italiana[/B] **</title>
+<link>$doregex[makelist1]</link>
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [COLOR yellow] [makelist1.param2] [/COLOR] **</title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres><![CDATA[<a href="(/film-streaming.*?)">(.*?)</a></li>]]></expres>
+<page>http://altadefinizione.zone</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  [COLOR lime] [makelist.param2] [/COLOR] **</title>
+<link>$doregex[stream]</link>
+<thumbnail>http://altadefinizione.zone[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<a href="(.*?)" title="(.*?)" class="short-images-link">.*?\n.*?<img src="(.*?)" alt="]]></expres>
+<page>http://altadefinizione.zone[makelist1.param1]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>stream</name>
+<expres><![CDATA[file: "(.*?)",]]></expres>
+<page>$doregex[url1]</page>
+</regex>
+
+<regex>
+<name>url1</name>
+<expres><![CDATA[" data-link="(http://.*?)">]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+<thumbnail>http://i.imgur.com/kqkqwPk.png</thumbnail>
+<fanart>http://ih1.redbubble.net/image.88009156.7389/ap,550x550,16x12,1,transparent,t.png</fanart>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Actuales ***[/COLOR] ** Nuevo</title>
 <link>$doregex[makelist]</link>
 
