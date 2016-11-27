@@ -2,6 +2,13 @@
 
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TeleBilbao **</title>
+<link>http://cls.todostreaming.eu/telebilbao/livestream/chunklist.m3u8</link>
+<thumbnail>http://www.telebilbao.es/images/boina-u496-fr.png</thumbnail>
+<fanart>http://www.telebilbao.es/images/imagenparafondo.png</fanart>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Enlace **</title>
 <link>$doregex[getsxtream]|User-Agent=iPhone</link>
 <regex>
@@ -35,6 +42,7 @@
 <link>rtmp://89.140.80.244/livepkgr/_definst_ playpath=livestream2 swfUrl=http://www.electrovideotv.com/components/com_allvideoshare/player.swf?random=1722143246 live=1 pageUrl=http://www.electrovideotv.com/index.php/canalevtonline</link>
 <thumbnail>http://www.electrovideotv.com/images/logovideo.png</thumbnail>
 </item>
+
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow]TV [I]M3U[/I] [/COLOR] **</title>
