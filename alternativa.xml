@@ -43,6 +43,46 @@
 <thumbnail>http://www.electrovideotv.com/images/logovideo.png</thumbnail>
 </item>
 
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Peru/latina **</title>
+<link>http://ooyalahd2-f.akamaihd.net/i/latinlima01_delivery@42383/master.m3u8|User-Agent: VLC/2.2.4 LibVLC/2.2.4</link>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Peru/panamericana **</title>
+<link>$doregex[final-url]</link>
+<regex>
+<name>final-url</name>
+<expres>(.*)#</expres>
+<page>$doregex[url]&amp;redirect=0</page>
+</regex>
+<regex>
+<name>url</name>
+<expres>$pyFunction:'$doregex[get-url]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-url</name>
+<expres>"source".*.{5}[",'](http[^"]*)[",'].*?auto</expres>
+<page>http://www.dailymotion.com/embed/video/x18w5up_panamericana-television-en-vivo_tv</page>
+<referer>http://www.dailymotion.com/</referer></regex>
+<thumbnail></thumbnail>
+</item>
+	   
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Tvperu **</title>
+<link>rtmp://cdnp5.iblups.com/canalipe/irtp swfUrl=https://iblups.com/jwplayer/jwplayer.flash.swf pageUrl=http://p.iblups.com/tvperu/embed.php swfVfy=1 live=1 </link>
+</item>
+  
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TvperuHD **</title>
+<link>rtmp://cdnp2.iblups.com/tvperuhd/R9WtilpKKB swfUrl=https://iblups.com/jwplayer/jwplayer.flash.swf pageUrl=https://iblups.com/e_tvperuHD swfVfy=1 live=1 </link>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Tvperu73 **</title>
+<link>rtmp://cdnp2.iblups.com/tvperu73/RMuwrdk7M9 swfUrl=https://iblups.com/jwplayer/jwplayer.flash.swf pageUrl=http://iblups.com/e_tvperu73 swfVfy=1 live=1 </link>
+</item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow]TV [I]M3U[/I] [/COLOR] **</title>
