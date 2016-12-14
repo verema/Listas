@@ -93,13 +93,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray] [/COLOR] **</title>
-<link>$doregex[id]</link>
- <regex>
- <name>id</name>
- <expres>file: "(.*?)",</expres>
- <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	
- <referer>http://streamin.to</referer>
- </regex>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>flv\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 
@@ -138,13 +144,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue][makelist2.param3] [/COLOR] [COLOR lightslategray][[makelist.param1]][/COLOR] **</title>
-<link>$doregex[id]</link>
- <regex>
- <name>id</name>
- <expres>file: "(.*?)",</expres>
- <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	
- <referer>http://streamin.to</referer>
- </regex>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>flv\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 
@@ -217,20 +229,26 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://hdfull.tv/tags-peliculas/[makelist3.param1]/date/[showPages.param1]</page>
 <referer></referer>
 <cookieJar></cookieJar>
-</regex>  
+</regex>
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
 
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue][makelist2.param3] [/COLOR]  **</title>
-<link>$doregex[id]</link>
- <regex>
- <name>id</name>
- <expres>file: "(.*?)",</expres>
- <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	
- <referer>http://streamin.to</referer>
- </regex>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>flv\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 
