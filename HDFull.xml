@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <channels>
-<channels_info> 
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Hdfull **</title>
-<genre>Peliculas</genre>
-<description>Web de peliculas en audio español y latino</description>
-<thumbnail>http://i.imgur.com/PIQyl6k.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<date>2016</date>
-<credits>Catoal</credits>
-</channels_info>
 
 <channel>
 <name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Películas **[/COLOR]</name>
@@ -50,7 +41,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist2</name>
 <listrepeat><![CDATA[
     <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2] **[/COLOR] - [COLOR lightslategray][I]streamin.to[/I][/COLOR]</title>
-    <link>$doregex[id]</link>
+    <link>$doregex[url]/$doregex[id2]/v.flv</link>
 	<thumbnail></thumbnail>
 ]]></listrepeat>
 <expres>http://streamin.to/embed-(.*?)-</expres>
@@ -61,11 +52,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <regex>
-<name>id</name>
-<expres>file: "(.*?)",</expres>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
 <page>http://streamin.to/embed-[makelist2.param1]-740x360.html</page>	 
 <referer>http://streamin.to</referer>
-</regex> 
+</regex>
+<regex>
+<name>id2</name>
+<expres>flv\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-[makelist2.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>  
 <thumbnail></thumbnail>
 </item>
 
