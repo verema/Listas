@@ -86,45 +86,6 @@
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Green Street Hooligans **</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist.param3][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-		<thumbnail>http://www.lifeder.com/wp-content/uploads/2016/07/Green-Street-Hooligans.jpg</thumbnail>
-		<fanart>http://image.tmdb.org/t/p/original/qG2NKjGLsFxohQYUWcjgI1fsuzz.jpg</fanart>
-        ]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://copiapop.com/Robex69/green-street-hooligans-saga-74091/list,1,1</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://copiapop.com/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param2]</page>
-<referer>http://copiapop.com/Robex69/green-street-hooligans-saga-74091/list,1,1</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://www.lifeder.com/wp-content/uploads/2016/07/Green-Street-Hooligans.jpg</thumbnail>
-<fanart>http://image.tmdb.org/t/p/original/qG2NKjGLsFxohQYUWcjgI1fsuzz.jpg</fanart>
-</item>
-
-<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** A Todo Gas **</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -160,9 +121,6 @@
 </regex>
 <thumbnail>http://www.mubis.es/media/covers/1882/3306/the-fast-and-furious-a-todo-gas-saga-completa-portada-l_cover.jpg</thumbnail>
 <fanart>http://www.mubis.es/media/users/5027/14228/saga-a-todo-gas-dvd-blu-ray-original.jpg</fanart>
-
-<info>La saga fílmica The Fast and the Furious conocida como Fast and Furious (antiguamente A Todo Gas) en España; Rápido y Furioso en Hispanoamérica) es una serie de películas de acción que conforman una franquicia estadounidense, que se centra en un género cinematográfico de carreras callejeras ilegales. La saga distribuida por Universal Pictures es una Decalogía cuya serie se inició con la película de 2001 titulada The Fast and the Furious; seguida de nueve secuelas y dos cortometraje Y Terminará en el 20 Aniversario de la franquicia (2021).
-Desde el mes de mayo de 2015, la saga, es la mayor franquicia de Universal de todos los tiempos, 1 compuesta por películas, videojuegos, personajes, bandas sonoras y juguetes de coches. La siguiente película, Fast 8, está prevista que sea estrenada en todo el mundo el 14 de abril de 2017.El 2 de febrero del 2016, Vin Diesel firmó La Octava entrega, así como confirmó la actualización en su contrato, donde la franquicia terminará con 10 Películas. La novena cinta está prevista para el 19 de abril del 2019, y terminará la saga con La décima para celebrar el 20 Aniversario de la saga, prevista para el 12 de abril del 2021..</info>
 </item>
 
 <item>
@@ -176,58 +134,32 @@ Desde el mes de mayo de 2015, la saga, es la mayor franquicia de Universal de to
         <thumbnail>https://images-na.ssl-images-amazon.com/images/I/71Un0R6IEIL._SY445_.jpg</thumbnail>
 		<fanart>http://4.bp.blogspot.com/-hko3nZsZMlM/Tyu2-pEXe_I/AAAAAAAABgw/MG9-ulW0tzw/s1600/Annex+-+Marx+Brothers_14.jpg</fanart>
 ]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/iiirepublica/hermanos-marx-68605/gallery,1,1</page>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/ddolfia/hermanos-max-peliculas-45174/list,1,1</page>
 <cookieJar></cookieJar>
 </regex>
-
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/ddolfia/hermanos-max-peliculas-45174/list,1,1</referer>
+<connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://images-na.ssl-images-amazon.com/images/I/71Un0R6IEIL._SY445_.jpg</thumbnail>
 <fanart>http://4.bp.blogspot.com/-hko3nZsZMlM/Tyu2-pEXe_I/AAAAAAAABgw/MG9-ulW0tzw/s1600/Annex+-+Marx+Brothers_14.jpg</fanart>
 </item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Clint Eastwood **</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>http://static4.comicvine.com/uploads/scale_small/0/77/1672341-clint_eastwood_art.jpg</thumbnail>
-		<fanart>http://www.bandejadeplata.com/wp-content/uploads/2014/09/Clint-Eastwood.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/iiirepublica/clint-eastwood-61063/gallery,1,9</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://static4.comicvine.com/uploads/scale_small/0/77/1672341-clint_eastwood_art.jpg</thumbnail>
-<fanart>http://www.bandejadeplata.com/wp-content/uploads/2014/09/Clint-Eastwood.jpg</fanart>
-</item>
-
-
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Matrix **</title>
@@ -267,66 +199,12 @@ Desde el mes de mayo de 2015, la saga, es la mayor franquicia de Universal de to
 <fanart>http://static2.filmclub.es/wp-content/uploads/2009/03/3posters-trilogia-matrix.jpg</fanart>
 </item>
 
-<item>
+<item> <!-- Sagas Disko -->
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Rec **</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>https://recfanatico.files.wordpress.com/2012/01/tetralogia.png</thumbnail>
-		<fanart>http://www.mubis.es/media/users/5004/116327/que-os-parecio-la-saga-de-rec-original.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-rec-61581/gallery,1,1</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
+<link>http://Ignoreme</link>
 <thumbnail>https://recfanatico.files.wordpress.com/2012/01/tetralogia.png</thumbnail>
 <fanart>http://www.mubis.es/media/users/5004/116327/que-os-parecio-la-saga-de-rec-original.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Riddick **</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>http://videos.compart-i2.com/files/uploads/1501.jpg</thumbnail>
-		<fanart>http://www.ojocritico.com/wp-content/uploads/2013/11/riddick2.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-de-riddick-60525/gallery,1,1</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://videos.compart-i2.com/files/uploads/1501.jpg</thumbnail>
-<fanart>http://www.ojocritico.com/wp-content/uploads/2013/11/riddick2.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/Carlesto/sagas/master/rec.xml</externallink>	
 </item>
 
 <item>
