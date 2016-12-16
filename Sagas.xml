@@ -77,6 +77,14 @@
 <fanart>http://i50.tinypic.com/hukmsp.jpg</fanart>
 </item>
 
+<item> <!-- Sagas Disko -->
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Saw **</title>
+<link>http://Ignoreme</link>
+<thumbnail>http://www.filmparadiset.se/wp-content/gallery/omslag/Saw-1-7-Box-Blu-ray-Omslag.jpg</thumbnail>
+<fanart>http://cinepremiere.impresionesaerea.netdna-cdn.com/noticias/2016/02-febrero/saw-8-legacy.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/Carlesto/sagas/master/saw.xml</externallink>	
+</item>
+
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Saw **</title>
 <link>$doregex[makelist]</link>
