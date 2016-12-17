@@ -583,7 +583,7 @@
 <fanart>http://www.diariosur.es/noticias/201601/13/media/cortadas/cine-regio--575x323.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Películas en HD ***[/COLOR] **</title>
 <link>$doregex[makelist]</link>
 
@@ -993,7 +993,7 @@
 <fanart>http://www.elobservatodo.cl/sites/elobservatodo.cl/files/imagecache/380x285/imagen_noticia/sal_pelicula.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** Cine Disney ***[/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -1024,7 +1024,7 @@
 <fanart>http://i.copiapop.com/images/coverPhoto/19bbb4e2-f85f-4e7c-985c-e511dbe30494</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]*** 3D ***[/COLOR] **ACTUALIZADA</title>
 <link>$doregex[makelist]</link>
 
