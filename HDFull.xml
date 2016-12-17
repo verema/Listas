@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<channels>
-
-<channel>
-<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Películas **[/COLOR]</name>
-<Thumbnail>http://i.imgur.com/PIQyl6k.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<items>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Buscar Películas **[/COLOR] </title>
@@ -257,12 +250,3 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 </item>
-</items>
-</channel>
-
-</channels>	
-
-
-
- 
- 
