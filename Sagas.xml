@@ -209,932 +209,2012 @@
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mision Imposible **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://cdn.revistagq.com/uploads/images/thumbs/201532/mision_imposible_1996_7543_511x760.jpg</thumbnail>
+		<fanart>http://img.ecartelera.com/sagas/000/55.jpg</fanart>
+        ]]></listrepeat>
+<expres>mision:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://cdn.revistagq.com/uploads/images/thumbs/201532/mision_imposible_1996_7543_511x760.jpg</thumbnail>
+		<thumbnail>http://cdn.revistagq.com/uploads/images/thumbs/201532/mision_imposible_1996_7543_511x760.jpg</thumbnail>
 		<fanart>http://img.ecartelera.com/sagas/000/55.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-mision-imposible-60320/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://cdn.revistagq.com/uploads/images/thumbs/201532/mision_imposible_1996_7543_511x760.jpg</thumbnail>
-<fanart>http://img.ecartelera.com/sagas/000/55.jpg</fanart>
+		<fanart>http://img.ecartelera.com/sagas/000/55.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Resident Evil **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://pre04.deviantart.net/7a8f/th/pre/f/2010/064/3/a/resident_evil_saga_poster_by_the_hero_of_time28.jpg</thumbnail>
+		<fanart>https://azgamesweb.files.wordpress.com/2014/05/resident-evil-characters.jpg</fanart>
+        ]]></listrepeat>
+<expres>resident:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://pre04.deviantart.net/7a8f/th/pre/f/2010/064/3/a/resident_evil_saga_poster_by_the_hero_of_time28.jpg</thumbnail>
+		<thumbnail>http://pre04.deviantart.net/7a8f/th/pre/f/2010/064/3/a/resident_evil_saga_poster_by_the_hero_of_time28.jpg</thumbnail>
 		<fanart>https://azgamesweb.files.wordpress.com/2014/05/resident-evil-characters.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-resident-evil-59329/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://pre04.deviantart.net/7a8f/th/pre/f/2010/064/3/a/resident_evil_saga_poster_by_the_hero_of_time28.jpg</thumbnail>
-<fanart>https://azgamesweb.files.wordpress.com/2014/05/resident-evil-characters.jpg</fanart>
+		<fanart>https://azgamesweb.files.wordpress.com/2014/05/resident-evil-characters.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Padrino **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://goo.gl/rahcH6</thumbnail>
+		<fanart>http://www.diasdehistoria.com.ar/userfiles/image/el-padrino-2.jpg</fanart>
+        ]]></listrepeat>
+<expres>padrino:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://goo.gl/rahcH6</thumbnail>
+		<thumbnail>http://goo.gl/rahcH6</thumbnail>
 		<fanart>http://www.diasdehistoria.com.ar/userfiles/image/el-padrino-2.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/trilogia-el-padrino-57597/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://goo.gl/rahcH6</thumbnail>
-<fanart>http://www.diasdehistoria.com.ar/userfiles/image/el-padrino-2.jpg</fanart>
+		<fanart>http://www.diasdehistoria.com.ar/userfiles/image/el-padrino-2.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Scream **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>https://eljardindelsur.files.wordpress.com/2015/03/scream2.jpg</thumbnail>
+		<fanart>http://cinergetica.com.mx/wp-content/uploads/2011/04/scream-ghostface.jpg</fanart>
+        ]]></listrepeat>
+<expres>scream:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>https://eljardindelsur.files.wordpress.com/2015/03/scream2.jpg</thumbnail>
+		<thumbnail>https://eljardindelsur.files.wordpress.com/2015/03/scream2.jpg</thumbnail>
 		<fanart>http://cinergetica.com.mx/wp-content/uploads/2011/04/scream-ghostface.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-scream-56885/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://eljardindelsur.files.wordpress.com/2015/03/scream2.jpg</thumbnail>
-<fanart>http://cinergetica.com.mx/wp-content/uploads/2011/04/scream-ghostface.jpg</fanart>
+		<fanart>http://cinergetica.com.mx/wp-content/uploads/2011/04/scream-ghostface.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Piratas del Caribe **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>https://losreyesdelmando.files.wordpress.com/2014/11/piratas1.jpg</thumbnail>
+		<fanart>http://goo.gl/6ojb6q</fanart>
+        ]]></listrepeat>
+<expres>piratas:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>https://losreyesdelmando.files.wordpress.com/2014/11/piratas1.jpg</thumbnail>
+		<thumbnail>https://losreyesdelmando.files.wordpress.com/2014/11/piratas1.jpg</thumbnail>
 		<fanart>http://goo.gl/6ojb6q</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-piratas-del-caribe-56883/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://losreyesdelmando.files.wordpress.com/2014/11/piratas1.jpg</thumbnail>
-<fanart>http://goo.gl/6ojb6q</fanart>
+		<fanart>http://goo.gl/6ojb6q</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Austin Powers **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://g-ecx.images-amazon.com/images/G/01/ciu/ac/41/aba781b0c8a0f180b3b8e110.L.jpg</thumbnail>
+		<fanart>http://img.ecartelera.com/sagas/000/16.jpg</fanart>
+        ]]></listrepeat>
+<expres>austin:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://g-ecx.images-amazon.com/images/G/01/ciu/ac/41/aba781b0c8a0f180b3b8e110.L.jpg</thumbnail>
+		<thumbnail>http://g-ecx.images-amazon.com/images/G/01/ciu/ac/41/aba781b0c8a0f180b3b8e110.L.jpg</thumbnail>
 		<fanart>http://img.ecartelera.com/sagas/000/16.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/trilogia-austin-powers-56842/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://g-ecx.images-amazon.com/images/G/01/ciu/ac/41/aba781b0c8a0f180b3b8e110.L.jpg</thumbnail>
-<fanart>http://img.ecartelera.com/sagas/000/16.jpg</fanart>
+		<fanart>http://img.ecartelera.com/sagas/000/16.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Scary Movie **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://i.imgur.com/CvQX17L.jpg</thumbnail>
+		<fanart>http://www.nosologeeks.es/wp-content/uploads/scary_movie_poster_nosologeeks.jpg</fanart>
+        ]]></listrepeat>
+<expres>scary:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://i.imgur.com/CvQX17L.jpg</thumbnail>
+		<thumbnail>http://i.imgur.com/CvQX17L.jpg</thumbnail>
 		<fanart>http://www.nosologeeks.es/wp-content/uploads/scary_movie_poster_nosologeeks.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-scary-movie-56743/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://i.imgur.com/CvQX17L.jpg</thumbnail>
-<fanart>http://www.nosologeeks.es/wp-content/uploads/scary_movie_poster_nosologeeks.jpg</fanart>
+		<fanart>http://www.nosologeeks.es/wp-content/uploads/scary_movie_poster_nosologeeks.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Critters **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://gnula.nu/wp-content/uploads/2015/09/Critters_1_poster_usa.jpg</thumbnail>
+		<fanart>http://www.cinetoxico.es/wp-content/uploads/2016/02/Critters-672x372.jpg</fanart>
+        ]]></listrepeat>
+<expres>critters:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://gnula.nu/wp-content/uploads/2015/09/Critters_1_poster_usa.jpg</thumbnail>
+		<thumbnail>http://gnula.nu/wp-content/uploads/2015/09/Critters_1_poster_usa.jpg</thumbnail>
 		<fanart>http://www.cinetoxico.es/wp-content/uploads/2016/02/Critters-672x372.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-critters-55908/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://gnula.nu/wp-content/uploads/2015/09/Critters_1_poster_usa.jpg</thumbnail>
-<fanart>http://www.cinetoxico.es/wp-content/uploads/2016/02/Critters-672x372.jpg</fanart>
+		<fanart>http://www.cinetoxico.es/wp-content/uploads/2016/02/Critters-672x372.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Evil Dead **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://goo.gl/VHqwLh</thumbnail>
+		<fanart>http://www.abc.es/Media/201211/02/evildead-musical--644x362.jpg</fanart>
+        ]]></listrepeat>
+<expres>evil:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://goo.gl/VHqwLh</thumbnail>
+		<thumbnail>http://goo.gl/VHqwLh</thumbnail>
 		<fanart>http://www.abc.es/Media/201211/02/evildead-musical--644x362.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-evil-dead-55627/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://goo.gl/VHqwLh</thumbnail>
-<fanart>http://www.abc.es/Media/201211/02/evildead-musical--644x362.jpg</fanart>
+		<fanart>http://www.abc.es/Media/201211/02/evildead-musical--644x362.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Halloween **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://teenagethunder.com/wp-content/uploads/2013/10/Halloween1.jpg</thumbnail>
+		<fanart>http://images.popmatters.com/news_art/h/halloween_feature_splash650.jpg</fanart>
+        ]]></listrepeat>
+<expres>hallo:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://teenagethunder.com/wp-content/uploads/2013/10/Halloween1.jpg</thumbnail>
+		<thumbnail>http://teenagethunder.com/wp-content/uploads/2013/10/Halloween1.jpg</thumbnail>
 		<fanart>http://images.popmatters.com/news_art/h/halloween_feature_splash650.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-halloween-54622/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://teenagethunder.com/wp-content/uploads/2013/10/Halloween1.jpg</thumbnail>
-<fanart>http://images.popmatters.com/news_art/h/halloween_feature_splash650.jpg</fanart>
+		<fanart>http://images.popmatters.com/news_art/h/halloween_feature_splash650.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Torrente **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://www.mubis.es/media/releases/659/480/torrente-saga-completa-blu-ray-l_cover.jpg</thumbnail>
+		<fanart>http://images.eldiario.es/cultura/Torrente-Eurovegas_EDIIMA20141003_0739_5.jpg</fanart>
+        ]]></listrepeat>
+<expres>torrente:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://www.mubis.es/media/releases/659/480/torrente-saga-completa-blu-ray-l_cover.jpg</thumbnail>
+		<thumbnail>http://www.mubis.es/media/releases/659/480/torrente-saga-completa-blu-ray-l_cover.jpg</thumbnail>
 		<fanart>http://images.eldiario.es/cultura/Torrente-Eurovegas_EDIIMA20141003_0739_5.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-torrente-54615/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://www.mubis.es/media/releases/659/480/torrente-saga-completa-blu-ray-l_cover.jpg</thumbnail>
-<fanart>http://images.eldiario.es/cultura/Torrente-Eurovegas_EDIIMA20141003_0739_5.jpg</fanart>
+		<fanart>http://images.eldiario.es/cultura/Torrente-Eurovegas_EDIIMA20141003_0739_5.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mad Max **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://goo.gl/Pei1Ke</thumbnail>
+		<fanart>http://goo.gl/fc7NZn</fanart>
+        ]]></listrepeat>
+<expres>mad:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://goo.gl/Pei1Ke</thumbnail>
+		<thumbnail>http://goo.gl/Pei1Ke</thumbnail>
 		<fanart>http://goo.gl/fc7NZn</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-mad-max-54512/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://goo.gl/Pei1Ke</thumbnail>
-<fanart>http://goo.gl/fc7NZn</fanart>
+		<fanart>http://goo.gl/fc7NZn</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Blade **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://i742.photobucket.com/albums/xx68/aylpic/18/18001/18001001/18001001001/BladeTrilogy.jpg</thumbnail>
+		<fanart>https://i.ytimg.com/vi/WVqKqQwgyTA/maxresdefault.jpg</fanart>
+        ]]></listrepeat>
+<expres>blade:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://i742.photobucket.com/albums/xx68/aylpic/18/18001/18001001/18001001001/BladeTrilogy.jpg</thumbnail>
+		<thumbnail>http://i742.photobucket.com/albums/xx68/aylpic/18/18001/18001001/18001001001/BladeTrilogy.jpg</thumbnail>
 		<fanart>https://i.ytimg.com/vi/WVqKqQwgyTA/maxresdefault.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/trilogia-blade-47397/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://i742.photobucket.com/albums/xx68/aylpic/18/18001/18001001/18001001001/BladeTrilogy.jpg</thumbnail>
-<fanart>https://i.ytimg.com/vi/WVqKqQwgyTA/maxresdefault.jpg</fanart>
+		<fanart>https://i.ytimg.com/vi/WVqKqQwgyTA/maxresdefault.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Spider-Man **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://www.mundodescargas.com/2k12/especiales/the_amazing_spider-man/imagenes/carteles/demo.jpg</thumbnail>
+		<fanart>https://i.ytimg.com/vi/WWU5IYYSTd8/maxresdefault.jpg</fanart>
+        ]]></listrepeat>
+<expres>spider:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://www.mundodescargas.com/2k12/especiales/the_amazing_spider-man/imagenes/carteles/demo.jpg</thumbnail>
+		<thumbnail>http://www.mundodescargas.com/2k12/especiales/the_amazing_spider-man/imagenes/carteles/demo.jpg</thumbnail>
 		<fanart>https://i.ytimg.com/vi/WWU5IYYSTd8/maxresdefault.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-spider-man-47395/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://www.mundodescargas.com/2k12/especiales/the_amazing_spider-man/imagenes/carteles/demo.jpg</thumbnail>
-<fanart>https://i.ytimg.com/vi/WWU5IYYSTd8/maxresdefault.jpg</fanart>
+		<fanart>https://i.ytimg.com/vi/WWU5IYYSTd8/maxresdefault.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** X-Men **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://pics.filmaffinity.com/x_men-358442316-large.jpg</thumbnail>
+		<fanart>http://www.desvariosvarios.com/wp-content/uploads/2013/09/x-men-cronologia.jpg</fanart>
+        ]]></listrepeat>
+<expres>x:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://pics.filmaffinity.com/x_men-358442316-large.jpg</thumbnail>
+		<thumbnail>http://pics.filmaffinity.com/x_men-358442316-large.jpg</thumbnail>
 		<fanart>http://www.desvariosvarios.com/wp-content/uploads/2013/09/x-men-cronologia.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-x-men-47394/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://pics.filmaffinity.com/x_men-358442316-large.jpg</thumbnail>
-<fanart>http://www.desvariosvarios.com/wp-content/uploads/2013/09/x-men-cronologia.jpg</fanart>
+		<fanart>http://www.desvariosvarios.com/wp-content/uploads/2013/09/x-men-cronologia.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Batman **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://goo.gl/dRI2iP</thumbnail>
+		<fanart>http://epoca1.valenciaplaza.com/bd/imagenes/imagen118595g.jpg</fanart>
+        ]]></listrepeat>
+<expres>bat:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://goo.gl/dRI2iP</thumbnail>
+		<thumbnail>http://goo.gl/dRI2iP</thumbnail>
 		<fanart>http://epoca1.valenciaplaza.com/bd/imagenes/imagen118595g.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/tetralogia-batman-clasica-47387/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://goo.gl/dRI2iP</thumbnail>
-<fanart>http://epoca1.valenciaplaza.com/bd/imagenes/imagen118595g.jpg</fanart>
+		<fanart>http://epoca1.valenciaplaza.com/bd/imagenes/imagen118595g.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Superman **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://1.bp.blogspot.com/__uKJinX4Yv8/RnQEUwl_UdI/AAAAAAAAACk/vwJsRtAaBG8/s320/superman2.jpg</thumbnail>
+		<fanart>http://cdn.20m.es/img2/recortes/2013/06/07/125260-936-550.jpg</fanart>
+        ]]></listrepeat>
+<expres>sup:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://1.bp.blogspot.com/__uKJinX4Yv8/RnQEUwl_UdI/AAAAAAAAACk/vwJsRtAaBG8/s320/superman2.jpg</thumbnail>
+		<thumbnail>http://1.bp.blogspot.com/__uKJinX4Yv8/RnQEUwl_UdI/AAAAAAAAACk/vwJsRtAaBG8/s320/superman2.jpg</thumbnail>
 		<fanart>http://cdn.20m.es/img2/recortes/2013/06/07/125260-936-550.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-superman-clasica-47386/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://1.bp.blogspot.com/__uKJinX4Yv8/RnQEUwl_UdI/AAAAAAAAACk/vwJsRtAaBG8/s320/superman2.jpg</thumbnail>
-<fanart>http://cdn.20m.es/img2/recortes/2013/06/07/125260-936-550.jpg</fanart>
+		<fanart>http://cdn.20m.es/img2/recortes/2013/06/07/125260-936-550.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Pasadilla en Elm-Street **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://www.mubis.es/media/covers/1105/1148/pesadilla-en-elm-street-el-origen-portada-original.jpg</thumbnail>
+		<fanart>http://www.lucesdesala.com/wp-content/uploads/2015/07/pesadilla-en-elm-street-10.jpg</fanart>
+        ]]></listrepeat>
+<expres>pasadilla:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://www.mubis.es/media/covers/1105/1148/pesadilla-en-elm-street-el-origen-portada-original.jpg</thumbnail>
+		<thumbnail>http://www.mubis.es/media/covers/1105/1148/pesadilla-en-elm-street-el-origen-portada-original.jpg</thumbnail>
 		<fanart>http://www.lucesdesala.com/wp-content/uploads/2015/07/pesadilla-en-elm-street-10.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-pesadilla-en-elm-street-42294/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://www.mubis.es/media/covers/1105/1148/pesadilla-en-elm-street-el-origen-portada-original.jpg</thumbnail>
-<fanart>http://www.lucesdesala.com/wp-content/uploads/2015/07/pesadilla-en-elm-street-10.jpg</fanart>
+		<fanart>http://www.lucesdesala.com/wp-content/uploads/2015/07/pesadilla-en-elm-street-10.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Viernes 13 **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://img.emol.com/2009/08/07/File_20098716463.jpg</thumbnail>
+		<fanart>http://cines.com/files/2014/01/viernes-13.jpg</fanart>
+        ]]></listrepeat>
+<expres>13:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://img.emol.com/2009/08/07/File_20098716463.jpg</thumbnail>
+		<thumbnail>http://img.emol.com/2009/08/07/File_20098716463.jpg</thumbnail>
 		<fanart>http://cines.com/files/2014/01/viernes-13.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-viernes-13-42293/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://img.emol.com/2009/08/07/File_20098716463.jpg</thumbnail>
-<fanart>http://cines.com/files/2014/01/viernes-13.jpg</fanart>
+		<fanart>http://cines.com/files/2014/01/viernes-13.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Jurassic Park **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://goo.gl/xGlwIj</thumbnail>
+		<fanart>http://dinosaurioss.com/wp-content/uploads/2015/05/lw6.jpg</fanart>
+        ]]></listrepeat>
+<expres>jura:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://goo.gl/xGlwIj</thumbnail>
+		<thumbnail>http://goo.gl/xGlwIj</thumbnail>
 		<fanart>http://dinosaurioss.com/wp-content/uploads/2015/05/lw6.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-jurassic-park-42292/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://goo.gl/xGlwIj</thumbnail>
-<fanart>http://dinosaurioss.com/wp-content/uploads/2015/05/lw6.jpg</fanart>
+		<fanart>http://dinosaurioss.com/wp-content/uploads/2015/05/lw6.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Terminator **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://goo.gl/IJE73L</thumbnail>
+		<fanart>http://www.facua.org/cineypublicidad/fotos/terminator.jpg</fanart>
+        ]]></listrepeat>
+<expres>ter:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://goo.gl/IJE73L</thumbnail>
+		<thumbnail>http://goo.gl/IJE73L</thumbnail>
 		<fanart>http://www.facua.org/cineypublicidad/fotos/terminator.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-terminator-42279/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://goo.gl/IJE73L</thumbnail>
-<fanart>http://www.facua.org/cineypublicidad/fotos/terminator.jpg</fanart>
+		<fanart>http://www.facua.org/cineypublicidad/fotos/terminator.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Alien Y Predator **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://www.cargad.com/wp-content/uploads/2014/09/alien.jpg</thumbnail>
+		<fanart>https://isracalzadolopez.files.wordpress.com/2012/09/alien-652148.jpeg</fanart>
+        ]]></listrepeat>
+<expres>alien:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://www.cargad.com/wp-content/uploads/2014/09/alien.jpg</thumbnail>
+		<thumbnail>http://www.cargad.com/wp-content/uploads/2014/09/alien.jpg</thumbnail>
 		<fanart>https://isracalzadolopez.files.wordpress.com/2012/09/alien-652148.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-alien-y-predator-42199/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://www.cargad.com/wp-content/uploads/2014/09/alien.jpg</thumbnail>
-<fanart>https://isracalzadolopez.files.wordpress.com/2012/09/alien-652148.jpeg</fanart>
+		<fanart>https://isracalzadolopez.files.wordpress.com/2012/09/alien-652148.jpeg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Conan **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://www.fanhammer.org/wp-content/uploads/2013/07/conan.jpg</thumbnail>
+		<fanart>https://cinemania-cdn.s3.amazonaws.com/images/2011/201205/conan/conan-the-barbarian-original.jpg</fanart>
+        ]]></listrepeat>
+<expres>conan:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://www.fanhammer.org/wp-content/uploads/2013/07/conan.jpg</thumbnail>
+		<thumbnail>http://www.fanhammer.org/wp-content/uploads/2013/07/conan.jpg</thumbnail>
 		<fanart>https://cinemania-cdn.s3.amazonaws.com/images/2011/201205/conan/conan-the-barbarian-original.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-conan-42186/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://www.fanhammer.org/wp-content/uploads/2013/07/conan.jpg</thumbnail>
-<fanart>https://cinemania-cdn.s3.amazonaws.com/images/2011/201205/conan/conan-the-barbarian-original.jpg</fanart>
+		<fanart>https://cinemania-cdn.s3.amazonaws.com/images/2011/201205/conan/conan-the-barbarian-original.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Robocop **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://retromemories.net/wp-content/uploads/2012/12/image001.jpg</thumbnail>
+		<fanart>http://img-youpeliculas.com/images/2013/09/29/Robocopmovie.jpg</fanart>
+        ]]></listrepeat>
+<expres>robo:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://retromemories.net/wp-content/uploads/2012/12/image001.jpg</thumbnail>
+		<thumbnail>http://retromemories.net/wp-content/uploads/2012/12/image001.jpg</thumbnail>
 		<fanart>http://img-youpeliculas.com/images/2013/09/29/Robocopmovie.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/trilogia-robocop-42185/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://retromemories.net/wp-content/uploads/2012/12/image001.jpg</thumbnail>
-<fanart>http://img-youpeliculas.com/images/2013/09/29/Robocopmovie.jpg</fanart>
+		<fanart>http://img-youpeliculas.com/images/2013/09/29/Robocopmovie.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Jungla de Cristal **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://www.cineochentas.com/wp-content/uploads/2011/08/la-jungla-de-cristal-pelicula.jpg</thumbnail>
+		<fanart>http://www.bolsamania.com/cine/wp-content/uploads/2014/09/126.jpg</fanart>
+        ]]></listrepeat>
+<expres>jungla:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://www.cineochentas.com/wp-content/uploads/2011/08/la-jungla-de-cristal-pelicula.jpg</thumbnail>
+		<thumbnail>http://www.cineochentas.com/wp-content/uploads/2011/08/la-jungla-de-cristal-pelicula.jpg</thumbnail>
 		<fanart>http://www.bolsamania.com/cine/wp-content/uploads/2014/09/126.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-la-jungla-de-cristal-42184/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://www.cineochentas.com/wp-content/uploads/2011/08/la-jungla-de-cristal-pelicula.jpg</thumbnail>
-<fanart>http://www.bolsamania.com/cine/wp-content/uploads/2014/09/126.jpg</fanart>
+		<fanart>http://www.bolsamania.com/cine/wp-content/uploads/2014/09/126.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Regreso al Futuro **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://image.librodearena.com/b/8/606458/regreso_al_futuro.jpg</thumbnail>
+		<fanart>http://i.blogs.es/4e44f5/regreso-futuro/650_1200.jpg</fanart>
+        ]]></listrepeat>
+<expres>regreso:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://image.librodearena.com/b/8/606458/regreso_al_futuro.jpg</thumbnail>
+		<thumbnail>http://image.librodearena.com/b/8/606458/regreso_al_futuro.jpg</thumbnail>
 		<fanart>http://i.blogs.es/4e44f5/regreso-futuro/650_1200.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/trilogia-regreso-al-futuro-42182/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://image.librodearena.com/b/8/606458/regreso_al_futuro.jpg</thumbnail>
-<fanart>http://i.blogs.es/4e44f5/regreso-futuro/650_1200.jpg</fanart>
+		<fanart>http://i.blogs.es/4e44f5/regreso-futuro/650_1200.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La Momia **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://peliculas-decine.com/files/uploads/1759.jpg</thumbnail>
+		<fanart>http://www.mubis.es/media/users/3724/27707/que-pelicula-de-la-saga-la-momia-te-gusta-mas-original.jpg</fanart>
+        ]]></listrepeat>
+<expres>momia:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://peliculas-decine.com/files/uploads/1759.jpg</thumbnail>
+		<thumbnail>http://peliculas-decine.com/files/uploads/1759.jpg</thumbnail>
 		<fanart>http://www.mubis.es/media/users/3724/27707/que-pelicula-de-la-saga-la-momia-te-gusta-mas-original.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-la-momia-42108/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://peliculas-decine.com/files/uploads/1759.jpg</thumbnail>
-<fanart>http://www.mubis.es/media/users/3724/27707/que-pelicula-de-la-saga-la-momia-te-gusta-mas-original.jpg</fanart>
+		<fanart>http://www.mubis.es/media/users/3724/27707/que-pelicula-de-la-saga-la-momia-te-gusta-mas-original.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Indiana Jones **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://d3c8kntzevhldx.cloudfront.net/packshots/w94981_l.jpg</thumbnail>
+		<fanart>http://static.tvtropes.org/pmwiki/pub/images/indy-pinball-adventure-backglass_561.jpg</fanart>
+        ]]></listrepeat>
+<expres>indi:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://d3c8kntzevhldx.cloudfront.net/packshots/w94981_l.jpg</thumbnail>
+		<thumbnail>http://d3c8kntzevhldx.cloudfront.net/packshots/w94981_l.jpg</thumbnail>
 		<fanart>http://static.tvtropes.org/pmwiki/pub/images/indy-pinball-adventure-backglass_561.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-indiana-jones-41961/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://d3c8kntzevhldx.cloudfront.net/packshots/w94981_l.jpg</thumbnail>
-<fanart>http://static.tvtropes.org/pmwiki/pub/images/indy-pinball-adventure-backglass_561.jpg</fanart>
+		<fanart>http://static.tvtropes.org/pmwiki/pub/images/indy-pinball-adventure-backglass_561.jpg</fanart>
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Señor de los Anillos  **</title>
-<link>$doregex[makelist]</link>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Señor de los Anillos **</title>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://www.reypelis.com/wp-content/uploads/2014/12/el-se%C3%B1or-de-los-anillos-1.jpg</thumbnail>
+		<fanart>http://fotos.subefotos.com/7d84ba0999850d1bc7cabb6855ffae2co.jpg</fanart>
+        ]]></listrepeat>
+<expres>anillo:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://www.reypelis.com/wp-content/uploads/2014/12/el-se%C3%B1or-de-los-anillos-1.jpg</thumbnail>
+		<thumbnail>http://www.reypelis.com/wp-content/uploads/2014/12/el-se%C3%B1or-de-los-anillos-1.jpg</thumbnail>
 		<fanart>http://fotos.subefotos.com/7d84ba0999850d1bc7cabb6855ffae2co.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-el-senor-de-los-anillos-v-extendida-41964/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://www.reypelis.com/wp-content/uploads/2014/12/el-se%C3%B1or-de-los-anillos-1.jpg</thumbnail>
-<fanart>http://fotos.subefotos.com/7d84ba0999850d1bc7cabb6855ffae2co.jpg</fanart>
+		<fanart>http://fotos.subefotos.com/7d84ba0999850d1bc7cabb6855ffae2co.jpg</fanart>
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Star Trek  **</title>
-<link>$doregex[makelist]</link>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Star Trek **</title>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://abcblogs.abc.es/mon-suarez/files/2013/06/star_trek-film.jpg</thumbnail>
+		<fanart>http://img.microsiervos.com/spock-startrek-tos.jpg</fanart>
+        ]]></listrepeat>
+<expres>trek:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://abcblogs.abc.es/mon-suarez/files/2013/06/star_trek-film.jpg</thumbnail>
+		<thumbnail>http://abcblogs.abc.es/mon-suarez/files/2013/06/star_trek-film.jpg</thumbnail>
 		<fanart>http://img.microsiervos.com/spock-startrek-tos.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-star-trek-39908/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://abcblogs.abc.es/mon-suarez/files/2013/06/star_trek-film.jpg</thumbnail>
-<fanart>http://img.microsiervos.com/spock-startrek-tos.jpg</fanart>
+		<fanart>http://img.microsiervos.com/spock-startrek-tos.jpg</fanart>
 </item>
 
 <item>
@@ -1291,192 +2371,408 @@
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Dune **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>https://upload.wikimedia.org/wikipedia/en/3/3b/Dune-CardGameCover.jpg</thumbnail>
+		<fanart>https://kbwheeler.files.wordpress.com/2009/03/dune-0001.jpg</fanart>
+        ]]></listrepeat>
+<expres>dune:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>https://upload.wikimedia.org/wikipedia/en/3/3b/Dune-CardGameCover.jpg</thumbnail>
+		<thumbnail>https://upload.wikimedia.org/wikipedia/en/3/3b/Dune-CardGameCover.jpg</thumbnail>
 		<fanart>https://kbwheeler.files.wordpress.com/2009/03/dune-0001.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-dune-68108/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/3/3b/Dune-CardGameCover.jpg</thumbnail>
-<fanart>https://kbwheeler.files.wordpress.com/2009/03/dune-0001.jpg</fanart>
+		<fanart>https://kbwheeler.files.wordpress.com/2009/03/dune-0001.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** El Planeta de los Simios **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://hispatube.com/images/contenidos/pelis/batalla-por-el-planeta-de-los-simios.jpg</thumbnail>
+		<fanart>http://images.eldiario.es/cultura/cine/Cuantas-peliculas-Planeta-simios-cree_EDIIMA20140717_0237_5.jpg</fanart>
+        ]]></listrepeat>
+<expres>simio:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://hispatube.com/images/contenidos/pelis/batalla-por-el-planeta-de-los-simios.jpg</thumbnail>
+		<thumbnail>http://hispatube.com/images/contenidos/pelis/batalla-por-el-planeta-de-los-simios.jpg</thumbnail>
 		<fanart>http://images.eldiario.es/cultura/cine/Cuantas-peliculas-Planeta-simios-cree_EDIIMA20140717_0237_5.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-el-planeta-de-los-simios-68107/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://hispatube.com/images/contenidos/pelis/batalla-por-el-planeta-de-los-simios.jpg</thumbnail>
-<fanart>http://images.eldiario.es/cultura/cine/Cuantas-peliculas-Planeta-simios-cree_EDIIMA20140717_0237_5.jpg</fanart>
+		<fanart>http://images.eldiario.es/cultura/cine/Cuantas-peliculas-Planeta-simios-cree_EDIIMA20140717_0237_5.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Superdetective en Hollywood **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://s28.postimg.org/dvhrweme5/Beverly_Hills_Cop_saga.jpg</thumbnail>
+		<fanart>http://www.antena3.com/clipping/2016/06/15/00045/31.jpg</fanart>
+        ]]></listrepeat>
+<expres>holly:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://s28.postimg.org/dvhrweme5/Beverly_Hills_Cop_saga.jpg</thumbnail>
+		<thumbnail>http://s28.postimg.org/dvhrweme5/Beverly_Hills_Cop_saga.jpg</thumbnail>
 		<fanart>http://www.antena3.com/clipping/2016/06/15/00045/31.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/trilogia-superdetective-en-hollywood-66248/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://s28.postimg.org/dvhrweme5/Beverly_Hills_Cop_saga.jpg</thumbnail>
-<fanart>http://www.antena3.com/clipping/2016/06/15/00045/31.jpg</fanart>
+		<fanart>http://www.antena3.com/clipping/2016/06/15/00045/31.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Harry el Sucio **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://a4.mzstatic.com/eu/r30/Video/v4/08/c8/e2/08c8e2e3-2ba5-955b-e044-6efc44db2850/poster227x227.jpeg</thumbnail>
+		<fanart>http://www.ojocritico.com/wp-content/uploads/2014/01/harryvideo0.jpg</fanart>
+        ]]></listrepeat>
+<expres>harry:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://a4.mzstatic.com/eu/r30/Video/v4/08/c8/e2/08c8e2e3-2ba5-955b-e044-6efc44db2850/poster227x227.jpeg</thumbnail>
+		<thumbnail>http://a4.mzstatic.com/eu/r30/Video/v4/08/c8/e2/08c8e2e3-2ba5-955b-e044-6efc44db2850/poster227x227.jpeg</thumbnail>
 		<fanart>http://www.ojocritico.com/wp-content/uploads/2014/01/harryvideo0.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-harry-el-sucio-64776/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://a4.mzstatic.com/eu/r30/Video/v4/08/c8/e2/08c8e2e3-2ba5-955b-e044-6efc44db2850/poster227x227.jpeg</thumbnail>
-<fanart>http://www.ojocritico.com/wp-content/uploads/2014/01/harryvideo0.jpg</fanart>
+		<fanart>http://www.ojocritico.com/wp-content/uploads/2014/01/harryvideo0.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Bourne **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://4.bp.blogspot.com/_-rSHhL0r2KE/S91PwE8EqYI/AAAAAAAABKU/0MEfF_Boyj4/s400/Trilogia+Bourne.png</thumbnail>
+		<fanart>http://cineadictos.es/wp-content/uploads/jasonbourneyouknowhisname.jpg</fanart>
+        ]]></listrepeat>
+<expres>Bourne:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://4.bp.blogspot.com/_-rSHhL0r2KE/S91PwE8EqYI/AAAAAAAABKU/0MEfF_Boyj4/s400/Trilogia+Bourne.png</thumbnail>
+		<thumbnail>http://4.bp.blogspot.com/_-rSHhL0r2KE/S91PwE8EqYI/AAAAAAAABKU/0MEfF_Boyj4/s400/Trilogia+Bourne.png</thumbnail>
 		<fanart>http://cineadictos.es/wp-content/uploads/jasonbourneyouknowhisname.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-de-bourne-64775/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://4.bp.blogspot.com/_-rSHhL0r2KE/S91PwE8EqYI/AAAAAAAABKU/0MEfF_Boyj4/s400/Trilogia+Bourne.png</thumbnail>
-<fanart>http://cineadictos.es/wp-content/uploads/jasonbourneyouknowhisname.jpg</fanart>
+		<fanart>http://cineadictos.es/wp-content/uploads/jasonbourneyouknowhisname.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Arma Letal **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://www.mundodescargas.com/portada/2011/12/28/oferta_saga_arma_letal_en_blu_ray/imagenes/demo.jpg</thumbnail>
+		<fanart>http://www.ecartelera.com/images/noticias/fotos/31300/31304/1.jpg</fanart>
+        ]]></listrepeat>
+<expres>arma:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://www.mundodescargas.com/portada/2011/12/28/oferta_saga_arma_letal_en_blu_ray/imagenes/demo.jpg</thumbnail>
+		<thumbnail>http://www.mundodescargas.com/portada/2011/12/28/oferta_saga_arma_letal_en_blu_ray/imagenes/demo.jpg</thumbnail>
 		<fanart>http://www.ecartelera.com/images/noticias/fotos/31300/31304/1.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Koba1994/saga-arma-letal-64773/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://www.mundodescargas.com/portada/2011/12/28/oferta_saga_arma_letal_en_blu_ray/imagenes/demo.jpg</thumbnail>
-<fanart>http://www.ecartelera.com/images/noticias/fotos/31300/31304/1.jpg</fanart>
+		<fanart>http://www.ecartelera.com/images/noticias/fotos/31300/31304/1.jpg</fanart>
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Saga Star Wars **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Star Wars **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1513,7 +2809,7 @@
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Saga Rocky **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Rocky **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1550,7 +2846,7 @@
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Saga Los juegos del hambre **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Los juegos del hambre **</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -1625,64 +2921,136 @@
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Jackie Chan **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://cdn.20m.es/img2/recortes/2012/12/18/88827-351-550.jpg</thumbnail>
+		<fanart>http://www.labutaca.net/noticias/wp-content/uploads/2012/12/jackie-chan-confirma-mercenarios-3.jpg</fanart>
+        ]]></listrepeat>
+<expres>chan:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://cdn.20m.es/img2/recortes/2012/12/18/88827-351-550.jpg</thumbnail>
+		<thumbnail>http://cdn.20m.es/img2/recortes/2012/12/18/88827-351-550.jpg</thumbnail>
 		<fanart>http://www.labutaca.net/noticias/wp-content/uploads/2012/12/jackie-chan-confirma-mercenarios-3.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/slek/jackie-58128/gallery,1,2</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://cdn.20m.es/img2/recortes/2012/12/18/88827-351-550.jpg</thumbnail>
-<fanart>http://www.labutaca.net/noticias/wp-content/uploads/2012/12/jackie-chan-confirma-mercenarios-3.jpg</fanart>
+		<fanart>http://www.labutaca.net/noticias/wp-content/uploads/2012/12/jackie-chan-confirma-mercenarios-3.jpg</fanart>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Los Mercenarios **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://pics.filmaffinity.com/the_expendables-597606855-large.jpg</thumbnail>
+		<fanart>http://www.fondoswiki.com/Uploads/fondoswiki.com/ImagenesGrandes/wallpapers-de-la-pelicula-los-mercenarios-2.jpg</fanart>
+        ]]></listrepeat>
+<expres>merce:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://pics.filmaffinity.com/the_expendables-597606855-large.jpg</thumbnail>
+		<thumbnail>http://pics.filmaffinity.com/the_expendables-597606855-large.jpg</thumbnail>
 		<fanart>http://www.fondoswiki.com/Uploads/fondoswiki.com/ImagenesGrandes/wallpapers-de-la-pelicula-los-mercenarios-2.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Txarly/los-mercenarios-saga-65152/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://pics.filmaffinity.com/the_expendables-597606855-large.jpg</thumbnail>
-<fanart>http://www.fondoswiki.com/Uploads/fondoswiki.com/ImagenesGrandes/wallpapers-de-la-pelicula-los-mercenarios-2.jpg</fanart>
+		<fanart>http://www.fondoswiki.com/Uploads/fondoswiki.com/ImagenesGrandes/wallpapers-de-la-pelicula-los-mercenarios-2.jpg</fanart>
 </item>
 
 <item>
@@ -1725,34 +3093,70 @@
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Karate Kid **</title>
-<link>$doregex[makelist]</link>
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist2.param1][/COLOR] **</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://estaticos1.milanuncios.com/fp/1150/37/115037772_1.jpg</thumbnail>
+		<fanart>https://frikadasmil.files.wordpress.com/2016/02/karate-kid.jpg</fanart>
+        ]]></listrepeat>
+<expres>kid:"(.*?)" src="(.*?)"</expres>
+<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/Copiapopnew/sagas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow] [makelist.param2][/COLOR] **</title>
+        <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime][makelist.param2][/COLOR] **</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>http://estaticos1.milanuncios.com/fp/1150/37/115037772_1.jpg</thumbnail>
+		<thumbnail>http://estaticos1.milanuncios.com/fp/1150/37/115037772_1.jpg</thumbnail>
 		<fanart>https://frikadasmil.files.wordpress.com/2016/02/karate-kid.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[class="name".*href="\/([^"]*)".+?>(.*?)<[\w\W\s]*?action="\/([^"]*)".+?value="(.*?)".*Token.+?value="(.*?)"]]></expres>
-<page>http://copiapop.com/Tercero/karate-kid-1-2-3-46261/gallery,1,1</page>
+        ]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://copiapop.com/[makelist.param3]</page>
-<rawpost>fileId=[makelist.param4]&__RequestVerificationToken=[makelist.param5]</rawpost>
-<referer>http://copiapop.com/[makelist.param1]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://copiapop.com/' 
+ url='http://copiapop.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'amistad' , 'Password' : 'asegurada'}
+ nr1 = requests.post('http://copiapop.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://copiapop.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://estaticos1.milanuncios.com/fp/1150/37/115037772_1.jpg</thumbnail>
-<fanart>https://frikadasmil.files.wordpress.com/2016/02/karate-kid.jpg</fanart>
-</item>
+		<fanart>https://frikadasmil.files.wordpress.com/2016/02/karate-kid.jpg</fanart>
+</item>		
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Tim burton **</title>
