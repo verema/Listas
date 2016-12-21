@@ -296,7 +296,7 @@
 <item>
 <title>[COLOR lime]Now Music Catoal[COLOR blue][I] Addon Necesario[/I][/COLOR]</title>
 <link>http://Ignoreme</link>
-<jsonrpc>plugin.video.now_music</jsonrpc>
+<jsonrpc>plugin://plugin.video.now_music</jsonrpc>
 <thumbnail>http://i.imgur.com/xg3tEaP.png</thumbnail>
 <fanart>http://i.imgur.com/ZZBUke1.jpg</fanart>
 </item>
