@@ -30,6 +30,14 @@
 -->
 
 <item>
+<title>[COLOR lime]Just For Laughs[/COLOR][COLOR blue][I] Addon Necesario[/I][/COLOR]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://plugin.video.JustForLaughs/</jsonrpc>
+<thumbnail>http://i.imgur.com/rRfvas1.png</thumbnail>
+<fanart>http://i.imgur.com/IGa8aeb.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR lime]IPTV La Otra Televisión[/COLOR]</title>
 <link>http://Ignoreme</link>
 <thumbnail>http://i.imgur.com/9hmmHaq.png</thumbnail>
