@@ -2,24 +2,15 @@
 
 
 <channels>
-<channels_info> 
-<title>Mis Peliculas De Hoy</title>
-<genre>Peliculas</genre>
-<description>La mejores películas de hoy</description>
-<thumbnail>http://i.imgur.com/HufvHuO.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<date>2016</date>
-<climeits>© Catoal</climeits>
-</channels_info>
 
 <channel>
-<name>[COLOR lime]La Butaca[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **[COLOR lime] La Butaca[/COLOR] **</name>
 <thumbnail>http://i.imgur.com/wlwYs4y.jpg</thumbnail>
 <fanart>http://butacaancha.com/wp-content/uploads/2013/06/apolo.jpg</fanart> 
 <items>
 
 <item>
-<title>[COLOR lime]La Butaca[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **[COLOR lime] La Butaca[/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#098;&#117;&#116;&#097;&#099;&#097;&#050;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://i.imgur.com/wlwYs4y.jpg</thumbnail>
@@ -211,7 +202,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<channel>
+<hannel>
 <name>[COLOR lime]Divxatope (Con QUASAR)[/COLOR]</name>
 <fanart>http://mispiclinks.esy.es/Archivos/DivX%20a%20tope.png</fanart>
 <thumbnail>http://i.imgur.com/kH6myee.png</thumbnail>
@@ -489,7 +480,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<channel>
+<hannel>
 <name>[COLOR lime]EliteTorrent (Con QUASAR)[/COLOR]</name>
 <fanart>http://todotalavera.com/img/blog/laboratoriofriki5_1.jpg</fanart>
 <thumbnail>http://i.imgur.com/Z0WdCyE.png</thumbnail> 
@@ -506,13 +497,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 <channel>
-<name>[COLOR lime]Pelismag (Con QUASAR)[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Pelismag (Con QUASAR)[/COLOR] **</name>
 <Thumbnail>http://i.imgur.com/kza9DRi.png</thumbnail>
 <fanart>http://image.tmdb.org/t/p/w1280/dP3bxMPEDc9eNN2nH9P5YyhS27p.jpg</fanart>
 <items>
 
 <item>
-<title>[COLOR lime]Pelismag[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Pelismag[/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#112;&#101;&#108;&#105;&#115;&#109;&#097;&#103;&#046;&#120;&#109;&#108;</externallink>
 <Thumbnail>http://i.imgur.com/kza9DRi.png</thumbnail>
@@ -522,13 +513,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 <channel>
-<name>[COLOR lime]HDfull[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]HDfull[/COLOR] **</name>
 <Thumbnail>http://i.imgur.com/PIQyl6k.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <items>
 
 <item>
-<title>[COLOR lime]HDfull[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]HDfull[/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#072;&#068;&#070;&#117;&#108;&#108;&#046;&#120;&#109;&#108;</externallink>
 <Thumbnail>http://i.imgur.com/PIQyl6k.jpg</thumbnail>
@@ -570,13 +561,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 <channel>
-<name>[COLOR yellow]Audio Latino [I]M3U[/I] [/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow]Audio Latino [I]M3U[/I] [/COLOR] **</name>
 <Thumbnail>http://i.imgur.com/8QppWFF.jpg</thumbnail>
 <fanart>http://i.imgur.com/8QppWFF.jpg</fanart>
 <items>
 
 <item>
-<title>[COLOR yellow]Audio Latino [I]M3U[/I] [/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow]Audio Latino [I]M3U[/I] [/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#080;&#101;&#108;&#046;&#109;&#051;&#117;</externallink>
 <Thumbnail>http://i.imgur.com/8QppWFF.jpg</thumbnail>
@@ -586,13 +577,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </channel>
 
 <channel>
-<name>[COLOR lime]Mis Sagas[/COLOR]</name>
+<name>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Mis Sagas[/COLOR] **</name>
 <thumbnail>http://i.imgur.com/ZB4gIOA.jpg</thumbnail>
 <fanart>http://i.imgur.com/ZB4gIOA.jpg</fanart> 
 <items>
 
 <item>
-<title>[COLOR lime]Mis Sagas[/COLOR]</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Mis Sagas[/COLOR] **</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#083;&#097;&#103;&#097;&#115;&#046;&#120;&#109;&#108;</externallink>
 <thumbnail>http://i.imgur.com/ZB4gIOA.jpg</thumbnail>
