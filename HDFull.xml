@@ -95,7 +95,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>flv\|(.*?)\|file</expres>
 <page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
 <referer>http://streamin.to</referer>
-</regex>>
+</regex>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 

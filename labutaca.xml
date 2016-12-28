@@ -26,7 +26,7 @@
 <fanart>http://butacaancha.com/wp-content/uploads/2013/06/apolo.jpg</fanart> 
 </item>
 
-<item>
+<tem>
 <title>[COLOR lime]La Butaca de Ivan Friky[/COLOR][B] N U E V O[/B]</title>
 <link>http://Ignoreme</link>
 <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#080;&#101;&#108;&#105;&#099;&#117;&#108;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#105;&#118;&#097;&#110;&#102;&#114;&#105;&#107;&#121;&#046;&#120;&#109;&#108;</externallink>
@@ -133,6 +133,7 @@
 <fanart>https://1.bp.blogspot.com/-6QQ_fPhaDaE/V4gkTO7rbII/AAAAAAAAIvo/0Z5_N5E1RoscFN5ajNcAuZz-uE4FuqW9gCEw/s1600/fotografia-estrenos-del-2016_541067.jpg</fanart>
 </item>
 </items>
+
 </channel>
 
 <channel>
@@ -536,7 +537,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<channel>
+<hannel>
 <name>[COLOR lime]Yaske[/COLOR]</name>
 <thumbnail>http://i.imgur.com/COXfQ4A.jpg</thumbnail>
 <fanart>http://s9.postimg.org/ujxykncfj/captura.jpg</fanart> 
@@ -552,7 +553,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </items>
 </channel>
 
-<channel>
+<hannel>
 <name>[COLOR lime]InkaPelis.com[/COLOR]</name>
 <thumbnail>http://i.imgur.com/sPBjEdl.jpg</thumbnail>
 <fanart>https://s3.amazonaws.com/woothumbs/inkapelis.com.png</fanart> 
@@ -599,4 +600,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 </items>
 </channel>
+
+
 </channels>
