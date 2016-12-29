@@ -297,6 +297,29 @@ def GetLSProData(page_data,Cookie_Jar,m, param=''):
 <items>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow]AGENDA[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[COLOR skyblue][makelist.param1][/COLOR] | [COLOR yellow][makelist.param2][/COLOR] | [COLOR red][makelist.param3][/COLOR] | Canal:  [COLOR lime][makelist.param4][/COLOR]</title>
+    <link>plugin://program.plexus/?url=$doregex[getace]&amp;mode=1&amp;name=[makelist.param1]</link>
+    <thumbnail>http://arenavision.in/sites/default/files/logo_av2015.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[auto-style3".+?>(.*?)<.*\s.*\s.*>(.*?)<.*\s.*\s.*>(.*?)<[\w\W\s]*?317px">(\d+)]]></expres>
+<page>http://arenavision.in/schedule</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getace</name>
+<expres>[",'](acestream[^"']+)</expres>
+<page>http://arenavision.in/av[makelist.param4]</page>
+<referer>http://arenavision.in/schedule</referer>
+<cookieJar></cookieJar>
+<thumbnail>http://arenavision.in/sites/default/files/logo_av2015.png</thumbnail>
+</item>
+
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR yellow]AGENDA Solo Información[/COLOR] **</title>
 <link>$doregex[makelist]</link>
 <regex>
