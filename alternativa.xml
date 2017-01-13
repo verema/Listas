@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>Onda Cádiz</title>         
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=OndaCadiz&amp;url=http://live.adc.stream.flumotion.com/adc/live.flv.m3u?</link>
-<thumbnail>http://tv.ocadizdigital.es/sites/all/themes/ltqq/images/cabecera-oc/icono-home.png</thumbnail>
-<agent></agent>
-<cookieJar></cookieJar>
-</item>
-
-<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Onda Cádiz **</title>
 <link>$doregex[m3u8]</link>
 <regex><name>getLink</name>
