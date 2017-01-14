@@ -19,6 +19,13 @@
 </item>
 
 <item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Onda Cádiz ** [I] Señal Youtube[/I]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=GHdGBSkBNPs</link>
+<thumbnail>http://tv.ocadizdigital.es/sites/all/themes/ltqq/images/cabecera-oc/icono-home.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TeleBilbao **</title>
 <link>http://cls.todostreaming.eu/telebilbao/livestream/chunklist.m3u8</link>
 <thumbnail>http://www.telebilbao.es/images/boina-u496-fr.png</thumbnail>
