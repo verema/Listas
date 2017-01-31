@@ -9,128 +9,7 @@
 </item>
 
 <item>
-<title>[COLOR deepskyblue]Antena 3 [/COLOR]</title>
-<link>http://cdn3.elitegol.xyz:8081/verdirectotv/5/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]La Cuatro[/COLOR]</title>
-<link>http://cdn2.elitegol.xyz:8081/verdirectotv/2/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]Telecinco[/COLOR]</title>
-<link>http://cdn1.elitegol.xyz:8081/verdirectotv/1/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]La Sexta[/COLOR]</title>
-<link>http://cdn3.elitegol.xyz:8081/verdirectotv/6/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]Divinity[/COLOR]</title>
-<link>http://cdn1.elitegol.xyz:8081/verdirectotv/3/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]AtresSeries[/COLOR]</title>
-<link>http://cdn3.elitegol.xyz:8081/verdirectotv/7/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]Calle13[/COLOR]</title>
-<link>http://cdn2.elitegol.xyz:8081/verliga/18/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]syfy[/COLOR]</title>
-<link>http://cdn3.elitegol.xyz:8081/verliga/19/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]AMC[/COLOR]</title>
-<link>http://cdn3.elitegol.xyz:8081/verliga/26/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]NatGeo Wild[/COLOR]</title>
-<link>http://cdn2.elitegol.xyz:8081/verliga/13/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]Caza y Pezca[/COLOR]</title>
-<link>http://cdn3.elitegol.xyz:8081/verliga/15/playlist.m3u8</link>
-</item>
-
-<item>
-<title>[COLOR deepskyblue]Cocina[/COLOR]</title>
-<link>http://cdn2.elitegol.xyz:8081/verliga/8/playlist.m3u8</link>
-</item>
-
-<!--
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IPTV Con TDT España **</title>
-<link>$doregex[makelist2]</link>
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime] [makelist2.param2][/COLOR] **</title>
-	<link>na</link>
-	<externallink>[makelist2.param1]</externallink>
-	<thumbnail>[makelist2.param3]</thumbnail>
-]]></listrepeat>
-<expres>URL:(http.*?)\nNombre:(.*?)\nLogo:-(http.*?)--</expres>
-<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#103;&#114;&#117;&#112;&#111;/&#109;&#097;&#115;&#116;&#101;&#114;/&#108;&#105;&#115;&#116;&#097;&#115;&#099;&#097;&#109;&#112;&#097;&#114;&#116;&#105;&#100;&#097;&#115;&#046;&#116;&#120;&#116;</page>
-</regex>
-<thumbnail>http://i.imgur.com/9hmmHaq.png</thumbnail>
-<fanart>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Philips_PM5544.svg/300px-Philips_PM5544.svg.png</fanart>
-</item>
-
-<tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IPTV Con TDT España **</title>
-<link>$doregex[makelist2]</link>
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR] **</title>
- <link>$doregex[makelist]</link>
- <thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
- <fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
- ]]></listrepeat>
-<expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
-<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
-<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
-</regex>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue][makelist.param1][/COLOR] **</title>
- <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR lightblue]Catoal [/COLOR] [makelist.param1]</link>
- <thumbnail></thumbnail>
- ]]></listrepeat>
-<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
-<page>[makelist2.param2]</page>
-<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
-</regex>
-<thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
-<fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
-</item> 
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Emitiendo **</title>
-<link>http://Ignoreme</link>
-<thumbnail>http://1.bp.blogspot.com/-zuHhRR4oXxA/TlqwYUhrmPI/AAAAAAAAAF0/IdH71AKySSk/s1600/MOVISTAR-logo+terformado.jpg</thumbnail>
-<fanart></fanart>
-<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#103;&#114;&#117;&#112;&#111;/&#109;&#097;&#115;&#116;&#101;&#114;/&#110;&#097;&#099;&#105;&#111;&#110;&#097;&#108;&#046;&#120;&#109;&#108;</externallink>	
-</item> 
--->
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Atreseries **</title>       
-<ink>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Atreseries&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2FA3Series_11zwyox%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Atreseries **</title>    
 <link>http://a3live-lh.akamaihd.net/i/a3shds/geoa3series_1@122775/index_4_av-b.m3u8</link>
 <thumbnail>http://i.imgur.com/mG20hej.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
@@ -145,9 +24,9 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Ten **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Ten&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Ften_azj987s%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
+<link></link>
 <thumbnail>http://i.imgur.com/7dEfWxq.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 m Safari/537.36</agent>
@@ -156,33 +35,23 @@
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Be Mad **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Be Mad&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fbemad_azhj93f%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
+<link>http://www.apps4two.com/apps/tvonline/rm2access.php?o=bemad</link>
 <thumbnail>http://i.imgur.com/JYrJj8Q.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 m Safari/537.36</agent>
-<cookieJar></cookieJar>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La 1 **</title>
 <link>http://iphonelive.rtve.es/LA1_LV3_IPH/LA1_LV3_IPH.m3u8</link>
-<link>rtmp://31.220.40.62/pull/ playpath=launotve?keys=luX2hnRlqDtgpci1G__Jbg&keyt=1471554899 swfUrl=http://leton.tv/jwplayer.flash.swf live=1 pageUrl=http://leton.tv/player.php?streampage=launotve&width=600&height=450#</link>
+<link>http://rtve-live.hds.adaptive.level3.net/hls-live/rtvegl7-la1lv3aomgl7/_definst_/live.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/TVE1.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La 1 **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Gol TV&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Ftve1_b0bqgib%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/TVE1.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 m Safari/537.36</agent>
-<cookieJar></cookieJar>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La 2 **</title>
 <link>http://hlslive.rtve.es:80/LA2_LV3_IPH/bitrate_1.m3u8</link>
+<link>http://rtve-live.hds.adaptive.level3.net/hls-live/rtvegl0-la2lv3aomgl0/_definst_/live.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/TVE2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
@@ -196,51 +65,34 @@
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Cuatro **</title>
-<link>rtmp://31.220.40.62/privatestream/ playpath=cuatroa?keys=onl1EKE-hWifcle6h5BHBw&keyt=1460649018 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
+<link>http://www.apps4two.com/apps/tvonline/rm2access.php?o=cuatro</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalcuatro.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Cuatro **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Cuatro&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fcuatro_xrf2a3%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/canalcuatro.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 m Safari/537.36</agent>
-<cookieJar></cookieJar>
 </item>
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Telecinco **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Telecinco&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Ftelecinco55_ao7nqiq%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
+<link>http://www.apps4two.com/apps/tvonline/rm2access.php?o=telecinco</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 m Safari/537.36</agent>
-<cookieJar></cookieJar>
 </item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Telecinco **</title>
-<link>rtmp://31.220.0.187/privatestream/ playpath=addfee?keys=HONp5GSPraiDzS58epPiNw&keyt=1466436643 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/tele5.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item> 
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Mega **</title>
 <link>http://a3live-lh.akamaihd.net/i/mghds/geomega_1@328914/master.m3u8</link>
+<link>http://a3live-lh.akamaihd.net/i/geomega_1@328914/index_1_av-p.m3u8?sd=10&rebase=on</link>
 <thumbnail>http://i.imgur.com/Rsysfc2.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Fox **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=7hgj3pw3pvieqh9 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/w4GkY2U.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Fox **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Fox&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Ffox_alwk17k%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://i.imgur.com/w4GkY2U.jpg</thumbnail>
@@ -249,14 +101,14 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Fox Live **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=o3m2hhbrqqux0ks swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/0dfbgI7.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Fox Live **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Fox Live&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Ffoxlive_au8xxzz%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://i.imgur.com/0dfbgI7.jpg</thumbnail>
@@ -265,14 +117,14 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** AXN **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=bi3y8fxntkbf1ss swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/dhPvhlb.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** AXN **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=AXN&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Faxn_alwla94%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://i.imgur.com/dhPvhlb.jpg</thumbnail>
@@ -281,14 +133,14 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TNT **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=nh4259fy0kikqbk swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
 <thumbnail>http://i.imgur.com/1yGfSgo.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TNT **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=TNT&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Ftnt_alwl3qm%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://i.imgur.com/1yGfSgo.jpg</thumbnail>
@@ -300,18 +152,9 @@
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** NEOX **</title>
 <link>http://a3live-lh.akamaihd.net/i/nxhds/geoneox_1@35261/index_1_av-p.m3u8?sd=10&rebase=on</link>
+<link>http://a3live-lh.akamaihd.net/i/nxhls/geoneox_1@35261/index_1_av-p.m3u8?sd=10&rebase=on</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/antenaneox.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** NEOX **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=NEOX&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fneox_alwkw2n%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
-<link>http://a3live-lh.akamaihd.net/i/nxhds/geoneox_1@35261/master.m3u8</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/antenaneox.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 m Safari/537.36</agent>
-<cookieJar></cookieJar>
 </item>
 
 <item>
@@ -320,15 +163,6 @@
 <link>http://a3live-lh.akamaihd.net/i/nvhds/geonova_1@379404/master.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/Nova.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
-
-<item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Nova **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Nova&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fnova2_acolsfq%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
-<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/Nova.jpg</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 m Safari/537.36</agent>
-<cookieJar></cookieJar>
 </item>
 
 <item>
@@ -341,18 +175,19 @@
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** La Sexta **</title>
 <link>http://a3live-lh.akamaihd.net/i/lasexta_1@35272/index_1_av-p.m3u8?sd=10&rebase=on</link>
+<link>http://a3live-lh.akamaihd.net/i/lasexta_1@35272/master.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/lasexta.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Hollywood **</title> 
 <link>rtmp://89.248.169.55/iguide playpath=g14tfn5k0uso0om swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/ token=#ed%h0#w18623jsda6523lDGDvcx7</link>
 <thumbnail>http://i.imgur.com/M3QCTSt.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>	
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Hollywood **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=Hollywood&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fholliwood_bawwczi%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://i.imgur.com/M3QCTSt.jpg</thumbnail>
@@ -361,7 +196,7 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TCM **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=TCM&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Ftcm_an1qv7p%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tmc_ph.png</thumbnail>
@@ -370,7 +205,7 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** AMC **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=AMC&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Famc_aw3dyqm%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://www.lyngsat-logo.com/logo/tv/aa/amc_us.png</thumbnail>
@@ -379,7 +214,7 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SYFY **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=SYFY&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fsyfy_aw3eq7m%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/scifi_pl.png</thumbnail>
@@ -388,7 +223,7 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** CALLE 13 **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=CALLE 13&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fcalle13_aw3fo9w%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://www.lyngsat-logo.com/logo/tv/cc/calle13_universal.png</thumbnail>
@@ -397,7 +232,7 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** COMEDY CENTRAL **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=COMEDY CENTRAL&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fcamedycentral_aza0tov%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://www.lyngsat-logo.com/logo/tv/cc/comedy_central_us.png</thumbnail>
@@ -406,7 +241,7 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** AxnWhite **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=AxnWhite&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Faxnwhite_aap5cqs%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://www.lyngsat-logo.com/logo/tv/aa/axn_white_es.png</thumbnail>
@@ -415,7 +250,7 @@
 <cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** DIVINITY **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=DIVINITY&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fdiniiiii_9fil4ag%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://www.lyngsat-logo.com/logo/tv/dd/divinity_tv_es.png</thumbnail>
@@ -426,14 +261,12 @@
 
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ENERGY **</title>       
-<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=ENERGY&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Fenergy_azhls60%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
+<link>http://www.apps4two.com/apps/tvonline/rm2access.php?o=energy</link>
 <thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/energy_tv_es.png</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 m Safari/537.36</agent>
-<cookieJar></cookieJar>
 </item>
 
-<item>
+<tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** FDF **</title>       
 <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;name=FDF&amp;url=http%3A%2F%2Fcdn.sitenow.me%2Flive%2Ffdfhd_xrewtt%2Fplaylist.m3u8%7CReferer%3Dhttp%253A%252F%252Fwww.playerapp1.pw%252Fembed.php%253Fc%253D137%2526width%253D800%2526height%253D450%2526autostart%253Dtrue%2526tk1%253DeGJfqG2WVADZwTZPB1eP9sWcaXeKlFRPCu7BYA8DIcoRR5SPAEWNeMOIr2nSS2Z7ObLF6XZQeBzC3P4ImSd%252FcA%253D%253D%2526tk2%253DOJpyXJSRq6nyaAQv21u5SwaQqMvKVFIJay8ERyN3qgU%253D%2526tk3%253DBo1u1iA58lGNJCIdMCGoAVBihi1zxPsxFUVUZ0GSq3M%253D%26User-Agent%3DMozilla%252F5.0%2520(Windows%2520NT%25206.1%253B%2520WOW64)%2520AppleWebKit%252F537.36%2520(KHTML%252C%2520like%2520Gecko)%2520Chrome%252F54.0.2840.99 m%2520Safari%252F537.36</link>
 <thumbnail>http://www.lyngsat-logo.com/logo/tv/ff/factoria_de_ficcion.png</thumbnail>
@@ -445,6 +278,7 @@
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 24 H **</title>
 <link>http://iphonelive.rtve.es/24H_LV3_IPH/bitrate_1.m3u8</link>
+<link>http://rtve-live.hds.adaptive.level3.net/hls-live/rtvegl8-24hlv3aomgl8/_definst_/live.m3u8</link>
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/24h-tve.jpg</thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart> 
 </item>
@@ -492,18 +326,17 @@
 </item>
 
 <item>
-			<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 13 TV **</title>
-			<thumbnail>http://upload.wikimedia.org/wikipedia/fr/9/9c/13tv_logo_2012.png</thumbnail>
-			<link>http://streaming13tv.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/mobile/playlist.m3u8?idLive=021&referer=TkQ=</link>
-			
-		</item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 13 TV **</title>
+<thumbnail>http://upload.wikimedia.org/wikipedia/fr/9/9c/13tv_logo_2012.png</thumbnail>
+<link>http://streaming13tv.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/mobile/playlist.m3u8?idLive=021&referer=TkQ=</link>
+</item>
 	
-	<item>
-	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
-	<link></link>
-	<thumbnail></thumbnail> 
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Real Madrid TV **</title>
+<link>http://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/master.m3u8</link>
+<thumbnail></thumbnail> 
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>	
-	</item>
+</item>
 	
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IB3 **</title>
@@ -547,31 +380,29 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>   
 </item>
 	
-	<item>
-	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
-	<link></link>
-	<thumbnail></thumbnail>
-	</item>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Paramount Channel **</title>
+<link>http://paramount.live.flumotion.com/live/chunklist.m3u8</link>
+<thumbnail></thumbnail>
+</item>
 	
-	<item>
-	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
-	<link></link>
-	<thumbnail></thumbnail>
-	</item>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Disney Channel **</title>
+<link>http://cdnapi.kaltura.com/p/1068292/sp/106829200/playManifest/entryId/1_d8lnsqu0/format/applehttp/protocol/http/uiConfId/27176231/a.m3u8?referrer=aHR0cDovL2Rpc25leWNoYW5uZWwuZXM=&playSessionId=8134da47-6b06-6113-0fde-2079fb2dcca0</link>
+<thumbnail></thumbnail>
+</item>
 
-	<item>
-	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
-	<link></link>
-	<thumbnail></thumbnail>
-	</item>
-
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Teledeporte **</title>
+<link>http://rtve-live.hds.adaptive.level3.net/hls-live/rtvegl1-tdplv3aomgl1/_definst_/live.m3u8</link>
+<thumbnail></thumbnail>
+</item>
 	
-	
-	<item>
-	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
-	<link></link>
-	<thumbnail></thumbnail>
-	</item>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TVE 60 aniversario **</title>
+<link>http://rtve-live.hds.adaptive.level3.net/hls-live/rtvegl0-irtve24lv3aomgl0/_definst_/live.m3u8</link>
+<thumbnail></thumbnail>
+</item>
 	
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ATV Andorra **</title>
@@ -580,11 +411,11 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 	
-	<item>
-	<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
-	<link></link>
-	<thumbnail>http://i739.photobucket.com/albums/xx33/catoal/barcelona_tv_large.jpg</thumbnail>
-	</item>
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** DMax **</title>
+<link>http://zba2-2-hls5-live.zahs.tv/ES_veo/master.m3u8?z32=OVZWK4S7NFSD2MJRGYZTCNJZHETG22LOOJQXIZJ5GATG2YLYOJQXIZJ5GE2TAMBGONUWOPJUMM4DAYRTGRQTSYJZGA4TEOLDMMYWMNRRGU4TEYTCGQ4TGNTEG4TGG43JMQ6TCNBZG5CTKNKFGBBUGRRTGQZTQLJTHE3TQRBYHA4UERBXIU3DQNCBEZUW42LUNFQWY4TBORST2MA</link>
+<thumbnail></thumbnail>
+</item>
 	
 <item>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Alfa TV (Spain) **</title>
@@ -599,140 +430,115 @@
 <thumbnail>http://i739.photobucket.com/albums/xx33/catoal/vivetv2003.jpg</thumbnail>
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
-      
 	
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] **  **</title>
-<link></link>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** DKiss **</title>
+<link>http://kisstvnacional.es.flash.glb.canalweb.com/kisstvnacional.es/mp4:9KISSTV.mp4/playlist.m3u8</link>
 <thumbnail></thumbnail>   
 </item>
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** CYLeon **</title>
- <link>rtmp://cdn.s10.eu.nice264.com/niceLiveServer/cyl_cyltvlivem_MB_698ext</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** CYLeon **</title>
+<link>rtmp://cdn.s10.eu.nice264.com/niceLiveServer/cyl_cyltvlivem_MB_698ext</link>
+<thumbnail></thumbnail>  
 </item>
- 
-
-
- 
-
- 
-
- 
+  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IB3 **</title>
- <link>http://ibsatiphone.ib3tv.com/iphoneliveIB3/IB3/IB3.m3u8</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IB3 **</title>
+<link>http://ibsatiphone.ib3tv.com/iphoneliveIB3/IB3/IB3.m3u8</link>
+<thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ETB **</title>
- <link>http://etbvhlsnogeo-lh.akamaihd.net/i/ETBEITBEUS_1@123113/master.m3u8</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ETB **</title>
+<link>http://etbvhlsnogeo-lh.akamaihd.net/i/ETBEITBEUS_1@123113/master.m3u8</link>
+<thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TVelche **</title>
- <link>rtmp://teledifusion.tv/teleelx/teleelxlive</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TVelche **</title>
+<link>rtmp://teledifusion.tv/teleelx/teleelxlive</link>
+<thumbnail></thumbnail>  
 </item>
- 
-
- 
+  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ZARAGOZATV **</title>
- <link>http://streaming.enetres.net/CD9843D3A4014583ACED8D757D30EAE5022/mobile/playlist.m3u8</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ZARAGOZATV **</title>
+<link>http://streaming.enetres.net/CD9843D3A4014583ACED8D757D30EAE5022/mobile/playlist.m3u8</link>
+<thumbnail></thumbnail>  
 </item>
- 
-
- 
-
- 
+  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 8TV **</title>
- <link>rtmp://91.121.143.193:1935/liverepeater/8TV/8aldia-directe</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 8TV **</title>
+<link>rtmp://91.121.143.193:1935/liverepeater/8TV/8aldia-directe</link>
+<thumbnail></thumbnail>  
 </item>
 
- <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** GIRONAtv **</title>
- <link>rtmp://tvgirona.dnssw.net/live/Icontouch</link>
- <thumbnail></thumbnail>  
-</item>
- 
-
- 
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** I+CiudadReal **</title>
- <link>rtmp://149.11.34.6/live/imastv.stream</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** GIRONAtv **</title>
+<link>rtmp://tvgirona.dnssw.net/live/Icontouch</link>
+<thumbnail></thumbnail>  
 </item>
- 
-
- 
-
+  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** HUELVACOSTA **</title>
- <link>http://cls.todostreaming.eu/azahara/lepevision/chunklist.m3u8</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** I+CiudadReal **</title>
+<link>rtmp://149.11.34.6/live/imastv.stream</link>
+<thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MELILLA **</title>
- <link>http://stream.tvmelilla.es:1935/tvmelilla/live/playlist.m3u8</link>
- <thumbnail></thumbnail>  
-</item>
- 
-
- 
-<item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SEVILLAFC **</title>
- <link>rtmp://flash0.80137-live0.dna.qbrick.com/80137-live0/sevillafc</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** HUELVACOSTA **</title>
+<link>http://cls.todostreaming.eu/azahara/lepevision/chunklist.m3u8</link>
+<thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MALAGATV **</title>
- <link>rtmp://teledifusion.tv/mijastv/mijastvlive</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MELILLA **</title>
+<link>http://stream.tvmelilla.es:1935/tvmelilla/live/playlist.m3u8</link>
+<thumbnail></thumbnail>  
+</item>
+  
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** SEVILLAFC **</title>
+<link>rtmp://flash0.80137-live0.dna.qbrick.com/80137-live0/sevillafc</link>
+<thumbnail></thumbnail>  
 </item>
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** LEVANTE **</title>
- <link>http://teledifusion.tv:1935/levantetvlive/levantetvlive/playlist.m3u8</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** MALAGATV **</title>
+<link>rtmp://teledifusion.tv/mijastv/mijastvlive</link>
+<thumbnail></thumbnail>  
 </item>
- 
- <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** OJOSSOLIDARIOS-Gran canaria **</title>
- <link>http://wm.mad.interhost.com:80/OjosSolidariosTv/playlist.m3u8</link>
- <thumbnail></thumbnail>  
-</item>
- 
-
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 25BARBASTRO **</title>
- <link>http://flash3.todostreaming.es/tvbarbastro/livestream/playlist.m3u8</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** LEVANTE **</title>
+<link>http://teledifusion.tv:1935/levantetvlive/levantetvlive/playlist.m3u8</link>
+<thumbnail></thumbnail>  
+</item>
+ 
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** OJOSSOLIDARIOS-Gran canaria **</title>
+<link>http://wm.mad.interhost.com:80/OjosSolidariosTv/playlist.m3u8</link>
+<thumbnail></thumbnail>  
+</item>
+  
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** 25BARBASTRO **</title>
+<link>http://flash3.todostreaming.es/tvbarbastro/livestream/playlist.m3u8</link>
+<thumbnail></thumbnail>  
 </item>
 
 <item> 
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ASTURIAS **</title>
- <link>rtmp://149.11.34.6:1935/live//teleasturias.stream</link>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** ASTURIAS **</title>
+<link>rtmp://149.11.34.6:1935/live//teleasturias.stream</link>
 <thumbnail></thumbnail>  
 </item> 
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TOLEDO **</title>
- <link>http://flash3.todostreaming.es/edesco/livestream/playlist.m3u8</link>
- <thumbnail></thumbnail>  
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** TOLEDO **</title>
+<link>http://flash3.todostreaming.es/edesco/livestream/playlist.m3u8</link>
+<thumbnail></thumbnail>  
 </item>
- 
-
- 
+  
 <item>
  <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** RIBERA-Valencia **</title>
  <link>http://flash3.todostreaming.es/ribera/livestream/playlist.m3u8</link>
@@ -770,10 +576,37 @@
 </item>
  
 <item>
- <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** NAVARRATV **</title>
-  <link>rtmp://antena3fms35livefs.fplive.net/antena3fms35live-live/stream-antena3_1</link>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Nasa TV - EEUU **</title>
+  <link>http://nasatv-lh.akamaihd.net/i/NASA_101@319270/master.m3u8</link>
   <thumbnail></thumbnail>  
 </item>
 
-	</items>
-	</channel>
+<item>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Ribera TV - Valencia (VC) **</title>
+  <link>http://orion.comelson.es/ribera/livestream/chunklist_w476320974.m3u8</link>
+  <thumbnail></thumbnail>  
+</item>
+
+<item>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Intereconomia - Madrid **</title>
+  <link>http://edge3.adnstream.com:81/hls/intereconomia.m3u8</link>
+  <thumbnail></thumbnail>  
+</item>
+
+<item>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Hit TV - Madrid **</title>
+  <link>http://tst.es.flash.glb.ipercast.net/tst.es-live/live/playlist_w.m3u8</link>
+  <thumbnail></thumbnail>  
+</item>
+
+<item>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** VOTV - Barcelona **</title>
+  <link>http://video-streaming.laxarxa.com:1935/ocasional5/directe/master.m3u8</link>
+  <thumbnail></thumbnail>  
+</item>
+
+<item>
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** BTV - Barcerlona  **</title>
+  <link>http://iphone-multi.barcelonatv.stream.flumotion.com/barcelonatv/iphone-multi/main.m3u8</link>
+  <thumbnail></thumbnail>  
+</item>
