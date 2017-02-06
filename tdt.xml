@@ -85,6 +85,33 @@
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** FOX HD **</title>
+<link>$doregex[getUrl2]|User-Agent=iPad</link>
+<regex>
+<name>getUrl2</name>
+<expres>source src="(.*?)"</expres>
+<page>http://tumarcador.xyz/fox</page></regex>
+
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests, re
+ rtmpUrl = re.search(r'function.*\n.*return\(\["(.*?)"\].+\s(.*?)\.join.+?getElementById\("(.*?)"', page_data)
+ tok2 = re.findall('id=' + rtmpUrl.group(3) + '>(.*?)<', page_data)[0]
+ rtmp = rtmpUrl.group(1).replace('","', '').replace('\/', '/')
+ tok1 = re.findall('var ' + rtmpUrl.group(2) + '.*?\["(.*?)"\]', page_data)[0].replace('","', '')
+ return rtmp + tok1 + tok2
+]]></expres>
+<page>http://tumarcador.xyz/fox</page>
+<referer>http://tumarcador.xyz/</referer>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/w4GkY2U.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>	
+
 <tem>
 <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** Fox **</title>
 <link>rtmp://www1.iguide.to/iguide playpath=7hgj3pw3pvieqh9 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link>
