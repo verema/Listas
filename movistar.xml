@@ -62,17 +62,71 @@
 <page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#077;&#111;&#118;&#105;&#115;&#116;&#097;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#115;&#046;&#116;&#120;&#116;</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
+</item>
+
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** #0 HD **</title>
+<link>$doregex[getUrl2]|User-Agent=iPad</link>
+<regex>
+<name>getUrl2</name>
+<expres>source src="(.*?)"</expres>
+<page>http://tumarcador.xyz/0</page></regex>
+
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests, re
+ rtmpUrl = re.search(r'function.*\n.*return\(\["(.*?)"\].+\s(.*?)\.join.+?getElementById\("(.*?)"', page_data)
+ tok2 = re.findall('id=' + rtmpUrl.group(3) + '>(.*?)<', page_data)[0]
+ rtmp = rtmpUrl.group(1).replace('","', '').replace('\/', '/')
+ tok1 = re.findall('var ' + rtmpUrl.group(2) + '.*?\["(.*?)"\]', page_data)[0].replace('","', '')
+ return rtmp + tok1 + tok2
+]]></expres>
+<page>http://tumarcador.xyz/0</page>
+<referer>http://tumarcador.xyz/</referer>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
 </item>	
 
 <item>
-            <title>#0  == [COLOR blue]SportDevil[/COLOR] ==</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** FOX HD **</title>
+<link>$doregex[getUrl2]|User-Agent=iPad</link>
+<regex>
+<name>getUrl2</name>
+<expres>source src="(.*?)"</expres>
+<page>http://tumarcador.xyz/fox</page></regex>
+
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests, re
+ rtmpUrl = re.search(r'function.*\n.*return\(\["(.*?)"\].+\s(.*?)\.join.+?getElementById\("(.*?)"', page_data)
+ tok2 = re.findall('id=' + rtmpUrl.group(3) + '>(.*?)<', page_data)[0]
+ rtmp = rtmpUrl.group(1).replace('","', '').replace('\/', '/')
+ tok1 = re.findall('var ' + rtmpUrl.group(2) + '.*?\["(.*?)"\]', page_data)[0].replace('","', '')
+ return rtmp + tok1 + tok2
+]]></expres>
+<page>http://tumarcador.xyz/fox</page>
+<referer>http://tumarcador.xyz/</referer>
+<agent>Mozilla/5.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>	
+
+
+
+<item>
+            <title>#0  == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/canal-1-spain-p1157358</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>       
 
 <item>
-            <title>MOVISTAR DEPORTES == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR DEPORTES == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/canal-deportes-spain-p1157316</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
@@ -81,14 +135,14 @@
 
 
 <item>
-            <title>MOVISTAR COMEDIA   == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR COMEDIA   == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/canal-comedia-spain-p1157346</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>CALLE 13   == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>CALLE 13   == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/calle-13-spain-p1157386</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
@@ -96,7 +150,7 @@
 
 
 <item>
-            <title>TNT == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>TNT == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/ver-tnt-espana-en-directo-online-por-internet/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
@@ -104,7 +158,7 @@
 
 
 <item>
-            <title>MOVISTAR SERIES == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR SERIES == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/canal-plus-series-xtra-online-en-directo/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
@@ -112,14 +166,14 @@
 
 
 <item>
-            <title>MOVISTAR DCINE == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR DCINE == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/canal-plus-dcine-en-directo-gratis-por-internet/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 
 <item>
-            <title>ANTENA3 HD  == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>ANTENA3 HD  == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://a3live-lh.akamaihd.net/i/antena3_1@35248/index_4_av-p.m3u8?sd=10&rebase=on</sportsdevil>
             <referer></referer>
             <thumbnail></thumbnail>
@@ -127,35 +181,35 @@
 
 
 <item>
-            <title>AXN == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>AXN == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/axn-hd-en-directo-gratis-por-internet/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MOVISTAR ACCION == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR ACCION == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/canal-accion-spain-p1157350</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MOVISTAR COMEDY == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR COMEDY == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/canal-comedy-spain-p1157376</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>HOLLYWOOD == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>HOLLYWOOD == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/holliwood-en-directo-gratis-por-internet/</sportsdevil>
             <referer>http://vercanalestv.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MOVISTAR DEPORTES2 == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR DEPORTES2 == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/canal-deportes2-spain-p1157338</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
@@ -163,252 +217,252 @@
 
 
 <item>
-            <title>M+ LIGA == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>M+ LIGA == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://tv.b-c-e.us/Canal+Liga.php</sportsdevil>
             <referer>http://tv.b-c-e.us/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MOVISTAR ESTRENOS == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR ESTRENOS == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/canal-estrenos-spain-p1157354</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>GOLTV == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>GOLTV == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/goltv-en-directo-gratis-por-internet/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>DISCOVERY CHNNEL == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>DISCOVERY CHNNEL == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/discovery-channel-en-directo-gratis-por-internet/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>REAL MADRID TV == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>REAL MADRID TV == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/ver-real-madrid-tv-online-en-directo-gratis/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>SYFY == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>SYFY == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/nacionales/syfy.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>AMC == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>AMC == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/nacionales/amc.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MOVISTAR TOROS == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR TOROS == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/canal-toros-spain-p1157308</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>CAZA Y PESCA == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>CAZA Y PESCA == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/documentales/cazaypesca.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MOVISTAR DEPORTES-2 == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR DEPORTES-2 == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/deportes-2-p1157520</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>EUROSPORT2 == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>EUROSPORT2 == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/eurosport2-spain-p1157324</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MOVISTAR GOLF == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR GOLF == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/deportes/plusgolf.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MULTIDEPORTES == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MULTIDEPORTES == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/multideportes-p1157518</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>NATIONAL GEO[/COLOR] == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>NATIONAL GEO[/COLOR] == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/national-geo-spain-p1157640</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>PARAMOUNT CHANNEL == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>PARAMOUNT CHANNEL == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/nacionales/p-channel.php</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>BARÇA TV == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>BARÇA TV == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/galicia-tv-p1157330</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>TVE 1 == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>TVE 1 == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/tve1-spain-p1157476</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>TVE 2 == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>TVE 2 == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/nacionales/tve2.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>TVE 24H == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>TVE 24H == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/nacionales/tve24h.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>ODISEA == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>ODISEA == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/odisea-spain-p1157646</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>A3S TV == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>A3S TV == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/a3s-tv-spain-p1157502</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>INTER ECONOMIA == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>INTER ECONOMIA == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/inter-economia-spain-p1157490</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>DARK == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>DARK == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/nacionales/dark.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>CN == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>CN == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/nacionales/cartoon.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>FDF == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>FDF == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/fdf-spain-p1157498</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>FOX CRIME == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>FOX CRIME == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/fox-crime-spain-p1157506</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>LA QUATRO == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>LA QUATRO == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/nacionales/la-cuatro.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>LA SEXTA == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>LA SEXTA == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/la-sexta-spain-p1157488</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>COSMOS == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>COSMOS == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/nacionales/cosmo.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MOVISTAR GP == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR GP == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/moto-gp-p1157318</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>TELECINCO == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>TELECINCO == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://zagaiptv.eklablog.com/tele-cinco-p1157486</sportsdevil>
             <referer>http://zagaiptv.eklablog.com/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>HISTORIA == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>HISTORIA == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://cinestrenostv.tv/canales/documentales/historia.php</sportsdevil>
             <referer>http://cinestrenostv.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>MOVISTAR F1 == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>MOVISTAR F1 == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/ver-la-f1online-en-directo-gratis-formula-1/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>BEIN SPORTÑ == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>BEIN SPORTÑ == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/bein-sport-en-directo-gratis-por-internet/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>BEINLALIGA == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>BEINLALIGA == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/bein-sports-la-liga-online-en-directo-gratis-24h/</sportsdevil>
             <referer>hhttp://latelete.tv/</referer>
             <thumbnail></thumbnail>
             </item>
 			
 <item>
-            <title>FOX ESPAÑA == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>FOX ESPAÑA == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://latelete.tv/fox-hd-en-directo-por-internet/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
@@ -416,7 +470,7 @@
 
 
 <item>
-            <title>VENUS   == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>VENUS   == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://www.vercanalestv.com/ver-canal-venus-online-en-vivo-y-online-gratis/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
@@ -424,7 +478,7 @@
  
  
 <item>
-            <title>PLAYBOY TV   == [COLOR blue]SportDevil[/COLOR] ==</title>
+            <title>PLAYBOY TV   == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title></title>
             <sportsdevil>http://www.vercanalestv.com/ver-playboy-en-vivo-gratis-por-internet/</sportsdevil>
             <referer>http://latelete.tv/</referer>
             <thumbnail></thumbnail>
