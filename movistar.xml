@@ -27,8 +27,25 @@
 </regex>
 </item>
 
+<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** M+ Full ** == [COLOR blue]SportDevil[/COLOR] ==[I] Esperar 10 segundos[/I]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<sportsdevil>http://cinestrenostv.tv/[makelist.param1]</sportsdevil>
+<thumbnail>http://cinestrenostv.tv/[makelist.param1]</thumbnail>
+<referer>http://cinestrenostv.tv/</referer>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)" title="(.*?)" target="tv"><img src="(.*?)"]]></expres>
+<page>http://cinestrenostv.tv/</page>
+</regex>
+<thumbnail>http://1.bp.blogspot.com/-zuHhRR4oXxA/TlqwYUhrmPI/AAAAAAAAAF0/IdH71AKySSk/s1600/MOVISTAR-logo+terformado.jpg</thumbnail>
+</item>
+
 <tem>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** M+ Full **</title>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** M+ Full ** </title>
 
 <link>$doregex[makelist]</link>
 <regex>
