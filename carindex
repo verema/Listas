@@ -184,7 +184,7 @@
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lime]Que Ver En TV[/COLOR] **</title>
+<title>[COLOR lime]Que Ver En TV[/COLOR]</title>
 <link>$doregex[makelist3]</link>
 
 <regex>
